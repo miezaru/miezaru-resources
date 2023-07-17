@@ -1,0 +1,9 @@
+.main {
+    display: grid;
+    grid-template-columns: [center-start] repeat(auto-fit, minmax(30rem, 1fr)) [center-end];
+    grid-row: 2;
+    grid-column: center-start / center-end;
+    gap: 6.4rem;
+    align-items: start;
+    margin-bottom: 6.4rem;
+}
