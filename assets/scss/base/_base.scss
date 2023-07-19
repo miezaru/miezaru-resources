@@ -2,8 +2,8 @@ body {
     min-height: 100vh;
     background-image: linear-gradient(
             to right bottom,
-            rgba(darken($clr-primary-light, 20%), 0.2),
-            rgba(darken($clr-primary-light, 60%), 0.2)
+            rgba(darken($clr-txt-tertiary, 20%), 0.8),
+            rgba(darken($clr-txt-tertiary, 60%), 0.8)
         ),
         url('../img/bcg-img.jpg');
     background-size: cover;

@@ -2,15 +2,19 @@ $white: #fff;
 $black: #000;
 $clr-txt-primary: #212121;
 $clr-txt-secondary: #757575;
+$clr-txt-tertiary: #363636;
 $clr-txt-divider: #bdbdbd;
+$clr-txt-comment: #9f79cf;
 $clr-txt-grey: #f7f7f7;
 $clr-accent: #00bcd4;
 $clr-primary: #673ab7;
 $clr-primary-light: #d1c4e9;
 $clr-primary-dark: #512da8;
+$clr-bcg-dark: #121212;
 
 // shadows
-$sh-default: 0 0 2.4rem rgba($black, 0.1);
+$sh-default: 0 0 1.2rem rgba($black, 0.1);
+$sh-white: 0 0 1.2rem rgba($white, 0.1);
 
 // transitions
 $tr-default: all 0.2s;
@@ -20,15 +24,19 @@ $tr-default: all 0.2s;
     --black: #{$black};
     --clr-txt-primary: #{$clr-txt-primary};
     --clr-txt-secondary: #{$clr-txt-secondary};
+    --clr-txt-tertiary: #{$clr-txt-tertiary};
     --clr-txt-divider: #{$clr-txt-divider};
+    --clr-txt-comment: #{$clr-txt-comment};
     --clr-txt-grey: #{$clr-txt-grey};
     --clr-accent: #{$clr-accent};
     --clr-primary: #{$clr-primary};
     --clr-primary-light: #{$clr-primary-light};
     --clr-primary-dark: #{$clr-primary-dark};
+    --clr-bcg-dark: #{$clr-bcg-dark};
 
     // shadows
     --sh-default: #{$sh-default};
+    --sh-white: #{$sh-white};
 
     // transitions
     --tr-default: #{$tr-default};

@@ -1,0 +1,12 @@
+.grid-page {
+    display: grid;
+    grid-template-columns:
+        [center-start] 0.8fr
+        [center-end];
+    grid-row: 2;
+    grid-column: center-start / center-end;
+    column-gap: 4.8rem;
+    align-items: start;
+    justify-content: center;
+    margin-bottom: 6.4rem;
+}

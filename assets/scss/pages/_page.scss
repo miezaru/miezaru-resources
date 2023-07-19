@@ -1,0 +1,36 @@
+.main {
+    padding: 2.4rem 4.8rem;
+    color: var(--clr-txt-divider);
+}
+
+.section__head {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    padding: 1.2rem 2.4rem;
+}
+
+.recources {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1.2rem;
+
+    &__link {
+        &:link,
+        &:visited {
+            padding: 1.2rem 2.4rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-align: center;
+            border-radius: 9px;
+            box-shadow: var(--sh-white);
+            transition: var(--tr-default);
+        }
+
+        &:hover,
+        &:active {
+            color: var(--clr-primary);
+            transform: translateY(-2px);
+        }
+    }
+}

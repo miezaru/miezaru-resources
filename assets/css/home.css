@@ -3,13 +3,17 @@
   --black: #000;
   --clr-txt-primary: #212121;
   --clr-txt-secondary: #757575;
+  --clr-txt-tertiary: #363636;
   --clr-txt-divider: #bdbdbd;
+  --clr-txt-comment: #9f79cf;
   --clr-txt-grey: #f7f7f7;
   --clr-accent: #00bcd4;
   --clr-primary: #673ab7;
   --clr-primary-light: #d1c4e9;
   --clr-primary-dark: #512da8;
-  --sh-default: 0 0 2.4rem rgba(0, 0, 0, 0.1);
+  --clr-bcg-dark: #121212;
+  --sh-default: 0 0 1.2rem rgba(0, 0, 0, 0.1);
+  --sh-white: 0 0 1.2rem rgba(255, 255, 255, 0.1);
   --tr-default: all 0.2s;
 }
 
@@ -17,11 +21,23 @@
   margin-bottom: 1.2rem;
 }
 
+.u-margin-bottom-md {
+  margin-bottom: 3.2rem;
+}
+
+.u-margin-bottom-m-md {
+  margin-bottom: -2.4rem;
+}
+
+.u-text-align-c {
+  text-align: center;
+}
+
 body {
   min-height: 100vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(151, 122, 205, 0.2)), to(rgba(53, 33, 90, 0.2))), url("../img/bcg-img.jpg");
-  background-image: -webkit-linear-gradient(left top, rgba(151, 122, 205, 0.2), rgba(53, 33, 90, 0.2)), url("../img/bcg-img.jpg");
-  background-image: linear-gradient(to right bottom, rgba(151, 122, 205, 0.2), rgba(53, 33, 90, 0.2)), url("../img/bcg-img.jpg");
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(3, 3, 3, 0.8)), to(rgba(0, 0, 0, 0.8))), url("../img/bcg-img.jpg");
+  background-image: -webkit-linear-gradient(left top, rgba(3, 3, 3, 0.8), rgba(0, 0, 0, 0.8)), url("../img/bcg-img.jpg");
+  background-image: linear-gradient(to right bottom, rgba(3, 3, 3, 0.8), rgba(0, 0, 0, 0.8)), url("../img/bcg-img.jpg");
   background-size: cover;
 }
 
@@ -59,16 +75,44 @@ body {
   font-family: "Noto Sans", sans-serif;
   font-weight: 400;
   line-height: 1;
-  color: var(--clr-txt-primary);
+  color: var(--clr-txt-tertiary);
+}
+
+.title-h1 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .title-h2 {
   font-size: 2rem;
   font-weight: 500;
+  line-height: 1.2;
 }
 
-.link {
-  display: block;
+.title-h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.title-h4 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.mark-text {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  line-height: 1;
+  background-color: #363636;
+  border-radius: 9px;
+}
+
+.link:link, .link:visited {
+  display: inline-block;
+  text-decoration: none;
 }
 
 .logo {
@@ -84,7 +128,7 @@ body {
 }
 .logo__name::before {
   font-weight: 700;
-  color: var(--clr-txt-primary);
+  color: var(--clr-txt-tertiary);
   content: "@";
 }
 
@@ -588,13 +632,7 @@ body {
   grid-row: 2;
   grid-column: center-start/center-end;
   overflow: hidden;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(151, 122, 205, 0.8)), to(rgba(53, 33, 90, 0.8))), url("../img/pillinger2.png");
-  background-image: -webkit-linear-gradient(left top, rgba(151, 122, 205, 0.8), rgba(53, 33, 90, 0.8)), url("../img/pillinger2.png");
-  background-image: linear-gradient(to right bottom, rgba(151, 122, 205, 0.8), rgba(53, 33, 90, 0.8)), url("../img/pillinger2.png");
   background-size: cover;
-  border-radius: 9px;
-  -webkit-box-shadow: var(--sh-default);
-          box-shadow: var(--sh-default);
 }
 
 .header {
@@ -641,8 +679,8 @@ body {
   padding: 1.2rem;
   overflow: hidden;
   border-radius: 9px;
-  -webkit-box-shadow: var(--sh-default);
-          box-shadow: var(--sh-default);
+  -webkit-box-shadow: var(--sh-white);
+          box-shadow: var(--sh-white);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
