@@ -9,6 +9,7 @@
             name="description"
             content="Artem 'Miezaru' Usatyi resources page. This website contains a tons of useful information of the web development and more. Current page about HTML 'head' element content, and meta information"
         />
+        <meta name="robots" content="index, follow" />
         <link rel="stylesheet" href="../../assets/css/page.css" />
         <link
             rel="apple-touch-icon"
@@ -300,11 +301,6 @@
                                     >Apple Docs
                                 </a>
                                 <a
-                                    href="http://brucelawson.github.io/manifest/"
-                                    class="recources__link link"
-                                    >Manifest Generator</a
-                                >
-                                <a
                                     href="https://www.favicon-generator.org/"
                                     class="recources__link link"
                                     >Favicons Generator</a
@@ -313,6 +309,11 @@
                                     href="https://dev.teams.microsoft.com/appvalidation.html"
                                     class="recources__link link"
                                     >Manifest Validation</a
+                                >
+                                <a
+                                    href="https://firefox-source-docs.mozilla.org/devtools-user/application/manifests/index.html"
+                                    class="recources__link link"
+                                    >Manifest Inspecting</a
                                 >
                             </div>
 
@@ -553,11 +554,6 @@ miezaruexpr@gmail.com" /&gt;
                                             >Habr Article</a
                                         >
                                         <a
-                                            href="http://brucelawson.github.io/manifest/"
-                                            class="recources__link link"
-                                            >Manifest Generator</a
-                                        >
-                                        <a
                                             href="https://www.favicon-generator.org/"
                                             class="recources__link link"
                                             >Favicons Generator</a
@@ -567,13 +563,86 @@ miezaruexpr@gmail.com" /&gt;
                                             class="recources__link link"
                                             >Manifest Validation</a
                                         >
+                                        <a
+                                            href="https://firefox-source-docs.mozilla.org/devtools-user/application/manifests/index.html"
+                                            class="recources__link link"
+                                            >Manifest Inspecting</a
+                                        >
                                     </div>
                                     <p class="properties__descr">
-                                        Document's character encoding
+                                        Manifest application icons
                                     </p>
                                     <pre class="pre-el">
                                         <code class="code-el">
-&lt;meta charset="utf-8" /&gt;
+{
+    "name": "Miezaru App",
+
+    <span class="pre-el__comment">// 12 characters max for short_name</span>
+    "short_name": "Miezaru",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff",
+    "start_url": ".",
+    "icons": [
+        {
+          "src": "/assets/img/icons/android-icon-36x36.png",
+          "sizes": "36x36",
+          "type": "image/png",
+          "density": "0.75"
+        },
+        {
+          "src": "/assets/img/icons/android-icon-48x48.png",
+          "sizes": "48x48",
+          "type": "image/png",
+          "density": "1.0"
+        },
+        {
+          "src": "/assets/img/icons/android-icon-72x72.png",
+          "sizes": "72x72",
+          "type": "image/png",
+          "density": "1.5"
+        },
+        {
+          "src": "/assets/img/icons/android-icon-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png",
+          "density": "2.0"
+        },
+        {
+          "src": "/assets/img/icons/android-icon-144x144.png",
+          "sizes": "144x144",
+          "type": "image/png",
+          "density": "3.0"
+        },
+        {
+          "src": "/assets/img/icons/android-icon-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png",
+          "density": "4.0"
+        }
+    ]
+}
+
+                                        </code>
+                                    </pre>
+                                </div>
+                                <div class="properties__item">
+                                    <h4 class="title-h4 u-margin-bottom-md">
+                                        Google specification
+                                    </h4>
+                                    <div class="recources u-margin-bottom-md">
+                                        <a
+                                            href="https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag"
+                                            class="recources__link link"
+                                            >Google
+                                        </a>
+                                    </div>
+                                    <p class="properties__descr">
+                                        Google Meta Information
+                                    </p>
+                                    <pre class="pre-el">
+                                        <code class="code-el">
+&lt;name="robots" content="index, follow" /&gt;
                                         </code>
                                     </pre>
                                 </div>
