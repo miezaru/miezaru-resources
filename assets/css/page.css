@@ -71,7 +71,7 @@ body {
   font-family: "Noto Sans", sans-serif;
   font-weight: 400;
   line-height: 1;
-  color: var(--clr-txt-tertiary);
+  color: var(--clr-txt-grey);
 }
 
 .title-h1 {
@@ -111,12 +111,21 @@ body {
   text-decoration: none;
 }
 
-.logo {
+.logo:link, .logo:visited {
   padding: 1.2rem 2.4rem;
   font-weight: 500;
+  color: var(--clr-txt-grey);
   text-align: center;
-  background-color: var(--clr-primary-light);
   border-radius: 9px;
+  -webkit-box-shadow: 0 0 1.2rem rgba(255, 255, 255, 0.2);
+          box-shadow: 0 0 1.2rem rgba(255, 255, 255, 0.2);
+  -webkit-transition: var(--tr-default);
+  transition: var(--tr-default);
+}
+.logo:hover, .logo:active {
+  -webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 .logo__name {
   display: block;
@@ -124,7 +133,6 @@ body {
 }
 .logo__name::before {
   font-weight: 700;
-  color: var(--clr-txt-tertiary);
   content: "@";
 }
 
@@ -244,6 +252,7 @@ body {
   transition: var(--tr-default);
 }
 .socials__icon:hover {
+  fill: var(--clr-primary);
   -webkit-transform: translateY(-2px);
       -ms-transform: translateY(-2px);
           transform: translateY(-2px);
