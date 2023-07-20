@@ -92,7 +92,8 @@ body {
   line-height: 1.2;
 }
 
-.title-h4 {
+.title-h4,
+.title-h5 {
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.2;
@@ -100,7 +101,7 @@ body {
 
 .mark-text {
   display: inline-block;
-  padding: 0.4rem 0.8rem;
+  padding: 0.2rem 0.8rem;
   line-height: 1;
   background-color: #363636;
   border-radius: 9px;
@@ -463,13 +464,13 @@ body {
 .grid-inner {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 10rem 6.4rem auto;
+  -ms-grid-rows: 10rem 2.4rem auto;
   grid-template-rows: 10rem auto;
   -ms-grid-columns: [full-start] 6.4rem [center-start] ([col-start] minmax(-webkit-min-content, 1fr) [col-end])[10] [center-end] 6.4rem [full-end];
   -ms-grid-columns: [full-start] 6.4rem [center-start] ([col-start] minmax(min-content, 1fr) [col-end])[10] [center-end] 6.4rem [full-end];
   grid-template-columns: [full-start] 6.4rem [center-start] repeat(10, [col-start] minmax(-webkit-min-content, 1fr) [col-end]) [center-end] 6.4rem [full-end];
   grid-template-columns: [full-start] 6.4rem [center-start] repeat(10, [col-start] minmax(min-content, 1fr) [col-end]) [center-end] 6.4rem [full-end];
-  row-gap: 6.4rem;
+  row-gap: 2.4rem;
 }
 
 .grid-inner > *:nth-child(1) {

@@ -30,7 +30,7 @@
 
     &__descr {
         margin-bottom: 1.2rem;
-        font-size: 1.4rem;
+        font-size: clamp(1.2rem, 1.196rem + 0.18vw, 1.44rem);
         font-weight: 400;
         line-height: 1.7;
 
@@ -52,6 +52,61 @@
         &:hover,
         &:active {
             color: var(--clr-primary);
+        }
+    }
+
+    & picture {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba(darken($clr-txt-tertiary, 20%), 0.8),
+            rgba(darken($clr-txt-tertiary, 60%), 0.8)
+        );
+        border-radius: 9px;
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+        filter: brightness(0.4);
+        border: 0.6rem solid var(--clr-primary-dark);
+        border-radius: 9px;
+    }
+
+    &__list {
+        position: relative;
+        list-style: none;
+
+        &-item {
+            position: relative;
+
+            &::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                width: 3px;
+                height: 1.2rem;
+                content: '';
+                background-color: $clr-primary;
+                transform: translateX(-1.8rem) translateY(0.35rem) rotate(45deg);
+            }
+
+            &::after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                width: 3px;
+                height: 1.2rem;
+                content: '';
+                background-color: $clr-primary;
+                transform: translateX(-1.8rem) translateY(0.35rem)
+                    rotate(-45deg);
+            }
+        }
+
+        &-about {
+            margin-left: 2rem;
         }
     }
 }
