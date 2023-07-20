@@ -1,8 +1,8 @@
 body {
     background-image: linear-gradient(
             to right bottom,
-            rgba(darken($clr-txt-tertiary, 20%), 0.8),
-            rgba(darken($clr-txt-tertiary, 60%), 0.8)
+            rgba(darken($clr-txt-tertiary, 20%), 0.93),
+            rgba(darken($clr-txt-tertiary, 20%), 0.93)
         ),
         image-set(
             url('../img/avif/bcg-repeat.avif') type('image/avif') 1x,
@@ -12,7 +12,6 @@ body {
             url('../img/jpg/bcg-repeat.jpg') type('image/jpeg') 1x,
             url('../img/jpg/bcg-repeat.jpg') type('image/jpeg') 2x
         );
-    background-repeat: repeat;
 }
 
 .main {
