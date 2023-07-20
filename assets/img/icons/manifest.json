@@ -1,6 +1,8 @@
 {
   "name": "Miezaru App",
   "short_name": "Miezaru",
+  "description": "Artem 'Miezaru' Usatyi recources app.",
+  "lang": "en-US",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff",
@@ -41,6 +43,24 @@
       "sizes": "192x192",
       "type": "image/png",
       "density": "4.0"
+    },
+    {
+      "src": "/assets/img/icons/android-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "density": "5.0"
+    },
+    {
+      "src": "/assets/img/icons/android-icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "density": "4.0"
+    },
+    {
+      "src": "/assets/img/icons/android-icon-maskable-196x196.png",
+      "sizes": "196x196",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }

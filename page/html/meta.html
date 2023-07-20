@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Miezaru App</title>
+        <title>Miezaru App | HTML Meta</title>
         <meta name="author" content="Artem Usatyi, miezaruexpr@gmail.com" />
         <meta
             name="description"
@@ -103,6 +103,7 @@
                             href="https://www.facebook.com/miezaruexpr"
                             class="link socials__item"
                             target="_blank"
+                            aria-label="Facebook"
                         >
                             <svg class="socials__icon">
                                 <use
@@ -114,6 +115,7 @@
                             href="https://web.telegram.org"
                             class="link socials__item"
                             target="_blank"
+                            aria-label="Telegram"
                         >
                             <svg class="socials__icon">
                                 <use
@@ -125,6 +127,7 @@
                             href="https://twitter.com/miezaruexpr"
                             class="link socials__item"
                             target="_blank"
+                            aria-label="Twitter"
                         >
                             <svg class="socials__icon">
                                 <use
@@ -136,6 +139,7 @@
                             href="https://www.instagram.com/miezaruexpr/"
                             class="link socials__item"
                             target="_blank"
+                            aria-label="Instagram"
                         >
                             <svg class="socials__icon">
                                 <use
@@ -147,6 +151,7 @@
                             href="https://www.pinterest.com/miezaruexpr/"
                             class="link socials__item"
                             target="_blank"
+                            aria-label="Pinterest"
                         >
                             <svg class="socials__icon">
                                 <use
@@ -155,7 +160,7 @@
                             </svg>
                         </a>
                     </div>
-                    <a class="logo link" href="../../index.html">
+                    <a class="logo link" href="./index.html">
                         <span class="logo__name">miezaru</span>
                     </a>
                     <div class="socials">
@@ -163,6 +168,7 @@
                             href="https://store.steampowered.com/"
                             class="link socials__item"
                             target="_blank"
+                            aria-label="Steam"
                         >
                             <svg class="socials__icon">
                                 <use
@@ -174,6 +180,7 @@
                             href="https://www.youtube.com/"
                             class="link socials__item"
                             target="_blank"
+                            aria-label="Youtube"
                         >
                             <svg class="socials__icon">
                                 <use
@@ -185,6 +192,7 @@
                             href="https://music.youtube.com/"
                             class="link socials__item"
                             target="_blank"
+                            aria-label="Youtube music"
                         >
                             <svg class="socials__icon">
                                 <use
@@ -196,6 +204,7 @@
                             href="https://github.com/miezaru"
                             class="link socials__item"
                             target="_blank"
+                            aria-label="Github"
                         >
                             <svg class="socials__icon">
                                 <use
@@ -207,6 +216,7 @@
                             href="https://www.twitch.tv/"
                             class="link socials__item"
                             target="_blank"
+                            aria-label="Twitch"
                         >
                             <svg class="socials__icon">
                                 <use
@@ -218,6 +228,7 @@
                             href="https://soundcloud.com/miezaru"
                             class="link socials__item"
                             target="_blank"
+                            aria-label="Soudcloud"
                         >
                             <svg class="socials__icon">
                                 <use
@@ -579,10 +590,12 @@ miezaruexpr@gmail.com" /&gt;
 
     <span class="pre-el__comment">// 12 characters max for short_name</span>
     "short_name": "Miezaru",
+    "description": "Artem 'Miezaru' Usatyi recources app.",
+    "lang": "en-US",
     "display": "standalone",
     "theme_color": "#000000",
     "background_color": "#ffffff",
-    "start_url": ".",
+    "start_url": "/",
     "icons": [
         {
           "src": "/assets/img/icons/android-icon-36x36.png",
@@ -617,6 +630,18 @@ miezaruexpr@gmail.com" /&gt;
         {
           "src": "/assets/img/icons/android-icon-192x192.png",
           "sizes": "192x192",
+          "type": "image/png",
+          "density": "4.0"
+        },
+        {
+          "src": "/assets/img/icons/android-icon-512x512.png",
+          "sizes": "512x512",
+          "type": "image/png",
+          "density": "5.0"
+        },
+        {
+          "src": "/assets/img/icons/android-icon-256x256.png",
+          "sizes": "256x256",
           "type": "image/png",
           "density": "4.0"
         }
