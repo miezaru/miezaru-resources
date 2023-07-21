@@ -1,32 +1,29 @@
 .grid {
     display: grid;
-    grid-template-rows: 4.8rem auto 4.8rem;
+    grid-template-rows: 4.8rem auto auto 4.8rem;
     grid-template-columns:
-        [full-start] minmax(3.2rem, 1fr) [center-start] 6.4rem
-        repeat(10, [col-start] minmax(min-content, 12rem) [col-end]) 6.4rem
-        [center-end] minmax(3.2rem, 1fr) [full-end];
-}
-
-.grid-inner {
-    display: grid;
-    grid-template-rows: 10rem auto;
-    grid-template-columns:
-        [full-start] 6.4rem [center-start] repeat(
+        [full-start] minmax(3.2rem, 1fr) [center-start] repeat(
             10,
-            [col-start] minmax(min-content, 1fr) [col-end]
+            [col-start] minmax(min-content, 12rem) [col-end]
         )
-        [center-end] 6.4rem [full-end];
+        [center-end] minmax(3.2rem, 1fr) [full-end];
     row-gap: 2.4rem;
-}
 
-.wrapper {
-    grid-row: 2;
-    grid-column: center-start / center-end;
-    overflow: hidden;
-    background-size: cover;
+    @media (width <= 48em) {
+        grid-template-rows: 0 auto auto 0;
+    }
+
+    @media (width <= 24em) {
+        grid-template-columns:
+            [full-start] 0 [center-start] repeat(
+                10,
+                [col-start] minmax(min-content, 12rem) [col-end]
+            )
+            [center-end] 0 [full-end];
+    }
 }
 
 .header {
-    grid-row: 1;
+    grid-row: 2;
     grid-column: full-start / full-end;
 }

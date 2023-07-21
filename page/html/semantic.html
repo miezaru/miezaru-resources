@@ -7,7 +7,7 @@
         <meta name="author" content="Artem Usatyi, miezaruexpr@gmail.com" />
         <meta
             name="description"
-            content="Artem 'Miezaru' Usatyi resources page. This website contains a tons of useful information of the web development and more. Current page about HTML 'head' element content, and meta information"
+            content="Artem 'Miezaru' Usatyi resources page. This website contains a tons of useful information of the web development and more. Current page about HTML semantics"
         />
         <meta name="robots" content="index, follow" />
         <link rel="stylesheet" href="../../assets/css/page.css" />
@@ -95,500 +95,449 @@
         />
     </head>
     <body class="grid">
-        <div class="wrapper">
-            <div class="grid-inner">
-                <header class="header">
-                    <div class="socials">
-                        <a
-                            href="https://www.facebook.com/miezaruexpr"
-                            class="link socials__item"
-                            target="_blank"
-                            aria-label="Facebook"
-                            rel="noopener noreferrer"
-                        >
-                            <svg class="socials__icon">
-                                <use
-                                    href="../../assets/svg/sprite.svg#icon-facebook2"
-                                ></use>
-                            </svg>
-                        </a>
-                        <a
-                            href="https://web.telegram.org"
-                            class="link socials__item"
-                            target="_blank"
-                            aria-label="Telegram"
-                            rel="noopener noreferrer"
-                        >
-                            <svg class="socials__icon">
-                                <use
-                                    href="../../assets/svg/sprite.svg#icon-telegram"
-                                ></use>
-                            </svg>
-                        </a>
-                        <a
-                            href="https://twitter.com/miezaruexpr"
-                            class="link socials__item"
-                            target="_blank"
-                            aria-label="Twitter"
-                            rel="noopener noreferrer"
-                        >
-                            <svg class="socials__icon">
-                                <use
-                                    href="../../assets/svg/sprite.svg#icon-twitter"
-                                ></use>
-                            </svg>
-                        </a>
-                        <a
-                            href="https://www.instagram.com/miezaruexpr/"
-                            class="link socials__item"
-                            target="_blank"
-                            aria-label="Instagram"
-                            rel="noopener noreferrer"
-                        >
-                            <svg class="socials__icon">
-                                <use
-                                    href="../../assets/svg/sprite.svg#icon-instagram"
-                                ></use>
-                            </svg>
-                        </a>
-                        <a
-                            href="https://www.pinterest.com/miezaruexpr/"
-                            class="link socials__item"
-                            target="_blank"
-                            aria-label="Pinterest"
-                            rel="noopener noreferrer"
-                        >
-                            <svg class="socials__icon">
-                                <use
-                                    href="../../assets/svg/sprite.svg#icon-pinterest"
-                                ></use>
-                            </svg>
-                        </a>
-                    </div>
-                    <a class="logo link" href="../../index.html">
-                        <span class="logo__name">miezaru</span>
+        <header class="header">
+            <div class="socials">
+                <a
+                    href="https://www.facebook.com/miezaruexpr"
+                    class="link socials__item"
+                    target="_blank"
+                    aria-label="Facebook"
+                    rel="noopener noreferrer"
+                >
+                    <svg class="socials__icon">
+                        <use
+                            href="../../assets/svg/sprite.svg#icon-facebook2"
+                        ></use>
+                    </svg>
+                </a>
+                <a
+                    href="https://web.telegram.org"
+                    class="link socials__item"
+                    target="_blank"
+                    aria-label="Telegram"
+                    rel="noopener noreferrer"
+                >
+                    <svg class="socials__icon">
+                        <use
+                            href="../../assets/svg/sprite.svg#icon-telegram"
+                        ></use>
+                    </svg>
+                </a>
+                <a
+                    href="https://twitter.com/miezaruexpr"
+                    class="link socials__item"
+                    target="_blank"
+                    aria-label="Twitter"
+                    rel="noopener noreferrer"
+                >
+                    <svg class="socials__icon">
+                        <use
+                            href="../../assets/svg/sprite.svg#icon-twitter"
+                        ></use>
+                    </svg>
+                </a>
+                <a
+                    href="https://www.instagram.com/miezaruexpr/"
+                    class="link socials__item"
+                    target="_blank"
+                    aria-label="Instagram"
+                    rel="noopener noreferrer"
+                >
+                    <svg class="socials__icon">
+                        <use
+                            href="../../assets/svg/sprite.svg#icon-instagram"
+                        ></use>
+                    </svg>
+                </a>
+                <a
+                    href="https://www.pinterest.com/miezaruexpr/"
+                    class="link socials__item"
+                    target="_blank"
+                    aria-label="Pinterest"
+                    rel="noopener noreferrer"
+                >
+                    <svg class="socials__icon">
+                        <use
+                            href="../../assets/svg/sprite.svg#icon-pinterest"
+                        ></use>
+                    </svg>
+                </a>
+            </div>
+            <a class="logo link" href="../../index.html">
+                <span class="logo__name">miezaru</span>
+            </a>
+            <div class="socials">
+                <a
+                    href="https://store.steampowered.com/"
+                    class="link socials__item"
+                    target="_blank"
+                    aria-label="Steam"
+                    rel="noopener noreferrer"
+                >
+                    <svg class="socials__icon">
+                        <use
+                            href="../../assets/svg/sprite.svg#icon-steam2"
+                        ></use>
+                    </svg>
+                </a>
+                <a
+                    href="https://www.youtube.com/"
+                    class="link socials__item"
+                    target="_blank"
+                    aria-label="Youtube"
+                    rel="noopener noreferrer"
+                >
+                    <svg class="socials__icon">
+                        <use
+                            href="../../assets/svg/sprite.svg#icon-youtube"
+                        ></use>
+                    </svg>
+                </a>
+                <a
+                    href="https://music.youtube.com/"
+                    class="link socials__item"
+                    target="_blank"
+                    aria-label="Youtube music"
+                    rel="noopener noreferrer"
+                >
+                    <svg class="socials__icon">
+                        <use
+                            href="../../assets/svg/sprite.svg#icon-music"
+                        ></use>
+                    </svg>
+                </a>
+                <a
+                    href="https://github.com/miezaru"
+                    class="link socials__item"
+                    target="_blank"
+                    aria-label="Github"
+                    rel="noopener noreferrer"
+                >
+                    <svg class="socials__icon">
+                        <use
+                            href="../../assets/svg/sprite.svg#icon-github"
+                        ></use>
+                    </svg>
+                </a>
+                <a
+                    href="https://www.twitch.tv/"
+                    class="link socials__item"
+                    target="_blank"
+                    aria-label="Twitch"
+                    rel="noopener noreferrer"
+                >
+                    <svg class="socials__icon">
+                        <use
+                            href="../../assets/svg/sprite.svg#icon-twitch"
+                        ></use>
+                    </svg>
+                </a>
+                <a
+                    href="https://soundcloud.com/miezaru"
+                    class="link socials__item"
+                    target="_blank"
+                    aria-label="Soudcloud"
+                    rel="noopener noreferrer"
+                >
+                    <svg class="socials__icon">
+                        <use
+                            href="../../assets/svg/sprite.svg#icon-soundcloud2"
+                        ></use>
+                    </svg>
+                </a>
+            </div>
+        </header>
+
+        <main class="main">
+            <header>
+                <h1 class="title-h1 u-margin-bottom-md u-text-align-c">
+                    HTML: semantic elements and semantic meaning
+                </h1>
+            </header>
+            <section class="section">
+                <div class="recources u-margin-bottom-md">
+                    <a
+                        href="https://web.dev/learn/html/semantic-html/"
+                        class="link recources__link"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >WebDev Semantics
                     </a>
-                    <div class="socials">
-                        <a
-                            href="https://store.steampowered.com/"
-                            class="link socials__item"
-                            target="_blank"
-                            aria-label="Steam"
-                            rel="noopener noreferrer"
-                        >
-                            <svg class="socials__icon">
-                                <use
-                                    href="../../assets/svg/sprite.svg#icon-steam2"
-                                ></use>
-                            </svg>
-                        </a>
-                        <a
-                            href="https://www.youtube.com/"
-                            class="link socials__item"
-                            target="_blank"
-                            aria-label="Youtube"
-                            rel="noopener noreferrer"
-                        >
-                            <svg class="socials__icon">
-                                <use
-                                    href="../../assets/svg/sprite.svg#icon-youtube"
-                                ></use>
-                            </svg>
-                        </a>
-                        <a
-                            href="https://music.youtube.com/"
-                            class="link socials__item"
-                            target="_blank"
-                            aria-label="Youtube music"
-                            rel="noopener noreferrer"
-                        >
-                            <svg class="socials__icon">
-                                <use
-                                    href="../../assets/svg/sprite.svg#icon-music"
-                                ></use>
-                            </svg>
-                        </a>
-                        <a
-                            href="https://github.com/miezaru"
-                            class="link socials__item"
-                            target="_blank"
-                            aria-label="Github"
-                            rel="noopener noreferrer"
-                        >
-                            <svg class="socials__icon">
-                                <use
-                                    href="../../assets/svg/sprite.svg#icon-github"
-                                ></use>
-                            </svg>
-                        </a>
-                        <a
-                            href="https://www.twitch.tv/"
-                            class="link socials__item"
-                            target="_blank"
-                            aria-label="Twitch"
-                            rel="noopener noreferrer"
-                        >
-                            <svg class="socials__icon">
-                                <use
-                                    href="../../assets/svg/sprite.svg#icon-twitch"
-                                ></use>
-                            </svg>
-                        </a>
-                        <a
-                            href="https://soundcloud.com/miezaru"
-                            class="link socials__item"
-                            target="_blank"
-                            aria-label="Soudcloud"
-                            rel="noopener noreferrer"
-                        >
-                            <svg class="socials__icon">
-                                <use
-                                    href="../../assets/svg/sprite.svg#icon-soundcloud2"
-                                ></use>
-                            </svg>
-                        </a>
-                    </div>
-                </header>
+                    <a
+                        href="https://web.dev/learn/html/headings-and-sections/"
+                        class="link recources__link"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >WebDev Headings and Sections
+                    </a>
+                    <a
+                        href="https://wicg.github.io/aom/explainer.html"
+                        class="link recources__link"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >AOM Explainer
+                    </a>
+                    <a
+                        href="https://w3c.github.io/aria/#dfn-role"
+                        class="link recources__link"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >ARIA specification
+                    </a>
+                    <a
+                        href="https://html.spec.whatwg.org/dev/"
+                        class="link recources__link"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >WHATWG HTML specification
+                    </a>
+                    <a
+                        href="https://www.digitala11y.com/wai-aria-1-1-cheat-sheet/"
+                        class="link recources__link"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >WAI-ARIA Cheat Sheet
+                    </a>
+                    <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes"
+                        class="link recources__link"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >MDN Aria attributes
+                    </a>
+                </div>
 
-                <div class="grid-page">
-                    <main class="main">
-                        <header>
-                            <h1
-                                class="title-h1 u-margin-bottom-md u-text-align-c"
+                <div class="properties">
+                    <h2 class="title-h2 u-margin-bottom-m-md u-text-align-c">
+                        Semantic elements and features
+                    </h2>
+                    <div class="properties__item">
+                        <h3 class="title-h3 u-margin-bottom-md">
+                            Semantic elements
+                        </h3>
+                        <div class="recources u-margin-bottom-md">
+                            <a
+                                href="https://web.dev/learn/html/headings-and-sections/"
+                                class="link recources__link"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                >WebDev Headings and Sections</a
                             >
-                                HTML: semantic elements and semantic meaning
-                            </h1>
-                        </header>
-                        <section class="section">
-                            <h2 class="title-h2 u-text-align-c">Semantics</h2>
-                            <div class="recources u-margin-bottom-md">
-                                <a
-                                    href="https://web.dev/learn/html/semantic-html/"
-                                    class="link recources__link"
-                                    rel="noopener noreferrer"
-                                    target="_blank"
-                                    >WebDev Semantics
-                                </a>
-                                <a
-                                    href="https://web.dev/learn/html/headings-and-sections/"
-                                    class="link recources__link"
-                                    rel="noopener noreferrer"
-                                    target="_blank"
-                                    >WebDev Headings and Sections
-                                </a>
-                                <a
-                                    href="https://wicg.github.io/aom/explainer.html"
-                                    class="link recources__link"
-                                    rel="noopener noreferrer"
-                                    target="_blank"
-                                    >AOM Explainer
-                                </a>
-                                <a
-                                    href="https://w3c.github.io/aria/#dfn-role"
-                                    class="link recources__link"
-                                    rel="noopener noreferrer"
-                                    target="_blank"
-                                    >ARIA specification
-                                </a>
-                                <a
-                                    href="https://html.spec.whatwg.org/dev/"
-                                    class="link recources__link"
-                                    rel="noopener noreferrer"
-                                    target="_blank"
-                                    >WHATWG HTML specification
-                                </a>
-                                <a
-                                    href="https://www.digitala11y.com/wai-aria-1-1-cheat-sheet/"
-                                    class="link recources__link"
-                                    rel="noopener noreferrer"
-                                    target="_blank"
-                                    >WAI-ARIA Cheat Sheet
-                                </a>
-                                <a
-                                    href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes"
-                                    class="link recources__link"
-                                    rel="noopener noreferrer"
-                                    target="_blank"
-                                    >MDN Aria attributes
-                                </a>
-                            </div>
+                        </div>
+                        <p class="properties__descr">
+                            Using the correct HTML elements to describe your
+                            document content.
+                        </p>
 
-                            <div class="properties">
-                                <h3
-                                    class="title-h3 u-margin-bottom-m-md u-text-align-c"
-                                >
-                                    Semantic elements and features
-                                </h3>
-                                <div class="properties__item">
-                                    <h4 class="title-h4 u-margin-bottom-md">
-                                        Semantic elements
-                                    </h4>
-                                    <div class="recources u-margin-bottom-md">
-                                        <a
-                                            href="https://web.dev/learn/html/headings-and-sections/"
-                                            class="link recources__link"
-                                            rel="noopener noreferrer"
-                                            target="_blank"
-                                            >WebDev Headings and Sections</a
-                                        >
-                                    </div>
+                        <ul class="properties__list">
+                            <li class="properties__list-item">
+                                <h4 class="title-h4 u-margin-bottom-sm">
+                                    header
+                                </h4>
+                                <div class="properties__list-about">
                                     <p class="properties__descr">
-                                        Using the correct HTML elements to
-                                        describe your document content.
+                                        When the
+                                        <span class="mark-text"
+                                            >&lt;header&gt;</span
+                                        >
+                                        is top level, it is the site banner, a
+                                        landmark role, which you may have noted
+                                        in the role code block. When a
+                                        <span class="mark-text"
+                                            >&lt;header&gt;</span
+                                        >
+                                        is nested in
+                                        <span class="mark-text"
+                                            >&lt;main&gt;</span
+                                        >,
+                                        <span class="mark-text"
+                                            >&lt;article&gt;</span
+                                        >, or
+                                        <span class="mark-text"
+                                            >&lt;section&gt;</span
+                                        >, it just identifies it as the header
+                                        for that section and isn't a landmark.
                                     </p>
+                                </div>
+                            </li>
 
-                                    <ul class="properties__list">
-                                        <li class="properties__list-item">
-                                            <h5
-                                                class="title-h5 u-margin-bottom-sm"
-                                            >
-                                                header
-                                            </h5>
-                                            <div class="properties__list-about">
-                                                <p class="properties__descr">
-                                                    When the
-                                                    <span class="mark-text"
-                                                        >&lt;header&gt;</span
-                                                    >
-                                                    is top level, it is the site
-                                                    banner, a landmark role,
-                                                    which you may have noted in
-                                                    the role code block. When a
-                                                    <span class="mark-text"
-                                                        >&lt;header&gt;</span
-                                                    >
-                                                    is nested in
-                                                    <span class="mark-text"
-                                                        >&lt;main&gt;</span
-                                                    >,
-                                                    <span class="mark-text"
-                                                        >&lt;article&gt;</span
-                                                    >, or
-                                                    <span class="mark-text"
-                                                        >&lt;section&gt;</span
-                                                    >, it just identifies it as
-                                                    the header for that section
-                                                    and isn't a landmark.
-                                                </p>
-                                            </div>
-                                        </li>
+                            <li class="properties__list-item">
+                                <h4 class="title-h4 u-margin-bottom-sm">nav</h4>
+                                <div class="properties__list-about">
+                                    <p class="properties__descr">
+                                        The
+                                        <span class="mark-text"
+                                            >&lt;nav&gt;</span
+                                        >
+                                        element identifies content as
+                                        navigation. As this<span
+                                            class="mark-text"
+                                            >&lt;nav&gt;</span
+                                        >
+                                        is nested in the site heading, it is the
+                                        main navigation for the site. If it was
+                                        nested in an<span class="mark-text"
+                                            >&lt;article&gt;</span
+                                        >
+                                        or
+                                        <span class="mark-text"
+                                            >&lt;section&gt;</span
+                                        >, it would be internal navigation for
+                                        that section only.
+                                    </p>
+                                </div>
+                            </li>
 
-                                        <li class="properties__list-item">
-                                            <h5
-                                                class="title-h5 u-margin-bottom-sm"
-                                            >
-                                                nav
-                                            </h5>
-                                            <div class="properties__list-about">
-                                                <p class="properties__descr">
-                                                    The
-                                                    <span class="mark-text"
-                                                        >&lt;nav&gt;</span
-                                                    >
-                                                    element identifies content
-                                                    as navigation. As this<span
-                                                        class="mark-text"
-                                                        >&lt;nav&gt;</span
-                                                    >
-                                                    is nested in the site
-                                                    heading, it is the main
-                                                    navigation for the site. If
-                                                    it was nested in an<span
-                                                        class="mark-text"
-                                                        >&lt;article&gt;</span
-                                                    >
-                                                    or
-                                                    <span class="mark-text"
-                                                        >&lt;section&gt;</span
-                                                    >, it would be internal
-                                                    navigation for that section
-                                                    only.
-                                                </p>
-                                            </div>
-                                        </li>
+                            <li class="properties__list-item">
+                                <h4 class="title-h4 u-margin-bottom-sm">
+                                    footer
+                                </h4>
+                                <div class="properties__list-about">
+                                    <p class="properties__descr">
+                                        Similar to
+                                        <span class="mark-text"
+                                            >&lt;header&gt;</span
+                                        >, whether the footer is a landmark
+                                        depends on where the footer is nested.
+                                    </p>
+                                    <p class="properties__descr">
+                                        The implicit
+                                        <span class="mark-text">role</span>
+                                        for the site footer is
+                                        <span class="mark-text"
+                                            >contentinfo</span
+                                        >
+                                        .
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="properties__list-item">
+                                <h4 class="title-h4 u-margin-bottom-sm">
+                                    main
+                                </h4>
+                                <div class="properties__list-about">
+                                    <p class="properties__descr">
+                                        There's a single
+                                        <span class="mark-text"
+                                            >&lt;main&gt;</span
+                                        >
+                                        landmark element. The
+                                        <span class="mark-text"
+                                            >&lt;main&gt;</span
+                                        >
+                                        element identifies the main content of
+                                        the document. There should be only one
+                                        <span class="mark-text"
+                                            >&lt;main&gt;</span
+                                        >
+                                        per page.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="properties__list-item">
+                                <h4 class="title-h4 u-margin-bottom-sm">
+                                    aside
+                                </h4>
+                                <div class="properties__list-about">
+                                    <p class="properties__descr">
+                                        The
+                                        <span class="mark-text"
+                                            >&lt;aside&gt;</span
+                                        >
+                                        is for content that is indirectly or
+                                        tangentially related to the document's
+                                        main content.
+                                    </p>
+                                    <p class="properties__descr">
+                                        The
+                                        <span class="mark-text"
+                                            >&lt;aside&gt;</span
+                                        >
+                                        would likely be presented in a sidebar
+                                        or a call-out box. The
+                                        <span class="mark-text"
+                                            >&lt;aside&gt;</span
+                                        >
+                                        is also a landmark, with the implicit
+                                        <span class="mark-text">role</span>
+                                        of
+                                        <span class="mark-text"
+                                            >complementary</span
+                                        >
+                                        .
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="properties__list-item">
+                                <h4 class="title-h4 u-margin-bottom-sm">
+                                    article
+                                </h4>
+                                <div class="properties__list-about">
+                                    <p class="properties__descr">
+                                        An
+                                        <span class="mark-text"
+                                            >&lt;article&gt;</span
+                                        >
+                                        represents a complete, or
+                                        self-contained, section of content that
+                                        is, in principle, independently
+                                        reusable.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="properties__list-item">
+                                <h4 class="title-h4 u-margin-bottom-sm">
+                                    section
+                                </h4>
+                                <div class="properties__list-about">
+                                    <p class="properties__descr">
+                                        The
+                                        <span class="mark-text"
+                                            >&lt;section&gt;</span
+                                        >
+                                        element is used to encompass generic
+                                        standalone sections of a document when
+                                        there is no more specific semantic
+                                        element to use. Sections should have a
+                                        heading, with very few exceptions.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="properties__list-item">
+                                <h4 class="title-h4 u-margin-bottom-sm">
+                                    headings h1 - h6
+                                </h4>
+                                <div class="properties__list-about">
+                                    <p class="properties__descr">
+                                        There are six section heading elements:
+                                        <span class="mark-text">&lt;h1&gt;</span
+                                        >,
+                                        <span class="mark-text">&lt;h2&gt;</span
+                                        >,
+                                        <span class="mark-text">&lt;h3&gt;</span
+                                        >,
+                                        <span class="mark-text">&lt;h3&gt;</span
+                                        >,
+                                        <span class="mark-text">&lt;h5&gt;</span
+                                        >, and
+                                        <span class="mark-text">&lt;h6&gt;</span
+                                        >. Each represents one of the six levels
+                                        of section headings, with
+                                        <span class="mark-text"
+                                            >&lt;h1&gt;</span
+                                        >
+                                        being the highest or most important
+                                        section level, and
+                                        <span class="mark-text"
+                                            >&lt;h6&gt;</span
+                                        >
+                                        the lowest.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
 
-                                        <li class="properties__list-item">
-                                            <h5
-                                                class="title-h5 u-margin-bottom-sm"
-                                            >
-                                                footer
-                                            </h5>
-                                            <div class="properties__list-about">
-                                                <p class="properties__descr">
-                                                    Similar to
-                                                    <span class="mark-text"
-                                                        >&lt;header&gt;</span
-                                                    >, whether the footer is a
-                                                    landmark depends on where
-                                                    the footer is nested.
-                                                </p>
-                                                <p class="properties__descr">
-                                                    The implicit
-                                                    <span class="mark-text"
-                                                        >role</span
-                                                    >
-                                                    for the site footer is
-                                                    <span class="mark-text"
-                                                        >contentinfo</span
-                                                    >
-                                                    .
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="properties__list-item">
-                                            <h5
-                                                class="title-h5 u-margin-bottom-sm"
-                                            >
-                                                main
-                                            </h5>
-                                            <div class="properties__list-about">
-                                                <p class="properties__descr">
-                                                    There's a single
-                                                    <span class="mark-text"
-                                                        >&lt;main&gt;</span
-                                                    >
-                                                    landmark element. The
-                                                    <span class="mark-text"
-                                                        >&lt;main&gt;</span
-                                                    >
-                                                    element identifies the main
-                                                    content of the document.
-                                                    There should be only one
-                                                    <span class="mark-text"
-                                                        >&lt;main&gt;</span
-                                                    >
-                                                    per page.
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="properties__list-item">
-                                            <h5
-                                                class="title-h5 u-margin-bottom-sm"
-                                            >
-                                                aside
-                                            </h5>
-                                            <div class="properties__list-about">
-                                                <p class="properties__descr">
-                                                    The
-                                                    <span class="mark-text"
-                                                        >&lt;aside&gt;</span
-                                                    >
-                                                    is for content that is
-                                                    indirectly or tangentially
-                                                    related to the document's
-                                                    main content.
-                                                </p>
-                                                <p class="properties__descr">
-                                                    The
-                                                    <span class="mark-text"
-                                                        >&lt;aside&gt;</span
-                                                    >
-                                                    would likely be presented in
-                                                    a sidebar or a call-out box.
-                                                    The
-                                                    <span class="mark-text"
-                                                        >&lt;aside&gt;</span
-                                                    >
-                                                    is also a landmark, with the
-                                                    implicit
-                                                    <span class="mark-text"
-                                                        >role</span
-                                                    >
-                                                    of
-                                                    <span class="mark-text"
-                                                        >complementary</span
-                                                    >
-                                                    .
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="properties__list-item">
-                                            <h5
-                                                class="title-h5 u-margin-bottom-sm"
-                                            >
-                                                article
-                                            </h5>
-                                            <div class="properties__list-about">
-                                                <p class="properties__descr">
-                                                    An
-                                                    <span class="mark-text"
-                                                        >&lt;article&gt;</span
-                                                    >
-                                                    represents a complete, or
-                                                    self-contained, section of
-                                                    content that is, in
-                                                    principle, independently
-                                                    reusable.
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="properties__list-item">
-                                            <h5
-                                                class="title-h5 u-margin-bottom-sm"
-                                            >
-                                                section
-                                            </h5>
-                                            <div class="properties__list-about">
-                                                <p class="properties__descr">
-                                                    The
-                                                    <span class="mark-text"
-                                                        >&lt;section&gt;</span
-                                                    >
-                                                    element is used to encompass
-                                                    generic standalone sections
-                                                    of a document when there is
-                                                    no more specific semantic
-                                                    element to use. Sections
-                                                    should have a heading, with
-                                                    very few exceptions.
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="properties__list-item">
-                                            <h5
-                                                class="title-h5 u-margin-bottom-sm"
-                                            >
-                                                headings h1 - h6
-                                            </h5>
-                                            <div class="properties__list-about">
-                                                <p class="properties__descr">
-                                                    There are six section
-                                                    heading elements:
-                                                    <span class="mark-text"
-                                                        >&lt;h1&gt;</span
-                                                    >,
-                                                    <span class="mark-text"
-                                                        >&lt;h2&gt;</span
-                                                    >,
-                                                    <span class="mark-text"
-                                                        >&lt;h3&gt;</span
-                                                    >,
-                                                    <span class="mark-text"
-                                                        >&lt;h4&gt;</span
-                                                    >,
-                                                    <span class="mark-text"
-                                                        >&lt;h5&gt;</span
-                                                    >, and
-                                                    <span class="mark-text"
-                                                        >&lt;h6&gt;</span
-                                                    >. Each represents one of
-                                                    the six levels of section
-                                                    headings, with
-                                                    <span class="mark-text"
-                                                        >&lt;h1&gt;</span
-                                                    >
-                                                    being the highest or most
-                                                    important section level, and
-                                                    <span class="mark-text"
-                                                        >&lt;h6&gt;</span
-                                                    >
-                                                    the lowest.
-                                                </p>
-                                            </div>
-                                        </li>
-                                    </ul>
-
-                                    <pre class="pre-el">
+                        <pre class="pre-el">
                                         <code class="code-el">
 &lt;header&gt;
   &lt;h1&gt;Machine Learning Workshop&lt;/h1&gt;
@@ -624,119 +573,115 @@
 &lt;/footer&gt;
                                         </code>
                                     </pre>
-                                </div>
+                    </div>
 
-                                <div class="properties__item">
-                                    <h4 class="title-h4 u-margin-bottom-md">
-                                        Accessibility object model (AOM)
-                                    </h4>
-                                    <div class="recources u-margin-bottom-md">
-                                        <a
-                                            href="https://wicg.github.io/aom/explainer.html"
-                                            class="link recources__link"
-                                            rel="noopener noreferrer"
-                                            target="_blank"
-                                            >AOM Explainer
-                                        </a>
-                                    </div>
-                                    <p class="properties__descr">
-                                        The AOM is like a semantic version of
-                                        the DOM. Enabled in google devtools.
-                                    </p>
+                    <div class="properties__item">
+                        <h3 class="title-h3 u-margin-bottom-md">
+                            Accessibility object model (AOM)
+                        </h3>
+                        <div class="recources u-margin-bottom-md">
+                            <a
+                                href="https://wicg.github.io/aom/explainer.html"
+                                class="link recources__link"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                >AOM Explainer
+                            </a>
+                        </div>
+                        <p class="properties__descr">
+                            The AOM is like a semantic version of the DOM.
+                            Enabled in google devtools.
+                        </p>
 
-                                    <picture>
-                                        <source
-                                            srcset="
-                                                ../../assets/img/avif/DOM-a11y-tree.avif
-                                            "
-                                            type="image/avif"
-                                        />
-                                        <source
-                                            srcset="
-                                                ../../assets/img/avif/DOM-a11y-tree.webp
-                                            "
-                                            type="image/webp"
-                                        />
-                                        <img
-                                            src="../../assets/img/jpg/DOM-a11y-tree.jpg"
-                                            alt="Image describes how Accessibility object model works. Document object model, a11y tree."
-                                            class="properties__img"
-                                            width="2074"
-                                            height="1146"
-                                        />
-                                    </picture>
-                                </div>
+                        <picture>
+                            <source
+                                srcset="
+                                    ../../assets/img/avif/DOM-a11y-tree.avif
+                                "
+                                type="image/avif"
+                            />
+                            <source
+                                srcset="
+                                    ../../assets/img/avif/DOM-a11y-tree.webp
+                                "
+                                type="image/webp"
+                            />
+                            <img
+                                src="../../assets/img/jpg/DOM-a11y-tree.jpg"
+                                alt="Image describes how Accessibility object model works. Document object model, a11y tree."
+                                class="properties__img"
+                                width="2074"
+                                height="1146"
+                            />
+                        </picture>
+                    </div>
 
-                                <div class="properties__item">
-                                    <h4 class="title-h4 u-margin-bottom-md">
-                                        The role attribute
-                                    </h4>
-                                    <div class="recources u-margin-bottom-md">
-                                        <a
-                                            href="https://w3c.github.io/aria/#dfn-role"
-                                            class="link recources__link"
-                                            rel="noopener noreferrer"
-                                            target="_blank"
-                                            >ARIA specification
-                                        </a>
-                                        <a
-                                            href="https://html.spec.whatwg.org/dev/"
-                                            class="link recources__link"
-                                            rel="noopener noreferrer"
-                                            target="_blank"
-                                            >WHATWG HTML specification
-                                        </a>
-                                        <a
-                                            href="https://www.digitala11y.com/wai-aria-1-1-cheat-sheet/"
-                                            class="link recources__link"
-                                            rel="noopener noreferrer"
-                                            target="_blank"
-                                            >WAI-ARIA Cheat Sheet
-                                        </a>
-                                        <a
-                                            href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes"
-                                            class="link recources__link"
-                                            rel="noopener noreferrer"
-                                            target="_blank"
-                                            >MDN Aria attributes
-                                        </a>
-                                    </div>
-                                    <p class="properties__descr">
-                                        The
-                                        <span class="mark-text">role</span>
-                                        attribute describes the role an element
-                                        has in the context of the document.
-                                    </p>
-                                    <p class="properties__descr">
-                                        Also
-                                        <span class="mark-text">role</span>
-                                        attribute is a global attribute—meaning
-                                        it is valid on all elements—defined by
-                                        the
-                                        <a
-                                            href="https://w3c.github.io/aria/#dfn-role"
-                                            class="properties__link"
-                                            rel="noopener noreferrer"
-                                            target="_blank"
-                                            >ARIA specification</a
-                                        >
-                                        rather than the
-                                        <a
-                                            href="https://html.spec.whatwg.org/dev/"
-                                            class="properties__link"
-                                            rel="noopener noreferrer"
-                                            target="_blank"
-                                            >WHATWG HTML specification</a
-                                        >
-                                        , where almost everything else in this
-                                        series is defined.
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                    </main>
+                    <div class="properties__item">
+                        <h3 class="title-h3 u-margin-bottom-md">
+                            The role attribute
+                        </h3>
+                        <div class="recources u-margin-bottom-md">
+                            <a
+                                href="https://w3c.github.io/aria/#dfn-role"
+                                class="link recources__link"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                >ARIA specification
+                            </a>
+                            <a
+                                href="https://html.spec.whatwg.org/dev/"
+                                class="link recources__link"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                >WHATWG HTML specification
+                            </a>
+                            <a
+                                href="https://www.digitala11y.com/wai-aria-1-1-cheat-sheet/"
+                                class="link recources__link"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                >WAI-ARIA Cheat Sheet
+                            </a>
+                            <a
+                                href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes"
+                                class="link recources__link"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                >MDN Aria attributes
+                            </a>
+                        </div>
+                        <p class="properties__descr">
+                            The
+                            <span class="mark-text">role</span>
+                            attribute describes the role an element has in the
+                            context of the document.
+                        </p>
+                        <p class="properties__descr">
+                            Also
+                            <span class="mark-text">role</span>
+                            attribute is a global attribute—meaning it is valid
+                            on all elements—defined by the
+                            <a
+                                href="https://w3c.github.io/aria/#dfn-role"
+                                class="properties__link"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                >ARIA specification</a
+                            >
+                            rather than the
+                            <a
+                                href="https://html.spec.whatwg.org/dev/"
+                                class="properties__link"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                >WHATWG HTML specification</a
+                            >
+                            , where almost everything else in this series is
+                            defined.
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </main>
     </body>
 </html>

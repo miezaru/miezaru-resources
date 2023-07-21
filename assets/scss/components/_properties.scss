@@ -5,8 +5,8 @@
 
     &__item {
         position: relative;
+        max-width: 100%;
         padding: 2.4rem 3.2rem;
-        margin-left: 1.2rem;
         background-image: linear-gradient(
             to right bottom,
             rgba($black, 0.5),
@@ -14,9 +14,14 @@
         );
         border-radius: 9px;
         box-shadow: var(--sh-white);
+
+        @media (width <= 24em) {
+            padding: 1.2rem 2.4rem;
+            border-radius: 0;
+        }
     }
 
-    &__item:not(:nth-child(2))::before {
+    &__item:not(:nth-of-type(1))::before {
         position: absolute;
         top: -2.4rem;
         left: 50%;
@@ -61,6 +66,10 @@
             rgba(darken($clr-txt-tertiary, 60%), 0.8)
         );
         border-radius: 9px;
+
+        &:not(:last-child) {
+            margin-bottom: 2.4rem;
+        }
     }
 
     &__img {
@@ -113,6 +122,10 @@
 
         &-about {
             margin-left: 2rem;
+
+            @media (width <= 24em) {
+                margin-left: 0.4rem;
+            }
         }
     }
 

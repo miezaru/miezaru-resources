@@ -14,16 +14,11 @@ body {
         );
 }
 
-.main {
-    padding: 2.4rem 4.8rem;
-    color: var(--clr-txt-divider);
-}
-
 .section {
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
-    padding: 1.2rem 2.4rem;
+    min-width: 0;
 
     &:not(:last-child) {
         margin-bottom: 3.2rem;
