@@ -75,36 +75,48 @@ body {
 }
 
 .title-h1 {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   font-weight: 500;
   line-height: 1.2;
 }
 
 .title-h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
 .title-h3 {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-weight: 500;
   line-height: 1.2;
 }
 
-.title-h4,
-.title-h5 {
+.title-h4 {
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.2;
 }
 
+.title-h5 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.title-h6 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
 .mark-text {
   display: inline-block;
   padding: 0.2rem 0.8rem;
-  line-height: 1;
-  background-color: #363636;
-  border-radius: 9px;
+  line-height: 1.1;
+  color: var(--clr-primary-light);
+  background-color: var(--clr-txt-tertiary);
+  border-radius: 3px;
 }
 
 .link:link, .link:visited {
@@ -154,6 +166,9 @@ body {
   font-weight: 400;
   color: var(--clr-txt-comment);
 }
+.pre-el:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
 
 .code-el {
   display: block;
@@ -196,12 +211,11 @@ body {
   background-color: #673ab7;
 }
 .properties__descr {
-  margin-bottom: 1.2rem;
-  font-size: clamp(1.2rem, 1.196rem + 0.18vw, 1.44rem);
-  font-weight: 400;
+  font-size: 1.5rem;
+  font-weight: 500;
   line-height: 1.7;
 }
-.properties__descr:last-of-type {
+.properties__descr:not(:last-child) {
   margin-bottom: 2.4rem;
 }
 .properties__link:link, .properties__link:visited {
@@ -231,7 +245,20 @@ body {
 }
 .properties__list {
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4.8rem;
   list-style: none;
+}
+.properties__list:not(:last-child) {
+  margin-bottom: 2.4rem;
 }
 .properties__list-item {
   position: relative;
@@ -264,6 +291,37 @@ body {
 }
 .properties__list-about {
   margin-left: 2rem;
+}
+.properties__list-inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.8rem;
+  margin-left: 2rem;
+  font-size: 1.5rem;
+  list-style: none;
+}
+.properties__list-inner:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+.properties__list-inner-item {
+  position: relative;
+}
+.properties__list-inner-item::before {
+  position: absolute;
+  top: 50%;
+  left: -2rem;
+  display: inline-block;
+  width: 1rem;
+  height: 2px;
+  content: "";
+  background-color: #673ab7;
 }
 
 .header {

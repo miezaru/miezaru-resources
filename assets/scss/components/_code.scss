@@ -9,6 +9,10 @@
         font-weight: 400;
         color: var(--clr-txt-comment);
     }
+
+    &:not(:last-child) {
+        margin-bottom: 2.4rem;
+    }
 }
 
 .code-el {

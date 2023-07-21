@@ -29,12 +29,11 @@
     }
 
     &__descr {
-        margin-bottom: 1.2rem;
-        font-size: clamp(1.2rem, 1.196rem + 0.18vw, 1.44rem);
-        font-weight: 400;
+        font-size: 1.5rem;
+        font-weight: 500;
         line-height: 1.7;
 
-        &:last-of-type {
+        &:not(:last-child) {
             margin-bottom: 2.4rem;
         }
     }
@@ -74,7 +73,14 @@
 
     &__list {
         position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 4.8rem;
         list-style: none;
+
+        &:not(:last-child) {
+            margin-bottom: 2.4rem;
+        }
 
         &-item {
             position: relative;
@@ -107,6 +113,34 @@
 
         &-about {
             margin-left: 2rem;
+        }
+    }
+
+    &__list-inner {
+        display: flex;
+        flex-direction: column;
+        gap: 1.8rem;
+        margin-left: 2rem;
+        font-size: 1.5rem;
+        list-style: none;
+
+        &:not(:last-child) {
+            margin-bottom: 2.4rem;
+        }
+
+        &-item {
+            position: relative;
+
+            &::before {
+                position: absolute;
+                top: 50%;
+                left: -2rem;
+                display: inline-block;
+                width: 1rem;
+                height: 2px;
+                content: '';
+                background-color: $clr-primary;
+            }
         }
     }
 }
