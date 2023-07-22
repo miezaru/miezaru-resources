@@ -37,7 +37,7 @@ body {
   min-height: 100vh;
 }
 
-:focus {
+:focus-visible {
   outline: 0.3rem solid var(--clr-primary-light);
   outline-offset: 0.3rem;
 }
@@ -637,7 +637,7 @@ body {
           flex-flow: row wrap;
   gap: 1.2rem;
   width: 100%;
-  padding: 1.2rem 2.4rem;
+  padding: 0.4rem 0.8rem;
   font-size: 1.4rem;
   text-align: center;
 }
@@ -673,7 +673,6 @@ body {
     border-radius: 0;
   }
   .resources__link-box {
-    padding: 0.4rem 0.8rem;
     border-radius: 0;
   }
 }

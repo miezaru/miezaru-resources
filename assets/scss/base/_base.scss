@@ -2,7 +2,7 @@ body {
     min-height: 100vh;
 }
 
-:focus {
+:focus-visible {
     outline: 0.3rem solid var(--clr-primary-light);
     outline-offset: 0.3rem;
 }

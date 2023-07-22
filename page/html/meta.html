@@ -690,10 +690,70 @@ miezaruexpr@gmail.com" /&gt;
                         </div>
                         <p class="properties__descr">Google Meta Information</p>
                         <pre class="pre-el">
-                                        <code class="code-el">
+                            <code class="code-el">
 &lt;name="robots" content="index, follow" /&gt;
-                                        </code>
-                                    </pre>
+                            </code>
+                        </pre>
+                    </div>
+
+                    <div class="properties__item">
+                        <h3 class="title-h3 u-margin-bottom-md">Scripts</h3>
+                        <p class="properties__descr">
+                            The
+                            <span class="mark-text">&lt;script&gt;</span> tag is
+                            used to include, well, scripts. The default type is
+                            JavaScript. If you include any other scripting
+                            language, include the
+                            <span class="mark-text">type</span> attribute with
+                            the mime type, or
+                            <span class="mark-text">type="module"</span> if it's
+                            a
+                            <a
+                                href="https://developer.mozilla.org/docs/Web/JavaScript/Guide/Modules#applying_the_module_to_your_html"
+                                class="properties__link"
+                                rel="noopener noreferrer external"
+                                target="_blank"
+                                >JavaScript module</a
+                            >. Only JavaScript and JavaScript modules get parsed
+                            and executed.
+                        </p>
+
+                        <p class="properties__descr">
+                            There are two attributes that can reduce the
+                            blocking nature of JavaScript download and
+                            execution: <span class="mark-text">defer</span> and
+                            <span class="mark-text">async</span>. With
+                            <span class="mark-text">defer</span>, HTML rendering
+                            is not blocked during the download, and the
+                            JavaScript only executes after the document has
+                            otherwise finished rendering. With
+                            <span class="mark-text">async</span>, rendering
+                            isn't blocked during the download either, but once
+                            the script has finished downloading, the rendering
+                            is paused while the JavaScript is executed.
+                        </p>
+
+                        <picture>
+                            <source
+                                srcset="
+                                    ../../assets/img/avif/js-async-defer.avif
+                                "
+                                type="image/avif"
+                            />
+                            <source
+                                srcset="
+                                    ../../assets/img/webp/js-async-defer.webp
+                                "
+                                type="image/webp"
+                            />
+                            <img
+                                src="../../assets/img/jpg/js-async-defer.jpg"
+                                alt="Image shows how html can load JavaScript. How async and defer types of loading scripts works."
+                                class="properties__img"
+                                width="845"
+                                height="386"
+                            />
+                        </picture>
                     </div>
                 </div>
             </section>

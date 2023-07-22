@@ -37,7 +37,7 @@ body {
   min-height: 100vh;
 }
 
-:focus {
+:focus-visible {
   outline: 0.3rem solid var(--clr-primary-light);
   outline-offset: 0.3rem;
 }
@@ -290,7 +290,8 @@ body {
   border: 0.6rem solid var(--clr-primary-dark);
   border-radius: 9px;
 }
-.properties__list {
+
+.list-primary {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -304,13 +305,13 @@ body {
   gap: 4.8rem;
   list-style: none;
 }
-.properties__list:not(:last-child) {
+.list-primary:not(:last-child) {
   margin-bottom: 3.2rem;
 }
-.properties__list-item {
+.list-primary__item {
   position: relative;
 }
-.properties__list-item::before {
+.list-primary__item::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -323,7 +324,7 @@ body {
       -ms-transform: translateX(-1.8rem) translateY(0.35rem) rotate(45deg);
           transform: translateX(-1.8rem) translateY(0.35rem) rotate(45deg);
 }
-.properties__list-item::after {
+.list-primary__item::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -336,10 +337,11 @@ body {
       -ms-transform: translateX(-1.8rem) translateY(0.35rem) rotate(-45deg);
           transform: translateX(-1.8rem) translateY(0.35rem) rotate(-45deg);
 }
-.properties__list-about {
+.list-primary__about {
   margin-left: 2rem;
 }
-.properties__list-inner {
+
+.list-secondary {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -352,17 +354,18 @@ body {
   gap: 1.8rem;
   margin-left: 2rem;
   font-size: 1.5rem;
+  line-height: 1.7;
   list-style: none;
 }
-.properties__list-inner:not(:last-child) {
+.list-secondary:not(:last-child) {
   margin-bottom: 2.4rem;
 }
-.properties__list-inner-item {
+.list-secondary__item {
   position: relative;
 }
-.properties__list-inner-item::before {
+.list-secondary__item::before {
   position: absolute;
-  top: 1.08rem;
+  top: 1rem;
   left: -2rem;
   display: inline-block;
   width: 1rem;
@@ -856,7 +859,7 @@ body {
     padding: 1.2rem 2.4rem;
     border-radius: 0;
   }
-  .properties__list-about {
+  .list-primary__about {
     margin-left: 0.4rem;
   }
   .grid {
