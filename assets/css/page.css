@@ -302,12 +302,12 @@ body {
   display: inline-block;
   font-weight: 700;
   color: inherit;
-  text-decoration: none;
+  text-decoration: underline;
   -webkit-transition: var(--tr-default);
   transition: var(--tr-default);
 }
 .properties__link:hover, .properties__link:active {
-  color: var(--clr-primary);
+  color: var(--clr-primary-dark);
 }
 .properties picture {
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(3, 3, 3, 0.8)), to(rgba(0, 0, 0, 0.8)));
@@ -356,9 +356,9 @@ body {
   height: 1.2rem;
   content: "";
   background-color: #673ab7;
-  -webkit-transform: translateX(-1.8rem) translateY(0.35rem) rotate(45deg);
-      -ms-transform: translateX(-1.8rem) translateY(0.35rem) rotate(45deg);
-          transform: translateX(-1.8rem) translateY(0.35rem) rotate(45deg);
+  -webkit-transform: translateX(-1.5rem) translateY(0.35rem) rotate(45deg);
+      -ms-transform: translateX(-1.5rem) translateY(0.35rem) rotate(45deg);
+          transform: translateX(-1.5rem) translateY(0.35rem) rotate(45deg);
 }
 .list-primary__item::after {
   position: absolute;
@@ -369,9 +369,9 @@ body {
   height: 1.2rem;
   content: "";
   background-color: #673ab7;
-  -webkit-transform: translateX(-1.8rem) translateY(0.35rem) rotate(-45deg);
-      -ms-transform: translateX(-1.8rem) translateY(0.35rem) rotate(-45deg);
-          transform: translateX(-1.8rem) translateY(0.35rem) rotate(-45deg);
+  -webkit-transform: translateX(-1.5rem) translateY(0.35rem) rotate(-45deg);
+      -ms-transform: translateX(-1.5rem) translateY(0.35rem) rotate(-45deg);
+          transform: translateX(-1.5rem) translateY(0.35rem) rotate(-45deg);
 }
 .list-primary__about {
   margin-left: 2rem;
@@ -459,8 +459,10 @@ body {
 .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 4.8rem 2.4rem auto 2.4rem auto 2.4rem 4.8rem;
-  grid-template-rows: 4.8rem auto auto 4.8rem;
+  -ms-grid-rows: 4.8rem 2.4rem -webkit-min-content 2.4rem -webkit-min-content 2.4rem 4.8rem;
+  -ms-grid-rows: 4.8rem 2.4rem min-content 2.4rem min-content 2.4rem 4.8rem;
+  grid-template-rows: 4.8rem -webkit-min-content -webkit-min-content 4.8rem;
+  grid-template-rows: 4.8rem min-content min-content 4.8rem;
   -ms-grid-columns: [full-start] minmax(3.2rem, 1fr) [center-start] ([col-start] minmax(-webkit-min-content, 12rem) [col-end])[10] [center-end] minmax(3.2rem, 1fr) [full-end];
   -ms-grid-columns: [full-start] minmax(3.2rem, 1fr) [center-start] ([col-start] minmax(min-content, 12rem) [col-end])[10] [center-end] minmax(3.2rem, 1fr) [full-end];
   grid-template-columns: [full-start] minmax(3.2rem, 1fr) [center-start] repeat(10, [col-start] minmax(-webkit-min-content, 12rem) [col-end]) [center-end] minmax(3.2rem, 1fr) [full-end];
@@ -879,8 +881,10 @@ body {
     padding: 1.2rem 2.4rem;
   }
   .grid {
-    -ms-grid-rows: 0 auto auto 0;
-    grid-template-rows: 0 auto auto 0;
+    -ms-grid-rows: 0 -webkit-min-content -webkit-min-content 0;
+    -ms-grid-rows: 0 min-content min-content 0;
+    grid-template-rows: 0 -webkit-min-content -webkit-min-content 0;
+    grid-template-rows: 0 min-content min-content 0;
   }
   .main {
     -ms-grid-columns: [center-start] 1fr [center-end];

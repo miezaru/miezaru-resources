@@ -257,8 +257,10 @@ body {
 .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 4.8rem 2.4rem auto 2.4rem auto 2.4rem 4.8rem;
-  grid-template-rows: 4.8rem auto auto 4.8rem;
+  -ms-grid-rows: 4.8rem 2.4rem -webkit-min-content 2.4rem -webkit-min-content 2.4rem 4.8rem;
+  -ms-grid-rows: 4.8rem 2.4rem min-content 2.4rem min-content 2.4rem 4.8rem;
+  grid-template-rows: 4.8rem -webkit-min-content -webkit-min-content 4.8rem;
+  grid-template-rows: 4.8rem min-content min-content 4.8rem;
   -ms-grid-columns: [full-start] minmax(3.2rem, 1fr) [center-start] ([col-start] minmax(-webkit-min-content, 12rem) [col-end])[10] [center-end] minmax(3.2rem, 1fr) [full-end];
   -ms-grid-columns: [full-start] minmax(3.2rem, 1fr) [center-start] ([col-start] minmax(min-content, 12rem) [col-end])[10] [center-end] minmax(3.2rem, 1fr) [full-end];
   grid-template-columns: [full-start] minmax(3.2rem, 1fr) [center-start] repeat(10, [col-start] minmax(-webkit-min-content, 12rem) [col-end]) [center-end] minmax(3.2rem, 1fr) [full-end];
@@ -678,8 +680,10 @@ body {
 }
 @media (width <= 48em) {
   .grid {
-    -ms-grid-rows: 0 auto auto 0;
-    grid-template-rows: 0 auto auto 0;
+    -ms-grid-rows: 0 -webkit-min-content -webkit-min-content 0;
+    -ms-grid-rows: 0 min-content min-content 0;
+    grid-template-rows: 0 -webkit-min-content -webkit-min-content 0;
+    grid-template-rows: 0 min-content min-content 0;
   }
 }
 @media (width <= 24em) {

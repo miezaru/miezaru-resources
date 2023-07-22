@@ -21,7 +21,7 @@
             height: 1.2rem;
             content: '';
             background-color: $clr-primary;
-            transform: translateX(-1.8rem) translateY(0.35rem) rotate(45deg);
+            transform: translateX(-1.5rem) translateY(0.35rem) rotate(45deg);
         }
 
         &::after {
@@ -33,7 +33,7 @@
             height: 1.2rem;
             content: '';
             background-color: $clr-primary;
-            transform: translateX(-1.8rem) translateY(0.35rem) rotate(-45deg);
+            transform: translateX(-1.5rem) translateY(0.35rem) rotate(-45deg);
         }
     }
 
