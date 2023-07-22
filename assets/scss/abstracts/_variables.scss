@@ -19,6 +19,10 @@ $sh-white: 0 0 1.2rem rgba($white, 0.1);
 // transitions
 $tr-default: all 0.2s;
 
+// border-radius
+$border-radius-default: 9px;
+$border-radius-small: 3px;
+
 :root {
     --white: #{$white};
     --black: #{$black};
@@ -40,4 +44,8 @@ $tr-default: all 0.2s;
 
     // transitions
     --tr-default: #{$tr-default};
+
+    // border-radius
+    --border-radius-default: #{$border-radius-default};
+    --border-radius-small: #{$border-radius-small};
 }

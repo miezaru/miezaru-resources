@@ -14,13 +14,13 @@ body {
     /* Handle */
     &::-webkit-scrollbar-thumb {
         background: var(--clr-primary-light);
-        border-radius: 9px;
+        border-radius: var(--border-radius-default);
     }
 
     /* Handle on hover */
     &::-webkit-scrollbar-thumb:hover {
         background: var(--clr-primary-light);
-        border-radius: 9px;
+        border-radius: var(--border-radius-default);
     }
 }
 

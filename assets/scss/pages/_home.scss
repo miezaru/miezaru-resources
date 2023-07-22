@@ -23,7 +23,7 @@ body {
     justify-content: center;
     padding: 1.2rem;
     overflow: hidden;
-    border-radius: 9px;
+    border-radius: var(--border-radius-default);
     box-shadow: var(--sh-white);
     transition: all 0.3s;
 
@@ -55,7 +55,7 @@ body {
         &:visited {
             padding: 0.8rem 1.6rem;
             font-weight: 700;
-            border-radius: 9px;
+            border-radius: var(--border-radius-default);
             box-shadow: var(--sh-white);
             transition: all 0.3s;
         }

@@ -5,7 +5,7 @@
         font-weight: 500;
         color: var(--clr-txt-grey);
         text-align: center;
-        border-radius: 9px;
+        border-radius: var(--border-radius-default);
         box-shadow: 0 0 1.2rem rgba($white, 0.2);
         transition: var(--tr-default);
     }

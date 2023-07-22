@@ -12,7 +12,7 @@
             rgba($black, 0.5),
             rgba($black, 0.5)
         );
-        border-radius: 9px;
+        border-radius: var(--border-radius-default);
         box-shadow: var(--sh-white);
 
         @media (width <= 24em) {
@@ -65,7 +65,7 @@
             rgba(darken($clr-txt-tertiary, 20%), 0.8),
             rgba(darken($clr-txt-tertiary, 60%), 0.8)
         );
-        border-radius: 9px;
+        border-radius: var(--border-radius-default);
 
         &:not(:last-child) {
             margin-bottom: 2.4rem;
@@ -77,6 +77,6 @@
         height: auto;
         filter: brightness(0.4);
         border: 0.6rem solid var(--clr-primary-dark);
-        border-radius: 9px;
+        border-radius: var(--border-radius-default);
     }
 }
