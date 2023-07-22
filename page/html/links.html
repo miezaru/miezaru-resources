@@ -10,6 +10,10 @@
             content="Artem 'Miezaru' Usatyi resources page. This website contains a tons of useful information of the web development and more. Current page about HTML 'a' element and other links."
         />
         <meta name="robots" content="index, follow" />
+        <link
+            rel="canonical"
+            href="https://miezaru-resources.netlify.app/page/html/links.html"
+        />
         <link rel="stylesheet" href="../../assets/css/page.css" />
         <link
             rel="apple-touch-icon"
@@ -249,13 +253,34 @@
                 </h1>
             </header>
             <section class="section">
-                <div class="recources u-margin-bottom-md">
+                <div class="resources u-margin-bottom-md">
                     <a
                         href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks#e-mail_links"
-                        class="link recources__link"
-                        rel="noopener noreferrer"
+                        class="link resources__link"
+                        rel="noopener noreferrer external"
                         target="_blank"
                         >MDN creating hyperlinks</a
+                    >
+                    <a
+                        href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL"
+                        class="link resources__link"
+                        rel="noopener noreferrer external"
+                        target="_blank"
+                        >MDN URL</a
+                    >
+                    <a
+                        href="https://css-tricks.com/data-uris/"
+                        class="link resources__link"
+                        rel="noopener noreferrer external"
+                        target="_blank"
+                        >Data URLs</a
+                    >
+                    <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel"
+                        class="link resources__link"
+                        rel="noopener noreferrer external"
+                        target="_blank"
+                        >MDN rel attribute</a
                     >
                 </div>
 
@@ -296,7 +321,7 @@
                             <a
                                 href="http://info.cern.ch/hypertext/WWW/TheProject.html"
                                 class="properties__link"
-                                rel="noopener noreferrer"
+                                rel="noopener noreferrer external"
                                 target="_blank"
                                 >first web page</a
                             >
@@ -315,13 +340,27 @@
                         <h3 class="title-h3 u-margin-bottom-md">
                             The href attribute
                         </h3>
-                        <div class="recources u-margin-bottom-md">
+                        <div class="resources u-margin-bottom-md">
                             <a
                                 href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks#e-mail_links"
-                                class="link recources__link"
-                                rel="noopener noreferrer"
+                                class="link resources__link"
+                                rel="noopener noreferrer external"
                                 target="_blank"
                                 >MDN creating hyperlinks</a
+                            >
+                            <a
+                                href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL"
+                                class="link resources__link"
+                                rel="noopener noreferrer external"
+                                target="_blank"
+                                >MDN URL</a
+                            >
+                            <a
+                                href="https://css-tricks.com/data-uris/"
+                                class="link resources__link"
+                                rel="noopener noreferrer external"
+                                target="_blank"
+                                >Data URLs</a
                             >
                         </div>
                         <p class="properties__descr">
@@ -347,6 +386,524 @@
 &lt;a href="tel:8005551212"&gt;Call Hal&lt;/a&gt;
                                         </code>
                                     </pre>
+                        <ul class="properties__list">
+                            <li class="properties__list-item">
+                                <h4 class="title-h4 u-margin-bottom-sm">
+                                    1 link
+                                </h4>
+                                <div class="properties__list-about">
+                                    <p class="properties__descr">
+                                        The first link includes an absolute
+                                        <a
+                                            href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL"
+                                            class="properties__link"
+                                            rel="noopener noreferrer external"
+                                            >URL</a
+                                        >, which can be used on any site in the
+                                        world. Absolute URLs include a protocol,
+                                        in this case
+                                        <span class="mark-text">https://</span>,
+                                        and a domain name. When the protocol is
+                                        written simply as
+                                        <span class="mark-text">//</span>, it is
+                                        an implicit protocol and means "use the
+                                        same protocol as is currently being
+                                        used."
+                                    </p>
+
+                                    <p class="properties__descr">
+                                        Relative URLs do not include a protocol
+                                        or domain name. They are "relative" to
+                                        the current file.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="properties__list-item">
+                                <h4 class="title-h4 u-margin-bottom-sm">
+                                    2 link
+                                </h4>
+                                <div class="properties__list-about">
+                                    <p class="properties__descr">
+                                        The second link is just a
+                                        <span class="mark-text"
+                                            >link fragment identifier</span
+                                        >, and will link to the element with
+                                        <span class="mark-text"
+                                            >id="teachers"</span
+                                        >, if there is one, on the current page.
+                                        Browsers also support two "top of page"
+                                        links: clicking on
+                                        <span class="mark-text"
+                                            >&lt;a
+                                            href="#top"&gt;Top&lt;/a&gt;</span
+                                        >
+                                        (case-insensitive) or simply
+                                        <span class="mark-text"
+                                            >&lt;a
+                                            href="#"&gt;Top&lt;/a&gt;</span
+                                        >
+                                        will scroll the user to the top of the
+                                        page, unless there is an element with
+                                        the id of
+                                        <span class="mark-text">top</span> set
+                                        in the same letter casing.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="properties__list-item">
+                                <h4 class="title-h4 u-margin-bottom-sm">
+                                    3 link
+                                </h4>
+                                <div class="properties__list-about">
+                                    <p class="properties__descr">
+                                        The third link combines the two values:
+                                        it contains an absolute URL followed by
+                                        a link fragment. This enables linking
+                                        directly to a section in the defined
+                                        URL, in this case, the
+                                        <span class="mark-text">#teachers</span>
+                                        section of the page. The page will be
+                                        loaded; then the browser will scroll to
+                                        the teachers section without sending the
+                                        fragment in the HTTP request.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="properties__list-item">
+                                <h4
+                                    class="title-h4 u-margin-bottom-sm"
+                                    id="link"
+                                >
+                                    4 and 5 link
+                                </h4>
+                                <div class="properties__list-about">
+                                    <p class="properties__descr">
+                                        The
+                                        <span class="mark-text">href</span>
+                                        attribute can begin with
+                                        <span class="mark-text">mailto:</span>
+                                        or
+                                        <span class="mark-text">tel:</span> to
+                                        email or make calls, with the handling
+                                        of the link depending on the device,
+                                        operating system, and installed
+                                        applications.
+                                    </p>
+                                    <p class="properties__descr">
+                                        The
+                                        <span class="mark-text">mailto</span>
+                                        link doesn't need to include an email
+                                        address, but it can, along with
+                                        <span class="mark-text">cc</span>,
+                                        <span class="mark-text">bcc</span>,
+                                        <span class="mark-text">subject</span>,
+                                        and
+                                        <span class="mark-text">body</span> text
+                                        to prepopulate the email. By default, an
+                                        email client will be opened. You could
+                                        prepopulate the subject and body of the
+                                        email with no email address, to allow
+                                        site visitors to invite their own
+                                        friends. In our link, in the footer of
+                                        the document, we include the URL to the
+                                        registration:
+                                    </p>
+                                    <pre class="pre-el">
+                                        <code class="code-el">
+&lt;a href="mailto:?subject=Join%20me%21&body=You%20need%20to%20show%20your%20human%20that%20you%20can%27t%20be%20owned%21%20Sign%20up%20for%20Machine%20Learning%20workshop.%20We%20are%20taking%20over%20the%20world.%20http%3A%2F%2Fwww.machinelearning.com%23reg
+  "&gt;Tell a machine&lt;/a
+&gt;
+                                        </code>
+                                    </pre>
+                                    <p class="properties__descr">
+                                        The question mark (<span
+                                            class="mark-text"
+                                            >?</span
+                                        >) separates the
+                                        <span class="mark-text">mailto:</span>
+                                        and the email address, if any, from the
+                                        query term. Within the query, ampersands
+                                        (<span class="mark-text">&</span>)
+                                        separate the fields, and equal signs
+                                        (<span class="mark-text">=</span>)
+                                        equate each field name with its value.
+                                        The entire string is percent-encoded,
+                                        which is definitely necessary if the
+                                        <span class="mark-text">href</span>
+                                        value isn't quoted or if the values
+                                        include quotes.
+                                    </p>
+                                    <p class="properties__descr">
+                                        Which app is opened when the user clicks
+                                        on, taps, or hits Enter on a
+                                        <span class="mark-text">tel</span> link
+                                        depends on the operating system,
+                                        installed applications, and settings the
+                                        user has on their device. An iPhone may
+                                        open FaceTime, the phone app, or
+                                        contacts. A Windows desktop might open
+                                        Skype, if installed.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="properties__list-item">
+                                <h4 class="title-h4 u-margin-bottom-sm">
+                                    Other types of URLs, blobs and data URLs
+                                </h4>
+
+                                <div class="resources u-margin-bottom-md">
+                                    <a
+                                        href="https://css-tricks.com/data-uris/"
+                                        class="link resources__link"
+                                        rel="noopener noreferrer external"
+                                        target="_blank"
+                                        >CSS Tricks Data URLs</a
+                                    >
+                                    <a
+                                        href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URLs"
+                                        class="link resources__link"
+                                        rel="noopener noreferrer external"
+                                        target="_blank"
+                                        >MDN Data URLs</a
+                                    >
+                                    <a
+                                        href="https://www.youtube.com/watch?v=WqBs_msUOXY"
+                                        class="link resources__link"
+                                        rel="noopener noreferrer external"
+                                        target="_blank"
+                                        >YT Blob Explain</a
+                                    >
+                                </div>
+                                <div class="properties__list-about">
+                                    <p class="properties__descr">
+                                        The biggest reason for using
+                                        <span class="mark-text">data URLs</span
+                                        >: it saves
+                                        <span class="mark-text"
+                                            >HTTP Requests</span
+                                        >. Other than pure document size, this
+                                        is the #1 factor concerning how fast a
+                                        page loads. Less = better.
+                                    </p>
+                                    <p class="properties__descr">
+                                        For secure sites (those served over
+                                        <span class="mark-text">https</span>),
+                                        it is possible
+                                        <a
+                                            href="https://web.dev/registering-a-custom-protocol-handler/"
+                                            class="properties__link"
+                                            rel="noopener noreferrer external"
+                                            >to create and run app specific
+                                            protocols</a
+                                        >
+                                        with
+                                        <a
+                                            href="https://developer.mozilla.org/docs/Web/API/Navigator/registerProtocolHandler"
+                                            class="properties__link"
+                                            rel="noopener noreferrer external"
+                                            >registerProtocolHandler()</a
+                                        >
+                                        .
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <p class="properties__descr">
+                            When including links that are likely to open other
+                            installed applications, it's good to let the user
+                            know. Make sure the text between the opening and
+                            closing tags tells the user what type of link
+                            they're about to activate. CSS attribute selectors,
+                            such as
+                            <span class="mark-text">[href^="mailto:"]</span>,
+                            <span class="mark-text">[href^="tel:"]</span>, and
+                            <span class="mark-text">[href$=".pdf"]</span> can be
+                            used to target styles by application type.
+                        </p>
+                    </div>
+
+                    <div class="properties__item">
+                        <h3 class="title-h3 u-margin-bottom-md">
+                            Downloadable resources
+                        </h3>
+                        <div class="resources u-margin-bottom-md">
+                            <a
+                                href="https://web.dev/learn/html/links/#downloadable-resources"
+                                class="link resources__link"
+                                rel="noopener noreferrer external"
+                                target="_blank"
+                                >WebDev Downloading</a
+                            >
+                        </div>
+                        <p class="properties__descr">
+                            The
+                            <span class="mark-text">download</span> attribute
+                            should be included when the
+                            <span class="mark-text">href</span> points to a
+                            downloadable resource. The value of the download
+                            attribute is the suggested filename for the resource
+                            to be saved in the user's local file system.
+                        </p>
+                        <pre class="pre-el">
+                            <code class="code-el">
+&lt;a href="blob:https://jakearchibald.github.io/944a5fc8-fdb3-458a-91ee-cdd5964b6646" download="hal.svg"&gt;download&lt;/a&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="properties__item">
+                        <h3 class="title-h3 u-margin-bottom-md">
+                            Browsing context
+                        </h3>
+                        <div class="resources u-margin-bottom-md">
+                            <a
+                                href="https://web.dev/learn/html/links/#browsing-context"
+                                class="link resources__link"
+                                rel="noopener noreferrer external"
+                                target="_blank"
+                                >WebDev Browsing context</a
+                            >
+                            <a
+                                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel"
+                                class="link resources__link"
+                                rel="noopener noreferrer external"
+                                target="_blank"
+                                >MDN rel attribute</a
+                            >
+                        </div>
+                        <p class="properties__descr">
+                            Every browsing context—basically, every browser
+                            tab—has a browsing context name. Links can open
+                            links in the current tab, a new unnamed tab, or a
+                            new or existing named tab. By default, the name is
+                            the empty string. To open a link in a new tab, the
+                            user can right-click and select "Open in a new tab".
+                            Developers can force this by including
+                            <span class="mark-text">target="_blank"</span>.
+                        </p>
+                        <p class="properties__descr">
+                            A link with
+                            <span class="mark-text">target="_blank"</span> will
+                            be opened in a new tab with a null name, opening a
+                            new, unnamed tab with every link click. This can
+                            create many new tabs. Too many tabs.
+                        </p>
+                        <pre class="pre-el">
+                            <code class="code-el">
+<span class="pre-el__comment">// fix</span>
+&lt;a href="registration.html" target="reg"&gt;Register Now&lt;/a&gt;
+                            </code>
+                        </pre>
+                        <p class="properties__descr">
+                            The
+                            <span class="mark-text">download</span> attribute
+                            should be included when the
+                            <span class="mark-text">href</span> points to a
+                            downloadable resource. The value of the download
+                            attribute is the suggested filename for the resource
+                            to be saved in the user's local file system.
+                        </p>
+                        <pre class="pre-el">
+                            <code class="code-el">
+&lt;a href="blob:https://jakearchibald.github.io/944a5fc8-fdb3-458a-91ee-cdd5964b6646" download="hal.svg"&gt;download&lt;/a&gt;
+                            </code>
+                        </pre>
+                        <p class="properties__descr">
+                            The <span class="mark-text">rel</span> attribute
+                            controls what kinds of links the link creates,
+                            defining the relationship between the current
+                            document and the resource linked to in the
+                            hyperlink.
+                        </p>
+                        <p class="properties__descr">
+                            The <span class="mark-text">nofollow</span> keyword
+                            can be included if you don't want spiders to follow
+                            the link. The
+                            <span class="mark-text">external</span> value can be
+                            added to indicate that the link directs to an
+                            external URL and is not a page within the current
+                            domain. The
+                            <span class="mark-text">help</span> keyword
+                            indicates the hyperlink will provide
+                            context-sensitive help. The
+                            <span class="mark-text">prev</span> and
+                            <span class="mark-text">next</span> values can be
+                            used on links pointing to the previous and next
+                            document in a series.
+                        </p>
+
+                        <p class="properties__descr">
+                            In this example, we include the URL of the
+                            translated page as the value of the
+                            <span class="mark-text">href</span>,
+                            <span class="mark-text">rel="alternate"</span>
+                            to indicate that it's an alternative version of a
+                            site; the
+                            <span class="mark-text">hreflang</span> attribute
+                            provides the language of the translations:
+                        </p>
+                        <pre class="pre-el">
+                            <code class="code-el">
+&lt;a href="/fr/" hreflang="fr-FR" rel="alternate" lang="fr-FR"&gt;atelier d'apprentissage mechanique&lt;/a&gt;
+&lt;a href="/pt/" hreflang="pt-BR" rel="alternate" lang="pt-BR"&gt;oficina de aprendizado de máquina&lt;/a&gt;
+                            </code>
+                        </pre>
+                        <p class="properties__descr">
+                            If the French translation is a
+                            <span class="mark-text">PDF</span>, you can provide
+                            the type attribute with the PDF
+                            <span class="mark-text">MIME type</span> of the
+                            linked resource. While the MIME type is purely
+                            advisory, informing the user that a link will open a
+                            document of a different format is always a good
+                            idea.
+                        </p>
+                        <pre class="pre-el">
+                            <code class="code-el">
+&lt;a href="/fr.pdf" hreflang="fr-FR" rel="alternate" lang="fr-FR" type="application/x-pdf"&gt;atelier d'apprentissage mechanique (pdf).&lt;/a&gt;
+                            </code>
+                        </pre>
+                    </div>
+
+                    <div class="properties__item">
+                        <h3 class="title-h3 u-margin-bottom-md">
+                            Tracking link clicks
+                        </h3>
+                        <p class="properties__descr">
+                            One way to track user interactions is to
+                            <span class="mark-text">ping</span> a URL when a
+                            link is clicked. The ping attribute, if present,
+                            includes a space-separated list of secure URLs
+                            (which start with
+                            <span class="mark-text">https</span>) that should be
+                            notified, or pinged, if the user activates the
+                            hyperlink. The browser sends
+                            <span class="mark-text">POST</span> requests with
+                            the body <span class="mark-text">PING</span> to the
+                            URLs listed as the value of the
+                            <span class="mark-text">ping</span> attribute.
+                        </p>
+
+                        <h3 class="title-h3 u-margin-bottom-sm">
+                            User experience tips
+                        </h3>
+
+                        <ul class="properties__list-inner">
+                            <li class="properties__list-inner-item">
+                                <p class="properties__descr">
+                                    Always consider the user experience when
+                                    writing HTML. Links should provide enough
+                                    information about the linked resource so the
+                                    user knows what they are clicking on.
+                                </p>
+                            </li>
+                            <li class="properties__list-inner-item">
+                                <p class="properties__descr">
+                                    Within a block of text, ensure the
+                                    appearance of your links differs enough from
+                                    the surrounding text so that users can
+                                    easily identify links from the rest of the
+                                    content, ensuring that color alone is not
+                                    the only means of differentiating between
+                                    text and the surrounding content.
+                                </p>
+                            </li>
+                            <li class="properties__list-inner-item">
+                                <p class="properties__descr">
+                                    Always include focus styles; this enables
+                                    keyboard navigators to know where they are
+                                    when tabbing through your content.
+                                </p>
+                            </li>
+                            <li class="properties__list-inner-item">
+                                <p class="properties__descr">
+                                    The content between the opening
+                                    <span class="mark-text">&lt;a&gt;</span> and
+                                    closing
+                                    <span class="mark-text">&lt;/a&gt;</span> is
+                                    the link's default accessible name and
+                                    should inform the user of the link's
+                                    destination or purpose. If the content of a
+                                    link is an image, the
+                                    <span class="mark-text">alt</span>
+                                    description is the accessible name. Whether
+                                    the accessible name comes from the
+                                    <span class="mark-text">alt</span> attribute
+                                    or a subset of words within a block of text,
+                                    make sure it provides information about the
+                                    link's destination. Link text should be more
+                                    descriptive than "click here" or "more
+                                    information"; this is important for your
+                                    screen reader users and your search engine
+                                    results!
+                                </p>
+                            </li>
+                            <li class="properties__list-inner-item">
+                                <p class="properties__descr">
+                                    Don't include interactive content, such as a
+                                    <span class="mark-text"
+                                        >&lt;button&gt;</span
+                                    >
+                                    or
+                                    <span class="mark-text">&lt;input&gt;</span
+                                    >, inside a link. Don't nest a link within a
+                                    <span class="mark-text"
+                                        >&lt;button&gt;</span
+                                    >
+                                    or
+                                    <span class="mark-text">&lt;label&gt;</span>
+                                    either. While the HTML page will still
+                                    render, nesting focusable and clickable
+                                    elements inside interactive elements creates
+                                    a bad user experience.
+                                </p>
+                            </li>
+                            <li class="properties__list-inner-item">
+                                <p class="properties__descr">
+                                    If the
+                                    <span class="mark-text">href</span>
+                                    attribute is present, pressing the Enter key
+                                    while focused on the
+                                    <span class="mark-text">&lt;a&gt;</span>
+                                    element will activate it.
+                                </p>
+                            </li>
+                            <li class="properties__list-inner-item">
+                                <p class="properties__descr">
+                                    Links are not limited to HTML. The
+                                    <span class="mark-text">a</span> element can
+                                    also be used within an SVG, forming a link
+                                    with either the 'href' or 'xlink:href'
+                                    attributes.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="properties__item">
+                        <h3 class="title-h3 u-margin-bottom-md">
+                            Links and JavaScript
+                        </h3>
+                        <p class="properties__descr">
+                            The <span class="mark-text">links</span> property
+                            returns an
+                            <span class="mark-text">HTMLCollection</span>
+                            matching <span class="mark-text">a</span> and
+                            <span class="mark-text">area</span> elements that
+                            have an
+                            <span class="mark-text">href</span> attribute.
+                        </p>
+                        <pre class="pre-el">
+                            <code class="code-el">
+let a = document.links[0]; <span class="pre-el__comment">// obtain the first link in the document</span>
+
+a.href = 'newpage.html'; <span class="pre-el__comment">// change the destination URL of the link</span>
+
+a.protocol = 'ftp'; <span class="pre-el__comment">// change just the scheme part of the URL</span>
+
+a.setAttribute('href', 'https://machinelearningworkshop.com/'); <span class="pre-el__comment">// change the attribute content directly</span>
+                            </code>
+                        </pre>
                     </div>
                 </div>
             </section>

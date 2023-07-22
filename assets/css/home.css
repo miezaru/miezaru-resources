@@ -37,6 +37,11 @@ body {
   min-height: 100vh;
 }
 
+:focus {
+  outline: 0.3rem solid var(--clr-primary-light);
+  outline-offset: 0.3rem;
+}
+
 *,
 *::before,
 *::after {
@@ -588,7 +593,7 @@ body {
   background-image: linear-gradient(to right bottom, rgba(3, 3, 3, 0.93), rgba(3, 3, 3, 0.93)), image-set(url("../img/avif/bcg-repeat.avif") type("image/avif") 1x, url("../img/avif/bcg-repeat.avif") type("image/avif") 2x, url("../img/webp/bcg-repeat.webp") type("image/webp") 1x, url("../img/webp/bcg-repeat.webp") type("image/webp") 2x, url("../img/jpg/bcg-repeat.jpg") type("image/jpeg") 1x, url("../img/jpg/bcg-repeat.jpg") type("image/jpeg") 2x);
 }
 
-.recources {
+.resources {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -616,10 +621,10 @@ body {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.recources > .title-h2 {
+.resources > .title-h2 {
   color: var(--white);
 }
-.recources__link-box {
+.resources__link-box {
   z-index: 999;
   display: -webkit-box;
   display: -webkit-flex;
@@ -636,7 +641,7 @@ body {
   font-size: 1.4rem;
   text-align: center;
 }
-.recources__link:link, .recources__link:visited {
+.resources__link:link, .resources__link:visited {
   padding: 0.8rem 1.6rem;
   font-weight: 700;
   border-radius: 9px;
@@ -645,7 +650,7 @@ body {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.recources__link:hover, .recources__link:active {
+.resources__link:hover, .resources__link:active {
   color: var(--clr-primary);
   -webkit-transform: translateY(-2px);
       -ms-transform: translateY(-2px);
@@ -664,10 +669,10 @@ body {
     grid-template-columns: [full-start] 0 [center-start] repeat(10, [col-start] minmax(-webkit-min-content, 12rem) [col-end]) [center-end] 0 [full-end];
     grid-template-columns: [full-start] 0 [center-start] repeat(10, [col-start] minmax(min-content, 12rem) [col-end]) [center-end] 0 [full-end];
   }
-  .recources {
+  .resources {
     border-radius: 0;
   }
-  .recources__link-box {
+  .resources__link-box {
     padding: 0.4rem 0.8rem;
     border-radius: 0;
   }
