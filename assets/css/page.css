@@ -35,6 +35,24 @@
 
 body {
   min-height: 100vh;
+  /* width or height */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+body::-webkit-scrollbar {
+  width: 1.2rem;
+}
+body::-webkit-scrollbar-track {
+  background: var(--clr-primary-dark);
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--clr-primary-light);
+  border-radius: 9px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--clr-primary-light);
+  border-radius: 9px;
 }
 
 :focus-visible {
@@ -218,6 +236,22 @@ body {
   font-size: 1.4rem;
   font-weight: 600;
   -webkit-overflow-scrolling: touch;
+  /* width or height */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.code-el::-webkit-scrollbar {
+  height: 0.6rem;
+}
+.code-el::-webkit-scrollbar-track {
+  background: var(--clr-primary-light);
+}
+.code-el::-webkit-scrollbar-thumb {
+  background: var(--clr-primary);
+}
+.code-el::-webkit-scrollbar-thumb:hover {
+  background: var(--clr-primary-dark);
 }
 
 .properties {
