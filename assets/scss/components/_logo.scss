@@ -1,27 +1,18 @@
 .logo {
     &:link,
     &:visited {
-        padding: 1.2rem 2.4rem;
-        font-weight: 500;
-        color: var(--clr-txt-grey);
-        text-align: center;
-        border-radius: var(--border-radius-default);
-        box-shadow: 0 0 1.2rem rgba($white, 0.2);
-        transition: var(--tr-default);
+        padding: 0.8rem 1.2rem;
+        font-size: 3.2rem;
+        line-height: 1;
+        color: var(--clr-txt-primary);
+        text-decoration: none;
+        border-radius: var(--br-default);
+        box-shadow: var(--sh-small);
+        transition: all 0.2s;
     }
 
     &:hover,
     &:active {
-        transform: translateY(-2px);
-    }
-
-    &__name {
-        display: block;
-        font-size: 2.6rem;
-
-        &::before {
-            font-weight: 700;
-            content: '@';
-        }
+        background-color: var(--clr-bcg-secondary-lg);
     }
 }

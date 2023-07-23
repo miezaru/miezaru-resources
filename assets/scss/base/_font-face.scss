@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-regular.eot');
+    src:
+        url('../fonts/poppins-regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/poppins-regular.woff2') format('woff2'),
+        url('../fonts/poppins-regular.woff') format('woff'),
+        url('../fonts/poppins-regular.ttf') format('truetype'),
+        url('../fonts/poppins-regular.svg#poppinsregular') format('svg');
+    font-display: optional;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/poppins-medium.eot');
+    src:
+        url('../fonts/poppins-medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/poppins-medium.woff2') format('woff2'),
+        url('../fonts/poppins-medium.woff') format('woff'),
+        url('../fonts/poppins-medium.ttf') format('truetype'),
+        url('../fonts/poppins-medium.svg#poppinsmedium') format('svg');
+    font-display: optional;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins-semibold.eot');
+    src:
+        url('../fonts/poppins-semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/poppins-semibold.woff2') format('woff2'),
+        url('../fonts/poppins-semibold.woff') format('woff'),
+        url('../fonts/poppins-semibold.ttf') format('truetype'),
+        url('../fonts/poppins-semibold.svg#poppinssemibold') format('svg');
+    font-display: optional;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/poppins-bold.eot');
+    src:
+        url('../fonts/poppins-bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/poppins-bold.woff2') format('woff2'),
+        url('../fonts/poppins-bold.woff') format('woff'),
+        url('../fonts/poppins-bold.ttf') format('truetype'),
+        url('../fonts/poppins-bold.svg#poppinsbold') format('svg');
+    font-display: optional;
+}

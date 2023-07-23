@@ -1,0 +1,121 @@
+main {
+    grid-row: 2;
+    grid-column: center-start / center-end;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-areas:
+        'html html tools'
+        'css css tools'
+        'scss js js'
+        'react react .';
+    grid-template-columns: auto;
+    gap: 4.8rem;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    padding: 1.2rem;
+    border-radius: var(--br-default);
+    box-shadow: 0 0 1.2rem rgba($black, 0.1);
+
+    &--html {
+        grid-area: html;
+        height: 30rem;
+    }
+
+    &--tools {
+        grid-area: tools;
+    }
+
+    &--css {
+        grid-area: css;
+        height: 30rem;
+    }
+
+    &--js {
+        grid-area: js;
+        height: 30rem;
+    }
+
+    &--scss {
+        grid-area: scss;
+        height: 30rem;
+    }
+
+    &--react {
+        grid-area: react;
+        height: 30rem;
+    }
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1.2rem;
+
+    &__link {
+        &:link,
+        &:visited {
+            display: block;
+            padding: 1.2rem 2.4rem;
+            font-size: 3.2rem;
+            font-weight: 500;
+            color: inherit;
+            text-align: center;
+            background-color: var(--clr-bcg-primary);
+            border-radius: var(--br-default);
+            box-shadow: var(--sh-small);
+            transition: all 0.2s;
+        }
+
+        &:hover,
+        &:active {
+            background-color: var(--clr-bcg-secondary-lg);
+        }
+    }
+
+    &__resources {
+        display: flex;
+        gap: 1.2rem;
+        border-radius: var(--br-default);
+        box-shadow: var(--sh-small);
+
+        & a {
+            &:link,
+            &:visited {
+                display: flex;
+                align-items: center;
+                width: auto;
+                height: 4.8rem;
+                padding: 1.2rem;
+                text-decoration: none;
+                background-color: var(--clr-bcg-primary);
+                border-radius: var(--br-default);
+                transition: all 0.2s;
+            }
+
+            &:hover,
+            &:active {
+                background-color: var(--clr-bcg-secondary-lg);
+            }
+        }
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 2.4rem;
+        height: 2.4rem;
+        fill: var(--clr-txt-primary);
+
+        &--codrops {
+            width: 11rem;
+        }
+    }
+}
