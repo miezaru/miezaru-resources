@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Artem Usatyi, miezaruexpr@gmail.com" />
+        <meta
+            name="description"
+            content="Artem 'Miezaru' Usatyi resources page. This website contains a tons of useful information of the web development and more."
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="msapplication-TileColor" content="#f8f7ff" />
+        <meta
+            name="msapplication-TileImage"
+            content="../../assets/img/icons/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#f8f7ff" />
+        <link
+            rel="canonical"
+            href="https://miezaru-resources.netlify.app/pages/html/accessibility.html"
+        />
+        <title>Miezaru App | HTML Accessibility</title>
+
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="../../assets/img/icons/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="../../assets/img/icons/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="../../assets/img/icons/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="../../assets/img/icons/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="../../assets/img/icons/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="../../assets/img/icons/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="../../assets/img/icons/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="../../assets/img/icons/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="../../assets/img/icons/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="../../assets/img/icons/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="../../assets/img/icons/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="../../assets/img/icons/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="../../assets/img/icons/favicon-16x16.png"
+        />
+        <link rel="manifest" href="../../assets/img/icons/manifest.json" />
+        <link
+            as="font"
+            crossorigin="anonymous"
+            href="../../assets/fonts/poppins-regular.woff2"
+            rel="preload"
+        />
+        <link
+            as="font"
+            crossorigin="anonymous"
+            href="../../assets/fonts/poppins-medium.woff2"
+            rel="preload"
+        />
+        <link
+            as="font"
+            crossorigin="anonymous"
+            href="../../assets/fonts/poppins-semibold.woff2"
+            rel="preload"
+        />
+        <link
+            as="font"
+            crossorigin="anonymous"
+            href="../../assets/fonts/poppins-bold.woff2"
+            rel="preload"
+        />
+        <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="../../assets/img/icons/favicon.ico"
+        />
+        <link rel="stylesheet" href="../../assets/css/html-page.css" />
+    </head>
+
+    <body class="grid">
+        <header class="header">
+            <a href="../../index.html" class="logo u-margin-right-auto">mic`</a>
+
+            <a
+                href="https://github.com/miezaru"
+                class="header__icon-box"
+                rel="noopener external"
+                aria-label="Miezaru github"
+            >
+                <svg class="header__icon">
+                    <use
+                        href="../../assets/svg/symbol-defs.svg#icon-github"
+                    ></use>
+                </svg>
+            </a>
+            <a
+                href="https://soundcloud.com/miezaru"
+                class="header__icon-box"
+                rel="noopener external"
+                aria-label="Miezaru soundcloud"
+            >
+                <svg class="header__icon">
+                    <use
+                        href="../../assets/svg/symbol-defs.svg#icon-soundcloud"
+                    ></use>
+                </svg>
+            </a>
+            <a
+                href="https://www.pinterest.com/miezaruexpr/"
+                class="header__icon-box"
+                rel="noopener external"
+                aria-label="Miezaru pinterest"
+            >
+                <svg class="header__icon">
+                    <use
+                        href="../../assets/svg/symbol-defs.svg#icon-pinterest"
+                    ></use>
+                </svg>
+            </a>
+            <a
+                href="https://web.telegram.org/"
+                class="header__icon-box"
+                rel="noopener external"
+                aria-label="Telegram"
+            >
+                <svg class="header__icon">
+                    <use
+                        href="../../assets/svg/symbol-defs.svg#icon-telegram"
+                    ></use>
+                </svg>
+            </a>
+            <a
+                href="https://www.twitch.tv/"
+                class="header__icon-box"
+                rel="noopener external"
+                aria-label="Twitch"
+            >
+                <svg class="header__icon">
+                    <use
+                        href="../../assets/svg/symbol-defs.svg#icon-twitch"
+                    ></use>
+                </svg>
+            </a>
+            <a
+                href="https://www.youtube.com/"
+                class="header__icon-box"
+                rel="noopener external"
+                aria-label="Miezaru youtube"
+            >
+                <svg class="header__icon">
+                    <use
+                        href="../../assets/svg/symbol-defs.svg#icon-youtube"
+                    ></use>
+                </svg>
+            </a>
+            <a
+                href="https://music.youtube.com/"
+                class="header__icon-box"
+                rel="noopener external"
+                aria-label="Miezaru youtube music"
+            >
+                <svg class="header__icon">
+                    <use
+                        href="../../assets/svg/symbol-defs.svg#icon-youtube-music"
+                    ></use>
+                </svg>
+            </a>
+            <a
+                href="https://www.facebook.com/miezaruexpr"
+                class="header__icon-box"
+                rel="noopener external"
+                aria-label="Miezaru facebook"
+            >
+                <svg class="header__icon">
+                    <use
+                        href="../../assets/svg/symbol-defs.svg#icon-facebook"
+                    ></use>
+                </svg>
+            </a>
+            <a
+                href="https://twitter.com/miezaruexpr"
+                class="header__icon-box"
+                rel="noopener external"
+                aria-label="Miezaru twitter"
+            >
+                <svg class="header__icon">
+                    <use
+                        href="../../assets/svg/symbol-defs.svg#icon-twitter"
+                    ></use>
+                </svg>
+            </a>
+            <a
+                href="https://store.steampowered.com/"
+                class="header__icon-box"
+                rel="noopener external"
+                aria-label="Miezaru steam"
+            >
+                <svg class="header__icon">
+                    <use
+                        href="../../assets/svg/symbol-defs.svg#icon-steam"
+                    ></use>
+                </svg>
+            </a>
+        </header>
+
+        <main class="grid-inner">
+            <header class="main-header">
+                <h1 class="title-h1">HTML: Accessibility</h1>
+            </header>
+            <section class="section" aria-labelledby="section-links-title">
+                <div class="section-header">
+                    <h2 class="title-h2" id="section-links-title">Links</h2>
+                </div>
+                <div class="section__part">
+                    <h3 class="title-h3">Accessibility Object Model AOM</h3>
+                    <div class="resources">
+                        <a
+                            href="https://developer.chrome.com/docs/devtools/accessibility/reference/#explore-tree"
+                            class="resources__link resources__link--html"
+                            rel="noopener external"
+                            >inscpect the AOM
+                            <svg class="resources__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-external"
+                                ></use></svg
+                        ></a>
+                    </div>
+                </div>
+
+                <div class="section__part">
+                    <h3 class="title-h3">Role attribute</h3>
+                    <div class="resources">
+                        <a
+                            href="https://www.digitala11y.com/wai-aria-1-1-cheat-sheet/"
+                            class="resources__link resources__link--html"
+                            rel="noopener external"
+                            >wai-aria cheat-sheet
+                            <svg class="resources__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-external"
+                                ></use></svg
+                        ></a>
+                        <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles"
+                            class="resources__link resources__link--html"
+                            rel="noopener external"
+                            >MDN wai-aria roles
+                            <svg class="resources__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-external"
+                                ></use></svg
+                        ></a>
+                    </div>
+                </div>
+                <div class="section__part">
+                    <h3 class="title-h3">NV Access app</h3>
+                    <div class="resources">
+                        <a
+                            href="https://www.nvaccess.org/"
+                            class="resources__link resources__link--html"
+                            rel="noopener external"
+                            >nv access
+                            <svg class="resources__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-external"
+                                ></use></svg
+                        ></a>
+                    </div>
+                </div>
+            </section>
+            <section class="section" aria-labelledby="section-about-title">
+                <header class="section-header">
+                    <h2 class="title-h2" id="section-about-title">About</h2>
+                </header>
+                <div class="section__part">
+                    <h3 class="title-h3">Accessibility Object Model AOM</h3>
+                    <p>
+                        The AOM is like a semantic version of the DOM. Enabled
+                        in google devtools.
+                    </p>
+                </div>
+                <div class="section__part">
+                    <h3 class="title-h3">Semantic</h3>
+                    <p>Semantic means "relating to meaning.</p>
+                </div>
+                <div class="section__part">
+                    <h3 class="title-h3">Role attribute</h3>
+                    <p>
+                        Role attribute is a global attribute—meaning it is valid
+                        on all elements—defined by the
+                        <a
+                            href="https://w3c.github.io/aria/#dfn-role"
+                            class="section__link section__link--html"
+                            rel="noopener external"
+                            >ARIA specification</a
+                        >
+                        rather than the
+                        <a
+                            href="https://html.spec.whatwg.org/dev/"
+                            class="section__link section__link--html"
+                            rel="noopener external"
+                            >WHATWG HTML specification</a
+                        >
+                        , where almost everything else in this series is
+                        defined.
+                    </p>
+                    <p>
+                        The role attribute describes the role an element has in
+                        the context of the document.
+                    </p>
+                    <p>
+                        <a
+                            href="https://developer.mozilla.org/docs/Web/Accessibility/ARIA/Roles#landmark_roles"
+                            class="section__link section__link--html"
+                            rel="noopener external"
+                            >Landmark</a
+                        >
+                        roles should be used sparingly, to identify larger
+                        overall sections of the document. Using too many
+                        landmark roles can create "noise" in screen readers,
+                        making it difficult to understand the overall layout of
+                        the page
+                    </p>
+                </div>
+                <div class="section__part">
+                    <h3 class="title-h3">Semantic elements</h3>
+                    <ul class="section__list" role="list">
+                        <li class="section__list-item">
+                            <h4 class="title-h4">Header</h4>
+                            <p>
+                                When the &lt;header&gt; is top level, it is the
+                                site
+                                <span class="mark-text mark-text--html"
+                                    >banner</span
+                                >, a landmark role. When a &lt;header&gt; is
+                                nested in &lt;main&gt;, &lt;article&gt;, or
+                                &lt;section&gt;, it just identifies it as the
+                                header for that section and isn't a landmark.
+                            </p>
+                        </li>
+
+                        <li class="section__list-item">
+                            <h4 class="title-h4">Footer</h4>
+                            <p>
+                                The top level footer is a landmark with the
+                                implicit role of
+                                <span class="mark-text mark-text--html"
+                                    >contentinfo</span
+                                >. The other footer isn't a landmark. Chrome
+                                shows it as
+                                <span class="mark-text mark-text--html"
+                                    >FooterAsNonLandmark;</span
+                                >
+                                Firefox shows it as section.
+                            </p>
+                            <p>
+                                Footers are often where you will find contact
+                                information, wrapped in
+                                <span class="mark-text mark-text--html"
+                                    >&lt;address&gt;</span
+                                >, the contact address element. It is used to
+                                enclose the contact information for individuals
+                                or organizations, not physical mailing
+                                addresses.
+                            </p>
+                        </li>
+
+                        <li class="section__list-item">
+                            <h4 class="title-h4">Main</h4>
+                            <p>
+                                There's a single &lt;main&gt; landmark element.
+                                The &lt;main&gt; element identifies the main
+                                content of the document. There should be
+                                <span class="mark-text mark-text--html"
+                                    >only one</span
+                                >
+                                &lt;main&gt; per page.
+                            </p>
+                        </li>
+
+                        <li class="section__list-item">
+                            <h4 class="title-h4">Aside</h4>
+                            <p>
+                                The &lt;aside&gt; is for content that is
+                                indirectly or tangentially related to the
+                                document's main content. The &lt;aside&gt;
+                                implicit role is
+                                <span class="mark-text mark-text--html"
+                                    >complementary</span
+                                >.
+                            </p>
+                        </li>
+                        <li class="section__list-item">
+                            <h4 class="title-h4">Article</h4>
+                            <p>
+                                An &lt;article&gt; represents a complete, or
+                                self-contained, section of content that is, in
+                                principle, independently
+                                <span class="mark-text mark-text--html"
+                                    >reusable</span
+                                >.
+                            </p>
+                        </li>
+                        <li class="section__list-item">
+                            <h4 class="title-h4">Section</h4>
+                            <p>
+                                The &lt;section&gt; element is used to encompass
+                                generic standalone sections of a document when
+                                there is no more specific semantic element to
+                                use. Sections should have a heading, with very
+                                few exceptions.
+                            </p>
+                        </li>
+                        <li class="section__list-item">
+                            <h4 class="title-h4">Headings: h1 - h6</h4>
+                            <p>
+                                Each represents one of the six levels of section
+                                headings, with &lt;h1&gt; being the highest or
+                                most important section level, and &lt;h6&gt; the
+                                lowest.
+                            </p>
+                            <p>
+                                When a heading is nested in a document banner
+                                &lt;header&gt;, it is the heading for the
+                                application or site. When nested in
+                                &lt;main&gt;, whether or not it is nested within
+                                a &lt;header&gt; in &lt;main&gt;, it is the
+                                header for that page, not the whole site. When
+                                nested in an &lt;article&gt; or &lt;section&gt;,
+                                it is the header for that subsection of the
+                                page.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

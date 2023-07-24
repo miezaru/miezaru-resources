@@ -1,0 +1,15 @@
+main {
+    grid-row: 2;
+    grid-column: center-start / center-end;
+}
+
+.grid-inner {
+    display: grid;
+    grid-template-areas:
+        'html html tools'
+        'css css tools'
+        'scss js js'
+        'react react .';
+    grid-template-columns: auto;
+    gap: 4.8rem;
+}

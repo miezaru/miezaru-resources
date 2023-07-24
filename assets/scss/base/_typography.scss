@@ -8,3 +8,42 @@ body {
 a {
     text-decoration: none;
 }
+
+p {
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 1.7;
+
+    &:not(:last-child) {
+        margin-bottom: 1.8rem;
+    }
+}
+
+.mark-text {
+    padding: 0.4rem 0.8rem;
+    border-radius: var(--br-default);
+
+    &--html {
+        background-color: var(--clr-bcg-section-html);
+    }
+
+    &--tools {
+        background-color: var(--clr-bcg-section-tools);
+    }
+
+    &--css {
+        background-color: var(--clr-bcg-section-css);
+    }
+
+    &--scss {
+        background-color: var(--clr-bcg-section-scss);
+    }
+
+    &--js {
+        background-color: var(--clr-bcg-section-js);
+    }
+
+    &--react {
+        background-color: var(--clr-bcg-section-react);
+    }
+}

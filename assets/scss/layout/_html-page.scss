@@ -1,0 +1,10 @@
+main {
+    grid-row: 2;
+}
+
+.grid-inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: center-start / center-end;
+    gap: 4.8rem;
+}

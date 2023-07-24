@@ -9,12 +9,12 @@
             content="Artem 'Miezaru' Usatyi resources page. This website contains a tons of useful information of the web development and more."
         />
         <meta name="robots" content="index, follow" />
-        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileColor" content="#f8f7ff" />
         <meta
             name="msapplication-TileImage"
             content="./assets/img/icons/ms-icon-144x144.png"
         />
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#f8f7ff" />
         <link
             rel="canonical"
             href="https://miezaru-resources.netlify.app/index.html"
@@ -122,14 +122,15 @@
         />
         <link rel="stylesheet" href="./assets/css/home.css" />
     </head>
+
     <body class="grid">
         <header class="header">
-            <a href="#" class="logo u-margin-right-auto">mic`</a>
+            <a href="./index.html" class="logo u-margin-right-auto">mic`</a>
 
             <a
                 href="https://github.com/miezaru"
                 class="header__icon-box"
-                rel="noopener noreferrer external"
+                rel="noopener external"
                 aria-label="Miezaru github"
             >
                 <svg class="header__icon">
@@ -139,7 +140,7 @@
             <a
                 href="https://soundcloud.com/miezaru"
                 class="header__icon-box"
-                rel="noopener noreferrer external"
+                rel="noopener external"
                 aria-label="Miezaru soundcloud"
             >
                 <svg class="header__icon">
@@ -151,7 +152,7 @@
             <a
                 href="https://www.pinterest.com/miezaruexpr/"
                 class="header__icon-box"
-                rel="noopener noreferrer external"
+                rel="noopener external"
                 aria-label="Miezaru pinterest"
             >
                 <svg class="header__icon">
@@ -163,7 +164,7 @@
             <a
                 href="https://web.telegram.org/"
                 class="header__icon-box"
-                rel="noopener noreferrer external"
+                rel="noopener external"
                 aria-label="Telegram"
             >
                 <svg class="header__icon">
@@ -175,7 +176,7 @@
             <a
                 href="https://www.twitch.tv/"
                 class="header__icon-box"
-                rel="noopener noreferrer external"
+                rel="noopener external"
                 aria-label="Twitch"
             >
                 <svg class="header__icon">
@@ -185,7 +186,7 @@
             <a
                 href="https://www.youtube.com/"
                 class="header__icon-box"
-                rel="noopener noreferrer external"
+                rel="noopener external"
                 aria-label="Miezaru youtube"
             >
                 <svg class="header__icon">
@@ -195,7 +196,7 @@
             <a
                 href="https://music.youtube.com/"
                 class="header__icon-box"
-                rel="noopener noreferrer external"
+                rel="noopener external"
                 aria-label="Miezaru youtube music"
             >
                 <svg class="header__icon">
@@ -207,7 +208,7 @@
             <a
                 href="https://www.facebook.com/miezaruexpr"
                 class="header__icon-box"
-                rel="noopener noreferrer external"
+                rel="noopener external"
                 aria-label="Miezaru facebook"
             >
                 <svg class="header__icon">
@@ -219,7 +220,7 @@
             <a
                 href="https://twitter.com/miezaruexpr"
                 class="header__icon-box"
-                rel="noopener noreferrer external"
+                rel="noopener external"
                 aria-label="Miezaru twitter"
             >
                 <svg class="header__icon">
@@ -229,7 +230,7 @@
             <a
                 href="https://store.steampowered.com/"
                 class="header__icon-box"
-                rel="noopener noreferrer external"
+                rel="noopener external"
                 aria-label="Miezaru steam"
             >
                 <svg class="header__icon">
@@ -238,7 +239,7 @@
             </a>
         </header>
 
-        <main class="home-grid">
+        <main class="grid-inner">
             <section class="section section--html">
                 <header class="section-header">
                     <h2 class="title-h2">
@@ -251,7 +252,7 @@
                     <div class="section-header__resources">
                         <a
                             href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-                            rel="noopener noreferrer external"
+                            rel="noopener external"
                             aria-label="Mozilla Web Docs"
                             class="section-header__resources-link section-header__resources-link--html"
                         >
@@ -263,7 +264,7 @@
                         </a>
                         <a
                             href="https://web.dev/learn/html/"
-                            rel="noopener noreferrer external"
+                            rel="noopener external"
                             aria-label="Web dev"
                             class="section-header__resources-link section-header__resources-link--html"
                         >
@@ -276,11 +277,27 @@
                     </div>
                 </header>
 
+                <h3 class="title-h3 title-h3--html">Relative</h3>
+                <div class="resources">
+                    <a
+                        href="./pages/html/metadata.html"
+                        class="resources__link resources__link--html"
+                        >metadata
+                    </a>
+
+                    <a
+                        href="./pages/html/accessibility.html"
+                        class="resources__link resources__link--html"
+                        >accessibility
+                    </a>
+                </div>
+
+                <h3 class="title-h3 title-h3--html">External</h3>
                 <div class="resources">
                     <a
                         href="https://css-tricks.com/snippets/html/glyphs/"
                         class="resources__link resources__link--html"
-                        rel="noopener noreferrer external"
+                        rel="noopener external"
                         >html entities
                         <svg class="resources__icon">
                             <use
@@ -300,12 +317,13 @@
                         >
                     </h2>
                 </header>
+                <h3 class="title-h3 title-h3--tools">Icons</h3>
                 <div class="resources">
                     <a
-                        href="https://caniuse.com/"
+                        href="https://jakearchibald.github.io/svgomg/"
                         class="resources__link resources__link--tools"
-                        rel="noopener noreferrer external"
-                        >caniuse
+                        rel="noopener external"
+                        >optimize svg
                         <svg class="resources__icon">
                             <use
                                 href="./assets/svg/symbol-defs.svg#icon-external"
@@ -313,10 +331,10 @@
                         </svg>
                     </a>
                     <a
-                        href="https://bennettfeely.com/clippy/"
+                        href="https://realfavicongenerator.net/"
                         class="resources__link resources__link--tools"
-                        rel="noopener noreferrer external"
-                        >clippy
+                        rel="noopener external"
+                        >favicon generator
                         <svg class="resources__icon">
                             <use
                                 href="./assets/svg/symbol-defs.svg#icon-external"
@@ -326,8 +344,270 @@
                     <a
                         href="https://icomoon.io/app/#/select/library"
                         class="resources__link resources__link--tools"
-                        rel="noopener noreferrer external"
+                        rel="noopener external"
                         >icomoon app
+                        <svg class="resources__icon">
+                            <use
+                                href="./assets/svg/symbol-defs.svg#icon-external"
+                            ></use>
+                        </svg>
+                    </a>
+                    <a
+                        href="https://fontastic.me/"
+                        class="resources__link resources__link--tools"
+                        rel="noopener external"
+                        >fontastic app
+                        <svg class="resources__icon">
+                            <use
+                                href="./assets/svg/symbol-defs.svg#icon-external"
+                            ></use>
+                        </svg>
+                    </a>
+
+                    <a
+                        href="https://simpleicons.org/"
+                        class="resources__link resources__link--tools"
+                        rel="noopener external"
+                        >simpleicons
+                        <svg class="resources__icon">
+                            <use
+                                href="./assets/svg/symbol-defs.svg#icon-external"
+                            ></use>
+                        </svg>
+                    </a>
+                    <a
+                        href="https://phosphoricons.com/"
+                        class="resources__link resources__link--tools"
+                        rel="noopener external"
+                        >phosphoricons
+                        <svg class="resources__icon">
+                            <use
+                                href="./assets/svg/symbol-defs.svg#icon-external"
+                            ></use>
+                        </svg>
+                    </a>
+                    <a
+                        href="https://ionic.io/ionicons"
+                        class="resources__link resources__link--tools"
+                        rel="noopener external"
+                        >ionicons
+                        <svg class="resources__icon">
+                            <use
+                                href="./assets/svg/symbol-defs.svg#icon-external"
+                            ></use>
+                        </svg>
+                    </a>
+                    <a
+                        href="https://icons8.com/"
+                        class="resources__link resources__link--tools"
+                        rel="noopener external"
+                        >icons8
+                        <svg class="resources__icon">
+                            <use
+                                href="./assets/svg/symbol-defs.svg#icon-external"
+                            ></use>
+                        </svg>
+                    </a>
+                    <a
+                        href="https://heroicons.com/"
+                        class="resources__link resources__link--tools"
+                        rel="noopener external"
+                        >heroicons
+                        <svg class="resources__icon">
+                            <use
+                                href="./assets/svg/symbol-defs.svg#icon-external"
+                            ></use>
+                        </svg>
+                    </a>
+                </div>
+                <h3 class="title-h3 title-h3--tools">Fonts</h3>
+
+                <div class="resources">
+                    <a
+                        href="https://www.fontsquirrel.com/tools/webfont-generator"
+                        class="resources__link resources__link--tools"
+                        rel="noopener external"
+                        >webfont generator
+                        <svg class="resources__icon">
+                            <use
+                                href="./assets/svg/symbol-defs.svg#icon-external"
+                            ></use>
+                        </svg>
+                    </a>
+                    <a
+                        href="https://fonts.google.com/"
+                        class="resources__link resources__link--tools"
+                        rel="noopener external"
+                        >google fonts
+                        <svg class="resources__icon">
+                            <use
+                                href="./assets/svg/symbol-defs.svg#icon-external"
+                            ></use>
+                        </svg>
+                    </a>
+                </div>
+                <h3 class="title-h3 title-h3--tools">Images and Videos</h3>
+
+                <div class="resources">
+                    <a
+                        href="https://unsplash.com/"
+                        class="resources__link resources__link--tools"
+                        rel="noopener external"
+                        >unsplash
+                        <svg class="resources__icon">
+                            <use
+                                href="./assets/svg/symbol-defs.svg#icon-external"
+                            ></use>
+                        </svg>
+                    </a>
+                    <a
+                        href="https://www.pexels.com/"
+                        class="resources__link resources__link--tools"
+                        rel="noopener external"
+                        >pexels
+                        <svg class="resources__icon">
+                            <use
+                                href="./assets/svg/symbol-defs.svg#icon-external"
+                            ></use>
+                        </svg>
+                    </a>
+                    <a
+                        href="https://icons8.com/photos"
+                        class="resources__link resources__link--tools"
+                        rel="noopener external"
+                        >icons8 photos
+                        <svg class="resources__icon">
+                            <use
+                                href="./assets/svg/symbol-defs.svg#icon-external"
+                            ></use>
+                        </svg>
+                    </a>
+                    <a
+                        href="https://www.drawkit.com/search-results"
+                        class="resources__link resources__link--tools"
+                        rel="noopener external"
+                        >drawkit
+                        <svg class="resources__icon">
+                            <use
+                                href="./assets/svg/symbol-defs.svg#icon-external"
+                            ></use>
+                        </svg>
+                    </a>
+                    <a
+                        href="https://undraw.co/illustrations"
+                        class="resources__link resources__link--tools"
+                        rel="noopener external"
+                        >undraw
+                        <svg class="resources__icon">
+                            <use
+                                href="./assets/svg/symbol-defs.svg#icon-external"
+                            ></use>
+                        </svg>
+                    </a>
+                    <a
+                        href="https://coverr.co/"
+                        class="resources__link resources__link--tools"
+                        rel="noopener external"
+                        >coverr videos
+                        <svg class="resources__icon">
+                            <use
+                                href="./assets/svg/symbol-defs.svg#icon-external"
+                            ></use>
+                        </svg>
+                    </a>
+                    <a
+                        href="https://stackdiary.com/svg-pattern-generators/"
+                        class="resources__link resources__link--tools"
+                        rel="noopener external"
+                        >patterns
+                        <svg class="resources__icon">
+                            <use
+                                href="./assets/svg/symbol-defs.svg#icon-external"
+                            ></use>
+                        </svg>
+                    </a>
+                    <a
+                        href="https://squoosh.app/"
+                        class="resources__link resources__link--tools"
+                        rel="noopener external"
+                        >squoosh
+                        <svg class="resources__icon">
+                            <use
+                                href="./assets/svg/symbol-defs.svg#icon-external"
+                            ></use>
+                        </svg>
+                    </a>
+                </div>
+                <h3 class="title-h3 title-h3--tools">Colors</h3>
+
+                <div class="resources">
+                    <a
+                        href="https://yeun.github.io/open-color/"
+                        class="resources__link resources__link--tools"
+                        rel="noopener external"
+                        >open color
+                        <svg class="resources__icon">
+                            <use
+                                href="./assets/svg/symbol-defs.svg#icon-external"
+                            ></use>
+                        </svg>
+                    </a>
+
+                    <a
+                        href="https://tailwindcss.com/docs/customizing-colors"
+                        class="resources__link resources__link--tools"
+                        rel="noopener external"
+                        >tailwind colors
+                        <svg class="resources__icon">
+                            <use
+                                href="./assets/svg/symbol-defs.svg#icon-external"
+                            ></use>
+                        </svg>
+                    </a>
+
+                    <a
+                        href="https://colorhunt.co/"
+                        class="resources__link resources__link--tools"
+                        rel="noopener external"
+                        >colorhunt
+                        <svg class="resources__icon">
+                            <use
+                                href="./assets/svg/symbol-defs.svg#icon-external"
+                            ></use>
+                        </svg>
+                    </a>
+                    <a
+                        href="https://maketintsandshades.com/"
+                        class="resources__link resources__link--tools"
+                        rel="noopener external"
+                        >tints and shades
+                        <svg class="resources__icon">
+                            <use
+                                href="./assets/svg/symbol-defs.svg#icon-external"
+                            ></use>
+                        </svg>
+                    </a>
+                </div>
+                <h3 class="title-h3 title-h3--tools">Other</h3>
+
+                <div class="resources">
+                    <a
+                        href="https://caniuse.com/"
+                        class="resources__link resources__link--tools"
+                        rel="noopener external"
+                        >caniuse
+                        <svg class="resources__icon">
+                            <use
+                                href="./assets/svg/symbol-defs.svg#icon-external"
+                            ></use>
+                        </svg>
+                    </a>
+
+                    <a
+                        href="https://bennettfeely.com/clippy/"
+                        class="resources__link resources__link--tools"
+                        rel="noopener external"
+                        >clippy
                         <svg class="resources__icon">
                             <use
                                 href="./assets/svg/symbol-defs.svg#icon-external"
@@ -348,7 +628,7 @@
                     <div class="section-header__resources">
                         <a
                             href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-                            rel="noopener noreferrer external"
+                            rel="noopener external"
                             aria-label="Mozilla Web Docs"
                             class="section-header__resources-link section-header__resources-link--css"
                         >
@@ -360,7 +640,7 @@
                         </a>
                         <a
                             href="https://web.dev/learn/css/"
-                            rel="noopener noreferrer external"
+                            rel="noopener external"
                             aria-label="Web dev"
                             class="section-header__resources-link section-header__resources-link--css"
                         >
@@ -372,11 +652,12 @@
                         </a>
                     </div>
                 </header>
+                <h3 class="title-h3 title-h3--css">External</h3>
                 <div class="resources">
                     <a
                         href="https://tympanus.net/codrops/css_reference/"
                         class="resources__link resources__link--css"
-                        rel="noopener noreferrer external"
+                        rel="noopener external"
                         >codrops reference
                         <svg class="resources__icon">
                             <use
@@ -396,6 +677,7 @@
                         >
                     </h2>
                 </header>
+                <h3 class="title-h3 title-h3--scss">External</h3>
             </section>
             <section class="section section--js">
                 <header class="section-header">
@@ -407,6 +689,7 @@
                         >
                     </h2>
                 </header>
+                <h3 class="title-h3 title-h3--js">External</h3>
             </section>
             <section class="section section--react">
                 <header class="section-header">
@@ -418,6 +701,7 @@
                         >
                     </h2>
                 </header>
+                <h3 class="title-h3 title-h3--react">External</h3>
             </section>
         </main>
     </body>

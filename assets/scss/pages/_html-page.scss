@@ -1,0 +1,95 @@
+.main-header {
+    text-align: center;
+}
+
+.section {
+    display: grid;
+    grid-template-columns:
+        [full-start] minmax(min-content, 1fr) [center-start] repeat(
+            10,
+            [col-start] minmax(min-content, 12rem) [col-end]
+        )
+        [center-end] minmax(min-content, 1fr) [full-end];
+    row-gap: 5.4rem;
+
+    &__part {
+        grid-column: col-start 2 / col-end 8;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            color: inherit;
+            transition: all 0.2s;
+        }
+
+        &--html {
+            &:link,
+            &:visited {
+                border-bottom: 2px solid var(--clr-accent-html);
+            }
+        }
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__list-item {
+        & p {
+            margin-left: 2rem;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 2.2rem;
+        }
+    }
+}
+
+.section-header {
+    grid-column: center-start / center-end;
+}
+
+.resources {
+    grid-column: center-start / center-end;
+}
+
+%title-styles {
+    display: inline-block;
+    font-weight: 600;
+    line-height: 1.2;
+    background-color: var(--clr-bcg-section-html);
+    border-radius: var(--br-default);
+}
+
+.title-h1 {
+    padding: 2rem 4rem;
+    font-size: 3.2rem;
+
+    @extend %title-styles;
+}
+
+.title-h2 {
+    padding: 1.2rem 2.4rem;
+    margin-bottom: -2.4rem;
+    font-size: 2.4rem;
+
+    @extend %title-styles;
+}
+
+.title-h3 {
+    padding: 1rem 2rem;
+    margin-bottom: 2.4rem;
+    font-size: 2rem;
+    transform: translateX(-2rem);
+
+    @extend %title-styles;
+}
+
+.title-h4 {
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
