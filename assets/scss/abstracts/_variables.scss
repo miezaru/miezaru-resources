@@ -1,11 +1,23 @@
 $white: #fff;
 $black: #000;
 $clr-bcg-primary: #f8f7ff;
-$clr-bcg-secondary: #b8b8ff;
-$clr-bcg-secondary-lg: #e3e3ff;
 $clr-primary: #ffc8dd;
 $clr-accent: #9381ff;
 $clr-txt-primary: #716282;
+
+// sections
+$clr-bcg-section-html: rgba(#ee957d, 0.1);
+$clr-bcg-section-css: rgba(#73aad3, 0.1);
+$clr-bcg-section-scss: rgba(#e0a3c2, 0.1);
+$clr-bcg-section-js: rgba(#faec78, 0.1);
+$clr-bcg-section-react: rgba(#a0e9fd, 0.1);
+$clr-bcg-section-tools: rgba(#b8b8ff, 0.1);
+$clr-accent-html: #f9dcd4;
+$clr-accent-css: #d0e3f0;
+$clr-accent-scss: #f5e0eb;
+$clr-accent-js: #fdf9d2;
+$clr-accent-react: #dff8fe;
+$clr-accent-tools: #e3e3ff;
 
 // border-radius
 $br-default: 9px;
@@ -17,10 +29,20 @@ $sh-small: 0 0 0.4rem 0 rgba($black, 0.1);
     --white: #{$white};
     --black: #{$black};
     --clr-bcg-primary: #{$clr-bcg-primary};
-    --clr-bcg-secondary: #{$clr-bcg-secondary};
-    --clr-bcg-secondary-lg: #{$clr-bcg-secondary-lg};
+    --clr-bcg-section-html: #{$clr-bcg-section-html};
+    --clr-bcg-section-tools: #{$clr-bcg-section-tools};
+    --clr-bcg-section-css: #{$clr-bcg-section-css};
+    --clr-bcg-section-scss: #{$clr-bcg-section-scss};
+    --clr-bcg-section-js: #{$clr-bcg-section-js};
+    --clr-bcg-section-react: #{$clr-bcg-section-react};
     --clr-primary: #{$clr-primary};
     --clr-accent: #{$clr-accent};
+    --clr-accent-html: #{$clr-accent-html};
+    --clr-accent-tools: #{$clr-accent-tools};
+    --clr-accent-css: #{$clr-accent-css};
+    --clr-accent-scss: #{$clr-accent-scss};
+    --clr-accent-js: #{$clr-accent-js};
+    --clr-accent-react: #{$clr-accent-react};
     --clr-txt-primary: #{$clr-txt-primary};
 
     // border-radius

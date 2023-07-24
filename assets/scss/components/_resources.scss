@@ -16,9 +16,46 @@
             transition: all 0.2s;
         }
 
-        &:hover,
-        &:active {
-            background-color: var(--clr-bcg-secondary-lg);
+        &--html {
+            &:hover,
+            &:active {
+                background-color: var(--clr-accent-html);
+            }
+        }
+
+        &--tools {
+            &:hover,
+            &:active {
+                background-color: var(--clr-accent-tools);
+            }
+        }
+
+        &--css {
+            &:hover,
+            &:active {
+                background-color: var(--clr-accent-css);
+            }
+        }
+
+        &--scss {
+            &:hover,
+            &:active {
+                background-color: var(--clr-accent-css);
+            }
+        }
+
+        &--js {
+            &:hover,
+            &:active {
+                background-color: var(--clr-accent-css);
+            }
+        }
+
+        &--react {
+            &:hover,
+            &:active {
+                background-color: var(--clr-accent-css);
+            }
         }
     }
 

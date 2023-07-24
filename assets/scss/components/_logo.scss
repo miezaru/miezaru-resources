@@ -6,13 +6,9 @@
         line-height: 1;
         color: var(--clr-txt-primary);
         text-decoration: none;
+        background-color: var(--clr-bcg-primary);
         border-radius: var(--br-default);
         box-shadow: var(--sh-small);
         transition: all 0.2s;
-    }
-
-    &:hover,
-    &:active {
-        background-color: var(--clr-bcg-secondary-lg);
     }
 }

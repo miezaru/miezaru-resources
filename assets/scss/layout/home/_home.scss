@@ -25,30 +25,60 @@ main {
     &--html {
         grid-area: html;
         height: 30rem;
+        background-image: linear-gradient(
+            to bottom right,
+            var(--clr-bcg-section-html),
+            var(--clr-bcg-section-html)
+        );
     }
 
     &--tools {
         grid-area: tools;
+        background-image: linear-gradient(
+            to bottom right,
+            var(--clr-bcg-section-tools),
+            var(--clr-bcg-section-tools)
+        );
     }
 
     &--css {
         grid-area: css;
         height: 30rem;
+        background-image: linear-gradient(
+            to bottom right,
+            var(--clr-bcg-section-css),
+            var(--clr-bcg-section-css)
+        );
     }
 
     &--js {
         grid-area: js;
         height: 30rem;
+        background-image: linear-gradient(
+            to bottom right,
+            var(--clr-bcg-section-js),
+            var(--clr-bcg-section-js)
+        );
     }
 
     &--scss {
         grid-area: scss;
         height: 30rem;
+        background-image: linear-gradient(
+            to bottom right,
+            var(--clr-bcg-section-scss),
+            var(--clr-bcg-section-scss)
+        );
     }
 
     &--react {
         grid-area: react;
         height: 30rem;
+        background-image: linear-gradient(
+            to bottom right,
+            var(--clr-bcg-section-react),
+            var(--clr-bcg-section-react)
+        );
     }
 }
 
@@ -73,35 +103,103 @@ main {
             transition: all 0.2s;
         }
 
-        &:hover,
-        &:active {
-            background-color: var(--clr-bcg-secondary-lg);
+        &--html {
+            &:hover,
+            &:active {
+                background-color: var(--clr-accent-html);
+            }
+        }
+
+        &--tools {
+            &:hover,
+            &:active {
+                background-color: var(--clr-accent-tools);
+            }
+        }
+
+        &--css {
+            &:hover,
+            &:active {
+                background-color: var(--clr-accent-css);
+            }
+        }
+
+        &--scss {
+            &:hover,
+            &:active {
+                background-color: var(--clr-accent-scss);
+            }
+        }
+
+        &--js {
+            &:hover,
+            &:active {
+                background-color: var(--clr-accent-js);
+            }
+        }
+
+        &--react {
+            &:hover,
+            &:active {
+                background-color: var(--clr-accent-react);
+            }
         }
     }
 
     &__resources {
         display: flex;
         gap: 1.2rem;
+        background-color: var(--clr-bcg-primary);
         border-radius: var(--br-default);
         box-shadow: var(--sh-small);
+    }
 
-        & a {
-            &:link,
-            &:visited {
-                display: flex;
-                align-items: center;
-                width: auto;
-                height: 4.8rem;
-                padding: 1.2rem;
-                text-decoration: none;
-                background-color: var(--clr-bcg-primary);
-                border-radius: var(--br-default);
-                transition: all 0.2s;
-            }
+    &__resources-link {
+        &:link,
+        &:visited {
+            display: flex;
+            align-items: center;
+            width: auto;
+            height: 4.8rem;
+            padding: 1.2rem;
+            text-decoration: none;
+            background-color: var(--clr-bcg-primary);
+            border-radius: var(--br-default);
+            transition: all 0.2s;
+        }
 
+        &--html {
             &:hover,
             &:active {
-                background-color: var(--clr-bcg-secondary-lg);
+                background-color: var(--clr-accent-html);
+            }
+        }
+
+        &--css {
+            &:hover,
+            &:active {
+                background-color: var(--clr-accent-css);
+            }
+        }
+
+        &--scss {
+            &:hover,
+            &:active {
+                background-color: var(--clr-accent-css);
+            }
+        }
+
+        &--js {
+            &:hover,
+            &:active {
+                background-color: var(--clr-accent-css);
+            }
+        }
+
+        &--react {
+            &:hover,
+            &:active {
+                background-color: var(--clr-accent-css);
             }
         }
     }
