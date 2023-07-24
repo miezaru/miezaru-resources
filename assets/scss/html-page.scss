@@ -1,14 +1,14 @@
+@import './base/font-face';
 @import './abstracts/functions';
 @import './abstracts/mixins';
 @import './abstracts/variables';
 @import './abstracts/utilities';
-@import './base/font-face';
+@import './base/typography';
 @import './base/base';
 @import './base/reset';
-@import './base/typography';
 @import './layout/header';
 @import './layout/grid';
-@import './layout/html-page';
+@import './layout/grid-page-html';
 @import './components/logo';
 @import './components/resources';
 @import './pages/html-page';

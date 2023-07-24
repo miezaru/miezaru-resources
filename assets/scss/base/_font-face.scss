@@ -9,7 +9,7 @@
         url('../fonts/poppins-regular.woff') format('woff'),
         url('../fonts/poppins-regular.ttf') format('truetype'),
         url('../fonts/poppins-regular.svg#poppinsregular') format('svg');
-    font-display: optional;
+    font-display: swap;
 }
 
 @font-face {
@@ -23,7 +23,7 @@
         url('../fonts/poppins-medium.woff') format('woff'),
         url('../fonts/poppins-medium.ttf') format('truetype'),
         url('../fonts/poppins-medium.svg#poppinsmedium') format('svg');
-    font-display: optional;
+    font-display: swap;
 }
 
 @font-face {
@@ -37,7 +37,7 @@
         url('../fonts/poppins-semibold.woff') format('woff'),
         url('../fonts/poppins-semibold.ttf') format('truetype'),
         url('../fonts/poppins-semibold.svg#poppinssemibold') format('svg');
-    font-display: optional;
+    font-display: swap;
 }
 
 @font-face {
@@ -51,5 +51,5 @@
         url('../fonts/poppins-bold.woff') format('woff'),
         url('../fonts/poppins-bold.ttf') format('truetype'),
         url('../fonts/poppins-bold.svg#poppinsbold') format('svg');
-    font-display: optional;
+    font-display: swap;
 }
