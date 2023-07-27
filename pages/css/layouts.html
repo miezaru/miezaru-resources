@@ -18,28 +18,28 @@
         <link
             as="font"
             crossorigin
-            href="../../assets/fonts/poppins-regular.woff2"
+            href="../../assets/fonts/notosans-regular.woff2"
             rel="preload"
             type="font/woff2"
         />
         <link
             as="font"
             crossorigin
-            href="../../assets/fonts/poppins-medium.woff2"
+            href="../../assets/fonts/notosans-medium.woff2"
             rel="preload"
             type="font/woff2"
         />
         <link
             as="font"
             crossorigin
-            href="../../assets/fonts/poppins-semibold.woff2"
+            href="../../assets/fonts/notosans-semibold.woff2"
             rel="preload"
             type="font/woff2"
         />
         <link
             as="font"
             crossorigin
-            href="../../assets/fonts/poppins-bold.woff2"
+            href="../../assets/fonts/notosans-bold.woff2"
             rel="preload"
             type="font/woff2"
         />
@@ -302,33 +302,45 @@
                         Page layout and components layout
                     </h3>
                     <p>The 3 ways of building layouts with CSS:</p>
-                    <ul class="section__list">
-                        <li class="section__list-item">
-                            <h4 class="title-h4">Float layouts</h4>
-                            <p>
-                                - The old way of building layouts of all sizes,
-                                using the float CSS property. Still used, but
-                                getting outdated fast
-                            </p>
+                    <ol class="section__list-sm section__list-sm--css">
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">Float layouts</p>
+                            <ul>
+                                <li>
+                                    The old way of building layouts of all
+                                    sizes, using the float CSS property. Still
+                                    used, but getting outdated fast
+                                </li>
+                            </ul>
                         </li>
-                        <li class="section__list-item">
-                            <h4 class="title-h4">Flexbox</h4>
-                            <p>
-                                - Modern way of laying out elements in a
-                                1-dimensional row without using floats <br />
-                                - Perfect for component layouts <br />
-                            </p>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">Flexbox</p>
+                            <ul>
+                                <li>
+                                    Modern way of laying out elements in a
+                                    1-dimensional row without using floats
+                                </li>
+                                <li>Perfect for component layouts</li>
+                            </ul>
                         </li>
-                        <li class="section__list-item">
-                            <h4 class="title-h4">CSS Grid</h4>
-                            <p>
-                                - For laying out elements in a fully-fledged
-                                2-dimensional grid <br />
-                                - Perfect for page layouts and complex
-                                components <br />
-                            </p>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">CSS Grid</p>
+                            <ul>
+                                <li>
+                                    Modern way of laying out elements in a
+                                    1-dimensional row without using floats
+                                </li>
+                                <li>
+                                    For laying out elements in a fully-fledged
+                                    2-dimensional grid
+                                </li>
+                                <li>
+                                    Perfect for page layouts and complex
+                                    components
+                                </li>
+                            </ul>
                         </li>
-                    </ul>
+                    </ol>
                 </div>
             </section>
             <section class="section" aria-labelledby="section-float-title">
@@ -336,38 +348,84 @@
                     <h2 class="title-h2 title-h2--css" id="section-float-title">
                         FLOAT
                     </h2>
+                    <div class="resources u-margin-top-lg">
+                        <a
+                            href="https://codepen.io/Miezaru/pen/MWadJgq"
+                            class="resources__link resources__link--css"
+                            rel="noopener external"
+                            >Float layout
+                            <svg class="resources__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-external"
+                                ></use></svg
+                        ></a>
+                        <a
+                            href="https://codepen.io/Miezaru/pen/KKpQMLE"
+                            class="resources__link resources__link--css"
+                            rel="noopener external"
+                            >Float grid
+                            <svg class="resources__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-external"
+                                ></use></svg
+                        ></a>
+                    </div>
                 </header>
 
                 <div class="section__part">
-                    <p>
-                        - Elements is removed from the normal flow: "out of
-                        flow" (like position: absolute;) <br />
-                        - Text and inline elements will wrap around the floated
-                        element <br />
-                        - The container will not adjust its height to the
-                        element <br />
-                        - Element height are collapsed if all his child elements
-                        are floated <br />
-                        - With CSS: float:left, float:right <br />
-                        - Fix collapsed heights by clearing floats: <br />
-                    </p>
-                    <pre class="code code--css">
-                        <code class="code-el">
-// new element after the floated elements with declaration:
-el {
-    clear: both;              // bad practice
-}
+                    <ol class="section__list-sm section__list-sm--css">
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Elements is removed from the normal flow: "out
+                                of flow" (like position: absolute;)
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Text and inline elements will wrap around the
+                                floated element
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                The container will not adjust its height to the
+                                element
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Element height are collapsed if all his child
+                                elements are floated
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                With CSS: float:left, float:right
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Fix collapsed heights by clearing floats:
+                            </p>
+                            <pre class="code code--css">
+                                <code class="code-el">
+        // new element after the floated elements with declaration:
+        el {
+            clear: both;              // bad practice
+        }
 
-// clearfix hack
-// add clearfix class to the parent element of the floats elements
+        // clearfix hack
+        // add clearfix class to the parent element of the floats elements
 
-.clearfix::after {
-  display: block;
-  clear: both;               // good practice
-  content: "";
-}
-                        </code>
-                    </pre>
+        .clearfix::after {
+          display: block;
+          clear: both;               // good practice
+          content: "";
+        }
+                                </code>
+                            </pre>
+                        </li>
+                    </ol>
                 </div>
             </section>
 
@@ -379,23 +437,76 @@ el {
                     >
                         FLEXBOX 2017
                     </h2>
+
+                    <div class="resources u-margin-top-lg">
+                        <a
+                            href="https://codepen.io/Miezaru/pen/wvayWLx"
+                            class="resources__link resources__link--css"
+                            rel="noopener external"
+                            >Flexbox grid margin
+                            <svg class="resources__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-external"
+                                ></use></svg
+                        ></a>
+                        <a
+                            href="https://codepen.io/Miezaru/pen/dyodXxW"
+                            class="resources__link resources__link--css"
+                            rel="noopener external"
+                            >Flexbox grid padding
+                            <svg class="resources__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-external"
+                                ></use></svg
+                        ></a>
+                    </div>
                 </header>
 
                 <div class="section__part">
-                    <p>
-                        - Flexbox is a set of related CSS properties for
-                        building 1-dimensional layouts <br />
-                        - The main idea behind flexbox is that empty space
-                        inside a container element can be automatically divided
-                        by its child elements <br />
-                        - Flexbox makes it easy to automatically align items to
-                        one another inside a parent container, both horizontally
-                        and vertically <br />
-                        - Flexbox solves common problems such as vertical
-                        centering and creating equal-height columns <br />
-                        - Flexbox is perfect for replacing floats, allowing us
-                        to write fewer and cleaner HTML and CSS code <br />
-                    </p>
+                    <ol class="section__list-sm section__list-sm--css">
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Flexbox is a set of related CSS properties for
+                                building 1-dimensional layouts
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                The main idea behind flexbox is that empty space
+                                inside a container element can be automatically
+                                divided by its child elements
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Flexbox makes it easy to automatically align
+                                items to one another inside a parent container,
+                                both horizontally and vertically
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Flexbox solves common problems such as vertical
+                                centering and creating equal-height columns
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Flexbox is perfect for replacing floats,
+                                allowing us to write fewer and cleaner HTML and
+                                CSS code
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">gap</p>
+                            <ul>
+                                <li>
+                                    better then margin, because no need to write
+                                    margin-right: 0; to the last element
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
                     <picture>
                         <source
                             srcset="
@@ -445,11 +556,6 @@ el {
                             height="576"
                         />
                     </picture>
-                    <p>
-                        gap <br />
-                        - better then margin, because no need to write
-                        margin-right: 0; to the last element
-                    </p>
                 </div>
             </section>
 
@@ -458,115 +564,60 @@ el {
                     <h2 class="title-h2 title-h2--css" id="section-grid-title">
                         CSS GRID
                     </h2>
+                    <div class="resources u-margin-top-lg">
+                        <a
+                            href="https://codepen.io/Miezaru/pen/qBdxadR"
+                            class="resources__link resources__link--css"
+                            rel="noopener external"
+                            >Simple grid
+                            <svg class="resources__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-external"
+                                ></use></svg
+                        ></a>
+                        <a
+                            href="https://codepen.io/Miezaru/pen/LYVQRpW"
+                            class="resources__link resources__link--css"
+                            rel="noopener external"
+                            >Website grid
+                            <svg class="resources__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-external"
+                                ></use></svg
+                        ></a>
+                    </div>
                 </header>
 
                 <div class="section__part">
-                    <h3 class="title-h3 title-h3--css">
-                        Special Units & Functions
-                    </h3>
-                    <p>
-                        <span class="mark-text mark-text--css"> fr units:</span>
-                        <br />
-                        - grid-template-columns: 1fr 3fr; - Means, loosely, 25%
-                        75%. <br />
-                        - grid-template-columns: 50px min-content 1fr; <br />
-                    </p>
-                    <p>
-                        <span class="mark-text mark-text--css">
-                            Sizing keywords:</span
-                        >
-                        <br />
-                        - min-content - the minimum size of the content. Imagine
-                        a line of text like "E pluribus unum", the min-content
-                        is likely the width of the word "pluribus" <br />
-                        - max-content - the maximum size of the content. Imagine
-                        the sentence above, the max-content is the length of the
-                        whole sentence <br />
-                        - auto - this keyword is a lot like fr units, except
-                        that they "lose" the fight in sizing against fr units
-                        when allocating the remaining space. <br />
-                        - fractional units - see above <br />
-                    </p>
-                    <p>
-                        <span class="mark-text mark-text--css">
-                            Sizing functions:</span
-                        >
-                        <br />
-                        - fit-content() - function uses the space available, but
-                        never less than min-content and never more than
-                        max-content. <br />
-                        - minmax() - function does exactly what it seems like:
-                        it sets a minimum and maximum value for what the length
-                        is able to be. This is useful for in combination with
-                        relative units. Like you may want a column to be only
-                        able to shrink so far. This is extremely useful and
-                        probably what u want: grid-template-columns:
-                        minmax(100px, 1fr) 3fr;<br />
-                        - min() <br />
-                        - max() <br />
-                    </p>
-                    <p>
-                        <span class="mark-text mark-text--css"> Masonry:</span>
-                        <br />
-                        -
-                        <a
-                            href="https://css-tricks.com/snippets/css/complete-guide-grid/#aa-masonry"
-                            class="section__link section__link--css"
-                            >Masonry 1</a
-                        >
-                        <br />
-                        -
-                        <a
-                            href="https://css-tricks.com/piecing-together-approaches-for-a-css-masonry-layout/"
-                            class="section__link section__link--css"
-                            >Masonry 2</a
-                        >
-                        <br />
-                    </p>
-                    <p>
-                        <span class="mark-text mark-text--css"> Subgrid:</span>
-                        <br />
-                        -
-                        <a
-                            href="https://css-tricks.com/snippets/css/complete-guide-grid/#aa-subgrid"
-                            class="section__link section__link--css"
-                            >Subgrid</a
-                        >
-                        <br />
-                    </p>
-                    <p>
-                        <span class="mark-text mark-text--css">
-                            Sizing functions:</span
-                        >
-                        <br />
-                        - fit-content() - function uses the space available, but
-                        never less than min-content and never more than
-                        max-content. <br />
-                        - minmax() - function does exactly what it seems like:
-                        it sets a minimum and maximum value for what the length
-                        is able to be. This is useful for in combination with
-                        relative units. Like you may want a column to be only
-                        able to shrink so far. This is extremely useful and
-                        probably what u want: grid-template-columns:
-                        minmax(100px, 1fr) 3fr;<br />
-                        - min() <br />
-                        - max() <br />
-                    </p>
-                </div>
-
-                <div class="section__part">
-                    <p>
-                        - CSS Grid is a set of CSS properties for building
-                        2-dimensional layouts <br />
-                        - The main idea behind CSS Grid is that we divide a
-                        container element into rows and columns that can be
-                        filled with its child elements <br />
-                        - In two-dimensional contexts, CSS Grid allows us to
-                        write less nested HTML and easier-to-read CSS <br />
-                        - CSS Grid is not meant to replace flexbox! Instead,
-                        they work perfectly together. Need a 1D layout? Use
-                        flexbox. Need a 2D layout? Use CSS Grid. <br />
-                    </p>
+                    <ol class="section__list-sm section__list-sm--css">
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                CSS Grid is a set of CSS properties for building
+                                2-dimensional layouts
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                The main idea behind CSS Grid is that we divide
+                                a container element into rows and columns that
+                                can be filled with its child elements
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                In two-dimensional contexts, CSS Grid allows us
+                                to write less nested HTML and easier-to-read CSS
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                CSS Grid is not meant to replace flexbox!
+                                Instead, they work perfectly together. Need a 1D
+                                layout? Use flexbox. Need a 2D layout? Use CSS
+                                Grid.
+                            </p>
+                        </li>
+                    </ol>
                     <picture>
                         <source
                             srcset="../../assets/img/grid/grid-cheat-xlg.avif"
@@ -587,365 +638,710 @@ el {
                 </div>
 
                 <div class="section__part">
-                    <p>
-                        - Explicit (явный) row - row, where we defined height
-                        <br />
-                        - Implicit (скрытый) row - row, where we do not defined
-                        height
-                    </p>
-
-                    <p>Instead of pixels, we can use fr unit and auto word:</p>
-                    <p>
-                        - grid-template-rows: repeat(4, 1fr) 2fr; <br />
-                        - grid-template-columns: 1fr 300px auto 2fr; <br />
-                        - grid-column: 1 / span 3; <br />
-                        - grid-column: 1 / 2; | grid-column: 1; - same
-                        declarations<br />
-
-                        - grid-column: 1 / -1; - to the end of the track <br />
-                    </p>
+                    <h3 class="title-h3 title-h3--css">
+                        Important CSS Grid terminology
+                    </h3>
+                    <ol class="section__list-sm section__list-sm--css">
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">Grid Container</p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">Grid Item</p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">Grid Line</p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">Grid Cell</p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">Grid Track</p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">Grid Area</p>
+                        </li>
+                    </ol>
+                </div>
+                <div class="section__part">
+                    <h3 class="title-h3 title-h3--css">
+                        Special Units & Functions
+                    </h3>
+                    <ol class="section__list-sm section__list-sm--css">
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">fr units</p>
+                            <ul>
+                                <li>
+                                    grid-template-columns: 1fr 3fr; - Means,
+                                    loosely, 25% 75%
+                                </li>
+                                <li>
+                                    grid-template-columns: 50px min-content 1fr;
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">Sizing keywords</p>
+                            <ul>
+                                <li>
+                                    min-content - the minimum size of the
+                                    content. Imagine a line of text like "E
+                                    pluribus unum", the min-content is likely
+                                    the width of the word "pluribus"
+                                </li>
+                                <li>
+                                    max-content - the maximum size of the
+                                    content. Imagine the sentence above, the
+                                    max-content is the length of the whole
+                                    sentence
+                                </li>
+                                <li>
+                                    auto - this keyword is a lot like fr units,
+                                    except that they "lose" the fight in sizing
+                                    against fr units when allocating the
+                                    remaining space
+                                </li>
+                                <li>fractional units - see above</li>
+                            </ul>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Sizing functions
+                            </p>
+                            <ul>
+                                <li>
+                                    fit-content() - function uses the space
+                                    available, but never less than min-content
+                                    and never more than max-content
+                                </li>
+                                <li>
+                                    minmax() - function does exactly what it
+                                    seems like: it sets a minimum and maximum
+                                    value for what the length is able to be.
+                                    This is useful for in combination with
+                                    relative units. Like you may want a column
+                                    to be only able to shrink so far. This is
+                                    extremely useful and probably what u want:
+                                    grid-template-columns: minmax(100px, 1fr)
+                                    3fr;
+                                </li>
+                                <li>min()</li>
+                                <li>max()</li>
+                            </ul>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">Masonry</p>
+                            <ul>
+                                <li>
+                                    <a
+                                        href="https://css-tricks.com/snippets/css/complete-guide-grid/#aa-masonry"
+                                        class="section__link section__link--css"
+                                        >Masonry 1</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://css-tricks.com/piecing-together-approaches-for-a-css-masonry-layout/"
+                                        class="section__link section__link--css"
+                                        >Masonry 2</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">Subgrid</p>
+                            <ul>
+                                <li>
+                                    <a
+                                        href="https://css-tricks.com/snippets/css/complete-guide-grid/#aa-subgrid"
+                                        class="section__link section__link--css"
+                                        >Subgrid</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
                 </div>
 
                 <div class="section__part">
-                    <p>
-                        Aligning tracks inside container: distribute empty space
-                    </p>
-                    <p>
-                        - justify-content: center; | start | end | space-between
-                        | space-evenly | space-around | stretch <br />
-                        - align-content: center; | start | end | space-between |
-                        space-evenly | space-around | stretch <br />
-                    </p>
-                    <p>
-                        Aligning items inside cells: moving items around inside
-                        cells
-                    </p>
-                    <p>
-                        - align-items: center; | start | end | stretch <br />
-                        - justify-items: center; | start | end | stretch <br />
-                    </p>
+                    <h3 class="title-h3 title-h3--css">Rows</h3>
+
+                    <ol class="section__list-sm section__list-sm--css">
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Explicit (явный) row - row, where we defined
+                                height
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Implicit (скрытый) row - row, where we do not
+                                defined height
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="section__part">
+                    <h3 class="title-h3 title-h3--css">fr unit</h3>
+                    <p>Instead of pixels, we can use fr unit and auto word:</p>
+
+                    <ol class="section__list-sm section__list-sm--css">
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                grid-template-rows: repeat(4, 1fr) 2fr;
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                grid-template-columns: 1fr 300px auto 2fr;
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                grid-column: 1 / span 3;
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                grid-column: 1 / 2; | grid-column: 1; - same
+                                declarations
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                grid-column: 1 / -1; - to the end of the track
+                            </p>
+                        </li>
+                    </ol>
                 </div>
 
                 <div class="section__part">
                     <h3 class="title-h3 title-h3--css">
-                        Important CSS Grid terminology
+                        Aligning tracks inside container
                     </h3>
-                    <p>
-                        - Grid Container <br />
-                        - Grid Item <br />
-                        - Grid Line <br />
-                        - Grid Cell <br />
-                        - Grid Track <br />
-                        - Grid Area <br />
-                    </p>
+
+                    <ol class="section__list-sm section__list-sm--css">
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                justify-content: center; | start | end |
+                                space-between | space-evenly | space-around |
+                                stretch
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                align-content: center; | start | end |
+                                space-between | space-evenly | space-around |
+                                stretch
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                place-content:
+                                &lt;align-content&gt;/&lt;justify-content&gt;
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="section__part">
+                    <h3 class="title-h3 title-h3--css">
+                        Aligning items inside cells
+                    </h3>
+                    <ol class="section__list-sm section__list-sm--css">
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                align-items: center; stretch | start | center |
+                                end
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                justify-items: center; stretch | start | center
+                                | end
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                place-items:
+                                &lt;align-items&gt;/&lt;justify-items&gt;
+                            </p>
+                        </li>
+                    </ol>
                 </div>
 
                 <div class="section__part">
                     <h3 class="title-h3 title-h3--css">
                         Parent Grid Container properties
                     </h3>
-                    <p>
-                        <span class="mark-text mark-text--css"> display:</span>
-                        <br />
-                        - grid - generates a block-level grid
-                        <br />
-                        - inline-grid - generates an inline-level grid <br />
-                    </p>
+                    <ol class="section__list-sm section__list-sm--css">
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">display</p>
+                            <ul>
+                                <li>grid - generates a block-level grid</li>
+                                <li>
+                                    inline-grid - generates an inline-level grid
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                grid-template-columns & grid-template-rows
+                            </p>
+                            <ul>
+                                <li>
+                                    track size - can be a length, a percentage,
+                                    or a fraction of the free space in the grid
+                                    using the fr unit
+                                </li>
+                                <li>
+                                    line name - an arbitrary name of your
+                                    choosing
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                grid-template-columns examples
+                            </p>
+                            <ul>
+                                <li>1fr 1fr</li>
+                                <li>minmax(10px, 1fr) 3fr</li>
+                                <li>repeat(5, 1fr)</li>
+                                <li>50px auto 100px 1fr</li>
+                                <li>
+                                    [first] 40px [line2] 50px [line3] auto
+                                    [col4-start] 50px [five] 40px [end]
+                                </li>
+                            </ul>
+                        </li>
 
-                    <p>
-                        <span class="mark-text mark-text--css">
-                            grid-template-columns & grid-template-rows: </span
-                        ><br />
-                        - track size - can be a length, a percentage, or a
-                        fraction of the free space in the grid using the fr unit
-                        <br />
-                        - line name - an arbitrary name of your choosing <br />
-                    </p>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                grid-template-rows examples
+                            </p>
+                            <ul>
+                                <li>min-content 1fr min-content</li>
+                                <li>100px 1fr max-content</li>
+                                <li>
+                                    [row1-start] 25% [row1-end] 100px
+                                    [third-line] auto [last-line]
+                                </li>
+                            </ul>
+                        </li>
 
-                    <p>
-                        <span class="mark-text mark-text--css">
-                            grid-template-columns:</span
-                        >
-                        <br />
-                        - 1fr 1fr <br />
-                        - minmax(10px, 1fr) 3fr <br />
-                        - repeat(5, 1fr) <br />
-                        - 50px auto 100px 1fr <br />
-                        - [first] 40px [line2] 50px [line3] auto [col4-start]
-                        50px [five] 40px [end] <br />
-                    </p>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                grid-template-areas
+                            </p>
+                            <ul>
+                                <li>
+                                    grid-area-name - the name of a grid area
+                                    specified with grid-area
+                                </li>
+                                <li>
+                                    . - a period signifies an empty grid cell
+                                </li>
+                                <li>none - no grid areas are defined</li>
+                            </ul>
+                        </li>
 
-                    <p>
-                        <span class="mark-text mark-text--css">
-                            grid-template-rows: </span
-                        ><br />
-                        - min-content 1fr min-content <br />
-                        - 100px 1fr max-content <br />
-                        - [row1-start] 25% [row1-end] 100px [third-line] auto
-                        [last-line] <br />
-                    </p>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">grid-template</p>
+                            <ul>
+                                <li>
+                                    none - sets all three properties to their
+                                    initial values
+                                </li>
+                                <li>
+                                    &lt;grid-template-rows&gt; /
+                                    &lt;grid-template-columns&gt;
+                                </li>
+                            </ul>
+                        </li>
 
-                    <p>
-                        <span class="mark-text mark-text--css">
-                            grid-template-areas:</span
-                        >
-                        <br />
-                        - grid-area-name - the name of a grid area specified
-                        with grid-area <br />
-                        - . - a period signifies an empty grid cell <br />
-                        - none - no grid areas are defined <br />
-                    </p>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                column-gap | row-gap | grid-column-gap |
+                                grid-row-gap
+                            </p>
+                            <ul>
+                                <li>line size - a length value</li>
+                                <li>grid-column-gap & grid-row-gap - old</li>
+                            </ul>
+                        </li>
 
-                    <p>
-                        <span class="mark-text mark-text--css">
-                            grid-template:</span
-                        >
-                        <br />
-                        - none - sets all three properties to their initial
-                        values <br />
-                        - &lt;grid-template-rows&gt; /
-                        &lt;grid-template-columns&gt;
-                    </p>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">gap | grid-gap</p>
+                            <ul>
+                                <li>
+                                    &lt;grid-row-gap&gt; &lt;grid-column-gap&gt;
+                                    - length values
+                                </li>
+                                <li>grid-gap - old</li>
+                            </ul>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">justify-items</p>
+                            <ul>
+                                <li>
+                                    stretch - fill the whole width of the cell
+                                    (this is the default)
+                                </li>
+                                <li>
+                                    start - aligns items to be flush with the
+                                    start edge of their cell
+                                </li>
+                                <li>
+                                    end - aligns items to be flush with the end
+                                    edge of their cell
+                                </li>
+                                <li>
+                                    center - align items in the center of their
+                                    cell
+                                </li>
+                            </ul>
+                        </li>
 
-                    <p>
-                        <span class="mark-text mark-text--css">
-                            column-gap | row-gap | grid-column-gap |
-                            grid-row-gap:</span
-                        >
-                        <br />
-                        - line size - a length value <br />
-                        - grid-column-gap & grid-row-gap - old
-                    </p>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">align-items</p>
+                            <ul>
+                                <li>
+                                    stretch - fills the whole height of the cell
+                                    (this is the default)
+                                </li>
+                                <li>
+                                    start - aligns items to be flush with the
+                                    start edge of their cell
+                                </li>
+                                <li>
+                                    end - align items to be flush with the end
+                                    edge of their cell
+                                </li>
+                                <li>
+                                    center - aligns items in the center of their
+                                    cell
+                                </li>
+                                <li>
+                                    baseline - align items along text baseline.
+                                    There are modifiers to baseline - first
+                                    baseline and last baseline which will use
+                                    the baseline from the first or last line in
+                                    the case of multi line text.
+                                </li>
+                            </ul>
+                        </li>
 
-                    <p>
-                        <span class="mark-text mark-text--css">
-                            gap | grid-gap:
-                        </span>
-                        <br />
-                        - &lt;grid-row-gap&gt; &lt;grid-column-gap&gt; - length
-                        values <br />
-                        - grid-gap - old
-                    </p>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">place-items</p>
+                            <ul>
+                                <li>
+                                    &lt;align-items&gt;/&lt;justify-items&gt; -
+                                    the first value sets align-items, the second
+                                    value justify-items. If the second value is
+                                    omitted, the first value is assigned to both
+                                    properties.
+                                </li>
+                            </ul>
+                        </li>
 
-                    <p>
-                        <span class="mark-text mark-text--css">
-                            justify-items:
-                        </span>
-                        <br />
-                        - start - aligns items to be flush with the start edge
-                        of their cell <br />
-                        - end - aligns items to be flush with the end edge of
-                        their cell <br />
-                        - center - align items in the center of their cell
-                        <br />
-                        - stretch - fill the whole width of the cell (this is
-                        the default) <br />
-                    </p>
-                    <p>
-                        <span class="mark-text mark-text--css">
-                            align-items:
-                        </span>
-                        <br />
-                        - stretch - fills the whole height of the cell (this is
-                        the default) <br />
-                        - start - aligns items to be flush with the start edge
-                        of their cell <br />
-                        - end - align items to be flush with the end edge of
-                        their cell <br />
-                        - center - aligns items in the center of their cell
-                        <br />
-                        - baseline - align items along text baseline. There are
-                        modifiers to baseline - first baseline and last baseline
-                        which will use the baseline from the first or last line
-                        in the case of multi line text. <br />
-                    </p>
-                    <p>
-                        <span class="mark-text mark-text--css">
-                            place-items:
-                        </span>
-                        <br />
-                        - &lt;align-items&gt;/&lt;justify-items&gt; - the first
-                        value sets align-items, the second value justify-items.
-                        If the second value is omitted, the first value is
-                        assigned to both properties.
-                    </p>
-                    <p>
-                        <span class="mark-text mark-text--css">
-                            justify-content:
-                        </span>
-                        <br />
-                        - start - aligns the grid to be flush with the start
-                        edge of the grid container <br />
-                        - end - aligns the grid to be flush with the end edge of
-                        the grid container <br />
-                        - center - aligns the grid in the center of the grid
-                        container <br />
-                        - stretch - resizes the grid items to allow the grid to
-                        fill the full width of the grid container <br />
-                        - space-around - places an even amount of space between
-                        each grid item, with half-sized spaces on the far ends
-                        <br />
-                        - space-between - places an even amount of space between
-                        each grid item, with no space at the far ends <br />
-                        - space-evenly - places an even amount of space between
-                        each grid item, including the far ends <br />
-                    </p>
-                    <p>
-                        <span class="mark-text mark-text--css">
-                            align-content:
-                        </span>
-                        <br />
-                        - start - aligns the grid to be flush with the start
-                        edge of the grid container <br />
-                        - end - aligns the grid to be flush with the end edge of
-                        the grid container <br />
-                        - center - aligns the grid in the center of the grid
-                        container <br />
-                        - stretch - resizes the grid items to allow the grid to
-                        fill the full height of the grid container <br />
-                        - space-around - places an even amount of space between
-                        each grid item, with half-sized spaces on the far ends
-                        <br />
-                        - space-between - places an even amount of space between
-                        each grid item, with no space at the far ends <br />
-                        - space-evenly - places an even amount of space between
-                        each grid item, including the far ends <br />
-                    </p>
-                    <p>
-                        <span class="mark-text mark-text--css">
-                            place-content:
-                        </span>
-                        <br />
-                        - &lt;align-content&gt; / &lt;justify-content&gt; - the
-                        first value sets align-content, the second values
-                        justify-content. If the second value is omitted, the
-                        first value is assigned to both properties.
-                    </p>
-                    <p>
-                        <span class="mark-text mark-text--css">
-                            grid-auto-columns & grid-auto-rows:
-                        </span>
-                        <br />
-                        - track-size - can be a length, a percentage, or a
-                        fraction of the free space in the grid (using the fr
-                        unit) <br />
-                        -
-                        <a
-                            href="https://css-tricks.com/snippets/css/complete-guide-grid/#aa-grid-auto-columnsgrid-auto-rows"
-                            class="section__link section__link--css"
-                            >explain</a
-                        >
-                    </p>
-                    <p>
-                        <span class="mark-text mark-text--css">
-                            grid-auto-flow:
-                        </span>
-                        <br />
-                        - row - tells the auto-placement algorithm to fill in
-                        each row in turn, adding new rows as necessary (default)
-                        <br />
-                        - column - tells the auto-placement algorithm to fill in
-                        each column in turn, adding new columns as necessary
-                        <br />
-                        - dense - tells the auto-placement algorithm to attempt
-                        to fill in holes earlier in the grid if smaller items
-                        come up later <br />
-                    </p>
-                    <p>
-                        <span class="mark-text mark-text--css"> grid: </span>
-                        <br />
-                        - none - sets all sub-properties to their initial values
-                        <br />
-                        - &lt;grid-template&gt; - works the same as the
-                        grid-template shorthand <br />
-                        - &lt;grid-template-rows&gt; / [ auto-flow && dense? ]
-                        &lt;grid-auto-columns&gt;? - sets grid -template-rows to
-                        the specified value. If the auto-flow keyword is to the
-                        right of the slash, it sets grid-auto-flow to column. If
-                        the dense keyword is specified additionally, the
-                        auto-placement algorithm uses a "dense" packing
-                        algorithm. If grid-auto-columns is omitted, it is set to
-                        auto <br />
-                        - [ auto-flow && dense? ] &lt;grid-auto-rows&gt; /
-                        &lt;grid-auto-columns&gt; - sets grid-template-columns
-                        to the specified value. If the auto-flow keyword is to
-                        the left of the slash, it sets grid-auto-flow to row. If
-                        the dense keyword is speicifed additionally, the
-                        auto-placement algorithm uses a "dense" packing
-                        algorithm. If grid-auto-rows is omitted, it is set to
-                        auto. <br />
-                    </p>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">justify-content</p>
+                            <ul>
+                                <li>
+                                    stretch - resizes the grid items to allow
+                                    the grid to fill the full width of the grid
+                                    container
+                                </li>
+                                <li>
+                                    start - aligns the grid to be flush with the
+                                    start edge of the grid container
+                                </li>
+                                <li>
+                                    end - aligns the grid to be flush with the
+                                    end edge of the grid container
+                                </li>
+                                <li>
+                                    center - aligns the grid in the center of
+                                    the grid container
+                                </li>
+                                <li>
+                                    space-around - places an even amount of
+                                    space between each grid item, with
+                                    half-sized spaces on the far ends
+                                </li>
+                                <li>
+                                    space-between - places an even amount of
+                                    space between each grid item, with no space
+                                    at the far ends
+                                </li>
+                                <li>
+                                    space-evenly - places an even amount of
+                                    space between each grid item, including the
+                                    far ends
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">align-content</p>
+                            <ul>
+                                <li>
+                                    stretch - resizes the grid items to allow
+                                    the grid to fill the full height of the grid
+                                    container
+                                </li>
+                                <li>
+                                    start - aligns the grid to be flush with the
+                                    start edge of the grid container
+                                </li>
+                                <li>
+                                    end - aligns the grid to be flush with the
+                                    end edge of the grid container
+                                </li>
+                                <li>
+                                    center - aligns the grid in the center of
+                                    the grid container
+                                </li>
+                                <li>
+                                    space-around - places an even amount of
+                                    space between each grid item, with
+                                    half-sized spaces on the far ends
+                                </li>
+                                <li>
+                                    space-between - places an even amount of
+                                    space between each grid item, with no space
+                                    at the far ends
+                                </li>
+                                <li>
+                                    space-evenly - places an even amount of
+                                    space between each grid item, including the
+                                    far ends
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">place-content</p>
+                            <ul>
+                                <li>
+                                    &lt;align-content&gt; /
+                                    &lt;justify-content&gt; - the first value
+                                    sets align-content, the second values
+                                    justify-content. If the second value is
+                                    omitted, the first value is assigned to both
+                                    properties.
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                grid-auto-columns & grid-auto-rows
+                            </p>
+                            <ul>
+                                <li>
+                                    track-size - can be a length, a percentage,
+                                    or a fraction of the free space in the grid
+                                    (using the fr unit)
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://css-tricks.com/snippets/css/complete-guide-grid/#aa-grid-auto-columnsgrid-auto-rows"
+                                        class="section__link section__link--css"
+                                        >explain</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">grid-auto-flow</p>
+                            <ul>
+                                <li>
+                                    row - tells the auto-placement algorithm to
+                                    fill in each row in turn, adding new rows as
+                                    necessary (default)
+                                </li>
+                                <li>
+                                    column - tells the auto-placement algorithm
+                                    to fill in each column in turn, adding new
+                                    columns as necessary
+                                </li>
+                                <li>
+                                    dense - tells the auto-placement algorithm
+                                    to attempt to fill in holes earlier in the
+                                    grid if smaller items come up later
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">grid</p>
+                            <ul>
+                                <li>
+                                    none - sets all sub-properties to their
+                                    initial values
+                                </li>
+                                <li>
+                                    &lt;grid-template&gt; - works the same as
+                                    the grid-template shorthand
+                                </li>
+                                <li>
+                                    &lt;grid-template-rows&gt; / [ auto-flow &&
+                                    dense? ] &lt;grid-auto-columns&gt;? - sets
+                                    grid -template-rows to the specified value.
+                                    If the auto-flow keyword is to the right of
+                                    the slash, it sets grid-auto-flow to column.
+                                    If the dense keyword is specified
+                                    additionally, the auto-placement algorithm
+                                    uses a "dense" packing algorithm. If
+                                    grid-auto-columns is omitted, it is set to
+                                    auto
+                                </li>
+                                <li>
+                                    [ auto-flow && dense? ]
+                                    &lt;grid-auto-rows&gt; /
+                                    &lt;grid-auto-columns&gt; - sets
+                                    grid-template-columns to the specified
+                                    value. If the auto-flow keyword is to the
+                                    left of the slash, it sets grid-auto-flow to
+                                    row. If the dense keyword is speicifed
+                                    additionally, the auto-placement algorithm
+                                    uses a "dense" packing algorithm. If
+                                    grid-auto-rows is omitted, it is set to
+                                    auto.
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
                 </div>
 
                 <div class="section__part">
+                    <h3 class="title-h3 title-h3--css">
+                        Properties have no effect on a grid item:
+                    </h3>
+                    <ol class="section__list-sm section__list-sm--css">
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">float</p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                display: inline-block
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                display: table-cell
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">vertical-align</p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">column-*</p>
+                        </li>
+                    </ol>
+                </div>
+                <div class="section__part">
                     <h3 class="title-h3 title-h3--css">Grid item properties</h3>
-                    <p>
-                        float, display: inline-block, display: table-cell,
-                        vertical-align and column-* properties have no effect on
-                        a grid item.
-                    </p>
-                    <p>
-                        <span class="mark-text mark-text--css">
-                            gird-column-start | grid-column-end | grid-row-start
-                            | grid-row-end:
-                        </span>
-                        <br />
-                        - &lt;line&gt; - can be a number to refer to a numbered
-                        grid line, or a name to refer to a named grid line
-                        <br />
-                        - span &lt;number&gt; - the item will span across the
-                        provided number of grid tracks <br />
-                        - span &lt;name&gt; - the item will span across until it
-                        hits the next line with the provided name <br />
-                        - auto - indicates auto-placement, an automatic span, or
-                        a default span of one <br />
-                    </p>
-                    <p>
-                        If no grid-column-end/grid-row-end is declared, the item
-                        will span 1 track by default. Items can overlap each
-                        other. You can use z-index to control their stacking
-                        order.
-                    </p>
+                    <ol class="section__list-sm section__list-sm--css">
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                gird-column-start | grid-column-end |
+                                grid-row-start | grid-row-end
+                            </p>
 
-                    <p>
-                        <span class="mark-text mark-text--css">
-                            justify-self
-                        </span>
-                        <br />
-                        - start - aligns the grid item to be flush with the
-                        start edge of the cell <br />
-                        - end - aligns the grid item to be flush with the end
-                        edge of the cell <br />
-                        - center - aligns the grid item in the center of the
-                        cell <br />
-                        - stretch - fills the whole width of the cell (this is
-                        the default) <br />
-                    </p>
-                    <p>
-                        <span class="mark-text mark-text--css">
-                            align-self
-                        </span>
-                        <br />
-                        - start- aligns the grid item to be flush with the start
-                        edge of the cell <br />
-                        - end - aligns the grid item to be flush with the end
-                        edge of the cell <br />
-                        - center - aligns the grid item in the center of the
-                        cell <br />
-                        - stretch - fills the whole height of the cell (this is
-                        the default) <br />
-                    </p>
-                    <p>
-                        <span class="mark-text mark-text--css">
-                            place-self
-                        </span>
-                        <br />- auto - the "default" alignment for the layout
-                        mode <br />
-                        - &lt;align-self&gt; / &lt;justify-self&gt; - the first
-                        value sets align-self, the second value justify-self. If
-                        the second value is omitted, the first value is assigned
-                        to both properties <br />
-                    </p>
+                            <ul>
+                                <li>
+                                    &lt;line&gt; - can be a number to refer to a
+                                    numbered grid line, or a name to refer to a
+                                    named grid line
+                                </li>
+                                <li>
+                                    span &lt;number&gt; - the item will span
+                                    across the provided number of grid tracks
+                                </li>
+                                <li>
+                                    span &lt;name&gt; - the item will span
+                                    across until it hits the next line with the
+                                    provided name
+                                </li>
+                                <li>
+                                    auto - indicates auto-placement, an
+                                    automatic span, or a default span of one
+                                </li>
+                            </ul>
+                            <p>
+                                If no grid-column-end/grid-row-end is declared,
+                                the item will span 1 track by default. Items can
+                                overlap each other. You can use z-index to
+                                control their stacking order.
+                            </p>
+                        </li>
+
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">justify-self</p>
+
+                            <ul>
+                                <li>
+                                    stretch - fills the whole width of the cell
+                                    (this is the default)
+                                </li>
+                                <li>
+                                    start - aligns the grid item to be flush
+                                    with the start edge of the cell
+                                </li>
+                                <li>
+                                    end - aligns the grid item to be flush with
+                                    the end edge of the cell
+                                </li>
+                                <li>
+                                    center - aligns the grid item in the center
+                                    of the cell
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">align-self</p>
+
+                            <ul>
+                                <li>
+                                    stretch - fills the whole height of the cell
+                                    (this is the default)
+                                </li>
+                                <li>
+                                    start- aligns the grid item to be flush with
+                                    the start edge of the cell
+                                </li>
+                                <li>
+                                    end - aligns the grid item to be flush with
+                                    the end edge of the cell
+                                </li>
+                                <li>
+                                    center - aligns the grid item in the center
+                                    of the cell
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">place-self</p>
+
+                            <ul>
+                                <li>
+                                    auto - the "default" alignment for the
+                                    layout mode
+                                </li>
+                                <li>
+                                    &lt;align-self&gt; / &lt;justify-self&gt; -
+                                    the first value sets align-self, the second
+                                    value justify-self. If the second value is
+                                    omitted, the first value is assigned to both
+                                    properties
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
                 </div>
             </section>
         </main>

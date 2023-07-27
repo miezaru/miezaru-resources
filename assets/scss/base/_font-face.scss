@@ -1,55 +1,56 @@
 @font-face {
-    font-family: 'Poppins';
+    font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/poppins-regular.eot');
+    src: url('../fonts/notosans-regular.eot');
     src:
-        url('../fonts/poppins-regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/poppins-regular.woff2') format('woff2'),
-        url('../fonts/poppins-regular.woff') format('woff'),
-        url('../fonts/poppins-regular.ttf') format('truetype'),
-        url('../fonts/poppins-regular.svg#poppinsregular') format('svg');
+        url('../fonts/notosans-regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/notosans-regular.woff2') format('woff2'),
+        url('../fonts/notosans-regular.woff') format('woff'),
+        url('../fonts/notosans-regular.ttf') format('truetype'),
+        url('../fonts/notosans-regular.svg#noto_sansregular') format('svg');
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Poppins';
+    font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 500;
-    src: url('../fonts/poppins-medium.eot');
+    src: url('../fonts/notosans-medium.eot');
     src:
-        url('../fonts/poppins-medium.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/poppins-medium.woff2') format('woff2'),
-        url('../fonts/poppins-medium.woff') format('woff'),
-        url('../fonts/poppins-medium.ttf') format('truetype'),
-        url('../fonts/poppins-medium.svg#poppinsmedium') format('svg');
+        url('../fonts/notosans-medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/notosans-medium.woff2') format('woff2'),
+        url('../fonts/notosans-medium.woff') format('woff'),
+        url('../fonts/notosans-medium.ttf') format('truetype'),
+        url('../fonts/notosans-medium.svg#noto_sansmedium') format('svg');
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Poppins';
+    font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 600;
-    src: url('../fonts/poppins-semibold.eot');
+    src: url('../fonts/notosans-semibold.eot');
     src:
-        url('../fonts/poppins-semibold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/poppins-semibold.woff2') format('woff2'),
-        url('../fonts/poppins-semibold.woff') format('woff'),
-        url('../fonts/poppins-semibold.ttf') format('truetype'),
-        url('../fonts/poppins-semibold.svg#poppinssemibold') format('svg');
+        url('../fonts/notosans-semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/notosans-semibold.woff2') format('woff2'),
+        url('../fonts/notosans-semibold.woff') format('woff'),
+        url('../fonts/notosans-semibold.ttf') format('truetype'),
+        url('../fonts/notosans-semibold.svg#noto_sansemibold') format('svg');
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Poppins';
+    font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 700;
-    src: url('../fonts/poppins-bold.eot');
+    src: url('../fonts/noto_sansbold.eot');
     src:
-        url('../fonts/poppins-bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/poppins-bold.woff2') format('woff2'),
-        url('../fonts/poppins-bold.woff') format('woff'),
-        url('../fonts/poppins-bold.ttf') format('truetype'),
-        url('../fonts/poppins-bold.svg#poppinsbold') format('svg');
+        url('../fonts/noto_sansbold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/noto_sansbold.woff2') format('woff2'),
+        url('../fonts/noto_sansbold.woff') format('woff'),
+        url('../fonts/noto_sansbold.ttf') format('truetype'),
+        url('../fonts/noto_sansbold.svg#noto_sansbold') format('svg');
     font-display: swap;
+    unicode-range: U+0400 — U+045F;
 }

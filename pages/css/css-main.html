@@ -18,28 +18,28 @@
         <link
             as="font"
             crossorigin
-            href="../../assets/fonts/poppins-regular.woff2"
+            href="../../assets/fonts/notosans-regular.woff2"
             rel="preload"
             type="font/woff2"
         />
         <link
             as="font"
             crossorigin
-            href="../../assets/fonts/poppins-medium.woff2"
+            href="../../assets/fonts/notosans-medium.woff2"
             rel="preload"
             type="font/woff2"
         />
         <link
             as="font"
             crossorigin
-            href="../../assets/fonts/poppins-semibold.woff2"
+            href="../../assets/fonts/notosans-semibold.woff2"
             rel="preload"
             type="font/woff2"
         />
         <link
             as="font"
             crossorigin
-            href="../../assets/fonts/poppins-bold.woff2"
+            href="../../assets/fonts/notosans-bold.woff2"
             rel="preload"
             type="font/woff2"
         />
@@ -321,6 +321,8 @@ h1 {                                                 |
                         font-size - property <br />
                         20px - value <br />
                     </p>
+                </div>
+                <div class="section__part">
                     <h3 class="title-h3 title-h3--css">CSS Types</h3>
                     <p>
                         Inline CSS - inside the element with
@@ -347,109 +349,155 @@ h1 {                                                 |
                             >link it with link element</span
                         >.<br />
                     </p>
+                </div>
+                <div class="section__part">
                     <h3 class="title-h3 title-h3--css">CSS Selectors</h3>
-                    <ul class="section__list">
-                        <li class="section__list-item">
-                            <h4 class="title-h4">Descendant selector</h4>
-                            <p>footer p {}</p>
-                        </li>
-                        <li class="section__list-item">
-                            <h4 class="title-h4">Nested descendant selector</h4>
-                            <p>article footer p {}</p>
-                        </li>
-                        <li class="section__list-item">
-                            <h4 class="title-h4">AND selector</h4>
-                            <p>.page.page--current {}</p>
-                        </li>
-                        <li class="section__list-item">
-                            <h4 class="title-h4">ID selector</h4>
-                            <p>author</p>
-                            <p>Only 1 on the page</p>
-                            <p>
-                                Нельзя выбратье сли начинается с цифры, но это
-                                легко обойти используя селектор по атрибуду
-                                [id="10"]
+                    <ol class="section__list-sm section__list-sm--css">
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Descendant selector
                             </p>
+
+                            <ul>
+                                <li>footer p {}</li>
+                            </ul>
                         </li>
-                        <li class="section__list-item">
-                            <h4 class="title-h4">Class selector</h4>
-                            <p>.author</p>
-                        </li>
-                        <li class="section__list-item">
-                            <h4 class="title-h4">
-                                Прямой потомок, Direct children >
-                            </h4>
-                            <p>.parent > .child {}</p>
-                        </li>
-                        <li class="section__list-item">
-                            <h4 class="title-h4">
-                                Следующий соседний элемент, Adjacent sibling +
-                            </h4>
-                            <p>.one + .item {}</p>
-                        </li>
-                        <li class="section__list-item">
-                            <h4 class="title-h4">
-                                Все соседние элементы, General sibling ~
-                            </h4>
-                            <p>
-                                .item:nth-child(3) ~ .item {все соседние
-                                элементы .item после третьего}
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Nested descendant selector
                             </p>
+
+                            <ul>
+                                <li>article footer p {}</li>
+                            </ul>
                         </li>
-                        <li class="section__list-item">
-                            <h4 class="title-h4">:not() selector</h4>
-                            <p>.grid:not(:last-child) {}</p>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">AND selector</p>
+
+                            <ul>
+                                <li>.page.page--current {}</li>
+                            </ul>
                         </li>
-                        <li class="section__list-item">
-                            <h4 class="title-h4">
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">ID selector</p>
+
+                            <ul>
+                                <li>#author</li>
+                                <li>Only 1 on the page</li>
+                                <li>
+                                    Нельзя выбратье сли начинается с цифры, но
+                                    это легко обойти используя селектор по
+                                    атрибуду [id="10"]
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">Class selector</p>
+
+                            <ul>
+                                <li>.author</li>
+                            </ul>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Прямой потомок, Direct children
+                            </p>
+
+                            <ul>
+                                <li>.parent > .child {}</li>
+                            </ul>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Следующий соседний элемент, Adjacent sibling
+                            </p>
+
+                            <ul>
+                                <li>.one + .item {}</li>
+                            </ul>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Все соседние элементы, General sibling
+                            </p>
+
+                            <ul>
+                                <li>
+                                    .item:nth-child(3) ~ .item {все соседние
+                                    элементы .item после третьего}
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">:not() selector</p>
+
+                            <ul>
+                                <li>.grid:not(:last-child) {}</li>
+                            </ul>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
                                 :empty - обнаруживает пустые элементы, и задает
                                 им стили, а также можно скрыть при помощи
                                 display: none;
-                            </h4>
-                            <p>.item:empty {display:none}</p>
+                            </p>
+
+                            <ul>
+                                <li>.item:empty {display:none}</li>
+                            </ul>
                         </li>
-                        <li class="section__list-item">
-                            <h4 class="title-h4">
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
                                 Селектор значения атрибута по подстроке,
                                 находящейся в его начале
-                            </h4>
-                            <p>^ - карет/колпак</p>
-                            <pre class="code code--css">
-                                <code class="code-el">
-&lt;li data-type="todo-chore"&gt;Empty the bins&lt;/li&gt;
-&lt;li data-type="todo-exercise"&gt;Play football&lt;/li&gt;
+                            </p>
 
-[data-type^="todo"] {
-  /* стили */
-}
-                                </code>
-                            </pre>
+                            <ul>
+                                <li>^ - карет/колпак</li>
+                            </ul>
+                            <pre class="code code--css">
+                                    <code class="code-el">
+    &lt;li data-type="todo-chore"&gt;Empty the bins&lt;/li&gt;
+    &lt;li data-type="todo-exercise"&gt;Play football&lt;/li&gt;
+
+    [data-type^="todo"] {
+      /* стили */
+    }
+                                    </code>
+                                </pre>
                         </li>
-                        <li class="section__list-item">
-                            <h4 class="title-h4">
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
                                 Селектор значения атрибута по имеющемуся в нем
                                 экземпляру подстроки
-                            </h4>
-                            <p>* - содержит</p>
+                            </p>
+
+                            <ul>
+                                <li>* - содержит</li>
+                            </ul>
                             <pre class="code code--css">
-                                <code class="code-el">
+                                    <code class="code-el">
 &lt;p data-ingredients="scones cream jam"&gt;Will I get selected?&lt;/p&gt;
 Этот элемент можно выбрать следующим образом:
 
 [data-ingredients*="cream"] {
-    color: red;
+  color: red;
 }
-                                </code>
-                            </pre>
+                                    </code>
+                                </pre>
                         </li>
-                        <li class="section__list-item">
-                            <h4 class="title-h4">
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
                                 Селектор значения атрибута по подстроке,
                                 находящейся в его конце
-                            </h4>
-                            <p>$ - заканчивается подстрокой</p>
+                            </p>
+
+                            <ul>
+                                <li>$ - заканчивается подстрокой</li>
+                            </ul>
+
                             <pre class="code code--css">
-                                <code class="code-el">
+                                    <code class="code-el">
 &lt;p data-ingredients="scones cream jam"&gt;Will I get selected?&lt;/p&gt;
 &lt;p data-ingredients="toast jam butter"&gt;Will I get selected?&lt;/p&gt;
 &lt;p data-ingredients="jam toast butter"&gt;Will I get selected?&lt;/p&gt;
@@ -457,13 +505,16 @@ h1 {                                                 |
 [data-ingredients$="jam"] {
     color: red;
 }
-                                </code>
-                            </pre>
+                                    </code>
+                                </pre>
                         </li>
-                        <li class="section__list-item">
-                            <h4 class="title-h4">Attribute selector</h4>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Attribute selector
+                            </p>
+
                             <pre class="code code--css">
-                                <code class="code-el">
+                                    <code class="code-el">
 img:not([alt]),
 img[alt=""] {
     border: 3px solid red;
@@ -479,249 +530,474 @@ a[class|="link"] {
 }
 
 [class^='col-']
-                                </code>
-                            </pre>
+                                    </code>
+                                </pre>
                         </li>
-                        <li class="section__list-item">
-                            <h4 class="title-h4"></h4>
-                            <p></p>
-                        </li>
-                    </ul>
+                    </ol>
+                </div>
+                <div class="section__part">
                     <h3 class="title-h3 title-h3--css">CSS Units</h3>
-                    <ul class="section__list">
-                        <li class="section__list-item">
-                            <h4 class="title-h4">%</h4>
-                            <p></p>
+                    <ol class="section__list-sm section__list-sm--css">
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">%</p>
                         </li>
-                        <li class="section__list-item">
-                            <h4 class="title-h4">rem</h4>
-                            <p></p>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">rem</p>
                         </li>
-                        <li class="section__list-item">
-                            <h4 class="title-h4">em</h4>
-                            <p></p>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">em</p>
                         </li>
-                        <li class="section__list-item">
-                            <h4 class="title-h4">vw</h4>
-                            <p></p>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">vw</p>
                         </li>
-                        <li class="section__list-item">
-                            <h4 class="title-h4">vh</h4>
-                            <p></p>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">vh</p>
                         </li>
-                        <li class="section__list-item">
-                            <h4 class="title-h4">vmax</h4>
-                            <p></p>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">vmax</p>
                         </li>
-                        <li class="section__list-item">
-                            <h4 class="title-h4">wmax</h4>
-                            <p></p>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">wmax</p>
                         </li>
-                    </ul>
+                    </ol>
+                </div>
+                <div class="section__part">
                     <h3 class="title-h3 title-h3--css">CSS Pseudo-classes</h3>
-                    <ul class="section__list">
-                        <li class="section__list-item">
-                            <h4 class="title-h4">li:first-child</h4>
-                            <p>
-                                Работает только если елемент буквально первый
-                                потомок. Лучший вариант использования, когда все
-                                елементы (потомки) одинаковые. Допустив как в
-                                списках - li.
+                    <ol class="section__list-sm section__list-sm--css">
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">li:first-child</p>
+                            <ul>
+                                <li>
+                                    Работает только если елемент буквально
+                                    первый потомок. Лучший вариант
+                                    использования, когда все елементы (потомки)
+                                    одинаковые. Допустив как в списках - li.
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">:only-child</p>
+                            <ul>
+                                <li>Один и неповторимый потомок</li>
+                            </ul>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">:only-of-type</p>
+                            <ul>
+                                <li>Один и неповторимый потом по элементу</li>
+                            </ul>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                li:nth-child(n/odd/even)
                             </p>
-                        </li>
-                        <li class="section__list-item">
-                            <h4 class="title-h4">:only-child</h4>
-                            <p>Один и неповторимый потомок</p>
-                        </li>
-                        <li class="section__list-item">
-                            <h4 class="title-h4">:only-of-type</h4>
-                            <p>Один и неповторимый потом по элементу</p>
-                        </li>
-                        <li class="section__list-item">
-                            <h4 class="title-h4">li:nth-child(n/odd/even)</h4>
                             <p>
                                 n может использоваться следующими двумя
                                 способами:
                             </p>
-                            <p>
-                                &mdash; в виде целого числа, например
-                                :nth-child(2), что приведет к выбору второго
-                                элемента
-                            </p>
-                            <p>
-                                &mdash; в виде числового выражения, например
-                                :nth-child(3n+1), благодаря чему выбор начнется
-                                с первого элемента и продолжится выбором каждого
-                                третьего элемента.
-                            </p>
+                            <ul>
+                                <li>
+                                    в виде целого числа, например :nth-child(2),
+                                    что приведет к выбору второго элемента
+                                </li>
+                                <li>
+                                    в виде числового выражения, например
+                                    :nth-child(3n+1), благодаря чему выбор
+                                    начнется с первого элемента и продолжится
+                                    выбором каждого третьего элемента.
+                                </li>
+                            </ul>
                         </li>
-                        <li class="section__list-item">
-                            <h4 class="title-h4">
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
                                 nth-last-child(n), :nth-last-child(-n+3)
-                            </h4>
-                            <p>
-                                Выбирает третий элемент с конца, а после этого
-                                каждый элемент после него
                             </p>
+                            <ul>
+                                <li>
+                                    Выбирает третий элемент с конца, а после
+                                    этого каждый элемент после него
+                                </li>
+                            </ul>
                         </li>
-                        <li class="section__list-item">
-                            <h4 class="title-h4">nth-of-type(n)</h4>
-                            <p>
-                                :nth-of-type(n + 4) - начиная с четвертого,
-                                каждый следующий
-                            </p>
-                            <p>
-                                :nth-of-type(-n + 3) - начиная с третьего каждый
-                                предыдущий
-                            </p>
-                        </li>
-                        <li class="section__list-item">
-                            <h4 class="title-h4">nth-last-of-type(n)</h4>
-                        </li>
-                    </ul>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">nth-of-type(n)</p>
 
+                            <ul>
+                                <li>
+                                    :nth-of-type(n + 4) - начиная с четвертого,
+                                    каждый следующий
+                                </li>
+                                <li>
+                                    :nth-of-type(-n + 3) - начиная с третьего
+                                    каждый предыдущий
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                nth-last-of-type(n)
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+                <div class="section__part">
                     <h3 class="title-h3 title-h3--css">Styling links - LVHA</h3>
-                    <p>
-                        :link - добавляет стили только ссылкам у которых есть
-                        href <br />
-                        :visited - посещенные ссылки<br />
-                        :hover - наводим мышку поверх ссылки<br />
-                        :active - когда кликаем на ссылку<br />
-                    </p>
-
+                    <ol class="section__list-sm section__list-sm--css">
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                :link - добавляет стили только ссылкам у которых
+                                есть href
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                :visited - посещенные ссылки
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                :hover - наводим мышку поверх ссылки
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                :active - когда кликаем на ссылку
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+                <div class="section__part">
                     <h3 class="title-h3 title-h3--css">Selectors priority</h3>
-                    <p>
-                        1. [!important] Declaration marked !important <br />
-                        2. [style="color: red;"] inline style (style attribute
-                        in HTML) <br />
-                        3. [#] ID <br />
-                        4. [.] classes and [:] pseudo-classes <br />
-                        5. [p, div, li, etc.] element selector <br />
-                        6. [*] Universal selector <br />
-                    </p>
+                    <ol class="section__list-sm section__list-sm--css">
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Declaration marked [!important]
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Inline style (style attribute in HTML)
+                                style="color: red;"]
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">Id [#]</p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Classes and [:] pseudo-classes [.]
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Element selector [p, div, li, etc.]
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Universal selector [*]
+                            </p>
+                        </li>
+                    </ol>
+                </div>
 
+                <div class="section__part">
                     <h3 class="title-h3 title-h3--css">Box model</h3>
                     <ul class="section__list">
                         <li class="section__list-item">
                             <h4 class="title-h4">
                                 Content-box - default behavior
                             </h4>
-                            <p>
-                                - Final element width: left-border +
-                                left-padding + width + right padding + right
-                                border <br />
-                                - Final element height: top-border + top-padding
-                                + height + bottom-padding + bottom-border <br />
-                                - With CSS: box-sizing: content-box; <br />
-                            </p>
+                            <ol class="section__list-sm section__list-sm--css">
+                                <li class="section__list-sm-item">
+                                    <p class="section__list-sm-text">
+                                        Final element width: left-border +
+                                        left-padding + width + right padding +
+                                        right border
+                                    </p>
+                                </li>
+                                <li class="section__list-sm-item">
+                                    <p class="section__list-sm-text">
+                                        Final element height: top-border +
+                                        top-padding + height + bottom-padding +
+                                        bottom-border
+                                    </p>
+                                </li>
+                                <li class="section__list-sm-item">
+                                    <p class="section__list-sm-text">
+                                        With CSS: box-sizing: content-box;
+                                    </p>
+                                </li>
+                            </ol>
                         </li>
                         <li class="section__list-item">
                             <h4 class="title-h4">Border-box</h4>
-                            <p>
-                                - Final element width: width <br />
-                                - Final element height: height <br />
-                                - With CSS: box-sizing: border-box; <br />
-                            </p>
+                            <ol class="section__list-sm section__list-sm--css">
+                                <li class="section__list-sm-item">
+                                    <p class="section__list-sm-text">
+                                        Final element width: width
+                                    </p>
+                                </li>
+                                <li class="section__list-sm-item">
+                                    <p class="section__list-sm-text">
+                                        Final element height: height
+                                    </p>
+                                </li>
+                                <li class="section__list-sm-item">
+                                    <p class="section__list-sm-text">
+                                        With CSS: box-sizing: border-box;
+                                    </p>
+                                </li>
+                            </ol>
                         </li>
                     </ul>
-
+                </div>
+                <div class="section__part">
                     <h3 class="title-h3 title-h3--css">Types of boxes</h3>
                     <ul class="section__list">
                         <li class="section__list-item">
                             <h4 class="title-h4">Block-level elements</h4>
-                            <p>
-                                - Elements are formatted visually as blocks
-                                <br />
-                                - Elements occupy 100% of parent element`s
-                                width, no matter the content<br />
-                                - Elements are stacked vertically by default,
-                                one after another<br />
-                                - The box-model applies as showed earlier<br />
-                                - Default elements: body, main, header, footer,
-                                section, nav, aside, div, h1-h6, p, ul, ol, li,
-                                etc.<br />
-                                - With CSS: display: block;<br />
-                            </p>
+                            <ol class="section__list-sm section__list-sm--css">
+                                <li class="section__list-sm-item">
+                                    <p class="section__list-sm-text">
+                                        Elements are formatted visually as
+                                        blocks
+                                    </p>
+                                </li>
+                                <li class="section__list-sm-item">
+                                    <p class="section__list-sm-text">
+                                        Elements occupy 100% of parent element`s
+                                        width, no matter the content
+                                    </p>
+                                </li>
+                                <li class="section__list-sm-item">
+                                    <p class="section__list-sm-text">
+                                        Elements are stacked vertically by
+                                        default, one after another
+                                    </p>
+                                </li>
+                                <li class="section__list-sm-item">
+                                    <p class="section__list-sm-text">
+                                        The box-model applies as showed earlier
+                                    </p>
+                                </li>
+                                <li class="section__list-sm-item">
+                                    <p class="section__list-sm-text">
+                                        Default elements: body, main, header,
+                                        footer, section, nav, aside, div, h1-h6,
+                                        p, ul, ol, li, etc.
+                                    </p>
+                                </li>
+                                <li class="section__list-sm-item">
+                                    <p class="section__list-sm-text">
+                                        With CSS: display: block;
+                                    </p>
+                                </li>
+                            </ol>
                         </li>
                         <li class="section__list-item">
                             <h4 class="title-h4">Inline elements</h4>
-                            <p>
-                                - Occupies only the space necessary for its
-                                content<br />
-                                - Causes no line-breaks after or before the
-                                element<br />
-                                - Box model applies in a different way: height
-                                and width do not apply<br />
-                                - Paddings and margins are applied only
-                                horizontally (left and right)<br />
-                                - Width and Height are not applies. Paddings and
-                                margins only horizontally<br />
-                                - With padding fill area inside elements
-                                expanded but not content around the box<br />
-                                - Default elements: a, img, strong, em, button,
-                                etc<br />
-                                - With CSS: display: inline;<br />
-                            </p>
+                            <ol class="section__list-sm section__list-sm--css">
+                                <li class="section__list-sm-item">
+                                    <p class="section__list-sm-text">
+                                        Occupies only the space necessary for
+                                        its content
+                                    </p>
+                                </li>
+                                <li class="section__list-sm-item">
+                                    <p class="section__list-sm-text">
+                                        Causes no line-breaks after or before
+                                        the element
+                                    </p>
+                                </li>
+                                <li class="section__list-sm-item">
+                                    <p class="section__list-sm-text">
+                                        Box model applies in a different way:
+                                        height and width do not apply
+                                    </p>
+                                </li>
+                                <li class="section__list-sm-item">
+                                    <p class="section__list-sm-text">
+                                        Paddings and margins are applied only
+                                        horizontally (left and right)
+                                    </p>
+                                </li>
+                                <li class="section__list-sm-item">
+                                    <p class="section__list-sm-text">
+                                        Width and Height are not applies.
+                                        Paddings and margins only horizontally
+                                    </p>
+                                </li>
+                                <li class="section__list-sm-item">
+                                    <p class="section__list-sm-text">
+                                        With padding fill area inside elements
+                                        expanded but not content around the box
+                                    </p>
+                                </li>
+                                <li class="section__list-sm-item">
+                                    <p class="section__list-sm-text">
+                                        Default elements: a, img, strong, em,
+                                        button, etc
+                                    </p>
+                                </li>
+                                <li class="section__list-sm-item">
+                                    <p class="section__list-sm-text">
+                                        With CSS: display: inline;
+                                    </p>
+                                </li>
+                            </ol>
                         </li>
                         <li class="section__list-item">
                             <h4 class="title-h4">Inline-block elements</h4>
-                            <p>
-                                - Images has inline-block behavior<br />
-                                - Look like inline from the outside, behaves
-                                like block-level on inside<br />
-                                - Occupies only content`s space | inline<br />
-                                - Causes no line-breaks | inline<br />
-                                - Box-model applies how it does in a block level
-                                boxes | block<br />
-                                - Default elements: img (it`s inline element,
-                                but doing like inline-block)<br />
-                                - With CSS: display: inline-block;<br />
-                                - Nice to use it with ::after and ::before
-                                pseudo-elements<br />
-                            </p>
+                            <ol class="section__list-sm section__list-sm--css">
+                                <li class="section__list-sm-item">
+                                    <p class="section__list-sm-text">
+                                        Images has inline-block behavior
+                                    </p>
+                                </li>
+                                <li class="section__list-sm-item">
+                                    <p class="section__list-sm-text">
+                                        Look like inline from the outside,
+                                        behaves like block-level on inside
+                                    </p>
+                                </li>
+                                <li class="section__list-sm-item">
+                                    <p class="section__list-sm-text">
+                                        Occupies only content`s space | inline
+                                    </p>
+                                </li>
+                                <li class="section__list-sm-item">
+                                    <p class="section__list-sm-text">
+                                        Causes no line-breaks | inline
+                                    </p>
+                                </li>
+                                <li class="section__list-sm-item">
+                                    <p class="section__list-sm-text">
+                                        Box-model applies how it does in a block
+                                        level boxes | block
+                                    </p>
+                                </li>
+                                <li class="section__list-sm-item">
+                                    <p class="section__list-sm-text">
+                                        Default elements: img (it`s inline
+                                        element, but doing like inline-block)
+                                    </p>
+                                </li>
+                                <li class="section__list-sm-item">
+                                    <p class="section__list-sm-text">
+                                        With CSS: display: inline-block;
+                                    </p>
+                                </li>
+                                <li class="section__list-sm-item">
+                                    <p class="section__list-sm-text">
+                                        Nice to use it with ::after and ::before
+                                        pseudo-elements
+                                    </p>
+                                </li>
+                            </ol>
                         </li>
                     </ul>
+                </div>
+                <div class="section__part">
                     <h3 class="title-h3 title-h3--css">Elements flow</h3>
                     <ul class="section__list">
                         <li class="section__list-item">
                             <h4 class="title-h4">Normal flow</h4>
-                            <p>
-                                - Default positioning: position: relative;
-                                <br />
-                                - Element is "in flow" <br />
-                                - Elements are simply laid out according to
-                                their order in the HTML code <br />
-                            </p>
+                            <ol class="section__list-sm section__list-sm--css">
+                                <li class="section__list-sm-item">
+                                    <p class="section__list-sm-text">
+                                        Default positioning: position: relative;
+                                    </p>
+                                </li>
+                                <li class="section__list-sm-item">
+                                    <p class="section__list-sm-text">
+                                        Element is "in flow"
+                                    </p>
+                                </li>
+                                <li class="section__list-sm-item">
+                                    <p class="section__list-sm-text">
+                                        Elements are simply laid out according
+                                        to their order in the HTML code
+                                    </p>
+                                </li>
+                            </ol>
                         </li>
                         <li class="section__list-item">
                             <h4 class="title-h4">Absolute Positioning</h4>
-                            <p>
-                                - Absolute positioning: position: absolute;<br />
-                                - Element is removed from the normal flow: "out
-                                of flow"<br />
-                                - No impact on surrounding elements, might
-                                overlap them <br />
-                                - We use top, bottom, left or right to offset
-                                the element from its relatively positioned
-                                container <br />
-                                - By default relation to viewport <br />
-                            </p>
+                            <ol class="section__list-sm section__list-sm--css">
+                                <li class="section__list-sm-item">
+                                    <p class="section__list-sm-text">
+                                        Absolute positioning: position:
+                                        absolute;
+                                    </p>
+                                </li>
+                                <li class="section__list-sm-item">
+                                    <p class="section__list-sm-text">
+                                        Element is removed from the normal flow:
+                                        "out of flow"
+                                    </p>
+                                </li>
+                                <li class="section__list-sm-item">
+                                    <p class="section__list-sm-text">
+                                        No impact on surrounding elements, might
+                                        overlap them
+                                    </p>
+                                </li>
+                                <li class="section__list-sm-item">
+                                    <p class="section__list-sm-text">
+                                        We use top, bottom, left or right to
+                                        offset the element from its relatively
+                                        positioned container
+                                    </p>
+                                </li>
+                                <li class="section__list-sm-item">
+                                    <p class="section__list-sm-text">
+                                        By default relation to viewport
+                                    </p>
+                                </li>
+                            </ol>
                         </li>
                     </ul>
+                </div>
+                <div class="section__part">
                     <h3 class="title-h3 title-h3--css">Pseudo-element</h3>
-                    <p>
-                        - Лучше использовать свойсво css display со значением
-                        inline-block для задавания отступов, ибо по стандарту
-                        это инлайн элемент. <br />
-                        - Позиционировать с помощью position:absolute, top, etc.
-                        <br />
-                        - With CSS: p::after, p::before, p::first-letter,
-                        p::first-line, ::selection, ::cue, ::marker <br />
-                        - p::after - last child element of p, need content=""
-                        property <br />
-                        - p::before - first child element of p, need content=""
-                        property <br />
-                    </p>
+                    <ol
+                        class="section__list-sm section__list-sm--css"
+                        role="list"
+                    >
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Лучше использовать свойсво css display со
+                                значением inline-block для задавания отступов,
+                                ибо по стандарту это инлайн элемент.
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Позиционировать с помощью position:absolute,
+                                top, etc.
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                With CSS: p::after, p::before, p::first-letter,
+                                p::first-line, ::selection, ::cue, ::marker по
+                                стандарту это инлайн элемент.
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                p::after - last child element of p, need
+                                content="" property
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                p::before - first child element of p, need
+                                content="" property
+                            </p>
+                        </li>
+                    </ol>
                 </div>
             </section>
         </main>
