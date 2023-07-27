@@ -74,7 +74,7 @@ a {
 
 p {
   max-inline-size: 66ch;
-  font-size: clamp(1.2rem, 0.75rem + 1.5vw, 2rem);
+  font-size: clamp(1.2rem, 0.75rem + 1.5vw, 1.8rem);
   font-weight: 500;
   line-height: 1.7;
 }
@@ -545,6 +545,10 @@ main {
   padding: 1rem 2rem;
   margin-bottom: 1.2rem;
   font-size: 2rem;
+  word-wrap: wrap;
+  -webkit-transform: translateX(-2rem);
+      -ms-transform: translateX(-2rem);
+          transform: translateX(-2rem);
 }
 
 .title-h4 {

@@ -1,0 +1,818 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Artem Usatyi, miezaruexpr@gmail.com" />
+        <meta
+            name="description"
+            content="Artem 'Miezaru' Usatyi resources page. This website contains a tons of useful information of the web development and more."
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="msapplication-TileColor" content="#f8f7ff" />
+        <meta
+            name="msapplication-TileImage"
+            content="../../assets/img/icons/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#f8f7ff" />
+        <link
+            as="font"
+            crossorigin
+            href="../../assets/fonts/poppins-regular.woff2"
+            rel="preload"
+            type="font/woff2"
+        />
+        <link
+            as="font"
+            crossorigin
+            href="../../assets/fonts/poppins-medium.woff2"
+            rel="preload"
+            type="font/woff2"
+        />
+        <link
+            as="font"
+            crossorigin
+            href="../../assets/fonts/poppins-semibold.woff2"
+            rel="preload"
+            type="font/woff2"
+        />
+        <link
+            as="font"
+            crossorigin
+            href="../../assets/fonts/poppins-bold.woff2"
+            rel="preload"
+            type="font/woff2"
+        />
+        <link
+            rel="canonical"
+            href="https://miezaru-resources.netlify.app/pages/html/forms.html"
+        />
+        <title>Miezaru App | HTML Forms</title>
+
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="../../assets/img/icons/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="../../assets/img/icons/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="../../assets/img/icons/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="../../assets/img/icons/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="../../assets/img/icons/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="../../assets/img/icons/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="../../assets/img/icons/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="../../assets/img/icons/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="../../assets/img/icons/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="../../assets/img/icons/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="../../assets/img/icons/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="../../assets/img/icons/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="../../assets/img/icons/favicon-16x16.png"
+        />
+        <link rel="manifest" href="../../assets/img/icons/manifest.json" />
+
+        <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="../../assets/img/icons/favicon.ico"
+        />
+        <link rel="stylesheet" href="../../assets/css/html-page.css" />
+    </head>
+
+    <body class="grid">
+        <header class="header">
+            <a
+                href="https://miezaru-resources.netlify.app/"
+                class="logo u-margin-right-auto"
+                >mic`</a
+            >
+
+            <a
+                href="https://github.com/miezaru"
+                class="header__icon-box"
+                rel="noopener external"
+                aria-label="Miezaru github"
+            >
+                <svg class="header__icon">
+                    <use
+                        href="../../assets/svg/symbol-defs.svg#icon-github"
+                    ></use>
+                </svg>
+            </a>
+            <a
+                href="https://gist.github.com/miezaru"
+                class="header__icon-box"
+                rel="noopener external"
+                aria-label="Miezaru gist"
+            >
+                <svg class="header__icon">
+                    <use
+                        href="../../assets/svg/symbol-defs.svg#icon-gist"
+                    ></use>
+                </svg>
+            </a>
+            <a
+                href="https://soundcloud.com/miezaru"
+                class="header__icon-box"
+                rel="noopener external"
+                aria-label="Miezaru soundcloud"
+            >
+                <svg class="header__icon">
+                    <use
+                        href="../../assets/svg/symbol-defs.svg#icon-soundcloud"
+                    ></use>
+                </svg>
+            </a>
+            <a
+                href="https://www.pinterest.com/miezaruexpr/"
+                class="header__icon-box"
+                rel="noopener external"
+                aria-label="Miezaru pinterest"
+            >
+                <svg class="header__icon">
+                    <use
+                        href="../../assets/svg/symbol-defs.svg#icon-pinterest"
+                    ></use>
+                </svg>
+            </a>
+            <a
+                href="https://web.telegram.org/"
+                class="header__icon-box"
+                rel="noopener external"
+                aria-label="Telegram"
+            >
+                <svg class="header__icon">
+                    <use
+                        href="../../assets/svg/symbol-defs.svg#icon-telegram"
+                    ></use>
+                </svg>
+            </a>
+            <a
+                href="https://www.twitch.tv/"
+                class="header__icon-box"
+                rel="noopener external"
+                aria-label="Twitch"
+            >
+                <svg class="header__icon">
+                    <use
+                        href="../../assets/svg/symbol-defs.svg#icon-twitch"
+                    ></use>
+                </svg>
+            </a>
+            <a
+                href="https://www.youtube.com/"
+                class="header__icon-box"
+                rel="noopener external"
+                aria-label="Miezaru youtube"
+            >
+                <svg class="header__icon">
+                    <use
+                        href="../../assets/svg/symbol-defs.svg#icon-youtube"
+                    ></use>
+                </svg>
+            </a>
+            <a
+                href="https://music.youtube.com/"
+                class="header__icon-box"
+                rel="noopener external"
+                aria-label="Miezaru youtube music"
+            >
+                <svg class="header__icon">
+                    <use
+                        href="../../assets/svg/symbol-defs.svg#icon-youtube-music"
+                    ></use>
+                </svg>
+            </a>
+            <a
+                href="https://www.facebook.com/miezaruexpr"
+                class="header__icon-box"
+                rel="noopener external"
+                aria-label="Miezaru facebook"
+            >
+                <svg class="header__icon">
+                    <use
+                        href="../../assets/svg/symbol-defs.svg#icon-facebook"
+                    ></use>
+                </svg>
+            </a>
+            <a
+                href="https://twitter.com/miezaruexpr"
+                class="header__icon-box"
+                rel="noopener external"
+                aria-label="Miezaru twitter"
+            >
+                <svg class="header__icon">
+                    <use
+                        href="../../assets/svg/symbol-defs.svg#icon-twitter"
+                    ></use>
+                </svg>
+            </a>
+            <a
+                href="https://store.steampowered.com/"
+                class="header__icon-box"
+                rel="noopener external"
+                aria-label="Miezaru steam"
+            >
+                <svg class="header__icon">
+                    <use
+                        href="../../assets/svg/symbol-defs.svg#icon-steam"
+                    ></use>
+                </svg>
+            </a>
+        </header>
+        <main class="grid-inner">
+            <header class="main-header">
+                <h1 class="title-h1">HTML: Forms</h1>
+            </header>
+            <section class="section" aria-labelledby="section-links-title">
+                <header class="section-header">
+                    <h2 class="title-h2" id="section-links-title">Links</h2>
+                </header>
+                <div class="section__part">
+                    <h3 class="title-h3">Learn resources</h3>
+                    <div class="resources">
+                        <a
+                            href="https://developer.mozilla.org/docs/Web/HTML/Element/input#input_types"
+                            class="resources__link resources__link--html"
+                            rel="noopener external"
+                            >Input types
+                            <svg class="resources__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-external"
+                                ></use></svg
+                        ></a>
+                        <a
+                            href="https://web.dev/learn/forms/"
+                            class="resources__link resources__link--html"
+                            rel="noopener external"
+                            >Webdev Forms
+                            <svg class="resources__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-external"
+                                ></use></svg
+                        ></a>
+                        <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form"
+                            class="resources__link resources__link--html"
+                            rel="noopener external"
+                            >MDN Forms
+                            <svg class="resources__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-external"
+                                ></use></svg
+                        ></a>
+                        <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete#browser_compatibility"
+                            class="resources__link resources__link--html"
+                            rel="noopener external"
+                            >MDN Autocomplete
+                            <svg class="resources__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-external"
+                                ></use></svg
+                        ></a>
+                        <a
+                            href="https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html"
+                            class="resources__link resources__link--html"
+                            rel="noopener external"
+                            >Validate data before storing and sharing
+                            <svg class="resources__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-external"
+                                ></use></svg
+                        ></a>
+                        <a
+                            href="https://developer.mozilla.org/docs/Web/API/Constraint_validation"
+                            class="resources__link resources__link--html"
+                            rel="noopener external"
+                            >JavaScript validation API
+                            <svg class="resources__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-external"
+                                ></use></svg
+                        ></a>
+                        <a
+                            href="https://www.deque.com/blog/anatomy-of-accessible-forms-required-form-fields/"
+                            class="resources__link resources__link--html"
+                            rel="noopener external"
+                            >Anatomy of accesible forms
+                            <svg class="resources__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-external"
+                                ></use></svg
+                        ></a>
+                        <a
+                            href="https://web.dev/sign-up-form-best-practices/#checklist"
+                            class="resources__link resources__link--html"
+                            rel="noopener external"
+                            >Sign In best practices
+                            <svg class="resources__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-external"
+                                ></use></svg
+                        ></a>
+                        <a
+                            href="https://web.dev/learn/forms/autofill/"
+                            class="resources__link resources__link--html"
+                            rel="noopener external"
+                            >Webdev autofill
+                            <svg class="resources__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-external"
+                                ></use></svg
+                        ></a>
+                    </div>
+                </div>
+                <div class="section__part">
+                    <h3 class="title-h3">Testing</h3>
+                    <div class="resources">
+                        <a
+                            href="https://pagespeed.web.dev/"
+                            class="resources__link resources__link--html"
+                            rel="noopener external"
+                            >PageSpeed Insights (PSI)
+                            <svg class="resources__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-external"
+                                ></use></svg
+                        ></a>
+                        <a
+                            href="https://developer.chrome.com/docs/lighthouse/overview/"
+                            class="resources__link resources__link--html"
+                            rel="noopener external"
+                            >Lighthouse
+                            <svg class="resources__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-external"
+                                ></use></svg
+                        ></a>
+                        <a
+                            href="https://chrome.google.com/webstore/detail/form-troubleshooter/lpjhcgjbicfdoijennopbjooigfipfjh"
+                            class="resources__link resources__link--html"
+                            rel="noopener external"
+                            >Troubleshoot extension
+                            <svg class="resources__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-external"
+                                ></use></svg
+                        ></a>
+                        <a
+                            href="https://wave.webaim.org/"
+                            class="resources__link resources__link--html"
+                            rel="noopener external"
+                            >Wave website tests
+                            <svg class="resources__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-external"
+                                ></use></svg
+                        ></a>
+                        <a
+                            href="https://www.deque.com/axe/"
+                            class="resources__link resources__link--html"
+                            rel="noopener external"
+                            >Axe website tests
+                            <svg class="resources__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-external"
+                                ></use></svg
+                        ></a>
+                    </div>
+                    <div class="section__part">
+                        <h3 class="title-h3">JavaScript</h3>
+                        <div class="resources">
+                            <a
+                                href="https://developer.mozilla.org/docs/Web/API/HTMLObjectElement/setCustomValidity"
+                                class="resources__link resources__link--html"
+                                rel="noopener external"
+                                >setCustomValidity()
+                                <svg class="resources__icon">
+                                    <use
+                                        href="../../assets/svg/symbol-defs.svg#icon-external"
+                                    ></use></svg
+                            ></a>
+                            <a
+                                href="https://codepen.io/web-dot-dev/pen/qBmgPrB"
+                                class="resources__link resources__link--html"
+                                rel="noopener external"
+                                >Codepen with onblur
+                                <svg class="resources__icon">
+                                    <use
+                                        href="../../assets/svg/symbol-defs.svg#icon-external"
+                                    ></use></svg
+                            ></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section" aria-labelledby="section-about-title">
+                <header class="section-header">
+                    <h2 class="title-h2" id="section-about-title">About</h2>
+                </header>
+                <div class="section__part">
+                    <h3 class="title-h3">Form</h3>
+                    <p>
+                        GET - URL <br />
+                        POST - data is included in the
+                        <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST#example"
+                            class="section__link section__link--html"
+                            >body of the request</a
+                        >.
+                    </p>
+                    <p>
+                        Based on the element name and the type attribute,
+                        browsers show different user interfaces, use different
+                        validation rules, and provide many other features. Using
+                        the appropriate form control helps you build better
+                        forms.
+                    </p>
+                    <pre class="code code--html">
+                        <code class="code__el">
+&lt;label for="color"&gt;What is your favorite color?&lt;/label&gt;
+&lt;input type="text" id="color" name="color"&gt;
+                        </code>
+                    </pre>
+                    <p>
+                        The
+                        <span class="mark-text mark-text--html">for</span>
+                        attribute on the label element matches the
+                        <span class="mark-text mark-text--html">id</span>
+                        attribute on the input.
+                    </p>
+                </div>
+                <div class="section__part">
+                    <h3 class="title-h3">Capturing user input</h3>
+                    <p>
+                        There are different types of form controls, all with
+                        useful built-in features that work across different
+                        browsers and platforms.
+                    </p>
+                    <p>
+                        The default value for type is text. This means that if
+                        you simply want a text &ltinput /&gt;, you can leave out
+                        the type attribute.
+                    </p>
+                    <pre class="code code--html">
+                        <code class="code__el">
+&lt;input /&gt;
+<input tabindex="-1"/>
+                        </code>
+                    </pre>
+
+                    <p>Multiple lines of text</p>
+                    <pre class="code code--html">
+                        <code class="code__el">
+&lt;label for="comment"&gt;Comment&lt;/label&gt;
+&lt;textarea id="comment" name="comment"&gt;&lt;/textarea&gt;
+                        </code>
+                    </pre>
+
+                    <p>list of options</p>
+                    <pre class="code code--html">
+                        <code class="code__el">
+&lt;label for="color"&gt;Color&lt;/label&gt;
+&lt;select id="color" name="color"&gt;
+    &lt;option value="orange"&gt;Orange&lt;/option&gt;
+    &lt;option value="pink"&gt;Pink&lt;/option&gt;
+&lt;/select&gt;
+                        </code>
+                    </pre>
+
+                    <p>Grouping form controls</p>
+                    <pre class="code code--html">
+                        <code class="code__el">
+&lt;fieldset&gt;
+  &lt;legend&gt;What is your favorite web technology&lt;/legend&gt;
+
+  &lt;label for="html"&gt;HTML&lt;/label&gt;
+  &lt;input type="radio" name="webfeature" value="html" id="html"&gt;
+
+  &lt;label for="css"&gt;CSS&lt;/label&gt;
+  &lt;input type="radio" name="webfeature" value="css" id="css"&gt;
+&lt;/fieldset&gt;
+                        </code>
+                    </pre>
+
+                    <p>Submitting a form</p>
+                    <pre class="code code--html">
+                        <code class="code__el">
+&lt;button&gt;Submit&lt;/button&gt;
+
+&lt;input type="submit" value="Submit"&gt;
+                        </code>
+                    </pre>
+                    <p>
+                        Every
+                        <span class="mark-text mark-text--html"
+                            >&lt;button&gt;</span
+                        >
+                        element inside a form works as a Submit button by
+                        default. To disable the default Submit behavior, you can
+                        add
+                        <span class="mark-text mark-text--html"
+                            >type="button"</span
+                        >
+                        to the
+                        <span class="mark-text mark-text--html"
+                            >&lt;button&gt;</span
+                        >.
+                    </p>
+                </div>
+
+                <div class="section__part">
+                    <h3 class="title-h3">
+                        Help users avoid re-entering data in forms and help
+                        browsers with autofill
+                    </h3>
+                    <p>
+                        Make it more convenient for users to fill out forms with
+                        <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete#browser_compatibility"
+                            class="section__link section__link--html"
+                            >HTML Autocomplete</a
+                        >.
+                    </p>
+                    <p>
+                        Based on this information, browsers can offer the option
+                        to autofill a field with previously entered data of the
+                        same type. Browsers can even offer to autofill an entire
+                        form.
+                    </p>
+                    <p>Use sensible attribute values</p>
+                    <p>
+                        Use
+                        <span class="mark-text mark-text--html">email</span> as
+                        a value for the
+                        <span class="mark-text mark-text--html">name</span>,
+                        <span class="mark-text mark-text--html">id</span>, and
+                        <span class="mark-text mark-text--html">type</span>
+                        attribute. Three hints for the browser that this is an
+                        email field.
+                    </p>
+
+                    <pre class="code code--html">
+                        <code class="code__el">
+&lt;label for="email"&gt;Email&lt;/label&gt;
+&lt;input type="email" name="email" id="email"&gt;
+                        </code>
+                    </pre>
+
+                    <p>The autocomplete attribute</p>
+                    <pre class="code code--html">
+                        <code class="code__el">
+&lt;label for="name"&gt;Name&lt;/label&gt;
+&lt;input type="text" name="name" id="name" autocomplete="name"&gt;
+                        </code>
+                    </pre>
+                </div>
+
+                <div class="section__part">
+                    <h3 class="title-h3">
+                        Help users enter the right data in forms
+                    </h3>
+                    <p>
+                        The
+                        <span class="mark-text mark-text--html">required</span>
+                        attribute tells the browser that the field is mandatory.
+                        The browser also tests if the entered data matches the
+                        format of the
+                        <span class="mark-text mark-text--html">type</span>.
+                    </p>
+                    <pre class="code code--html">
+                        <code class="code__el">
+&lt;label for="name"&gt;Name (required)&lt;/label&gt;
+&lt;input required type="text" id="name" name="name"&gt;
+                        </code>
+                    </pre>
+
+                    <p>minlenght</p>
+                    <pre class="code code--html">
+                        <code class="code__el">
+&lt;label for="password"&gt;Password (required)&lt;/label&gt;
+&lt;input required minlength="8" type="password" id="password" name="password"&gt;
+                        </code>
+                    </pre>
+
+                    <p>
+                        For numerical input types use
+                        <span class="mark-text mark-text--html">min</span> and
+                        <span class="mark-text mark-text--html">max</span> to
+                        achieve the same result.
+                    </p>
+
+                    <p>Pattern attribute</p>
+                    <p>
+                        Sometimes you want to define more advanced validation
+                        rules. Use HTML
+                        <span class="mark-text mark-text--html"
+                            >pattern attribute</span
+                        >, and you can define a regular expression as the value.
+                    </p>
+                    <pre class="code code--html">
+                        <code class="code__el">
+&lt;label for="animal"&gt;What is your favorite animal? (required)&lt;/label&gt;
+&lt;input required pattern="[a-z]{2,20}" type="text" id="animal" name="animal"&gt;
+                        </code>
+                    </pre>
+                    <p>
+                        Here, only lowercase letters are allowed; the user has
+                        to enter at least two characters, and not more than
+                        twenty.
+                    </p>
+                </div>
+
+                <div class="section__part">
+                    <h3 class="title-h3">Communicate your validation rules</h3>
+                    <p>
+                        Make sure all users understand your validation rules.
+                        For this, connect the form control with an element that
+                        explains the rules. To do so, add an
+                        <span class="mark-text mark-text--html"
+                            >aria-describedby</span
+                        >
+                        attribute to the element with the
+                        <span class="mark-text mark-text--html">id</span> of the
+                        form.
+                    </p>
+                    <pre class="code code--html">
+                        <code class="code__el">
+&lt;label for="password"&gt;Password (required)&lt;/label&gt;
+&lt;input required minlength="8" type="password" id="password"
+  name="password" aria-describedby="password-minlength"&gt;
+&lt;div id="password-minlength"&gt;Enter at least eight characters&lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <div class="section__part">
+                    <h3 class="title-h3">Style forms</h3>
+                    <p>
+                        <span class="mark-text mark-text--html">:invalid</span>
+                        pseudo-class to add styles to invalid form controls.
+                        Also the
+                        <span class="mark-text mark-text--html">:valid</span>
+                        pseudo-class for styling valid form elements
+                    </p>
+                    <pre class="code code--html">
+                        <code class="code__el">
+input:required {}      // required
+input:invalid {}       // invalid
+input:user-invalid {}  // user-invalid
+                        </code>
+                    </pre>
+                    <p>
+                        Sometimes designers color the invalid state red, using
+                        the
+                        <span class="mark-text mark-text--html">:invalid</span>
+                        pseudo-class. However, to communicate error or success
+                        you should never rely only on color. For people with
+                        red-green color blindness a green and a red border look
+                        almost the same. It's impossible for them to see if
+                        there was an error or success. Add text or an icon to
+                        make it obvious.
+                    </p>
+                    <p>
+                        In practice
+                        <span class="mark-text mark-text--html">:invalid</span>
+                        is tricky to work with. Invalid form fields are already
+                        marked as
+                        <span class="mark-text mark-text--html">:invalid</span
+                        >before user interaction, which may confuse users. The
+                        <span class="mark-text mark-text--html"
+                            >:user-invalid</span
+                        >
+                        pseudo-class solves this issue, as the styles are only
+                        applied after user interaction.
+                    </p>
+                </div>
+                <div class="section__part">
+                    <h3 class="title-h3">Validation with JavaScript</h3>
+                    <p>Provide meaningful error messages</p>
+                    <p>
+                        Error messages are not identical in every browser. To
+                        achieve same message to everyone, use the
+                        setCustomValidity() method of the Constraint Validation
+                        API.
+                    </p>
+                    <pre class="code code--html">
+                        <code class="code__el">
+const nameInput = document.querySelector('[name="name"]');
+
+nameInput.addEventListener('invalid', () => {
+    nameInput.setCustomValidity('Please enter your name.');
+});
+                        </code>
+                    </pre>
+                    <p>
+                        Add real-time validation in JavaScript by listening to
+                        the
+                        <span class="mark-text mark-text--html">onblur</span>
+                        event of a form control, and validate the input
+                        immediately when a user leaves a form field.
+                    </p>
+                </div>
+                <div class="section__part">
+                    <h3 class="title-h3">Design recommendation</h3>
+                    <ul class="section__list">
+                        <li class="section__list-item">
+                            <p>Use a label for every form control</p>
+                        </li>
+                        <li class="section__list-item">
+                            <p>Label wording</p>
+                            <pre class="code code--html">
+                                <code class="code__el">
+&lt;label for="email"&gt;Enter your email address&lt;/label&gt;
+&lt;label for="email"&gt;Email address&lt;/label&gt; // better
+                                </code>
+                            </pre>
+                        </li>
+                        <li class="section__list-item">
+                            <p>Best label position - TOP</p>
+                        </li>
+                        <li class="section__list-item">
+                            <p>Better for users use single column form</p>
+                        </li>
+                        <li class="section__list-item">
+                            <p>
+                                Make forms big enought. The recommended tap
+                                target size of a button is at least 48px.
+                            </p>
+                        </li>
+                        <li class="section__list-item">
+                            <p>Show errors where they happen</p>
+                        </li>
+                        <li class="section__list-item">
+                            <p>Make it clear to users what data to enter</p>
+                            <pre class="code code--html">
+                                <code class="code__el">
+&lt;label for="password"&gt;Password (required)&lt;/label&gt;
+&lt;input required minlength="8" type="password" id="password" name="password" aria-describedby="password-minlength"&gt;
+&lt;span id="password-minlength"&gt;Enter at least eight characters&lt;/span&gt;
+                                </code>
+                            </pre>
+                        </li>
+                        <li class="section__list-item">
+                            <p>
+                                Make it clear to users which fields are required
+                            </p>
+                            <pre class="code code--html">
+                                <code class="code__el">
+&lt;label for="name"&gt;Name (required)&lt;/label&gt;
+&lt;input name="name" id="name" required&gt;
+                                </code>
+                            </pre>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
