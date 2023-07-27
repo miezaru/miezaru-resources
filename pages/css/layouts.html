@@ -1,0 +1,953 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Artem Usatyi, miezaruexpr@gmail.com" />
+        <meta
+            name="description"
+            content="Artem 'Miezaru' Usatyi resources page. This website contains a tons of useful information of the web development and more."
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="msapplication-TileColor" content="#f8f7ff" />
+        <meta
+            name="msapplication-TileImage"
+            content="../../assets/img/icons/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#f8f7ff" />
+        <link
+            as="font"
+            crossorigin
+            href="../../assets/fonts/poppins-regular.woff2"
+            rel="preload"
+            type="font/woff2"
+        />
+        <link
+            as="font"
+            crossorigin
+            href="../../assets/fonts/poppins-medium.woff2"
+            rel="preload"
+            type="font/woff2"
+        />
+        <link
+            as="font"
+            crossorigin
+            href="../../assets/fonts/poppins-semibold.woff2"
+            rel="preload"
+            type="font/woff2"
+        />
+        <link
+            as="font"
+            crossorigin
+            href="../../assets/fonts/poppins-bold.woff2"
+            rel="preload"
+            type="font/woff2"
+        />
+        <link
+            rel="canonical"
+            href="https://miezaru-resources.netlify.app/pages/css/layouts.html"
+        />
+        <title>Miezaru App | CSS Layouts</title>
+
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="../../assets/img/icons/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="../../assets/img/icons/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="../../assets/img/icons/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="../../assets/img/icons/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="../../assets/img/icons/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="../../assets/img/icons/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="../../assets/img/icons/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="../../assets/img/icons/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="../../assets/img/icons/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="../../assets/img/icons/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="../../assets/img/icons/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="../../assets/img/icons/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="../../assets/img/icons/favicon-16x16.png"
+        />
+        <link rel="manifest" href="../../assets/img/icons/manifest.json" />
+
+        <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="../../assets/img/icons/favicon.ico"
+        />
+        <link rel="stylesheet" href="../../assets/css/html-page.css" />
+    </head>
+
+    <body class="grid">
+        <header class="header">
+            <a
+                href="https://miezaru-resources.netlify.app/"
+                class="logo u-margin-right-auto"
+                >mic`</a
+            >
+
+            <a
+                href="https://github.com/miezaru"
+                class="header__icon-box"
+                rel="noopener external"
+                aria-label="Miezaru github"
+            >
+                <svg class="header__icon">
+                    <use
+                        href="../../assets/svg/symbol-defs.svg#icon-github"
+                    ></use>
+                </svg>
+            </a>
+            <a
+                href="https://gist.github.com/miezaru"
+                class="header__icon-box"
+                rel="noopener external"
+                aria-label="Miezaru gist"
+            >
+                <svg class="header__icon">
+                    <use
+                        href="../../assets/svg/symbol-defs.svg#icon-gist"
+                    ></use>
+                </svg>
+            </a>
+            <a
+                href="https://soundcloud.com/miezaru"
+                class="header__icon-box"
+                rel="noopener external"
+                aria-label="Miezaru soundcloud"
+            >
+                <svg class="header__icon">
+                    <use
+                        href="../../assets/svg/symbol-defs.svg#icon-soundcloud"
+                    ></use>
+                </svg>
+            </a>
+            <a
+                href="https://www.pinterest.com/miezaruexpr/"
+                class="header__icon-box"
+                rel="noopener external"
+                aria-label="Miezaru pinterest"
+            >
+                <svg class="header__icon">
+                    <use
+                        href="../../assets/svg/symbol-defs.svg#icon-pinterest"
+                    ></use>
+                </svg>
+            </a>
+            <a
+                href="https://web.telegram.org/"
+                class="header__icon-box"
+                rel="noopener external"
+                aria-label="Telegram"
+            >
+                <svg class="header__icon">
+                    <use
+                        href="../../assets/svg/symbol-defs.svg#icon-telegram"
+                    ></use>
+                </svg>
+            </a>
+            <a
+                href="https://www.twitch.tv/"
+                class="header__icon-box"
+                rel="noopener external"
+                aria-label="Twitch"
+            >
+                <svg class="header__icon">
+                    <use
+                        href="../../assets/svg/symbol-defs.svg#icon-twitch"
+                    ></use>
+                </svg>
+            </a>
+            <a
+                href="https://www.youtube.com/"
+                class="header__icon-box"
+                rel="noopener external"
+                aria-label="Miezaru youtube"
+            >
+                <svg class="header__icon">
+                    <use
+                        href="../../assets/svg/symbol-defs.svg#icon-youtube"
+                    ></use>
+                </svg>
+            </a>
+            <a
+                href="https://music.youtube.com/"
+                class="header__icon-box"
+                rel="noopener external"
+                aria-label="Miezaru youtube music"
+            >
+                <svg class="header__icon">
+                    <use
+                        href="../../assets/svg/symbol-defs.svg#icon-youtube-music"
+                    ></use>
+                </svg>
+            </a>
+            <a
+                href="https://www.facebook.com/miezaruexpr"
+                class="header__icon-box"
+                rel="noopener external"
+                aria-label="Miezaru facebook"
+            >
+                <svg class="header__icon">
+                    <use
+                        href="../../assets/svg/symbol-defs.svg#icon-facebook"
+                    ></use>
+                </svg>
+            </a>
+            <a
+                href="https://twitter.com/miezaruexpr"
+                class="header__icon-box"
+                rel="noopener external"
+                aria-label="Miezaru twitter"
+            >
+                <svg class="header__icon">
+                    <use
+                        href="../../assets/svg/symbol-defs.svg#icon-twitter"
+                    ></use>
+                </svg>
+            </a>
+            <a
+                href="https://store.steampowered.com/"
+                class="header__icon-box"
+                rel="noopener external"
+                aria-label="Miezaru steam"
+            >
+                <svg class="header__icon">
+                    <use
+                        href="../../assets/svg/symbol-defs.svg#icon-steam"
+                    ></use>
+                </svg>
+            </a>
+        </header>
+        <main class="grid-inner">
+            <header class="main-header">
+                <h1 class="title-h1 title-h1--css">CSS: Layouts</h1>
+            </header>
+            <section class="section" aria-labelledby="section-layouts-title">
+                <header class="section-header">
+                    <h2
+                        class="title-h2 title-h2--css"
+                        id="section-layouts-title"
+                    >
+                        Layouts
+                    </h2>
+                </header>
+
+                <div class="section__part">
+                    <p>
+                        Layout is the way text, images and other content is
+                        placed and arranged on a webpage.
+                    </p>
+                    <p>
+                        Layout gives the page a visual structure, into which we
+                        place our content.
+                    </p>
+                    <p>
+                        Building a layout: arranging page elements into a visual
+                        structure, instead of simply having them placed one
+                        after another (normal flow)
+                    </p>
+
+                    <h3 class="title-h3 title-h3--css">
+                        Page layout and components layout
+                    </h3>
+                    <p>The 3 ways of building layouts with CSS:</p>
+                    <ul class="section__list">
+                        <li class="section__list-item">
+                            <h4 class="title-h4">Float layouts</h4>
+                            <p>
+                                - The old way of building layouts of all sizes,
+                                using the float CSS property. Still used, but
+                                getting outdated fast
+                            </p>
+                        </li>
+                        <li class="section__list-item">
+                            <h4 class="title-h4">Flexbox</h4>
+                            <p>
+                                - Modern way of laying out elements in a
+                                1-dimensional row without using floats <br />
+                                - Perfect for component layouts <br />
+                            </p>
+                        </li>
+                        <li class="section__list-item">
+                            <h4 class="title-h4">CSS Grid</h4>
+                            <p>
+                                - For laying out elements in a fully-fledged
+                                2-dimensional grid <br />
+                                - Perfect for page layouts and complex
+                                components <br />
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section" aria-labelledby="section-float-title">
+                <header class="section-header">
+                    <h2 class="title-h2 title-h2--css" id="section-float-title">
+                        FLOAT
+                    </h2>
+                </header>
+
+                <div class="section__part">
+                    <p>
+                        - Elements is removed from the normal flow: "out of
+                        flow" (like position: absolute;) <br />
+                        - Text and inline elements will wrap around the floated
+                        element <br />
+                        - The container will not adjust its height to the
+                        element <br />
+                        - Element height are collapsed if all his child elements
+                        are floated <br />
+                        - With CSS: float:left, float:right <br />
+                        - Fix collapsed heights by clearing floats: <br />
+                    </p>
+                    <pre class="code code--css">
+                        <code class="code-el">
+// new element after the floated elements with declaration:
+el {
+    clear: both;              // bad practice
+}
+
+// clearfix hack
+// add clearfix class to the parent element of the floats elements
+
+.clearfix::after {
+  display: block;
+  clear: both;               // good practice
+  content: "";
+}
+                        </code>
+                    </pre>
+                </div>
+            </section>
+
+            <section class="section" aria-labelledby="section-flexbox-title">
+                <header class="section-header">
+                    <h2
+                        class="title-h2 title-h2--css"
+                        id="section-flexbox-title"
+                    >
+                        FLEXBOX 2017
+                    </h2>
+                </header>
+
+                <div class="section__part">
+                    <p>
+                        - Flexbox is a set of related CSS properties for
+                        building 1-dimensional layouts <br />
+                        - The main idea behind flexbox is that empty space
+                        inside a container element can be automatically divided
+                        by its child elements <br />
+                        - Flexbox makes it easy to automatically align items to
+                        one another inside a parent container, both horizontally
+                        and vertically <br />
+                        - Flexbox solves common problems such as vertical
+                        centering and creating equal-height columns <br />
+                        - Flexbox is perfect for replacing floats, allowing us
+                        to write fewer and cleaner HTML and CSS code <br />
+                    </p>
+                    <picture>
+                        <source
+                            srcset="
+                                ../../assets/img/flexbox/flexbox-cheat-xlg.avif
+                            "
+                            type="image/avif"
+                        />
+                        <source
+                            srcset="
+                                ../../assets/img/flexbox/flexbox-cheat-xlg.webp
+                            "
+                            type="image/webp"
+                        />
+                        <img
+                            src="../../assets/img/flexbox/flexbox-cheat-xlg.png"
+                            srcset="
+                                ../../assets/img/flexbox/flexbox-cheat-xlg.png
+                            "
+                            alt="Flexbox cheat sheet"
+                            width="1920"
+                            height="1080"
+                        />
+                    </picture>
+                    <picture class="section__img">
+                        <source
+                            srcset="
+                                ../../assets/img/flexbox/flexbox-terminology-sm.avif 1x,
+                                ../../assets/img/flexbox/flexbox-terminology-lg.avif 2x
+                            "
+                            type="image/avif"
+                        />
+                        <source
+                            srcset="
+                                ../../assets/img/flexbox/flexbox-terminology-sm.webp 1x,
+                                ../../assets/img/flexbox/flexbox-terminology-lg.webp 2x
+                            "
+                            type="image/webp"
+                        />
+                        <img
+                            src="../../assets/img/flexbox/flexbox-terminology-lg.png"
+                            srcset="
+                                ../../assets/img/flexbox/flexbox-terminology-sm.png 1x,
+                                ../../assets/img/flexbox/flexbox-terminology-lg.png 2x
+                            "
+                            alt="Flexbox terminology sheet"
+                            width="1024"
+                            height="576"
+                        />
+                    </picture>
+                    <p>
+                        gap <br />
+                        - better then margin, because no need to write
+                        margin-right: 0; to the last element
+                    </p>
+                </div>
+            </section>
+
+            <section class="section" aria-labelledby="section-grid-title">
+                <header class="section-header">
+                    <h2 class="title-h2 title-h2--css" id="section-grid-title">
+                        CSS GRID
+                    </h2>
+                </header>
+
+                <div class="section__part">
+                    <h3 class="title-h3 title-h3--css">
+                        Special Units & Functions
+                    </h3>
+                    <p>
+                        <span class="mark-text mark-text--css"> fr units:</span>
+                        <br />
+                        - grid-template-columns: 1fr 3fr; - Means, loosely, 25%
+                        75%. <br />
+                        - grid-template-columns: 50px min-content 1fr; <br />
+                    </p>
+                    <p>
+                        <span class="mark-text mark-text--css">
+                            Sizing keywords:</span
+                        >
+                        <br />
+                        - min-content - the minimum size of the content. Imagine
+                        a line of text like "E pluribus unum", the min-content
+                        is likely the width of the word "pluribus" <br />
+                        - max-content - the maximum size of the content. Imagine
+                        the sentence above, the max-content is the length of the
+                        whole sentence <br />
+                        - auto - this keyword is a lot like fr units, except
+                        that they "lose" the fight in sizing against fr units
+                        when allocating the remaining space. <br />
+                        - fractional units - see above <br />
+                    </p>
+                    <p>
+                        <span class="mark-text mark-text--css">
+                            Sizing functions:</span
+                        >
+                        <br />
+                        - fit-content() - function uses the space available, but
+                        never less than min-content and never more than
+                        max-content. <br />
+                        - minmax() - function does exactly what it seems like:
+                        it sets a minimum and maximum value for what the length
+                        is able to be. This is useful for in combination with
+                        relative units. Like you may want a column to be only
+                        able to shrink so far. This is extremely useful and
+                        probably what u want: grid-template-columns:
+                        minmax(100px, 1fr) 3fr;<br />
+                        - min() <br />
+                        - max() <br />
+                    </p>
+                    <p>
+                        <span class="mark-text mark-text--css"> Masonry:</span>
+                        <br />
+                        -
+                        <a
+                            href="https://css-tricks.com/snippets/css/complete-guide-grid/#aa-masonry"
+                            class="section__link section__link--css"
+                            >Masonry 1</a
+                        >
+                        <br />
+                        -
+                        <a
+                            href="https://css-tricks.com/piecing-together-approaches-for-a-css-masonry-layout/"
+                            class="section__link section__link--css"
+                            >Masonry 2</a
+                        >
+                        <br />
+                    </p>
+                    <p>
+                        <span class="mark-text mark-text--css"> Subgrid:</span>
+                        <br />
+                        -
+                        <a
+                            href="https://css-tricks.com/snippets/css/complete-guide-grid/#aa-subgrid"
+                            class="section__link section__link--css"
+                            >Subgrid</a
+                        >
+                        <br />
+                    </p>
+                    <p>
+                        <span class="mark-text mark-text--css">
+                            Sizing functions:</span
+                        >
+                        <br />
+                        - fit-content() - function uses the space available, but
+                        never less than min-content and never more than
+                        max-content. <br />
+                        - minmax() - function does exactly what it seems like:
+                        it sets a minimum and maximum value for what the length
+                        is able to be. This is useful for in combination with
+                        relative units. Like you may want a column to be only
+                        able to shrink so far. This is extremely useful and
+                        probably what u want: grid-template-columns:
+                        minmax(100px, 1fr) 3fr;<br />
+                        - min() <br />
+                        - max() <br />
+                    </p>
+                </div>
+
+                <div class="section__part">
+                    <p>
+                        - CSS Grid is a set of CSS properties for building
+                        2-dimensional layouts <br />
+                        - The main idea behind CSS Grid is that we divide a
+                        container element into rows and columns that can be
+                        filled with its child elements <br />
+                        - In two-dimensional contexts, CSS Grid allows us to
+                        write less nested HTML and easier-to-read CSS <br />
+                        - CSS Grid is not meant to replace flexbox! Instead,
+                        they work perfectly together. Need a 1D layout? Use
+                        flexbox. Need a 2D layout? Use CSS Grid. <br />
+                    </p>
+                    <picture>
+                        <source
+                            srcset="../../assets/img/grid/grid-cheat-xlg.avif"
+                            type="image/avif"
+                        />
+                        <source
+                            srcset="../../assets/img/grid/grid-cheat-xlg.webp"
+                            type="image/webp"
+                        />
+                        <img
+                            src="../../assets/img/grid/grid-cheat-xlg.png"
+                            srcset="../../assets/img/grid/grid-cheat-xlg.png"
+                            alt="grid cheat sheet"
+                            width="1920"
+                            height="1080"
+                        />
+                    </picture>
+                </div>
+
+                <div class="section__part">
+                    <p>
+                        - Explicit (явный) row - row, where we defined height
+                        <br />
+                        - Implicit (скрытый) row - row, where we do not defined
+                        height
+                    </p>
+
+                    <p>Instead of pixels, we can use fr unit and auto word:</p>
+                    <p>
+                        - grid-template-rows: repeat(4, 1fr) 2fr; <br />
+                        - grid-template-columns: 1fr 300px auto 2fr; <br />
+                        - grid-column: 1 / span 3; <br />
+                        - grid-column: 1 / 2; | grid-column: 1; - same
+                        declarations<br />
+
+                        - grid-column: 1 / -1; - to the end of the track <br />
+                    </p>
+                </div>
+
+                <div class="section__part">
+                    <p>
+                        Aligning tracks inside container: distribute empty space
+                    </p>
+                    <p>
+                        - justify-content: center; | start | end | space-between
+                        | space-evenly | space-around | stretch <br />
+                        - align-content: center; | start | end | space-between |
+                        space-evenly | space-around | stretch <br />
+                    </p>
+                    <p>
+                        Aligning items inside cells: moving items around inside
+                        cells
+                    </p>
+                    <p>
+                        - align-items: center; | start | end | stretch <br />
+                        - justify-items: center; | start | end | stretch <br />
+                    </p>
+                </div>
+
+                <div class="section__part">
+                    <h3 class="title-h3 title-h3--css">
+                        Important CSS Grid terminology
+                    </h3>
+                    <p>
+                        - Grid Container <br />
+                        - Grid Item <br />
+                        - Grid Line <br />
+                        - Grid Cell <br />
+                        - Grid Track <br />
+                        - Grid Area <br />
+                    </p>
+                </div>
+
+                <div class="section__part">
+                    <h3 class="title-h3 title-h3--css">
+                        Parent Grid Container properties
+                    </h3>
+                    <p>
+                        <span class="mark-text mark-text--css"> display:</span>
+                        <br />
+                        - grid - generates a block-level grid
+                        <br />
+                        - inline-grid - generates an inline-level grid <br />
+                    </p>
+
+                    <p>
+                        <span class="mark-text mark-text--css">
+                            grid-template-columns & grid-template-rows: </span
+                        ><br />
+                        - track size - can be a length, a percentage, or a
+                        fraction of the free space in the grid using the fr unit
+                        <br />
+                        - line name - an arbitrary name of your choosing <br />
+                    </p>
+
+                    <p>
+                        <span class="mark-text mark-text--css">
+                            grid-template-columns:</span
+                        >
+                        <br />
+                        - 1fr 1fr <br />
+                        - minmax(10px, 1fr) 3fr <br />
+                        - repeat(5, 1fr) <br />
+                        - 50px auto 100px 1fr <br />
+                        - [first] 40px [line2] 50px [line3] auto [col4-start]
+                        50px [five] 40px [end] <br />
+                    </p>
+
+                    <p>
+                        <span class="mark-text mark-text--css">
+                            grid-template-rows: </span
+                        ><br />
+                        - min-content 1fr min-content <br />
+                        - 100px 1fr max-content <br />
+                        - [row1-start] 25% [row1-end] 100px [third-line] auto
+                        [last-line] <br />
+                    </p>
+
+                    <p>
+                        <span class="mark-text mark-text--css">
+                            grid-template-areas:</span
+                        >
+                        <br />
+                        - grid-area-name - the name of a grid area specified
+                        with grid-area <br />
+                        - . - a period signifies an empty grid cell <br />
+                        - none - no grid areas are defined <br />
+                    </p>
+
+                    <p>
+                        <span class="mark-text mark-text--css">
+                            grid-template:</span
+                        >
+                        <br />
+                        - none - sets all three properties to their initial
+                        values <br />
+                        - &lt;grid-template-rows&gt; /
+                        &lt;grid-template-columns&gt;
+                    </p>
+
+                    <p>
+                        <span class="mark-text mark-text--css">
+                            column-gap | row-gap | grid-column-gap |
+                            grid-row-gap:</span
+                        >
+                        <br />
+                        - line size - a length value <br />
+                        - grid-column-gap & grid-row-gap - old
+                    </p>
+
+                    <p>
+                        <span class="mark-text mark-text--css">
+                            gap | grid-gap:
+                        </span>
+                        <br />
+                        - &lt;grid-row-gap&gt; &lt;grid-column-gap&gt; - length
+                        values <br />
+                        - grid-gap - old
+                    </p>
+
+                    <p>
+                        <span class="mark-text mark-text--css">
+                            justify-items:
+                        </span>
+                        <br />
+                        - start - aligns items to be flush with the start edge
+                        of their cell <br />
+                        - end - aligns items to be flush with the end edge of
+                        their cell <br />
+                        - center - align items in the center of their cell
+                        <br />
+                        - stretch - fill the whole width of the cell (this is
+                        the default) <br />
+                    </p>
+                    <p>
+                        <span class="mark-text mark-text--css">
+                            align-items:
+                        </span>
+                        <br />
+                        - stretch - fills the whole height of the cell (this is
+                        the default) <br />
+                        - start - aligns items to be flush with the start edge
+                        of their cell <br />
+                        - end - align items to be flush with the end edge of
+                        their cell <br />
+                        - center - aligns items in the center of their cell
+                        <br />
+                        - baseline - align items along text baseline. There are
+                        modifiers to baseline - first baseline and last baseline
+                        which will use the baseline from the first or last line
+                        in the case of multi line text. <br />
+                    </p>
+                    <p>
+                        <span class="mark-text mark-text--css">
+                            place-items:
+                        </span>
+                        <br />
+                        - &lt;align-items&gt;/&lt;justify-items&gt; - the first
+                        value sets align-items, the second value justify-items.
+                        If the second value is omitted, the first value is
+                        assigned to both properties.
+                    </p>
+                    <p>
+                        <span class="mark-text mark-text--css">
+                            justify-content:
+                        </span>
+                        <br />
+                        - start - aligns the grid to be flush with the start
+                        edge of the grid container <br />
+                        - end - aligns the grid to be flush with the end edge of
+                        the grid container <br />
+                        - center - aligns the grid in the center of the grid
+                        container <br />
+                        - stretch - resizes the grid items to allow the grid to
+                        fill the full width of the grid container <br />
+                        - space-around - places an even amount of space between
+                        each grid item, with half-sized spaces on the far ends
+                        <br />
+                        - space-between - places an even amount of space between
+                        each grid item, with no space at the far ends <br />
+                        - space-evenly - places an even amount of space between
+                        each grid item, including the far ends <br />
+                    </p>
+                    <p>
+                        <span class="mark-text mark-text--css">
+                            align-content:
+                        </span>
+                        <br />
+                        - start - aligns the grid to be flush with the start
+                        edge of the grid container <br />
+                        - end - aligns the grid to be flush with the end edge of
+                        the grid container <br />
+                        - center - aligns the grid in the center of the grid
+                        container <br />
+                        - stretch - resizes the grid items to allow the grid to
+                        fill the full height of the grid container <br />
+                        - space-around - places an even amount of space between
+                        each grid item, with half-sized spaces on the far ends
+                        <br />
+                        - space-between - places an even amount of space between
+                        each grid item, with no space at the far ends <br />
+                        - space-evenly - places an even amount of space between
+                        each grid item, including the far ends <br />
+                    </p>
+                    <p>
+                        <span class="mark-text mark-text--css">
+                            place-content:
+                        </span>
+                        <br />
+                        - &lt;align-content&gt; / &lt;justify-content&gt; - the
+                        first value sets align-content, the second values
+                        justify-content. If the second value is omitted, the
+                        first value is assigned to both properties.
+                    </p>
+                    <p>
+                        <span class="mark-text mark-text--css">
+                            grid-auto-columns & grid-auto-rows:
+                        </span>
+                        <br />
+                        - track-size - can be a length, a percentage, or a
+                        fraction of the free space in the grid (using the fr
+                        unit) <br />
+                        -
+                        <a
+                            href="https://css-tricks.com/snippets/css/complete-guide-grid/#aa-grid-auto-columnsgrid-auto-rows"
+                            class="section__link section__link--css"
+                            >explain</a
+                        >
+                    </p>
+                    <p>
+                        <span class="mark-text mark-text--css">
+                            grid-auto-flow:
+                        </span>
+                        <br />
+                        - row - tells the auto-placement algorithm to fill in
+                        each row in turn, adding new rows as necessary (default)
+                        <br />
+                        - column - tells the auto-placement algorithm to fill in
+                        each column in turn, adding new columns as necessary
+                        <br />
+                        - dense - tells the auto-placement algorithm to attempt
+                        to fill in holes earlier in the grid if smaller items
+                        come up later <br />
+                    </p>
+                    <p>
+                        <span class="mark-text mark-text--css"> grid: </span>
+                        <br />
+                        - none - sets all sub-properties to their initial values
+                        <br />
+                        - &lt;grid-template&gt; - works the same as the
+                        grid-template shorthand <br />
+                        - &lt;grid-template-rows&gt; / [ auto-flow && dense? ]
+                        &lt;grid-auto-columns&gt;? - sets grid -template-rows to
+                        the specified value. If the auto-flow keyword is to the
+                        right of the slash, it sets grid-auto-flow to column. If
+                        the dense keyword is specified additionally, the
+                        auto-placement algorithm uses a "dense" packing
+                        algorithm. If grid-auto-columns is omitted, it is set to
+                        auto <br />
+                        - [ auto-flow && dense? ] &lt;grid-auto-rows&gt; /
+                        &lt;grid-auto-columns&gt; - sets grid-template-columns
+                        to the specified value. If the auto-flow keyword is to
+                        the left of the slash, it sets grid-auto-flow to row. If
+                        the dense keyword is speicifed additionally, the
+                        auto-placement algorithm uses a "dense" packing
+                        algorithm. If grid-auto-rows is omitted, it is set to
+                        auto. <br />
+                    </p>
+                </div>
+
+                <div class="section__part">
+                    <h3 class="title-h3 title-h3--css">Grid item properties</h3>
+                    <p>
+                        float, display: inline-block, display: table-cell,
+                        vertical-align and column-* properties have no effect on
+                        a grid item.
+                    </p>
+                    <p>
+                        <span class="mark-text mark-text--css">
+                            gird-column-start | grid-column-end | grid-row-start
+                            | grid-row-end:
+                        </span>
+                        <br />
+                        - &lt;line&gt; - can be a number to refer to a numbered
+                        grid line, or a name to refer to a named grid line
+                        <br />
+                        - span &lt;number&gt; - the item will span across the
+                        provided number of grid tracks <br />
+                        - span &lt;name&gt; - the item will span across until it
+                        hits the next line with the provided name <br />
+                        - auto - indicates auto-placement, an automatic span, or
+                        a default span of one <br />
+                    </p>
+                    <p>
+                        If no grid-column-end/grid-row-end is declared, the item
+                        will span 1 track by default. Items can overlap each
+                        other. You can use z-index to control their stacking
+                        order.
+                    </p>
+
+                    <p>
+                        <span class="mark-text mark-text--css">
+                            justify-self
+                        </span>
+                        <br />
+                        - start - aligns the grid item to be flush with the
+                        start edge of the cell <br />
+                        - end - aligns the grid item to be flush with the end
+                        edge of the cell <br />
+                        - center - aligns the grid item in the center of the
+                        cell <br />
+                        - stretch - fills the whole width of the cell (this is
+                        the default) <br />
+                    </p>
+                    <p>
+                        <span class="mark-text mark-text--css">
+                            align-self
+                        </span>
+                        <br />
+                        - start- aligns the grid item to be flush with the start
+                        edge of the cell <br />
+                        - end - aligns the grid item to be flush with the end
+                        edge of the cell <br />
+                        - center - aligns the grid item in the center of the
+                        cell <br />
+                        - stretch - fills the whole height of the cell (this is
+                        the default) <br />
+                    </p>
+                    <p>
+                        <span class="mark-text mark-text--css">
+                            place-self
+                        </span>
+                        <br />- auto - the "default" alignment for the layout
+                        mode <br />
+                        - &lt;align-self&gt; / &lt;justify-self&gt; - the first
+                        value sets align-self, the second value justify-self. If
+                        the second value is omitted, the first value is assigned
+                        to both properties <br />
+                    </p>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

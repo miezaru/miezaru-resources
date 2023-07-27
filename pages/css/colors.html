@@ -45,9 +45,9 @@
         />
         <link
             rel="canonical"
-            href="https://miezaru-resources.netlify.app/pages/html/images.html"
+            href="https://miezaru-resources.netlify.app/pages/css/colors.html"
         />
-        <title>Miezaru App | HTML Images</title>
+        <title>Miezaru App | CSS Colors</title>
 
         <link
             rel="apple-touch-icon"
@@ -271,112 +271,105 @@
         </header>
         <main class="grid-inner">
             <header class="main-header">
-                <h1 class="title-h1 title-h1--html">HTML: Images</h1>
+                <h1 class="title-h1 title-h1--css">CSS: Colors</h1>
             </header>
-            <section class="section" aria-labelledby="section-links-title">
+            <section class="section" aria-labelledby="section-csscolors-title">
                 <header class="section-header">
                     <h2
-                        class="title-h2 title-h2--html"
-                        id="section-links-title"
+                        class="title-h2 title-h2--css"
+                        id="section-csscolors-title"
                     >
-                        Links
+                        CSS Colors
                     </h2>
                 </header>
                 <div class="section__part">
-                    <h3 class="title-h3">Performance</h3>
-                    <div class="resources">
-                        <a
-                            href="https://web.dev/fetch-priority/#use-cases"
-                            class="resources__link resources__link--html"
-                            rel="noopener external"
-                            >fetchpriority use cases
-                            <svg class="resources__icon">
-                                <use
-                                    href="../../assets/svg/symbol-defs.svg#icon-external"
-                                ></use></svg
-                        ></a>
-                        <a
-                            href="https://almanac.httparchive.org/"
-                            class="resources__link resources__link--html"
-                            rel="noopener external"
-                            >tracked website performance
-                            <svg class="resources__icon">
-                                <use
-                                    href="../../assets/svg/symbol-defs.svg#icon-external"
-                                ></use></svg
-                        ></a>
-                        <a
-                            href="https://docs.google.com/document/d/1bCDuq9H1ih9iNjgzyAL0gpwNFiEP4TZS-YLRp_RuMlc/edit#"
-                            class="resources__link resources__link--html"
-                            rel="noopener external"
-                            >chrome loading resources
-                            <svg class="resources__icon">
-                                <use
-                                    href="../../assets/svg/symbol-defs.svg#icon-external"
-                                ></use>
-                            </svg>
-                        </a>
-                        <a
-                            href="https://web.dev/learn/images/automating/"
-                            class="resources__link resources__link--html"
-                            rel="noopener external"
-                            >webdev react gulp images
-                            <svg class="resources__icon">
-                                <use
-                                    href="../../assets/svg/symbol-defs.svg#icon-external"
-                                ></use>
-                            </svg>
-                        </a>
-                        <a
-                            href="https://web.dev/learn/images/cms/"
-                            class="resources__link resources__link--html"
-                            rel="noopener external"
-                            >webdev react sharp images
-                            <svg class="resources__icon">
-                                <use
-                                    href="../../assets/svg/symbol-defs.svg#icon-external"
-                                ></use>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="section__part">
-                    <h3 class="title-h3 title-h3--html">Tools</h3>
-                    <div class="resources">
-                        <a
-                            href="https://squoosh.app/"
-                            class="resources__link resources__link--html"
-                            rel="noopener external"
-                            >squoosh
-                            <svg class="resources__icon">
-                                <use
-                                    href="../../assets/svg/symbol-defs.svg#icon-external"
-                                ></use>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <section class="section" aria-labelledby="section-about-title">
-                <header class="section-header">
-                    <h2
-                        class="title-h2 title-h2--html"
-                        id="section-about-title"
-                    >
-                        About
-                    </h2>
-                </header>
-                <div class="section__part">
-                    <h3 class="title-h3 title-h3--html">Performance</h3>
                     <p>
-                        <span class="mark-text mark-text--html"
-                            >fetchpriority</span
-                        >
+                        RGB Model: Every color can be represented by a
+                        combination of
+                        <span class="mark-text mark-text--css">RED</span>,
+                        <span class="mark-text mark-text--css">GREEN</span> and
+                        <span class="mark-text mark-text--css">BLUE</span>.
                     </p>
-                    <pre class="code code--html">
-                        <code class="code__el">
-                        </code>
-                    </pre>
+                    <p>
+                        Each of the 3 base colors can take a value between 0 and
+                        255, which leads to 16.8 million different colors
+                    </p>
+
+                    <h3 class="title-h3 title-h3--css">
+                        Defining colors in CSS:
+                    </h3>
+                    <ul class="section__list">
+                        <li class="section__list-item">
+                            <h4 class="title-h4">RGB/RGBA Notation</h4>
+                            <p>
+                                Regular RGB model<br />
+                                - rgb(0, 255, 255) <br />
+                                RBG with transparency ("alpha") <br />
+                                - rgba(0, 255, 255, 0.3) <br />
+                            </p>
+                        </li>
+                        <li class="section__list-item">
+                            <h4 class="title-h4">HEXADECIMAL Notation</h4>
+                            <p>
+                                Instead of using scale from 0 to 255, we go from
+                                0 to ff (255 in hexadecimal numbers) <br />
+                                - #00ffff <br />
+                                Shorthand, when all colors are identical pairs
+                                <br />
+                                - #0ff <br />
+                                Also have transparency <br />
+                                -
+                                <a
+                                    href="https://gist.github.com/lopspower/03fb1cc0ac9f32ef38f4"
+                                    class="section__link section__link--css"
+                                    >HEX Transparency </a
+                                ><br />
+                            </p>
+                        </li>
+                        <li class="section__list-item">
+                            <h4 class="title-h4">
+                                HSL (hue, saturation, lightness — тон,
+                                насыщенность и яркость
+                            </h4>
+                            <p>
+                                - hsl(315, 100%, 60%) <br />
+                                - hsla(359, 99%, 50%, 0.5)<br />
+                            </p>
+                        </li>
+                    </ul>
+                    <p>«Young guys can be messy rascals»</p>
+                    <picture class="section__img">
+                        <source
+                            srcset="
+                                ../../assets/img/rgb/rgb-sm.avif 1x,
+                                ../../assets/img/rgb/rgb-lg.avif 2x
+                            "
+                            type="image/avif"
+                        />
+                        <source
+                            srcset="
+                                ../../assets/img/rgb/rgb-sm.webp 1x,
+                                ../../assets/img/rgb/rgb-lg.webp 2x
+                            "
+                            type="image/webp"
+                        />
+                        <img
+                            src="../../assets/img/rgb/rgb-lg.jpg"
+                            srcset="
+                                ../../assets/img/rgb/rgb-sm.jpg 1x,
+                                ../../assets/img/rgb/rgb-lg.jpg 2x
+                            "
+                            alt="RGB Colors notation"
+                            width="1024"
+                            height="914"
+                        />
+                    </picture>
+                    <h3 class="title-h3 title-h3--css">Shades of GREY</h3>
+                    <p>
+                        - When colors in all 3 channels are the same, we get a
+                        grey color <br />
+                        - There are 256 pure grays to choose from <br />
+                    </p>
                 </div>
             </section>
         </main>

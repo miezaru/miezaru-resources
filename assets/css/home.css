@@ -74,7 +74,7 @@ a {
 
 p {
   max-inline-size: 66ch;
-  font-size: clamp(1.2rem, 0.75rem + 1.5vw, 1.8rem);
+  font-size: clamp(1.2rem, 0.75rem + 1.5vw, 1.7rem);
   font-weight: 500;
   line-height: 1.7;
 }
@@ -132,12 +132,18 @@ picture {
   display: inline-block;
 }
 
-img {
-  display: block;
-}
-
 strong {
   font-weight: 600;
+}
+
+img,
+video,
+iframe {
+  display: block;
+  max-width: 100%;
+  max-inline-size: 100%;
+  height: auto;
+  block-size: auto;
 }
 
 .header {
@@ -614,7 +620,7 @@ main {
       -ms-flex-item-align: start;
           align-self: flex-start;
   padding: 0.8rem 1.6rem;
-  font-size: 1.6rem;
+  font-size: clamp(1rem, 0.75rem + 1.5vw, 1.6rem);
   font-weight: 600;
   border-radius: var(--br-default);
 }

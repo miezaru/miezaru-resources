@@ -271,14 +271,19 @@
         </header>
         <main class="grid-inner">
             <header class="main-header">
-                <h1 class="title-h1">HTML: Images</h1>
+                <h1 class="title-h1 title-h1--html">HTML: Images</h1>
             </header>
             <section class="section" aria-labelledby="section-links-title">
                 <header class="section-header">
-                    <h2 class="title-h2" id="section-links-title">Links</h2>
+                    <h2
+                        class="title-h2 title-h2--html"
+                        id="section-links-title"
+                    >
+                        Links
+                    </h2>
                 </header>
                 <div class="section__part">
-                    <h3 class="title-h3">Performance</h3>
+                    <h3 class="title-h3 title-h3--html">Performance</h3>
                     <div class="resources">
                         <a
                             href="https://web.dev/fetch-priority/#use-cases"
@@ -336,7 +341,7 @@
                     </div>
                 </div>
                 <div class="section__part">
-                    <h3 class="title-h3">Tools</h3>
+                    <h3 class="title-h3 title-h3--html">Tools</h3>
                     <div class="resources">
                         <a
                             href="https://squoosh.app/"
@@ -376,10 +381,86 @@
             </section>
             <section class="section" aria-labelledby="section-about-title">
                 <header class="section-header">
-                    <h2 class="title-h2" id="section-about-title">About</h2>
+                    <h2
+                        class="title-h2 title-h2--html"
+                        id="section-about-title"
+                    >
+                        About
+                    </h2>
                 </header>
                 <div class="section__part">
-                    <h3 class="title-h3">Performance</h3>
+                    <h3 class="title-h3 title-h3--html">Use good images</h3>
+                    <p>
+                        Different types of images: product photos, storytelling
+                        photos, illustrations, patterns <br />
+                        - SVG PATTERNS <br />
+                        - NICE ILLUSTRATIONS <br />
+                    </p>
+                    <p>
+                        Use images to support website`s
+                        <span class="mark-text mark-text--html"
+                            >message and story</span
+                        >
+                        . So only use relevant images!
+                    </p>
+                    <p>
+                        Prefer original images. If not possible, use
+                        <span class="mark-text mark-text--html"
+                            >original-looking</span
+                        >
+                        stock images (not generic ones!)
+                    </p>
+                </div>
+
+                <div class="section__part">
+                    <h3 class="title-h3 title-h3--html">Use images well</h3>
+                    <p>Try to show real people to trigger user`s emotions</p>
+                    <p>If necessary, crop images to fit your message</p>
+                    <p>
+                        Experiment combining photos, illustrations and patterns
+                    </p>
+                </div>
+
+                <div class="section__part">
+                    <h3 class="title-h3 title-h3--html">
+                        Handling text on images
+                    </h3>
+                    <p>
+                        Darker or brighten image (completely or partially, using
+                        a gradient)
+                    </p>
+                    <p>Position a text into neutral image area</p>
+                    <p>Put text in a box</p>
+                </div>
+
+                <div class="section__part">
+                    <h3 class="title-h3 title-h3--html">
+                        Some technical details
+                    </h3>
+                    <p>
+                        To account for high-res screens, make image dimensions
+                        2x as big as their displayed size <br />
+                        - If image have website size 300x300, he`s original size
+                        need to be 600x600 <br />
+                        - Scale factor: Actual pixels the screen contains /
+                        Pixels represented on screen <br />
+                        - On high-res screens, scale factor is 2x or even 3x, on
+                        "normal" screens it`s just 1x (1 physical pixel = 1
+                        design pixel) <br />
+                    </p>
+                    <p>
+                        Compress images for a lower file size and better
+                        performance
+                    </p>
+                    <p>
+                        When using multiple images side-by-side, make sure they
+                        have the exact same dimensions
+                    </p>
+                    <p>Always declare images size</p>
+                </div>
+
+                <div class="section__part">
+                    <h3 class="title-h3 title-h3--html">Performance</h3>
                     <p>
                         Use
                         <span class="mark-text mark-text--html"
@@ -442,7 +523,7 @@ loading="eager"
                 </div>
 
                 <div class="section__part">
-                    <h3 class="title-h3">Usable</h3>
+                    <h3 class="title-h3 title-h3--html">Usable</h3>
                     <pre class="code code--html">
                         <code class="code__el">
 &lt;img src="image.jpg" height="200" width="400" alt="…"&gt
@@ -451,6 +532,13 @@ loading="eager"
 img {
   max-width: 100%;
   height: auto;
+}
+
+img,
+video,
+iframe {
+    max-inline-size: 100%;
+    block-size: auto;
 }
                         </code>
                     </pre>
@@ -583,7 +671,7 @@ background-image: image-set(
                 </div>
 
                 <div class="section__part">
-                    <h3 class="title-h3">Squoosh API</h3>
+                    <h3 class="title-h3 title-h3--html">Squoosh API</h3>
                     <p>Not maintainable</p>
                     <p>Need install:</p>
                     <ul class="section__list">
@@ -614,7 +702,7 @@ squoosh-cli --mozjpeg '{quality: 75}' -d jpg *(*.jpg|*.png|*.avif|*.webp!(webp|a
                 </div>
 
                 <div class="section__part">
-                    <h3 class="title-h3">Useful</h3>
+                    <h3 class="title-h3 title-h3--html">Useful</h3>
                     <p>Картинке сохранять пропорции при ресайзе</p>
                     <pre class="code code--html">
                         <code class="code__el">
