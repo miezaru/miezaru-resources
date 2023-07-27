@@ -34,12 +34,12 @@
   --white: #fff;
   --black: #000;
   --clr-bcg-primary: #f8f7ff;
-  --clr-bcg-section-html: rgba(238, 149, 125, 0.1);
-  --clr-bcg-section-tools: rgba(184, 184, 255, 0.1);
-  --clr-bcg-section-css: rgba(115, 170, 211, 0.1);
-  --clr-bcg-section-scss: rgba(224, 163, 194, 0.1);
-  --clr-bcg-section-js: rgba(250, 236, 120, 0.1);
-  --clr-bcg-section-react: rgba(160, 233, 253, 0.1);
+  --clr-bcg-section-html: #f8edf2;
+  --clr-bcg-section-tools: #f1f0ff;
+  --clr-bcg-section-css: #ebf0fb;
+  --clr-bcg-section-scss: #f6eff9;
+  --clr-bcg-section-js: #f8f5f1;
+  --clr-bcg-section-react: #eff6ff;
   --clr-primary: #ffc8dd;
   --clr-accent: #9381ff;
   --clr-accent-html: #f9dcd4;
@@ -73,12 +73,10 @@ a {
 }
 
 p {
-  font-size: 1.7rem;
+  max-inline-size: 66ch;
+  font-size: clamp(1.2rem, 0.75rem + 1.5vw, 2rem);
   font-weight: 500;
   line-height: 1.7;
-}
-p:not(:last-child) {
-  margin-bottom: 1.8rem;
 }
 
 .mark-text {
@@ -106,6 +104,7 @@ p:not(:last-child) {
 
 body {
   min-height: 100vh;
+  font-display: swap;
   background-color: var(--clr-bcg-primary);
 }
 
@@ -184,16 +183,176 @@ strong {
 .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 8rem 6.4rem -webkit-min-content;
-  -ms-grid-rows: 8rem 6.4rem min-content;
+  -ms-grid-rows: 8rem 5rem -webkit-min-content;
+  -ms-grid-rows: 8rem 5rem min-content;
   grid-template-rows: 8rem -webkit-min-content;
   grid-template-rows: 8rem min-content;
   -ms-grid-columns: [full-start] minmax(3.2rem, 1fr) [center-start] ([col-start] minmax(-webkit-min-content, 14.4rem) [col-end])[10] [center-end] minmax(3.2rem, 1fr) [full-end];
   -ms-grid-columns: [full-start] minmax(3.2rem, 1fr) [center-start] ([col-start] minmax(min-content, 14.4rem) [col-end])[10] [center-end] minmax(3.2rem, 1fr) [full-end];
   grid-template-columns: [full-start] minmax(3.2rem, 1fr) [center-start] repeat(10, [col-start] minmax(-webkit-min-content, 14.4rem) [col-end]) [center-end] minmax(3.2rem, 1fr) [full-end];
   grid-template-columns: [full-start] minmax(3.2rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 14.4rem) [col-end]) [center-end] minmax(3.2rem, 1fr) [full-end];
-  row-gap: 6.4rem;
+  row-gap: 5rem;
   padding: 3.2rem 0 12rem;
+}
+
+.grid > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.grid > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+
+.grid > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.grid > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+}
+
+.grid > *:nth-child(5) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+
+.grid > *:nth-child(6) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 6;
+}
+
+.grid > *:nth-child(7) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+}
+
+.grid > *:nth-child(8) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 8;
+}
+
+.grid > *:nth-child(9) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 9;
+}
+
+.grid > *:nth-child(10) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 10;
+}
+
+.grid > *:nth-child(11) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 11;
+}
+
+.grid > *:nth-child(12) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 12;
+}
+
+.grid > *:nth-child(13) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 13;
+}
+
+.grid > *:nth-child(14) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 14;
+}
+
+.grid > *:nth-child(15) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 15;
+}
+
+.grid > *:nth-child(16) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 16;
+}
+
+.grid > *:nth-child(17) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+.grid > *:nth-child(18) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+}
+
+.grid > *:nth-child(19) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+
+.grid > *:nth-child(20) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+}
+
+.grid > *:nth-child(21) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}
+
+.grid > *:nth-child(22) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 6;
+}
+
+.grid > *:nth-child(23) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+}
+
+.grid > *:nth-child(24) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 8;
+}
+
+.grid > *:nth-child(25) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 9;
+}
+
+.grid > *:nth-child(26) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 10;
+}
+
+.grid > *:nth-child(27) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 11;
+}
+
+.grid > *:nth-child(28) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 12;
+}
+
+.grid > *:nth-child(29) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 13;
+}
+
+.grid > *:nth-child(30) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 14;
+}
+
+.grid > *:nth-child(31) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 15;
+}
+
+.grid > *:nth-child(32) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 16;
 }
 
 main {
@@ -240,7 +399,7 @@ main {
 }
 .resources__link:link, .resources__link:visited {
   padding: 0.8rem 1.6rem;
-  font-size: 1.6rem;
+  font-size: clamp(1.2rem, 0.75rem + 1.5vw, 1.8rem);
   font-weight: 500;
   color: inherit;
   background-color: var(--clr-bcg-primary);
@@ -296,27 +455,21 @@ main {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: html;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(var(--clr-bcg-section-html)), to(var(--clr-bcg-section-html)));
-  background-image: -webkit-linear-gradient(top left, var(--clr-bcg-section-html), var(--clr-bcg-section-html));
-  background-image: linear-gradient(to bottom right, var(--clr-bcg-section-html), var(--clr-bcg-section-html));
+  background-color: var(--clr-bcg-section-html);
 }
 .section--tools {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   -ms-grid-column: 5;
   grid-area: tools;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(var(--clr-bcg-section-tools)), to(var(--clr-bcg-section-tools)));
-  background-image: -webkit-linear-gradient(top left, var(--clr-bcg-section-tools), var(--clr-bcg-section-tools));
-  background-image: linear-gradient(to bottom right, var(--clr-bcg-section-tools), var(--clr-bcg-section-tools));
+  background-color: var(--clr-bcg-section-tools);
 }
 .section--css {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: css;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(var(--clr-bcg-section-css)), to(var(--clr-bcg-section-css)));
-  background-image: -webkit-linear-gradient(top left, var(--clr-bcg-section-css), var(--clr-bcg-section-css));
-  background-image: linear-gradient(to bottom right, var(--clr-bcg-section-css), var(--clr-bcg-section-css));
+  background-color: var(--clr-bcg-section-css);
 }
 .section--js {
   -ms-grid-row: 5;
@@ -324,18 +477,14 @@ main {
   -ms-grid-column-span: 3;
   grid-area: js;
   height: 30rem;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(var(--clr-bcg-section-js)), to(var(--clr-bcg-section-js)));
-  background-image: -webkit-linear-gradient(top left, var(--clr-bcg-section-js), var(--clr-bcg-section-js));
-  background-image: linear-gradient(to bottom right, var(--clr-bcg-section-js), var(--clr-bcg-section-js));
+  background-color: var(--clr-bcg-section-js);
 }
 .section--scss {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: scss;
   height: 30rem;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(var(--clr-bcg-section-scss)), to(var(--clr-bcg-section-scss)));
-  background-image: -webkit-linear-gradient(top left, var(--clr-bcg-section-scss), var(--clr-bcg-section-scss));
-  background-image: linear-gradient(to bottom right, var(--clr-bcg-section-scss), var(--clr-bcg-section-scss));
+  background-color: var(--clr-bcg-section-scss);
 }
 .section--react {
   -ms-grid-row: 7;
@@ -343,9 +492,7 @@ main {
   -ms-grid-column-span: 3;
   grid-area: react;
   height: 30rem;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(var(--clr-bcg-section-react)), to(var(--clr-bcg-section-react)));
-  background-image: -webkit-linear-gradient(top left, var(--clr-bcg-section-react), var(--clr-bcg-section-react));
-  background-image: linear-gradient(to bottom right, var(--clr-bcg-section-react), var(--clr-bcg-section-react));
+  background-color: var(--clr-bcg-section-react);
 }
 
 .section-header {
@@ -472,20 +619,20 @@ main {
   border-radius: var(--br-default);
 }
 .title-h3--html {
-  background-color: var(--clr-bcg-section-html);
+  background-color: var(--clr-accent-html);
 }
 .title-h3--tools {
-  background-color: var(--clr-bcg-section-tools);
+  background-color: var(--clr-accent-tools);
 }
 .title-h3--css {
-  background-color: var(--clr-bcg-section-css);
+  background-color: var(--clr-accent-css);
 }
 .title-h3--scss {
-  background-color: var(--clr-bcg-section-scss);
+  background-color: var(--clr-accent-scss);
 }
 .title-h3--js {
-  background-color: var(--clr-bcg-section-js);
+  background-color: var(--clr-accent-js);
 }
 .title-h3--react {
-  background-color: var(--clr-bcg-section-react);
+  background-color: var(--clr-accent-react);
 }

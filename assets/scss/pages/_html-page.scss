@@ -6,14 +6,17 @@
     display: grid;
     grid-template-columns:
         [full-start] minmax(min-content, 1fr) [center-start] repeat(
-            10,
-            [col-start] minmax(min-content, 12rem) [col-end]
+            8,
+            [col-start] minmax(min-content, 10rem) [col-end]
         )
         [center-end] minmax(min-content, 1fr) [full-end];
-    row-gap: 5.4rem;
+    row-gap: 5rem;
 
     &__part {
-        grid-column: col-start 2 / col-end 8;
+        display: flex;
+        flex-direction: column;
+        grid-column: col-start 1 / col-end 8;
+        gap: 2.4rem;
     }
 
     &__link {
@@ -41,13 +44,13 @@
         }
 
         &:not(:last-child) {
-            margin-bottom: 2.2rem;
+            margin-bottom: 1.8rem;
         }
     }
 }
 
 .section-header {
-    grid-column: center-start / center-end;
+    grid-column: col-start 1 / col-end 8;
 }
 
 .resources {
@@ -70,25 +73,27 @@
 }
 
 .title-h2 {
+    display: inline-block;
     padding: 1.2rem 2.4rem;
     margin-bottom: -2.4rem;
     font-size: 2.4rem;
+    transform: translateX(-3.5rem);
 
     @extend %title-styles;
 }
 
 .title-h3 {
+    align-self: flex-start;
     padding: 1rem 2rem;
-    margin-bottom: 2.4rem;
+    margin-bottom: 1.2rem;
     font-size: 2rem;
-    transform: translateX(-2rem);
 
     @extend %title-styles;
 }
 
 .title-h4 {
     display: inline-block;
-    margin-bottom: 2rem;
+    margin-bottom: 1.2rem;
     font-size: 1.8rem;
     font-weight: 500;
     line-height: 1.2;

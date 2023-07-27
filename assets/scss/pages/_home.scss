@@ -8,59 +8,35 @@
 
     &--html {
         grid-area: html;
-        background-image: linear-gradient(
-            to bottom right,
-            var(--clr-bcg-section-html),
-            var(--clr-bcg-section-html)
-        );
+        background-color: var(--clr-bcg-section-html);
     }
 
     &--tools {
         grid-area: tools;
-        background-image: linear-gradient(
-            to bottom right,
-            var(--clr-bcg-section-tools),
-            var(--clr-bcg-section-tools)
-        );
+        background-color: var(--clr-bcg-section-tools);
     }
 
     &--css {
         grid-area: css;
-        background-image: linear-gradient(
-            to bottom right,
-            var(--clr-bcg-section-css),
-            var(--clr-bcg-section-css)
-        );
+        background-color: var(--clr-bcg-section-css);
     }
 
     &--js {
         grid-area: js;
         height: 30rem;
-        background-image: linear-gradient(
-            to bottom right,
-            var(--clr-bcg-section-js),
-            var(--clr-bcg-section-js)
-        );
+        background-color: var(--clr-bcg-section-js);
     }
 
     &--scss {
         grid-area: scss;
         height: 30rem;
-        background-image: linear-gradient(
-            to bottom right,
-            var(--clr-bcg-section-scss),
-            var(--clr-bcg-section-scss)
-        );
+        background-color: var(--clr-bcg-section-scss);
     }
 
     &--react {
         grid-area: react;
         height: 30rem;
-        background-image: linear-gradient(
-            to bottom right,
-            var(--clr-bcg-section-react),
-            var(--clr-bcg-section-react)
-        );
+        background-color: var(--clr-bcg-section-react);
     }
 }
 
@@ -210,26 +186,26 @@
     border-radius: var(--br-default);
 
     &--html {
-        background-color: var(--clr-bcg-section-html);
+        background-color: var(--clr-accent-html);
     }
 
     &--tools {
-        background-color: var(--clr-bcg-section-tools);
+        background-color: var(--clr-accent-tools);
     }
 
     &--css {
-        background-color: var(--clr-bcg-section-css);
+        background-color: var(--clr-accent-css);
     }
 
     &--scss {
-        background-color: var(--clr-bcg-section-scss);
+        background-color: var(--clr-accent-scss);
     }
 
     &--js {
-        background-color: var(--clr-bcg-section-js);
+        background-color: var(--clr-accent-js);
     }
 
     &--react {
-        background-color: var(--clr-bcg-section-react);
+        background-color: var(--clr-accent-react);
     }
 }
