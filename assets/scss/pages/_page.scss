@@ -112,6 +112,7 @@
             justify-content: center;
             width: 1.8rem;
             height: 1.8rem;
+            font-size: 1rem;
             font-size: clamp(1rem, 0.75rem + 1.5vw, 1.4rem);
             line-height: 1;
             color: var(--clr-txt-primary);
@@ -146,8 +147,8 @@
 
             & li {
                 position: relative;
+                font-size: 1.5rem;
                 font-size: clamp(1.5rem, 0.75rem + 1.5vw, 1.7rem);
-                font-size: 1.7rem;
                 line-height: 1.5;
                 transform: translateX(6rem);
             }
@@ -224,6 +225,7 @@
 
 .title-h1 {
     padding: 2rem 4rem;
+    font-size: 2.4rem;
     font-size: clamp(2.4rem, 1.4rem + 1vw, 3rem);
 
     &--html {
@@ -257,6 +259,7 @@
     display: inline-block;
     padding: 1.2rem 2.4rem;
     margin-bottom: -2.4rem;
+    font-size: 2rem;
     font-size: clamp(2rem, 0.9rem + 1vw, 2.4rem);
     transform: translateX(-3.5rem);
 
@@ -291,6 +294,7 @@
     align-self: flex-start;
     padding: 1rem 2rem;
     margin-bottom: 1.2rem;
+    font-size: 1.7rem;
     font-size: clamp(1.7rem, 0.8rem + 1vw, 2rem);
     word-wrap: wrap;
     transform: translateX(-2rem);
@@ -325,6 +329,7 @@
 .title-h4 {
     display: inline-block;
     margin-bottom: 1.2rem;
+    font-size: 1.7rem;
     font-size: clamp(1.7rem, 0.75rem + 1vw, 1.8rem);
     font-weight: 600;
     line-height: 1.2;
