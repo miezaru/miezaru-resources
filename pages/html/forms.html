@@ -18,28 +18,21 @@
         <link
             as="font"
             crossorigin
-            href="../../assets/fonts/notosans-regular.woff2"
+            href="../../assets/fonts/RubikRegular.woff2"
             rel="preload"
             type="font/woff2"
         />
         <link
             as="font"
             crossorigin
-            href="../../assets/fonts/notosans-medium.woff2"
+            href="../../assets/fonts/RubikMedium.woff2"
             rel="preload"
             type="font/woff2"
         />
         <link
             as="font"
             crossorigin
-            href="../../assets/fonts/notosans-semibold.woff2"
-            rel="preload"
-            type="font/woff2"
-        />
-        <link
-            as="font"
-            crossorigin
-            href="../../assets/fonts/notosans-bold.woff2"
+            href="../../assets/fonts/RubikSemiBold.woff2"
             rel="preload"
             type="font/woff2"
         />
@@ -469,15 +462,22 @@
                 </header>
                 <div class="section__part">
                     <h3 class="title-h3 title-h3--html">Form</h3>
-                    <p>
-                        GET - URL <br />
-                        POST - data is included in the
-                        <a
-                            href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST#example"
-                            class="section__link section__link--html"
-                            >body of the request</a
-                        >.
-                    </p>
+
+                    <ol class="section__list-sm section__list-sm--html">
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">GET - URL</p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                POST - data is included in the
+                                <a
+                                    href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST#example"
+                                    class="section__link section__link--html"
+                                    >body of the request</a
+                                >.
+                            </p>
+                        </li>
+                    </ol>
                     <p>
                         Based on the element name and the type attribute,
                         browsers show different user interfaces, use different
@@ -520,48 +520,61 @@
                         </code>
                     </pre>
 
-                    <p>Multiple lines of text</p>
-                    <pre class="code code--html">
-                        <code class="code__el">
+                    <ol class="section__list-sm section__list-sm--html">
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Multiple lines of text
+                            </p>
+                            <pre class="code code--html">
+                                <code class="code__el">
 &lt;label for="comment"&gt;Comment&lt;/label&gt;
 &lt;textarea id="comment" name="comment"&gt;&lt;/textarea&gt;
-                        </code>
-                    </pre>
-
-                    <p>list of options</p>
-                    <pre class="code code--html">
-                        <code class="code__el">
+                                </code>
+                            </pre>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">list of options</p>
+                            <pre class="code code--html">
+                                <code class="code__el">
 &lt;label for="color"&gt;Color&lt;/label&gt;
 &lt;select id="color" name="color"&gt;
     &lt;option value="orange"&gt;Orange&lt;/option&gt;
     &lt;option value="pink"&gt;Pink&lt;/option&gt;
 &lt;/select&gt;
-                        </code>
-                    </pre>
-
-                    <p>Grouping form controls</p>
-                    <pre class="code code--html">
+                                </code>
+                            </pre>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Grouping form controls
+                            </p>
+                            <pre class="code code--html">
                         <code class="code__el">
 &lt;fieldset&gt;
-  &lt;legend&gt;What is your favorite web technology&lt;/legend&gt;
+    &lt;legend&gt;What is your favorite web technology&lt;/legend&gt;
 
-  &lt;label for="html"&gt;HTML&lt;/label&gt;
-  &lt;input type="radio" name="webfeature" value="html" id="html"&gt;
+    &lt;label for="html"&gt;HTML&lt;/label&gt;
+    &lt;input type="radio" name="webfeature" value="html" id="html"&gt;
 
-  &lt;label for="css"&gt;CSS&lt;/label&gt;
-  &lt;input type="radio" name="webfeature" value="css" id="css"&gt;
+    &lt;label for="css"&gt;CSS&lt;/label&gt;
+    &lt;input type="radio" name="webfeature" value="css" id="css"&gt;
 &lt;/fieldset&gt;
-                        </code>
-                    </pre>
-
-                    <p>Submitting a form</p>
-                    <pre class="code code--html">
-                        <code class="code__el">
+                                </code>
+                            </pre>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Submitting a form
+                            </p>
+                            <pre class="code code--html">
+                                <code class="code__el">
 &lt;button&gt;Submit&lt;/button&gt;
 
 &lt;input type="submit" value="Submit"&gt;
-                        </code>
-                    </pre>
+                                </code>
+                            </pre>
+                        </li>
+                    </ol>
                     <p>
                         Every
                         <span class="mark-text mark-text--html"
@@ -582,104 +595,151 @@
 
                 <div class="section__part">
                     <h3 class="title-h3 title-h3--html">
-                        Help users avoid re-entering data in forms and help
-                        browsers with autofill
+                        Help users avoid re-entering data in forms
                     </h3>
-                    <p>
-                        Make it more convenient for users to fill out forms with
-                        <a
-                            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete#browser_compatibility"
-                            class="section__link section__link--html"
-                            >HTML Autocomplete</a
-                        >.
-                    </p>
-                    <p>
-                        Based on this information, browsers can offer the option
-                        to autofill a field with previously entered data of the
-                        same type. Browsers can even offer to autofill an entire
-                        form.
-                    </p>
-                    <p>Use sensible attribute values</p>
-                    <p>
-                        Use
-                        <span class="mark-text mark-text--html">email</span> as
-                        a value for the
-                        <span class="mark-text mark-text--html">name</span>,
-                        <span class="mark-text mark-text--html">id</span>, and
-                        <span class="mark-text mark-text--html">type</span>
-                        attribute. Three hints for the browser that this is an
-                        email field.
-                    </p>
 
-                    <pre class="code code--html">
-                        <code class="code__el">
+                    <ol class="section__list-sm section__list-sm--html">
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Make it more convenient for users to fill out
+                                forms with
+                                <a
+                                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete#browser_compatibility"
+                                    class="section__link section__link--html"
+                                    >HTML Autocomplete</a
+                                >.
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Based on this information, browsers can offer
+                                the option to autofill a field with previously
+                                entered data of the same type. Browsers can even
+                                offer to autofill an entire form.
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Use sensible attribute values
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Use
+                                <span class="mark-text mark-text--html"
+                                    >email</span
+                                >
+                                as a value for the
+                                <span class="mark-text mark-text--html"
+                                    >name</span
+                                >,
+                                <span class="mark-text mark-text--html">id</span
+                                >, and
+                                <span class="mark-text mark-text--html"
+                                    >type</span
+                                >
+                                attribute. Three hints for the browser that this
+                                is an email field.
+                            </p>
+
+                            <pre class="code code--html">
+                                <code class="code__el">
 &lt;label for="email"&gt;Email&lt;/label&gt;
 &lt;input type="email" name="email" id="email"&gt;
-                        </code>
-                    </pre>
+                                </code>
+                            </pre>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                The autocomplete attribute
+                            </p>
 
-                    <p>The autocomplete attribute</p>
-                    <pre class="code code--html">
+                            <pre class="code code--html">
                         <code class="code__el">
 &lt;label for="name"&gt;Name&lt;/label&gt;
 &lt;input type="text" name="name" id="name" autocomplete="name"&gt;
                         </code>
                     </pre>
+                        </li>
+                    </ol>
                 </div>
 
                 <div class="section__part">
                     <h3 class="title-h3 title-h3--html">
                         Help users enter the right data in forms
                     </h3>
-                    <p>
-                        The
-                        <span class="mark-text mark-text--html">required</span>
-                        attribute tells the browser that the field is mandatory.
-                        The browser also tests if the entered data matches the
-                        format of the
-                        <span class="mark-text mark-text--html">type</span>.
-                    </p>
-                    <pre class="code code--html">
-                        <code class="code__el">
+
+                    <ol class="section__list-sm section__list-sm--html">
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                The
+                                <span class="mark-text mark-text--html"
+                                    >required</span
+                                >
+                                attribute tells the browser that the field is
+                                mandatory. The browser also tests if the entered
+                                data matches the format of the
+                                <span class="mark-text mark-text--html"
+                                    >type</span
+                                >.
+                            </p>
+
+                            <pre class="code code--html">
+                                <code class="code__el">
 &lt;label for="name"&gt;Name (required)&lt;/label&gt;
 &lt;input required type="text" id="name" name="name"&gt;
-                        </code>
-                    </pre>
+                                </code>
+                            </pre>
+                        </li>
 
-                    <p>minlenght</p>
-                    <pre class="code code--html">
-                        <code class="code__el">
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">minlenght</p>
+
+                            <pre class="code code--html">
+                                <code class="code__el">
 &lt;label for="password"&gt;Password (required)&lt;/label&gt;
 &lt;input required minlength="8" type="password" id="password" name="password"&gt;
-                        </code>
-                    </pre>
-
-                    <p>
-                        For numerical input types use
-                        <span class="mark-text mark-text--html">min</span> and
-                        <span class="mark-text mark-text--html">max</span> to
-                        achieve the same result.
-                    </p>
-
-                    <p>Pattern attribute</p>
-                    <p>
-                        Sometimes you want to define more advanced validation
-                        rules. Use HTML
-                        <span class="mark-text mark-text--html"
-                            >pattern attribute</span
-                        >, and you can define a regular expression as the value.
-                    </p>
-                    <pre class="code code--html">
-                        <code class="code__el">
+                                </code>
+                            </pre>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                For numerical input types use
+                                <span class="mark-text mark-text--html"
+                                    >min</span
+                                >
+                                and
+                                <span class="mark-text mark-text--html"
+                                    >max</span
+                                >
+                                to achieve the same result.
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Pattern attribute
+                            </p>
+                            <p class="section__list-sm-text">
+                                Sometimes you want to define more advanced
+                                validation rules. Use HTML
+                                <span class="mark-text mark-text--html"
+                                    >pattern attribute</span
+                                >, and you can define a regular expression as
+                                the value.
+                            </p>
+                            <pre class="code code--html">
+                                <code class="code__el">
 &lt;label for="animal"&gt;What is your favorite animal? (required)&lt;/label&gt;
 &lt;input required pattern="[a-z]{2,20}" type="text" id="animal" name="animal"&gt;
-                        </code>
-                    </pre>
-                    <p>
-                        Here, only lowercase letters are allowed; the user has
-                        to enter at least two characters, and not more than
-                        twenty.
-                    </p>
+                                </code>
+                            </pre>
+                            <p class="section__list-sm-text">
+                                Here, only lowercase letters are allowed; the
+                                user has to enter at least two characters, and
+                                not more than twenty.
+                            </p>
+                        </li>
+                    </ol>
                 </div>
 
                 <div class="section__part">
@@ -779,12 +839,15 @@ nameInput.addEventListener('invalid', () => {
                     <h3 class="title-h3 title-h3--html">
                         Design recommendation
                     </h3>
-                    <ul class="section__list">
-                        <li class="section__list-item">
-                            <p>Use a label for every form control</p>
+                    <ol class="section__list-sm section__list-sm--html">
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Use a label for every form control
+                            </p>
                         </li>
-                        <li class="section__list-item">
-                            <p>Label wording</p>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">Label wording</p>
+
                             <pre class="code code--html">
                                 <code class="code__el">
 &lt;label for="email"&gt;Enter your email address&lt;/label&gt;
@@ -792,23 +855,31 @@ nameInput.addEventListener('invalid', () => {
                                 </code>
                             </pre>
                         </li>
-                        <li class="section__list-item">
-                            <p>Best label position - TOP</p>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Best label position - TOP
+                            </p>
                         </li>
-                        <li class="section__list-item">
-                            <p>Better for users use single column form</p>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Better for users use single column form
+                            </p>
                         </li>
-                        <li class="section__list-item">
-                            <p>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
                                 Make forms big enought. The recommended tap
                                 target size of a button is at least 48px.
                             </p>
                         </li>
-                        <li class="section__list-item">
-                            <p>Show errors where they happen</p>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Show errors where they happen
+                            </p>
                         </li>
-                        <li class="section__list-item">
-                            <p>Make it clear to users what data to enter</p>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Make it clear to users what data to enter
+                            </p>
                             <pre class="code code--html">
                                 <code class="code__el">
 &lt;label for="password"&gt;Password (required)&lt;/label&gt;
@@ -817,8 +888,8 @@ nameInput.addEventListener('invalid', () => {
                                 </code>
                             </pre>
                         </li>
-                        <li class="section__list-item">
-                            <p>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
                                 Make it clear to users which fields are required
                             </p>
                             <pre class="code code--html">
@@ -828,7 +899,7 @@ nameInput.addEventListener('invalid', () => {
                                 </code>
                             </pre>
                         </li>
-                    </ul>
+                    </ol>
                 </div>
             </section>
         </main>

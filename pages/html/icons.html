@@ -18,28 +18,21 @@
         <link
             as="font"
             crossorigin
-            href="../../assets/fonts/notosans-regular.woff2"
+            href="../../assets/fonts/RubikRegular.woff2"
             rel="preload"
             type="font/woff2"
         />
         <link
             as="font"
             crossorigin
-            href="../../assets/fonts/notosans-medium.woff2"
+            href="../../assets/fonts/RubikMedium.woff2"
             rel="preload"
             type="font/woff2"
         />
         <link
             as="font"
             crossorigin
-            href="../../assets/fonts/notosans-semibold.woff2"
-            rel="preload"
-            type="font/woff2"
-        />
-        <link
-            as="font"
-            crossorigin
-            href="../../assets/fonts/notosans-bold.woff2"
+            href="../../assets/fonts/RubikSemiBold.woff2"
             rel="preload"
             type="font/woff2"
         />
@@ -285,18 +278,30 @@
                 </header>
                 <div class="section__part">
                     <h3 class="title-h3 title-h3--html">Use good icons</h3>
-                    <p>
-                        Use a good icon pack, there are tons of free and paid
-                        icons packs
-                    </p>
-                    <p>
-                        Use only one icon pack. Don`t mix icons from different
-                        icon packs
-                    </p>
-                    <p>
-                        Use SVG icons or icon fonts. Don`t use bitmap image
-                        formats (.jpg and .png)!
-                    </p>
+                    <ol class="section__list-sm section__list-sm--html">
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Use a good icon pack, there are tons of free and
+                                paid icons packs
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Use only one icon pack. Don`t mix icons from
+                                different icon packs
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Use SVG icons or icon fonts. Don`t use bitmap
+                                image formats (.jpg and .png)!
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+                <div class="section__part">
+                    <h3 class="title-h3 title-h3--html">Icon types</h3>
+
                     <ol class="section__list-sm section__list-sm--html">
                         <li class="section__list-sm-item">
                             <p class="section__list-sm-text">Vector-based</p>
@@ -306,8 +311,6 @@
                                 <li>Scale indefinitely!</li>
                             </ul>
                         </li>
-                    </ol>
-                    <ol class="section__list-sm section__list-sm--html">
                         <li class="section__list-sm-item">
                             <p class="section__list-sm-text">Bitmap</p>
 
@@ -317,6 +320,7 @@
                             </ul>
                         </li>
                     </ol>
+
                     <p>
                         Adjust to website personality! Roundness, weight and
                         filled/outlined depend on typography
@@ -325,58 +329,101 @@
 
                 <div class="section__part">
                     <h3 class="title-h3 title-h3--html">When to use icons</h3>
-                    <p>Use icons to provide visual assistance to text</p>
-                    <p>Use icons for product feature blocks</p>
-                    <p>
-                        Use icons associated with actions, and label them
-                        (unless no space or icon is 100% clear)
-                    </p>
-                    <p>Use icons as bullet points</p>
+
+                    <ol class="section__list-sm section__list-sm--html">
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Use icons to provide visual assistance to text
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Use icons for product feature blocks
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Use icons associated with actions, and label
+                                them (unless no space or icon is 100% clear)
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Use icons as bullet points
+                            </p>
+                        </li>
+                    </ol>
                 </div>
 
                 <div class="section__part">
                     <h3 class="title-h3 title-h3--html">Use icons well</h3>
-                    <p>
-                        To keep icons neutral, use same color as text. To draw
-                        more attention, use different color
-                    </p>
-                    <p>Use icons for product feature blocks</p>
-                    <p>
-                        Don`t confuse users: icons need to make sense and fit
-                        the text or action!
-                    </p>
-                    <p>
-                        3. Don`t make icons larger than what they were designed
-                        for. If needed, enclose them in a shape
-                    </p>
+                    <ol class="section__list-sm section__list-sm--html">
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                To keep icons neutral, use same color as text.
+                                To draw more attention, use different color
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Don`t confuse users: icons need to make sense
+                                and fit the text or action!
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Don`t make icons larger than what they were
+                                designed for. If needed, enclose them in a shape
+                            </p>
+                        </li>
+                    </ol>
                 </div>
                 <div class="section__part">
                     <h3 class="title-h3 title-h3--html">
                         How to make external SVG sprite file:
                     </h3>
-                    <p>Create file sprites.svg</p>
 
-                    <pre class="code code--html">
-                        <code class="code-el">
-&lt;svg xmlns="http://www.w3.org/2000/svg"&gt;
-    &lt;symbol id="science" viewBox="0 0 24 24" fill="none"&gt;
-        &lt;path stroke-linecap="round" stroke-linejoin="round"
-        d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /&gt;
-    &lt;/symbol&gt;
-&lt;/svg&gt;
-                        </code>
-                    </pre>
-                    <p>
-                        Need to take path from svg icon, if path`s more than 1,
-                        use &lt;g&gt; tag to group them (it works w/o group
-                        paths, need to test it)
-                    </p>
-                    <p>Add viewBox attribute to symbol tag, from svg icon</p>
-                    <p>Use id to link sprite to embedded svg</p>
-                    <p>
-                        Sometimes, svg icons need more than viewBox, the might
-                        be need stroke or fill="none" properties
-                    </p>
+                    <ol class="section__list-sm section__list-sm--html">
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Create file sprites.svg
+                            </p>
+                            <pre class="code code--html">
+                                <code class="code-el">
+        &lt;svg xmlns="http://www.w3.org/2000/svg"&gt;
+            &lt;symbol id="science" viewBox="0 0 24 24" fill="none"&gt;
+                &lt;path stroke-linecap="round" stroke-linejoin="round"
+                d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /&gt;
+            &lt;/symbol&gt;
+        &lt;/svg&gt;
+                                </code>
+                            </pre>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Need to take path from svg icon, if path`s more
+                                than 1, use &lt;g&gt; tag to group them (it
+                                works w/o group paths, need to test it)
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Add viewBox attribute to symbol tag, from svg
+                                icon
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Use id to link sprite to embedded svg
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Sometimes, svg icons need more than viewBox, the
+                                might be need stroke or fill="none" properties
+                            </p>
+                        </li>
+                    </ol>
                 </div>
             </section>
         </main>

@@ -1,36 +1,34 @@
-@charset "UTF-8";
 @font-face {
-  font-family: "Noto Sans";
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/notosans-regular.eot");
-  src: url("../fonts/notosans-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/notosans-regular.woff2") format("woff2"), url("../fonts/notosans-regular.woff") format("woff"), url("../fonts/notosans-regular.ttf") format("truetype"), url("../fonts/notosans-regular.svg#noto_sansregular") format("svg");
+  src: url("../fonts/RubikRegular.eot");
+  src: url("../fonts/RubikRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RubikRegular.woff2") format("woff2"), url("../fonts/RubikRegular.woff") format("woff"), url("../fonts/RubikRegular.ttf") format("truetype"), url("../fonts/RubikRegular.svg#RubikRegular") format("svg");
   font-display: swap;
 }
 @font-face {
-  font-family: "Noto Sans";
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/notosans-medium.eot");
-  src: url("../fonts/notosans-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/notosans-medium.woff2") format("woff2"), url("../fonts/notosans-medium.woff") format("woff"), url("../fonts/notosans-medium.ttf") format("truetype"), url("../fonts/notosans-medium.svg#noto_sansmedium") format("svg");
+  src: url("../fonts/RubikMedium.eot");
+  src: url("../fonts/RubikMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/RubikMedium.woff2") format("woff2"), url("../fonts/RubikMedium.woff") format("woff"), url("../fonts/RubikMedium.ttf") format("truetype"), url("../fonts/RubikMedium.svg#RubikMedium") format("svg");
   font-display: swap;
 }
 @font-face {
-  font-family: "Noto Sans";
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/notosans-semibold.eot");
-  src: url("../fonts/notosans-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/notosans-semibold.woff2") format("woff2"), url("../fonts/notosans-semibold.woff") format("woff"), url("../fonts/notosans-semibold.ttf") format("truetype"), url("../fonts/notosans-semibold.svg#noto_sansemibold") format("svg");
+  src: url("../fonts/RubikSemiBold.eot");
+  src: url("../fonts/RubikSemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RubikSemiBold.woff2") format("woff2"), url("../fonts/RubikSemiBold.woff") format("woff"), url("../fonts/RubikSemiBold.ttf") format("truetype"), url("../fonts/RubikSemiBold.svg#RubikSemiBold") format("svg");
   font-display: swap;
 }
 @font-face {
-  font-family: "Noto Sans";
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/noto_sansbold.eot");
-  src: url("../fonts/noto_sansbold.eot?#iefix") format("embedded-opentype"), url("../fonts/noto_sansbold.woff2") format("woff2"), url("../fonts/noto_sansbold.woff") format("woff"), url("../fonts/noto_sansbold.ttf") format("truetype"), url("../fonts/noto_sansbold.svg#noto_sansbold") format("svg");
+  src: url("../fonts/RubikBold.eot");
+  src: url("../fonts/RubikBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RubikBold.woff2") format("woff2"), url("../fonts/RubikBold.woff") format("woff"), url("../fonts/RubikBold.ttf") format("truetype"), url("../fonts/RubikBold.svg#RubikBold") format("svg");
   font-display: swap;
-  unicode-range: U+0400 — U+045F;
 }
 :root {
   --white: #fff;
@@ -42,6 +40,7 @@
   --clr-bcg-section-scss: #f6eff9;
   --clr-bcg-section-js: #f8f5f1;
   --clr-bcg-section-react: #eff6ff;
+  --clr-bcg-err: #ffb4b0;
   --clr-primary: #ffc8dd;
   --clr-accent: #9381ff;
   --clr-accent-html: #f9dcd4;
@@ -68,7 +67,7 @@
 }
 
 body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
   line-height: 1;
   color: var(--clr-txt-primary);
@@ -80,7 +79,6 @@ a {
 
 p {
   font-size: clamp(1.6rem, 0.75rem + 1vw, 1.8rem);
-  font-weight: 400;
   line-height: 1.7;
 }
 
@@ -105,6 +103,9 @@ p {
 }
 .mark-text--react {
   background-color: var(--clr-bcg-section-react);
+}
+.mark-text--err {
+  background-color: var(--clr-bcg-err);
 }
 
 body {
@@ -411,7 +412,7 @@ main {
 .resources__link:link, .resources__link:visited {
   padding: 0.8rem 1.6rem;
   font-size: clamp(1.6rem, 0.9rem + 1vw, 1.8rem);
-  font-weight: 400;
+  font-weight: 500;
   color: inherit;
   background-color: var(--clr-bcg-primary);
   border-radius: var(--br-default);
@@ -526,7 +527,7 @@ main {
   display: block;
   padding: 1.2rem 2.4rem;
   font-size: clamp(2.6rem, 1.3rem + 1vw, 3rem);
-  font-weight: 500;
+  font-weight: 700;
   color: inherit;
   text-align: center;
   background-color: var(--clr-bcg-primary);
@@ -626,7 +627,7 @@ main {
           align-self: flex-start;
   padding: 0.8rem 1.6rem;
   font-size: clamp(1.7rem, 0.8rem + 1vw, 2rem);
-  font-weight: 500;
+  font-weight: 600;
   border-radius: var(--br-default);
 }
 .title-h3--html {

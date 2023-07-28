@@ -29,6 +29,7 @@
     &__link {
         &:link,
         &:visited {
+            font-weight: 500;
             color: inherit;
             transition: all 0.2s;
         }
@@ -105,7 +106,7 @@
 
         &::before {
             position: absolute;
-            top: 0.1rem;
+            top: 0.35rem;
             display: inline-flex;
             align-items: center;
             justify-content: center;
@@ -123,8 +124,6 @@
         display: flex;
         flex-direction: column;
         gap: 3rem;
-        font-size: clamp(1.5rem, 0.75rem + 1.5vw, 1.6rem);
-        font-weight: 400;
         counter-reset: steps;
 
         &-text {
@@ -132,7 +131,7 @@
         }
 
         & p {
-            line-height: 1.2;
+            line-height: 1.5;
         }
 
         & ul {
@@ -147,6 +146,8 @@
 
             & li {
                 position: relative;
+                font-size: clamp(1.5rem, 0.75rem + 1.5vw, 1.7rem);
+                font-size: 1.7rem;
                 line-height: 1.5;
                 transform: translateX(6rem);
             }
@@ -216,7 +217,7 @@
 
 %title-styles {
     display: inline-block;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.2;
     border-radius: var(--br-default);
 }
@@ -325,6 +326,6 @@
     display: inline-block;
     margin-bottom: 1.2rem;
     font-size: clamp(1.7rem, 0.75rem + 1vw, 1.8rem);
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.2;
 }

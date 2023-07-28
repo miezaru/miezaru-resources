@@ -25,6 +25,7 @@ $clr-bcg-section-react: #eff6ff;
 
 // $clr-bcg-section-tools: rgba(#b8b8ff, 0.1);
 $clr-bcg-section-tools: #f1f0ff;
+$clr-bcg-err: #ffb4b0;
 $clr-accent-html: #f9dcd4;
 $clr-accent-css: #d0e3f0;
 $clr-accent-scss: #f5e0eb;
@@ -48,6 +49,7 @@ $sh-small: 0 0 0.4rem 0 rgba($black, 0.1);
     --clr-bcg-section-scss: #{$clr-bcg-section-scss};
     --clr-bcg-section-js: #{$clr-bcg-section-js};
     --clr-bcg-section-react: #{$clr-bcg-section-react};
+    --clr-bcg-err: #{$clr-bcg-err};
     --clr-primary: #{$clr-primary};
     --clr-accent: #{$clr-accent};
     --clr-accent-html: #{$clr-accent-html};
