@@ -128,7 +128,7 @@
             <a
                 href="https://miezaru-resources.netlify.app/"
                 class="logo u-margin-right-auto"
-                >mic`</a
+                >miezaru</a
             >
 
             <a
@@ -269,7 +269,9 @@
             <p id="on-this-page">On this page</p>
             <ul class="page-nav__list">
                 <li class="page-nav__item">
-                    <a href="#top" class="page-nav__link">Back to top &uarr;</a>
+                    <a href="#top" class="page-nav__link details-link"
+                        >Back to top &uarr;</a
+                    >
                 </li>
                 <li class="page-nav__item">
                     <details class="page-nav__details details">
@@ -292,10 +294,14 @@
                     </details>
                 </li>
                 <li class="page-nav__item">
-                    <a href="#float" class="page-nav__link">Float</a>
+                    <a href="#float" class="page-nav__link details-link"
+                        >Float</a
+                    >
                 </li>
                 <li class="page-nav__item">
-                    <a href="#flexbox" class="page-nav__link">Flexbox</a>
+                    <a href="#flexbox" class="page-nav__link details-link"
+                        >Flexbox</a
+                    >
                 </li>
                 <li class="page-nav__item">
                     <details class="page-nav__details details">
@@ -312,13 +318,7 @@
                                     >Terminology</a
                                 >
                             </li>
-                            <li class="page-nav__item-inner">
-                                <a
-                                    href="#grid-units-and-functions"
-                                    class="page-nav__link-inner"
-                                    >Units and functions</a
-                                >
-                            </li>
+
                             <li class="page-nav__item-inner">
                                 <a
                                     href="#grid-rows"
@@ -326,9 +326,19 @@
                                     >Rows</a
                                 >
                             </li>
+
                             <li class="page-nav__item-inner">
-                                <a href="#grid-fr" class="page-nav__link-inner"
-                                    >Fr unit</a
+                                <a
+                                    href="#grid-w-o-effect"
+                                    class="page-nav__link-inner"
+                                    >Properties w/o effect</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#grid-units-and-functions"
+                                    class="page-nav__link-inner"
+                                    >Units and functions</a
                                 >
                             </li>
                             <li class="page-nav__item-inner">
@@ -349,14 +359,7 @@
                                 <a
                                     href="#grid-parent-container"
                                     class="page-nav__link-inner"
-                                    >Parent Container properties</a
-                                >
-                            </li>
-                            <li class="page-nav__item-inner">
-                                <a
-                                    href="#grid-w-o-effect"
-                                    class="page-nav__link-inner"
-                                    >Properties w/o effect</a
+                                    >Parent container properties</a
                                 >
                             </li>
                             <li class="page-nav__item-inner">
@@ -785,6 +788,52 @@
                         </li>
                     </ol>
                 </div>
+
+                <div class="section__part" id="grid-rows">
+                    <h3 class="title-h3 title-h3--css">Rows</h3>
+
+                    <ol class="section__list-sm section__list-sm--css">
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Explicit (явный) row - row, where we defined
+                                height
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Implicit (скрытый) row - row, where we do not
+                                defined height
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="section__part" id="grid-w-o-effect">
+                    <h3 class="title-h3 title-h3--css">
+                        Properties have no effect on a grid item:
+                    </h3>
+                    <ol class="section__list-sm section__list-sm--css">
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">float</p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                display: inline-block
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                display: table-cell
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">vertical-align</p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">column-*</p>
+                        </li>
+                    </ol>
+                </div>
                 <div class="section__part" id="grid-units-and-functions">
                     <h3 class="title-h3 title-h3--css">
                         Special Units & Functions
@@ -797,8 +846,17 @@
                                     grid-template-columns: 1fr 3fr; - Means,
                                     loosely, 25% 75%
                                 </li>
+
                                 <li>
-                                    grid-template-columns: 50px min-content 1fr;
+                                    grid-column: 1 / 2; | grid-column: 1; - same
+                                    declarations
+                                </li>
+
+                                <li>grid-column: 1 / span 3;</li>
+
+                                <li>
+                                    grid-column: 1 / -1; - to the end of the
+                                    track
                                 </li>
                             </ul>
                         </li>
@@ -881,59 +939,6 @@
                                     >
                                 </li>
                             </ul>
-                        </li>
-                    </ol>
-                </div>
-
-                <div class="section__part" id="grid-rows">
-                    <h3 class="title-h3 title-h3--css">Rows</h3>
-
-                    <ol class="section__list-sm section__list-sm--css">
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
-                                Explicit (явный) row - row, where we defined
-                                height
-                            </p>
-                        </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
-                                Implicit (скрытый) row - row, where we do not
-                                defined height
-                            </p>
-                        </li>
-                    </ol>
-                </div>
-
-                <div class="section__part" id="grid-fr">
-                    <h3 class="title-h3 title-h3--css">Fr unit</h3>
-                    <p>Instead of pixels, we can use fr unit and auto word:</p>
-
-                    <ol class="section__list-sm section__list-sm--css">
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
-                                grid-template-rows: repeat(4, 1fr) 2fr;
-                            </p>
-                        </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
-                                grid-template-columns: 1fr 300px auto 2fr;
-                            </p>
-                        </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
-                                grid-column: 1 / span 3;
-                            </p>
-                        </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
-                                grid-column: 1 / 2; | grid-column: 1; - same
-                                declarations
-                            </p>
-                        </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
-                                grid-column: 1 / -1; - to the end of the track
-                            </p>
                         </li>
                     </ol>
                 </div>
@@ -1340,32 +1345,6 @@
                     </ol>
                 </div>
 
-                <div class="section__part" id="grid-w-o-effect">
-                    <h3 class="title-h3 title-h3--css">
-                        Properties have no effect on a grid item:
-                    </h3>
-                    <ol class="section__list-sm section__list-sm--css">
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">float</p>
-                        </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
-                                display: inline-block
-                            </p>
-                        </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
-                                display: table-cell
-                            </p>
-                        </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">vertical-align</p>
-                        </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">column-*</p>
-                        </li>
-                    </ol>
-                </div>
                 <div class="section__part" id="grid-item-properties">
                     <h3 class="title-h3 title-h3--css">Grid item properties</h3>
                     <ol class="section__list-sm section__list-sm--css">

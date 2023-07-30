@@ -15,7 +15,7 @@ const obs = new IntersectionObserver(
     {
         root: null, // observe inside of viewport
         threshold: 0, // as soon as 0% section on a viewport
-        rootMargin: '-80px',
+        rootMargin: '-90px',
     }
 )
 obs.observe(navMakesSticky)
@@ -23,24 +23,15 @@ obs.observe(navMakesSticky)
 // details
 const details = document.querySelectorAll('.details')
 const detailsLinks = document.querySelectorAll('.details-link')
+const summaryEl = document.querySelector('summary')
 
 for (let i = 0; i < detailsLinks.length; i++) {
-    detailsLinks[i].addEventListener('click', function () {
-        if (!details[i].open) {
-            details[i].open = 'true'
-        } else {
-            details[i].open = 'false'
+    detailsLinks[i].addEventListener('click', function (el) {
+        const parentDetails = el.target.parentElement.parentElement
+        details.forEach((el) => el.removeAttribute('open'))
+
+        if (!parentDetails.open) {
+            parentDetails.setAttribute('open', '')
         }
     })
 }
-
-// for (let i = 0; i < details.length; i++) {
-//     details[i].addEventListener('click', function () {
-//         if (details[i].open) {
-//             details[i].open = 'false'
-//         }
-//         if (!details[i].open) {
-//             details[i].open = 'true'
-//         }
-//     })
-// }

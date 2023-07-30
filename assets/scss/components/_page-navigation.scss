@@ -23,9 +23,17 @@
         gap: 1rem;
     }
 
+    & summary {
+        &::marker {
+            display: none;
+            content: '';
+        }
+    }
+
     &__link {
         &:link,
         &:visited {
+            display: block;
             font-weight: 500;
             color: inherit;
             transition: all 0.2s;

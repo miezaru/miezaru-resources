@@ -128,7 +128,7 @@
             <a
                 href="https://miezaru-resources.netlify.app/"
                 class="logo u-margin-right-auto"
-                >mic`</a
+                >miezaru</a
             >
 
             <a
@@ -269,7 +269,9 @@
             <p id="on-this-page">On this page</p>
             <ul class="page-nav__list">
                 <li class="page-nav__item">
-                    <a href="#top" class="page-nav__link">Back to top &uarr;</a>
+                    <a href="#top" class="page-nav__link details-link"
+                        >Back to top &uarr;</a
+                    >
                 </li>
                 <li class="page-nav__item">
                     <details class="page-nav__details details">
@@ -284,6 +286,7 @@
                                     >CSS Rule</a
                                 >
                             </li>
+
                             <li class="page-nav__item-inner">
                                 <a
                                     href="#css-types"
@@ -296,6 +299,13 @@
                                     href="#css-selectors"
                                     class="page-nav__link-inner"
                                     >Selectors</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#css-selectors-priority"
+                                    class="page-nav__link-inner"
+                                    >Selectors priority</a
                                 >
                             </li>
                             <li class="page-nav__item-inner">
@@ -314,18 +324,12 @@
                             </li>
                             <li class="page-nav__item-inner">
                                 <a
-                                    href="#css-style-links"
+                                    href="#css-pseudo-elements"
                                     class="page-nav__link-inner"
-                                    >Styling links - LVHA</a
+                                    >Pseudo-elements</a
                                 >
                             </li>
-                            <li class="page-nav__item-inner">
-                                <a
-                                    href="#css-selectors-priority"
-                                    class="page-nav__link-inner"
-                                    >Selectors priority</a
-                                >
-                            </li>
+
                             <li class="page-nav__item-inner">
                                 <a
                                     href="#css-box-model"
@@ -333,6 +337,7 @@
                                     >Box model</a
                                 >
                             </li>
+
                             <li class="page-nav__item-inner">
                                 <a
                                     href="#css-types-of-boxes"
@@ -349,9 +354,9 @@
                             </li>
                             <li class="page-nav__item-inner">
                                 <a
-                                    href="#css-pseudo-elements"
+                                    href="#css-style-links"
                                     class="page-nav__link-inner"
-                                    >Pseudo-elements</a
+                                    >Styling links - LVHA</a
                                 >
                             </li>
                         </ul>
@@ -626,6 +631,41 @@ a[class|="link"] {
                         </li>
                     </ol>
                 </div>
+                <div class="section__part" id="css-selectors-priority">
+                    <h3 class="title-h3 title-h3--css">Selectors priority</h3>
+                    <ol class="section__list-sm section__list-sm--css">
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Declaration marked [!important]
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Inline style (style attribute in HTML)
+                                style="color: red;"]
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">Id [#]</p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Classes and [:] pseudo-classes [.]
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Element selector [p, div, li, etc.]
+                            </p>
+                        </li>
+                        <li class="section__list-sm-item">
+                            <p class="section__list-sm-text">
+                                Universal selector [*]
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+
                 <div class="section__part" id="css-units">
                     <h3 class="title-h3 title-h3--css">Units</h3>
                     <ol class="section__list-sm section__list-sm--css">
@@ -731,62 +771,43 @@ a[class|="link"] {
                         </li>
                     </ol>
                 </div>
-                <div class="section__part" id="css-style-links">
-                    <h3 class="title-h3 title-h3--css">Styling links - LVHA</h3>
-                    <ol class="section__list-sm section__list-sm--css">
+
+                <div class="section__part" id="css-pseudo-elements">
+                    <h3 class="title-h3 title-h3--css">Pseudo-elements</h3>
+                    <ol
+                        class="section__list-sm section__list-sm--css"
+                        role="list"
+                    >
                         <li class="section__list-sm-item">
                             <p class="section__list-sm-text">
-                                :link - добавляет стили только ссылкам у которых
-                                есть href
+                                Лучше использовать свойсво css display со
+                                значением inline-block для задавания отступов,
+                                ибо по стандарту это инлайн элемент.
                             </p>
                         </li>
                         <li class="section__list-sm-item">
                             <p class="section__list-sm-text">
-                                :visited - посещенные ссылки
+                                Позиционировать с помощью position:absolute,
+                                top, etc.
                             </p>
                         </li>
                         <li class="section__list-sm-item">
                             <p class="section__list-sm-text">
-                                :hover - наводим мышку поверх ссылки
+                                With CSS: p::after, p::before, p::first-letter,
+                                p::first-line, ::selection, ::cue, ::marker по
+                                стандарту это инлайн элемент.
                             </p>
                         </li>
                         <li class="section__list-sm-item">
                             <p class="section__list-sm-text">
-                                :active - когда кликаем на ссылку
-                            </p>
-                        </li>
-                    </ol>
-                </div>
-                <div class="section__part" id="css-selectors-priority">
-                    <h3 class="title-h3 title-h3--css">Selectors priority</h3>
-                    <ol class="section__list-sm section__list-sm--css">
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
-                                Declaration marked [!important]
+                                p::after - last child element of p, need
+                                content="" property
                             </p>
                         </li>
                         <li class="section__list-sm-item">
                             <p class="section__list-sm-text">
-                                Inline style (style attribute in HTML)
-                                style="color: red;"]
-                            </p>
-                        </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">Id [#]</p>
-                        </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
-                                Classes and [:] pseudo-classes [.]
-                            </p>
-                        </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
-                                Element selector [p, div, li, etc.]
-                            </p>
-                        </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
-                                Universal selector [*]
+                                p::before - first child element of p, need
+                                content="" property
                             </p>
                         </li>
                     </ol>
@@ -997,7 +1018,7 @@ a[class|="link"] {
                             <ol class="section__list-sm section__list-sm--css">
                                 <li class="section__list-sm-item">
                                     <p class="section__list-sm-text">
-                                        Default positioning: position: relative;
+                                        Default positioning: position: static;
                                     </p>
                                 </li>
                                 <li class="section__list-sm-item">
@@ -1050,42 +1071,28 @@ a[class|="link"] {
                         </li>
                     </ul>
                 </div>
-                <div class="section__part" id="css-pseudo-elements">
-                    <h3 class="title-h3 title-h3--css">Pseudo-elements</h3>
-                    <ol
-                        class="section__list-sm section__list-sm--css"
-                        role="list"
-                    >
+                <div class="section__part" id="css-style-links">
+                    <h3 class="title-h3 title-h3--css">Styling links - LVHA</h3>
+                    <ol class="section__list-sm section__list-sm--css">
                         <li class="section__list-sm-item">
                             <p class="section__list-sm-text">
-                                Лучше использовать свойсво css display со
-                                значением inline-block для задавания отступов,
-                                ибо по стандарту это инлайн элемент.
+                                :link - добавляет стили только ссылкам у которых
+                                есть href
                             </p>
                         </li>
                         <li class="section__list-sm-item">
                             <p class="section__list-sm-text">
-                                Позиционировать с помощью position:absolute,
-                                top, etc.
+                                :visited - посещенные ссылки
                             </p>
                         </li>
                         <li class="section__list-sm-item">
                             <p class="section__list-sm-text">
-                                With CSS: p::after, p::before, p::first-letter,
-                                p::first-line, ::selection, ::cue, ::marker по
-                                стандарту это инлайн элемент.
+                                :hover - наводим мышку поверх ссылки
                             </p>
                         </li>
                         <li class="section__list-sm-item">
                             <p class="section__list-sm-text">
-                                p::after - last child element of p, need
-                                content="" property
-                            </p>
-                        </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
-                                p::before - first child element of p, need
-                                content="" property
+                                :active - когда кликаем на ссылку
                             </p>
                         </li>
                     </ol>
