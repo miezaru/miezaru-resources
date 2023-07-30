@@ -118,7 +118,8 @@
             type="image/x-icon"
             href="../../assets/img/icons/favicon.ico"
         />
-        <link rel="stylesheet" href="../../assets/css/html-page.css" />
+        <link rel="stylesheet" href="../../assets/css/page.css" />
+        <script src="../../assets/js/script.js" defer></script>
     </head>
 
     <body class="grid">
@@ -262,20 +263,121 @@
                 </svg>
             </a>
         </header>
+        <nav class="page-nav" aria-labelledby="on-this-page">
+            <p id="on-this-page">On this page</p>
+            <ul class="page-nav__list">
+                <li class="page-nav__item">
+                    <a href="#top" class="page-nav__link">Back to top &uarr;</a>
+                </li>
+                <li class="page-nav__item">
+                    <details class="page-nav__details details">
+                        <summary>
+                            <a href="#links" class="page-nav__link details-link"
+                                >Links</a
+                            >
+                        </summary>
+                        <ul class="page-nav__list-inner">
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#links-performance"
+                                    class="page-nav__link-inner"
+                                    >Performance</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#links-tools"
+                                    class="page-nav__link-inner"
+                                    >Tools</a
+                                >
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="page-nav__item">
+                    <details class="page-nav__details details">
+                        <summary>
+                            <a href="#about" class="page-nav__link details-link"
+                                >About</a
+                            >
+                        </summary>
+                        <ul class="page-nav__list-inner">
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#about-good-imgs"
+                                    class="page-nav__link-inner"
+                                    >Use good images</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#about-use-well"
+                                    class="page-nav__link-inner"
+                                    >Use images well</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#about-text-on-imgs"
+                                    class="page-nav__link-inner"
+                                    >Text on images</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#about-tech-details"
+                                    class="page-nav__link-inner"
+                                    >Technical details</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#about-performance"
+                                    class="page-nav__link-inner"
+                                    >Performance</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#about-usable"
+                                    class="page-nav__link-inner"
+                                    >Usable</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#about-squoosh"
+                                    class="page-nav__link-inner"
+                                    >Squoosh API</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#about-useful"
+                                    class="page-nav__link-inner"
+                                    >Useful</a
+                                >
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </nav>
+
         <main class="grid-inner">
             <header class="main-header">
                 <h1 class="title-h1 title-h1--html">HTML: Images</h1>
             </header>
             <section class="section" aria-labelledby="section-links-title">
-                <header class="section-header">
+                <header class="section-header" id="links">
                     <h2
-                        class="title-h2 title-h2--html"
+                        class="title-h2 title-h2--html nav-makes-sticky"
                         id="section-links-title"
                     >
                         Links
                     </h2>
                 </header>
-                <div class="section__part">
+                <div class="section__part" id="links-performance">
                     <h3 class="title-h3 title-h3--html">Performance</h3>
                     <div class="resources">
                         <a
@@ -333,7 +435,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="section__part">
+                <div class="section__part" id="links-tools">
                     <h3 class="title-h3 title-h3--html">Tools</h3>
                     <div class="resources">
                         <a
@@ -373,7 +475,7 @@
                 </div>
             </section>
             <section class="section" aria-labelledby="section-about-title">
-                <header class="section-header">
+                <header class="section-header" id="about">
                     <h2
                         class="title-h2 title-h2--html"
                         id="section-about-title"
@@ -381,7 +483,7 @@
                         About
                     </h2>
                 </header>
-                <div class="section__part">
+                <div class="section__part" id="about-good-imgs">
                     <h3 class="title-h3 title-h3--html">Use good images</h3>
                     <ol class="section__list-sm section__list-sm--html">
                         <li class="section__list-sm-item">
@@ -406,7 +508,7 @@
                     </ol>
                 </div>
 
-                <div class="section__part">
+                <div class="section__part" id="about-use-well">
                     <h3 class="title-h3 title-h3--html">Use images well</h3>
                     <ol class="section__list-sm section__list-sm--html">
                         <li class="section__list-sm-item">
@@ -429,7 +531,7 @@
                     </ol>
                 </div>
 
-                <div class="section__part">
+                <div class="section__part" id="about-text-on-imgs">
                     <h3 class="title-h3 title-h3--html">
                         Handling text on images
                     </h3>
@@ -454,7 +556,7 @@
                     </ol>
                 </div>
 
-                <div class="section__part">
+                <div class="section__part" id="about-tech-details">
                     <h3 class="title-h3 title-h3--html">
                         Some technical details
                     </h3>
@@ -502,7 +604,7 @@
                     </ol>
                 </div>
 
-                <div class="section__part">
+                <div class="section__part" id="about-performance">
                     <h3 class="title-h3 title-h3--html">Performance</h3>
                     <ol class="section__list-sm section__list-sm--html">
                         <li class="section__list-sm-item">
@@ -560,7 +662,7 @@
                     </ol>
                 </div>
 
-                <div class="section__part">
+                <div class="section__part" id="about-usable">
                     <h3 class="title-h3 title-h3--html">Usable</h3>
                     <ol class="section__list-sm section__list-sm--html">
                         <li class="section__list-sm-item">
@@ -705,7 +807,7 @@ background-image: image-set(
                     </ol>
                 </div>
 
-                <div class="section__part">
+                <div class="section__part" id="about-squoosh">
                     <h3 class="title-h3 title-h3--html">Squoosh API</h3>
                     <p>
                         <span class="mark-text mark-text--err"
@@ -748,7 +850,7 @@ squoosh-cli --mozjpeg '{quality: 75}' -d jpg *(*.jpg|*.png|*.avif|*.webp!(webp|a
                     <p></p>
                 </div>
 
-                <div class="section__part">
+                <div class="section__part" id="about-useful">
                     <h3 class="title-h3 title-h3--html">Useful</h3>
                     <ol class="section__list-sm section__list-sm--html">
                         <li class="section__list-sm-item">

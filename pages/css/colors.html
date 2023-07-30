@@ -118,7 +118,8 @@
             type="image/x-icon"
             href="../../assets/img/icons/favicon.ico"
         />
-        <link rel="stylesheet" href="../../assets/css/html-page.css" />
+        <link rel="stylesheet" href="../../assets/css/page.css" />
+        <script src="../../assets/js/script.js" defer></script>
     </head>
 
     <body class="grid">
@@ -262,14 +263,54 @@
                 </svg>
             </a>
         </header>
+
+        <nav class="page-nav" aria-labelledby="on-this-page">
+            <p id="on-this-page">On this page</p>
+            <ul class="page-nav__list">
+                <li class="page-nav__item">
+                    <a href="#top" class="page-nav__link">Back to top &uarr;</a>
+                </li>
+                <li class="page-nav__item">
+                    <details class="page-nav__details details">
+                        <summary>
+                            <a
+                                href="#colors"
+                                class="page-nav__link details-link"
+                                >CSS Colors</a
+                            >
+                        </summary>
+                        <ul class="page-nav__list-inner">
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#colors-define"
+                                    class="page-nav__link-inner"
+                                    >Defining colors in CSS</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#colors-grey"
+                                    class="page-nav__link-inner"
+                                    >Shades of grey</a
+                                >
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </nav>
         <main class="grid-inner">
             <header class="main-header">
                 <h1 class="title-h1 title-h1--css">CSS: Colors</h1>
             </header>
-            <section class="section" aria-labelledby="section-csscolors-title">
+            <section
+                class="section"
+                aria-labelledby="section-csscolors-title"
+                id="colors"
+            >
                 <header class="section-header">
                     <h2
-                        class="title-h2 title-h2--css"
+                        class="title-h2 title-h2--css nav-makes-sticky"
                         id="section-csscolors-title"
                     >
                         CSS Colors
@@ -287,7 +328,8 @@
                         Each of the 3 base colors can take a value between 0 and
                         255, which leads to 16.8 million different colors
                     </p>
-
+                </div>
+                <div class="section__part" id="colors-define">
                     <h3 class="title-h3 title-h3--css">
                         Defining colors in CSS:
                     </h3>
@@ -400,6 +442,8 @@
                             height="914"
                         />
                     </picture>
+                </div>
+                <div class="section__part" id="colors-grey">
                     <h3 class="title-h3 title-h3--css">Shades of GREY</h3>
                     <ol
                         class="section__list-sm section__list-sm--css"

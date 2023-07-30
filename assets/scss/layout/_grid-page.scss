@@ -6,5 +6,5 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     grid-column: center-start / center-end;
-    gap: 6.4rem;
+    row-gap: 6.4rem;
 }

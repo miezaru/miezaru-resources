@@ -118,7 +118,8 @@
             type="image/x-icon"
             href="../../assets/img/icons/favicon.ico"
         />
-        <link rel="stylesheet" href="../../assets/css/html-page.css" />
+        <link rel="stylesheet" href="../../assets/css/page.css" />
+        <script src="../../assets/js/script.js" defer></script>
     </head>
 
     <body class="grid">
@@ -262,20 +263,128 @@
                 </svg>
             </a>
         </header>
+
+        <nav class="page-nav" aria-labelledby="on-this-page">
+            <p id="on-this-page">On this page</p>
+            <ul class="page-nav__list">
+                <li class="page-nav__item">
+                    <a href="#top" class="page-nav__link">Back to top &uarr;</a>
+                </li>
+                <li class="page-nav__item">
+                    <details class="page-nav__details details">
+                        <summary>
+                            <a href="#links" class="page-nav__link details-link"
+                                >Links</a
+                            >
+                        </summary>
+                        <ul class="page-nav__list-inner">
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#links-learn-resources"
+                                    class="page-nav__link-inner"
+                                    >Learn resources</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#links-testing"
+                                    class="page-nav__link-inner"
+                                    >Testing</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a href="#links-js" class="page-nav__link-inner"
+                                    >JavaScript</a
+                                >
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="page-nav__item">
+                    <details class="page-nav__details details">
+                        <summary>
+                            <a href="#about" class="page-nav__link details-link"
+                                >About</a
+                            >
+                        </summary>
+                        <ul class="page-nav__list-inner">
+                            <li class="page-nav__item-inner"></li>
+
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#about-form"
+                                    class="page-nav__link-inner"
+                                    >Form</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#about-user-input"
+                                    class="page-nav__link-inner"
+                                    >Capturing user input</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#about-re-entering"
+                                    class="page-nav__link-inner"
+                                    >Re-entering data</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#about-right-data"
+                                    class="page-nav__link-inner"
+                                    >Right data</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#about-aria-validation"
+                                    class="page-nav__link-inner"
+                                    >Aria validation rules</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#about-style-forms"
+                                    class="page-nav__link-inner"
+                                    >Style forms</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#about-validation-js"
+                                    class="page-nav__link-inner"
+                                    >Validation with JS</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#about-design-recommendation"
+                                    class="page-nav__link-inner"
+                                    >Design recommendation</a
+                                >
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </nav>
         <main class="grid-inner">
             <header class="main-header">
                 <h1 class="title-h1 title-h1--html">HTML: Forms</h1>
             </header>
             <section class="section" aria-labelledby="section-links-title">
-                <header class="section-header">
+                <header class="section-header" id="links">
                     <h2
-                        class="title-h2 title-h2--html"
-                        id="section-links-title"
+                        class="title-h2 title-h2--html nav-makes-sticky"
+                        id="section-links-title "
                     >
                         Links
                     </h2>
                 </header>
-                <div class="section__part">
+                <div class="section__part" id="links-learn-resources">
                     <h3 class="title-h3 title-h3--html">Learn resources</h3>
                     <div class="resources">
                         <a
@@ -370,7 +479,7 @@
                         ></a>
                     </div>
                 </div>
-                <div class="section__part">
+                <div class="section__part" id="links-testing">
                     <h3 class="title-h3 title-h3--html">Testing</h3>
                     <div class="resources">
                         <a
@@ -424,7 +533,7 @@
                                 ></use></svg
                         ></a>
                     </div>
-                    <div class="section__part">
+                    <div class="section__part" id="links-js">
                         <h3 class="title-h3 title-h3--html">JavaScript</h3>
                         <div class="resources">
                             <a
@@ -452,7 +561,7 @@
                 </div>
             </section>
             <section class="section" aria-labelledby="section-about-title">
-                <header class="section-header">
+                <header class="section-header" id="about">
                     <h2
                         class="title-h2 title-h2--html"
                         id="section-about-title"
@@ -460,7 +569,7 @@
                         About
                     </h2>
                 </header>
-                <div class="section__part">
+                <div class="section__part" id="about-form">
                     <h3 class="title-h3 title-h3--html">Form</h3>
 
                     <ol class="section__list-sm section__list-sm--html">
@@ -499,7 +608,7 @@
                         attribute on the input.
                     </p>
                 </div>
-                <div class="section__part">
+                <div class="section__part" id="about-user-input">
                     <h3 class="title-h3 title-h3--html">
                         Capturing user input
                     </h3>
@@ -593,7 +702,7 @@
                     </p>
                 </div>
 
-                <div class="section__part">
+                <div class="section__part" id="about-re-entering">
                     <h3 class="title-h3 title-h3--html">
                         Help users avoid re-entering data in forms
                     </h3>
@@ -664,7 +773,7 @@
                     </ol>
                 </div>
 
-                <div class="section__part">
+                <div class="section__part" id="about-right-data">
                     <h3 class="title-h3 title-h3--html">
                         Help users enter the right data in forms
                     </h3>
@@ -742,7 +851,7 @@
                     </ol>
                 </div>
 
-                <div class="section__part">
+                <div class="section__part" id="about-aria-validation">
                     <h3 class="title-h3 title-h3--html">
                         Communicate your validation rules
                     </h3>
@@ -766,7 +875,7 @@
                         </code>
                     </pre>
                 </div>
-                <div class="section__part">
+                <div class="section__part" id="about-style-forms">
                     <h3 class="title-h3 title-h3--html">Style forms</h3>
                     <p>
                         <span class="mark-text mark-text--html">:invalid</span>
@@ -807,7 +916,7 @@ input:user-invalid {}  // user-invalid
                         applied after user interaction.
                     </p>
                 </div>
-                <div class="section__part">
+                <div class="section__part" id="about-validation-js">
                     <h3 class="title-h3 title-h3--html">
                         Validation with JavaScript
                     </h3>
@@ -835,7 +944,7 @@ nameInput.addEventListener('invalid', () => {
                         immediately when a user leaves a form field.
                     </p>
                 </div>
-                <div class="section__part">
+                <div class="section__part" id="about-design-recommendation">
                     <h3 class="title-h3 title-h3--html">
                         Design recommendation
                     </h3>

@@ -118,7 +118,8 @@
             type="image/x-icon"
             href="../../assets/img/icons/favicon.ico"
         />
-        <link rel="stylesheet" href="../../assets/css/html-page.css" />
+        <link rel="stylesheet" href="../../assets/css/page.css" />
+        <script src="../../assets/js/script.js" defer></script>
     </head>
 
     <body class="grid">
@@ -262,21 +263,79 @@
                 </svg>
             </a>
         </header>
+        <nav class="page-nav" aria-labelledby="on-this-page">
+            <p id="on-this-page">On this page</p>
+            <ul class="page-nav__list">
+                <li class="page-nav__item">
+                    <a href="#top" class="page-nav__link">Back to top &uarr;</a>
+                </li>
+                <li class="page-nav__item">
+                    <details class="page-nav__details details">
+                        <summary>
+                            <a href="#about" class="page-nav__link details-link"
+                                >About</a
+                            >
+                        </summary>
+                        <ul class="page-nav__list-inner">
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#about-use-good-icons"
+                                    class="page-nav__link-inner"
+                                    >Use good icons</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#about-icons-type"
+                                    class="page-nav__link-inner"
+                                    >Icons type</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#about-when-use"
+                                    class="page-nav__link-inner"
+                                    >When use icons</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#about-use-well"
+                                    class="page-nav__link-inner"
+                                    >Use icons well</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#about-sprite-svg"
+                                    class="page-nav__link-inner"
+                                    >How to make svg sprite</a
+                                >
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </nav>
         <main class="grid-inner">
             <header class="main-header">
                 <h1 class="title-h1 title-h1--html">HTML: Icons</h1>
             </header>
 
-            <section class="section" aria-labelledby="section-about-title">
+            <section
+                class="section"
+                aria-labelledby="section-about-title"
+                id="about"
+            >
                 <header class="section-header">
                     <h2
-                        class="title-h2 title-h2--html"
+                        class="title-h2 title-h2--html nav-makes-sticky"
                         id="section-about-title"
                     >
                         About
                     </h2>
                 </header>
-                <div class="section__part">
+                <div class="section__part" id="about-use-good-icons">
                     <h3 class="title-h3 title-h3--html">Use good icons</h3>
                     <ol class="section__list-sm section__list-sm--html">
                         <li class="section__list-sm-item">
@@ -299,7 +358,7 @@
                         </li>
                     </ol>
                 </div>
-                <div class="section__part">
+                <div class="section__part" id="about-icons-type">
                     <h3 class="title-h3 title-h3--html">Icon types</h3>
 
                     <ol class="section__list-sm section__list-sm--html">
@@ -327,7 +386,7 @@
                     </p>
                 </div>
 
-                <div class="section__part">
+                <div class="section__part" id="about-when-use">
                     <h3 class="title-h3 title-h3--html">When to use icons</h3>
 
                     <ol class="section__list-sm section__list-sm--html">
@@ -355,7 +414,7 @@
                     </ol>
                 </div>
 
-                <div class="section__part">
+                <div class="section__part" id="about-use-well">
                     <h3 class="title-h3 title-h3--html">Use icons well</h3>
                     <ol class="section__list-sm section__list-sm--html">
                         <li class="section__list-sm-item">
@@ -378,7 +437,7 @@
                         </li>
                     </ol>
                 </div>
-                <div class="section__part">
+                <div class="section__part" id="about-sprite-svg">
                     <h3 class="title-h3 title-h3--html">
                         How to make external SVG sprite file:
                     </h3>

@@ -6,6 +6,7 @@ $clr-accent: #9381ff;
 
 // $clr-txt-primary: #716282;
 $clr-txt-primary: #363636;
+$clr-txt-dark: #202020;
 
 // sections
 // $clr-bcg-section-html: rgba(#ee957d, 0.1);
@@ -59,6 +60,7 @@ $sh-small: 0 0 0.4rem 0 rgba($black, 0.1);
     --clr-accent-js: #{$clr-accent-js};
     --clr-accent-react: #{$clr-accent-react};
     --clr-txt-primary: #{$clr-txt-primary};
+    --clr-txt-dark: #{$clr-txt-dark};
 
     // border-radius
     --br-default: #{$br-default};

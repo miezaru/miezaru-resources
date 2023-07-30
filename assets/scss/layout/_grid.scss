@@ -5,9 +5,10 @@
         [full-start]
         minmax(3.2rem, 1fr) [center-start] repeat(
             10,
-            [col-start] minmax(min-content, 14.4rem) [col-end]
+            [col-start] minmax(min-content, 12rem) [col-end]
         )
         [center-end]
+        24.4rem [nav-end]
         minmax(3.2rem, 1fr) [full-end];
     row-gap: 5rem;
     padding: 3.2rem 0 12rem;

@@ -50,6 +50,7 @@
   --clr-accent-js: #fdf9d2;
   --clr-accent-react: #dff8fe;
   --clr-txt-primary: #363636;
+  --clr-txt-dark: #202020;
   --br-default: 9px;
   --sh-small: 0 0 0.4rem 0 rgba(0, 0, 0, 0.1);
 }
@@ -160,7 +161,7 @@ iframe {
   display: flex;
   -ms-grid-row: 1;
   grid-row: 1;
-  grid-column: center-start/center-end;
+  grid-column: center-start/nav-end;
   gap: 2.4rem;
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -200,10 +201,10 @@ iframe {
   -ms-grid-rows: 8rem 5rem min-content;
   grid-template-rows: 8rem -webkit-min-content;
   grid-template-rows: 8rem min-content;
-  -ms-grid-columns: [full-start] minmax(3.2rem, 1fr) [center-start] ([col-start] minmax(-webkit-min-content, 14.4rem) [col-end])[10] [center-end] minmax(3.2rem, 1fr) [full-end];
-  -ms-grid-columns: [full-start] minmax(3.2rem, 1fr) [center-start] ([col-start] minmax(min-content, 14.4rem) [col-end])[10] [center-end] minmax(3.2rem, 1fr) [full-end];
-  grid-template-columns: [full-start] minmax(3.2rem, 1fr) [center-start] repeat(10, [col-start] minmax(-webkit-min-content, 14.4rem) [col-end]) [center-end] minmax(3.2rem, 1fr) [full-end];
-  grid-template-columns: [full-start] minmax(3.2rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 14.4rem) [col-end]) [center-end] minmax(3.2rem, 1fr) [full-end];
+  -ms-grid-columns: [full-start] minmax(3.2rem, 1fr) [center-start] ([col-start] minmax(-webkit-min-content, 12rem) [col-end])[10] [center-end] 24.4rem [nav-end] minmax(3.2rem, 1fr) [full-end];
+  -ms-grid-columns: [full-start] minmax(3.2rem, 1fr) [center-start] ([col-start] minmax(min-content, 12rem) [col-end])[10] [center-end] 24.4rem [nav-end] minmax(3.2rem, 1fr) [full-end];
+  grid-template-columns: [full-start] minmax(3.2rem, 1fr) [center-start] repeat(10, [col-start] minmax(-webkit-min-content, 12rem) [col-end]) [center-end] 24.4rem [nav-end] minmax(3.2rem, 1fr) [full-end];
+  grid-template-columns: [full-start] minmax(3.2rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 12rem) [col-end]) [center-end] 24.4rem [nav-end] minmax(3.2rem, 1fr) [full-end];
   row-gap: 5rem;
   padding: 3.2rem 0 12rem;
 }
@@ -289,89 +290,109 @@ iframe {
 }
 
 .grid > *:nth-child(17) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 17;
 }
 
 .grid > *:nth-child(18) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 18;
 }
 
 .grid > *:nth-child(19) {
   -ms-grid-row: 3;
-  -ms-grid-column: 3;
+  -ms-grid-column: 1;
 }
 
 .grid > *:nth-child(20) {
   -ms-grid-row: 3;
-  -ms-grid-column: 4;
+  -ms-grid-column: 2;
 }
 
 .grid > *:nth-child(21) {
   -ms-grid-row: 3;
-  -ms-grid-column: 5;
+  -ms-grid-column: 3;
 }
 
 .grid > *:nth-child(22) {
   -ms-grid-row: 3;
-  -ms-grid-column: 6;
+  -ms-grid-column: 4;
 }
 
 .grid > *:nth-child(23) {
   -ms-grid-row: 3;
-  -ms-grid-column: 7;
+  -ms-grid-column: 5;
 }
 
 .grid > *:nth-child(24) {
   -ms-grid-row: 3;
-  -ms-grid-column: 8;
+  -ms-grid-column: 6;
 }
 
 .grid > *:nth-child(25) {
   -ms-grid-row: 3;
-  -ms-grid-column: 9;
+  -ms-grid-column: 7;
 }
 
 .grid > *:nth-child(26) {
   -ms-grid-row: 3;
-  -ms-grid-column: 10;
+  -ms-grid-column: 8;
 }
 
 .grid > *:nth-child(27) {
   -ms-grid-row: 3;
-  -ms-grid-column: 11;
+  -ms-grid-column: 9;
 }
 
 .grid > *:nth-child(28) {
   -ms-grid-row: 3;
-  -ms-grid-column: 12;
+  -ms-grid-column: 10;
 }
 
 .grid > *:nth-child(29) {
   -ms-grid-row: 3;
-  -ms-grid-column: 13;
+  -ms-grid-column: 11;
 }
 
 .grid > *:nth-child(30) {
   -ms-grid-row: 3;
-  -ms-grid-column: 14;
+  -ms-grid-column: 12;
 }
 
 .grid > *:nth-child(31) {
   -ms-grid-row: 3;
-  -ms-grid-column: 15;
+  -ms-grid-column: 13;
 }
 
 .grid > *:nth-child(32) {
   -ms-grid-row: 3;
+  -ms-grid-column: 14;
+}
+
+.grid > *:nth-child(33) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 15;
+}
+
+.grid > *:nth-child(34) {
+  -ms-grid-row: 3;
   -ms-grid-column: 16;
+}
+
+.grid > *:nth-child(35) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 17;
+}
+
+.grid > *:nth-child(36) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 18;
 }
 
 main {
   -ms-grid-row: 2;
   grid-row: 2;
-  grid-column: center-start/center-end;
+  grid-column: center-start/nav-end;
 }
 
 .grid-inner {

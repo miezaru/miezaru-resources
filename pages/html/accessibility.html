@@ -125,7 +125,8 @@
             type="image/x-icon"
             href="../../assets/img/icons/favicon.ico"
         />
-        <link rel="stylesheet" href="../../assets/css/html-page.css" />
+        <link rel="stylesheet" href="../../assets/css/page.css" />
+        <script src="../../assets/js/script.js" defer></script>
     </head>
 
     <body class="grid">
@@ -270,20 +271,117 @@
             </a>
         </header>
 
+        <nav class="page-nav" aria-labelledby="on-this-page">
+            <p id="on-this-page">On this page</p>
+            <ul class="page-nav__list">
+                <li class="page-nav__item">
+                    <a href="#top" class="page-nav__link">On top &uarr;</a>
+                </li>
+                <li class="page-nav__item">
+                    <details class="page-nav__details details">
+                        <summary>
+                            <a href="#links" class="page-nav__link details-link"
+                                >Links</a
+                            >
+                        </summary>
+                        <ul class="page-nav__list-inner">
+                            <li class="page-nav__item-inner"></li>
+
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#links-aom"
+                                    class="page-nav__link-inner"
+                                    >Accessibility Object Model</a
+                                >
+                            </li>
+
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#links-notes"
+                                    class="page-nav__link-inner"
+                                    >Notes</a
+                                >
+                            </li>
+
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#links-role-attr"
+                                    class="page-nav__link-inner"
+                                    >Role attribute</a
+                                >
+                            </li>
+
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#links-nv-access"
+                                    class="page-nav__link-inner"
+                                    >NV Access app</a
+                                >
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="page-nav__item">
+                    <details class="page-nav__details details">
+                        <summary>
+                            <a href="#about" class="page-nav__link details-link"
+                                >About</a
+                            >
+                        </summary>
+                        <ul class="page-nav__list-inner">
+                            <li class="page-nav__item-inner"></li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#about-aom"
+                                    class="page-nav__link-inner"
+                                    >Accessibility Object Model</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#about-semantic"
+                                    class="page-nav__link-inner"
+                                    >Semantic</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#about-role-attr"
+                                    class="page-nav__link-inner"
+                                    >Role attribute</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#about-semantic-elements"
+                                    class="page-nav__link-inner"
+                                    >Semantic elements</a
+                                >
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </nav>
+
         <main class="grid-inner">
             <header class="main-header">
                 <h1 class="title-h1 title-h1--html">HTML: Accessibility</h1>
             </header>
-            <section class="section" aria-labelledby="section-links-title">
+            <section
+                class="section"
+                aria-labelledby="section-links-title"
+                id="links"
+            >
                 <header class="section-header">
                     <h2
-                        class="title-h2 title-h2--html"
+                        class="title-h2 title-h2--html nav-makes-sticky"
                         id="section-links-title"
                     >
                         Links
                     </h2>
                 </header>
-                <div class="section__part">
+                <div class="section__part" id="links-aom">
                     <h3 class="title-h3 title-h3--html">
                         Accessibility Object Model AOM
                     </h3>
@@ -300,7 +398,7 @@
                         ></a>
                     </div>
                 </div>
-                <div class="section__part">
+                <div class="section__part" id="links-notes">
                     <h3 class="title-h3 title-h3--html">Notes</h3>
                     <div class="resources">
                         <a
@@ -316,7 +414,7 @@
                     </div>
                 </div>
 
-                <div class="section__part">
+                <div class="section__part" id="links-role-attr">
                     <h3 class="title-h3 title-h3--html">Role attribute</h3>
                     <div class="resources">
                         <a
@@ -341,7 +439,7 @@
                         ></a>
                     </div>
                 </div>
-                <div class="section__part">
+                <div class="section__part" id="links-nv-access">
                     <h3 class="title-h3 title-h3--html">NV Access app</h3>
                     <div class="resources">
                         <a
@@ -357,7 +455,11 @@
                     </div>
                 </div>
             </section>
-            <section class="section" aria-labelledby="section-about-title">
+            <section
+                class="section"
+                aria-labelledby="section-about-title"
+                id="about"
+            >
                 <header class="section-header">
                     <h2
                         class="title-h2 title-h2--html"
@@ -366,7 +468,7 @@
                         About
                     </h2>
                 </header>
-                <div class="section__part">
+                <div class="section__part" id="about-aom">
                     <h3 class="title-h3 title-h3--html">
                         Accessibility Object Model AOM
                     </h3>
@@ -375,11 +477,11 @@
                         in google devtools.
                     </p>
                 </div>
-                <div class="section__part">
+                <div class="section__part" id="about-semantic">
                     <h3 class="title-h3 title-h3--html">Semantic</h3>
                     <p>Semantic means "relating to meaning.</p>
                 </div>
-                <div class="section__part">
+                <div class="section__part" id="about-role-attr">
                     <h3 class="title-h3 title-h3--html">Role attribute</h3>
                     <p>
                         Role attribute is a global attribute—meaning it is valid
@@ -418,7 +520,7 @@
                         the page
                     </p>
                 </div>
-                <div class="section__part">
+                <div class="section__part" id="about-semantic-elements">
                     <h3 class="title-h3 title-h3--html">Semantic elements</h3>
                     <ul class="section__list" role="list">
                         <li class="section__list-item">

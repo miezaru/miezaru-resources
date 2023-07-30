@@ -117,7 +117,8 @@
             type="image/x-icon"
             href="../../assets/img/icons/favicon.ico"
         />
-        <link rel="stylesheet" href="../../assets/css/html-page.css" />
+        <link rel="stylesheet" href="../../assets/css/page.css" />
+        <script src="../../assets/js/script.js" defer></script>
     </head>
 
     <body class="grid">
@@ -262,20 +263,72 @@
             </a>
         </header>
 
+        <nav class="page-nav" aria-labelledby="on-this-page">
+            <p id="on-this-page">On this page</p>
+            <ul class="page-nav__list">
+                <li class="page-nav__item">
+                    <a href="#top" class="page-nav__link">Back to top &uarr;</a>
+                </li>
+                <li class="page-nav__item">
+                    <details class="page-nav__details details">
+                        <summary>
+                            <a href="#links" class="page-nav__link details-link"
+                                >Links</a
+                            >
+                        </summary>
+                        <ul class="page-nav__list-inner">
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#links-metadata"
+                                    class="page-nav__link-inner"
+                                    >Metadata</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#links-social"
+                                    class="page-nav__link-inner"
+                                    >Social metadata</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#links-icons"
+                                    class="page-nav__link-inner"
+                                    >Icons</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#links-fonts"
+                                    class="page-nav__link-inner"
+                                    >Fonts</a
+                                >
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </nav>
+
         <main class="grid-inner">
             <header class="main-header">
                 <h1 class="title-h1 title-h1--html">HTML: Metadata</h1>
             </header>
-            <section class="section" aria-labelledby="section-links-title">
+            <section
+                class="section"
+                aria-labelledby="section-links-title"
+                id="links"
+            >
                 <header class="section-header">
                     <h2
-                        class="title-h2 title-h2--html"
-                        id="section-links-title"
+                        class="title-h2 title-h2--html nav-makes-sticky"
+                        id="section-links-title "
                     >
                         Links
                     </h2>
                 </header>
-                <div class="section__part">
+                <div class="section__part" id="links-metadata">
                     <h3 class="title-h3 title-h3--html">Metadata</h3>
                     <div class="resources">
                         <a
@@ -330,7 +383,7 @@
                         ></a>
                     </div>
                 </div>
-                <div class="section__part">
+                <div class="section__part" id="links-social">
                     <h3 class="title-h3 title-h3--html">
                         Twitter, LinkedIn and Facebook
                     </h3>
@@ -377,7 +430,7 @@
                         ></a>
                     </div>
                 </div>
-                <div class="section__part">
+                <div class="section__part" id="links-icons">
                     <h3 class="title-h3 title-h3--html">Icons</h3>
                     <div class="resources">
                         <a
@@ -423,7 +476,7 @@
                         ></a>
                     </div>
                 </div>
-                <div class="section__part">
+                <div class="section__part" id="links-fonts">
                     <h3 class="title-h3 title-h3--html">Fonts</h3>
                     <div class="resources">
                         <a

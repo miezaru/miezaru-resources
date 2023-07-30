@@ -119,7 +119,8 @@
             type="image/x-icon"
             href="../../assets/img/icons/favicon.ico"
         />
-        <link rel="stylesheet" href="../../assets/css/html-page.css" />
+        <link rel="stylesheet" href="../../assets/css/page.css" />
+        <script src="../../assets/js/script.js" defer></script>
     </head>
 
     <body class="grid">
@@ -263,14 +264,126 @@
                 </svg>
             </a>
         </header>
+
+        <nav class="page-nav" aria-labelledby="on-this-page">
+            <p id="on-this-page">On this page</p>
+            <ul class="page-nav__list">
+                <li class="page-nav__item">
+                    <a href="#top" class="page-nav__link">Back to top &uarr;</a>
+                </li>
+                <li class="page-nav__item">
+                    <details class="page-nav__details details">
+                        <summary>
+                            <a
+                                href="#layouts"
+                                class="page-nav__link details-link"
+                                >Layouts</a
+                            >
+                        </summary>
+                        <ul class="page-nav__list-inner">
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#layouts-about"
+                                    class="page-nav__link-inner"
+                                    >3 ways to build layouts</a
+                                >
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="page-nav__item">
+                    <a href="#float" class="page-nav__link">Float</a>
+                </li>
+                <li class="page-nav__item">
+                    <a href="#flexbox" class="page-nav__link">Flexbox</a>
+                </li>
+                <li class="page-nav__item">
+                    <details class="page-nav__details details">
+                        <summary>
+                            <a href="#grid" class="page-nav__link details-link"
+                                >Grid</a
+                            >
+                        </summary>
+                        <ul class="page-nav__list-inner">
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#grid-terminology"
+                                    class="page-nav__link-inner"
+                                    >Terminology</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#grid-units-and-functions"
+                                    class="page-nav__link-inner"
+                                    >Units and functions</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#grid-rows"
+                                    class="page-nav__link-inner"
+                                    >Rows</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a href="#grid-fr" class="page-nav__link-inner"
+                                    >Fr unit</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#grid-align-tracks-inside-con"
+                                    class="page-nav__link-inner"
+                                    >Align tracks inside container</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#grid-align-tracks-inside-cell"
+                                    class="page-nav__link-inner"
+                                    >Align tracks inside cells</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#grid-parent-container"
+                                    class="page-nav__link-inner"
+                                    >Parent Container properties</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#grid-w-o-effect"
+                                    class="page-nav__link-inner"
+                                    >Properties w/o effect</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#grid-item-properties"
+                                    class="page-nav__link-inner"
+                                    >Item properties</a
+                                >
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </nav>
+
         <main class="grid-inner">
             <header class="main-header">
                 <h1 class="title-h1 title-h1--css">CSS: Layouts</h1>
             </header>
-            <section class="section" aria-labelledby="section-layouts-title">
+            <section
+                class="section"
+                aria-labelledby="section-layouts-title"
+                id="layouts"
+            >
                 <header class="section-header">
                     <h2
-                        class="title-h2 title-h2--css"
+                        class="title-h2 title-h2--css nav-makes-sticky"
                         id="section-layouts-title"
                     >
                         Layouts
@@ -291,9 +404,10 @@
                         structure, instead of simply having them placed one
                         after another (normal flow)
                     </p>
-
+                </div>
+                <div class="section__part" id="layouts-about">
                     <h3 class="title-h3 title-h3--css">
-                        Page layout and components layout
+                        Page layouts and components layout
                     </h3>
                     <p>The 3 ways of building layouts with CSS:</p>
                     <ol class="section__list-sm section__list-sm--css">
@@ -337,7 +451,11 @@
                     </ol>
                 </div>
             </section>
-            <section class="section" aria-labelledby="section-float-title">
+            <section
+                class="section"
+                aria-labelledby="section-float-title"
+                id="float"
+            >
                 <header class="section-header">
                     <h2 class="title-h2 title-h2--css" id="section-float-title">
                         FLOAT
@@ -423,13 +541,17 @@
                 </div>
             </section>
 
-            <section class="section" aria-labelledby="section-flexbox-title">
+            <section
+                class="section"
+                aria-labelledby="section-flexbox-title"
+                id="flexbox"
+            >
                 <header class="section-header">
                     <h2
                         class="title-h2 title-h2--css"
                         id="section-flexbox-title"
                     >
-                        FLEXBOX 2017
+                        FLEXBOX
                     </h2>
 
                     <div class="resources u-margin-top-lg">
@@ -555,7 +677,11 @@
                 </div>
             </section>
 
-            <section class="section" aria-labelledby="section-grid-title">
+            <section
+                class="section"
+                aria-labelledby="section-grid-title"
+                id="grid"
+            >
                 <header class="section-header">
                     <h2 class="title-h2 title-h2--css" id="section-grid-title">
                         CSS GRID
@@ -634,7 +760,7 @@
                     </picture>
                 </div>
 
-                <div class="section__part">
+                <div class="section__part" id="grid-terminology">
                     <h3 class="title-h3 title-h3--css">
                         Important CSS Grid terminology
                     </h3>
@@ -659,7 +785,7 @@
                         </li>
                     </ol>
                 </div>
-                <div class="section__part">
+                <div class="section__part" id="grid-units-and-functions">
                     <h3 class="title-h3 title-h3--css">
                         Special Units & Functions
                     </h3>
@@ -759,7 +885,7 @@
                     </ol>
                 </div>
 
-                <div class="section__part">
+                <div class="section__part" id="grid-rows">
                     <h3 class="title-h3 title-h3--css">Rows</h3>
 
                     <ol class="section__list-sm section__list-sm--css">
@@ -778,8 +904,8 @@
                     </ol>
                 </div>
 
-                <div class="section__part">
-                    <h3 class="title-h3 title-h3--css">fr unit</h3>
+                <div class="section__part" id="grid-fr">
+                    <h3 class="title-h3 title-h3--css">Fr unit</h3>
                     <p>Instead of pixels, we can use fr unit and auto word:</p>
 
                     <ol class="section__list-sm section__list-sm--css">
@@ -812,7 +938,7 @@
                     </ol>
                 </div>
 
-                <div class="section__part">
+                <div class="section__part" id="grid-align-tracks-inside-con">
                     <h3 class="title-h3 title-h3--css">
                         Aligning tracks inside container
                     </h3>
@@ -841,7 +967,7 @@
                     </ol>
                 </div>
 
-                <div class="section__part">
+                <div class="section__part" id="grid-align-tracks-inside-cell">
                     <h3 class="title-h3 title-h3--css">
                         Aligning items inside cells
                     </h3>
@@ -867,7 +993,7 @@
                     </ol>
                 </div>
 
-                <div class="section__part">
+                <div class="section__part" id="grid-parent-container">
                     <h3 class="title-h3 title-h3--css">
                         Parent Grid Container properties
                     </h3>
@@ -1214,7 +1340,7 @@
                     </ol>
                 </div>
 
-                <div class="section__part">
+                <div class="section__part" id="grid-w-o-effect">
                     <h3 class="title-h3 title-h3--css">
                         Properties have no effect on a grid item:
                     </h3>
@@ -1240,7 +1366,7 @@
                         </li>
                     </ol>
                 </div>
-                <div class="section__part">
+                <div class="section__part" id="grid-item-properties">
                     <h3 class="title-h3 title-h3--css">Grid item properties</h3>
                     <ol class="section__list-sm section__list-sm--css">
                         <li class="section__list-sm-item">
