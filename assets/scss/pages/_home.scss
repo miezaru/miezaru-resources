@@ -38,22 +38,37 @@
         height: 30rem;
         background-color: var(--clr-bcg-section-react);
     }
+
+    &--pwa {
+        grid-area: pwa;
+        height: 30rem;
+
+        // background-color: var(--clr-bcg-section-pwa);
+    }
 }
 
 .section-header {
     display: flex;
-    gap: 4.8rem;
+    gap: 2rem;
     align-items: center;
     justify-content: space-between;
     padding-bottom: 1.2rem;
+
+    @media (width <= 87.5em) {
+        justify-content: center;
+    }
+
+    @media (width <= 42.5em) {
+        flex-wrap: wrap;
+    }
 
     &__link {
         &:link,
         &:visited {
             display: block;
             padding: 1.2rem 2.4rem;
-            font-size: 2.6rem;
-            font-size: clamp(2.6rem, 1.3rem + 1vw, 3rem);
+            font-size: 2.4rem;
+            font-size: clamp(2.4rem, 1.4rem + 1vw, 3rem);
             font-weight: 700;
             color: inherit;
             text-align: center;

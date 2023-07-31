@@ -4,7 +4,26 @@ main {
 
 .grid-inner {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns:
+        [full-start] minmax(min-content, 1fr) [center-start] repeat(
+            8,
+            [col-start] minmax(min-content, 10rem) [col-end]
+        )
+        [center-end] minmax(5rem, 1fr) [full-end];
     grid-column: center-start / center-end;
-    row-gap: 6.4rem;
+    row-gap: 5rem;
+
+    @media (width <= 68.75em) {
+        grid-template-columns:
+            [full-start] minmax(min-content, 1fr) [center-start] repeat(
+                8,
+                [col-start] minmax(min-content, 10rem) [col-end]
+            )
+            [center-end] minmax(min-content, 1fr) [full-end];
+    }
+
+    @media (width <= 52.5em) {
+        grid-template-columns: [center-start] 1fr [center-end];
+        row-gap: 2.8rem;
+    }
 }

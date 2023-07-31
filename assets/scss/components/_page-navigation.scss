@@ -6,6 +6,10 @@
     border-radius: var(--br-default);
     transform: translateY(13.9rem);
 
+    @media (width <= 68.75em) {
+        display: none;
+    }
+
     & p {
         margin-bottom: 2.4rem;
     }

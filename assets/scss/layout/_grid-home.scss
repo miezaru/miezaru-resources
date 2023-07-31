@@ -1,15 +1,41 @@
 main {
     grid-row: 2;
     grid-column: center-start / nav-end;
+
+    @media (width <= 68.75em) {
+        grid-column: center-start / center-end;
+    }
 }
 
 .grid-inner {
     display: grid;
     grid-template-areas:
-        'html html tools'
-        'css css tools'
-        'scss js js'
-        'react react .';
+        'html html html tools tools tools'
+        'css css css tools tools tools'
+        'scss scss scss js js js'
+        'react react react pwa pwa pwa';
     grid-template-columns: auto;
     gap: 4.8rem;
+
+    @media (width <= 87.5em) {
+        grid-template-areas:
+            '. . html html html . .'
+            '. . css css css . .'
+            '. . tools tools tools . .'
+            '. . scss scss scss . .'
+            '. . js js js . .'
+            '. . react react react . .'
+            '. . pwa pwa pwa . .';
+    }
+
+    @media (width <= 56.25em) {
+        grid-template-areas:
+            'html html html html html html '
+            'css css css css css css'
+            'tools tools tools tools tools tools'
+            'scss scss scss scss scss scss'
+            'js js js js js js'
+            'react react react react react react'
+            'pwa pwa pwa pwa pwa pwa';
+    }
 }

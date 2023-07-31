@@ -1,8 +1,9 @@
 .code {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1px;
     align-items: center;
-    width: clamp(20rem, calc(20rem + 50vw), 80rem);
-    max-inline-size: 100%;
+
+    // width: clamp(20rem, calc(20rem + 50vw), 80rem);
     padding: 1.2rem 3.2rem;
     overflow-x: auto;
     font-size: 1.6rem;
@@ -11,11 +12,10 @@
     // scroll-snap-type: inline proximity;
     scroll-behavior: smooth;
 
-    &__el {
+    &-el {
         padding: 1px;
         font-family: monospace;
         line-height: 1;
-        scroll-snap-align: start;
     }
 
     &--html {

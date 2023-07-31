@@ -27,3 +27,20 @@
         fill: var(--clr-txt-primary);
     }
 }
+
+.socials-box {
+    display: flex;
+    gap: 2.4rem;
+
+    @media (width <= 87.5em) {
+        display: none;
+    }
+}
+
+.btn-mobile-nav {
+    display: none;
+
+    @media (width <= 87.5em) {
+        display: block;
+    }
+}
