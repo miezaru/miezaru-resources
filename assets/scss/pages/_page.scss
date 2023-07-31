@@ -17,8 +17,12 @@
         display: flex;
         flex-direction: column;
         grid-column: col-start 1 / col-end 8;
-        gap: 2.4rem;
+        gap: 3.6rem;
         padding: 1.2rem 0;
+
+        & > h4 {
+            margin-bottom: -1.2rem;
+        }
     }
 
     &__img {
@@ -31,6 +35,7 @@
     &__link {
         &:link,
         &:visited {
+            display: inline;
             font-weight: 500;
             color: inherit;
             transition: all 0.2s;
@@ -89,6 +94,10 @@
             margin-left: 2rem;
         }
 
+        & h4 {
+            margin-bottom: 1.2rem;
+        }
+
         &:not(:last-child) {
             margin-bottom: 3.2rem;
         }
@@ -108,14 +117,13 @@
 
         &::before {
             position: absolute;
-            top: 0.35rem;
+            top: 0.75rem;
             display: inline-flex;
             align-items: center;
             justify-content: center;
             width: 1.8rem;
             height: 1.8rem;
-            font-size: 1rem;
-            font-size: clamp(1rem, 0.75rem + 1.5vw, 1.4rem);
+            font-size: 1.4rem;
             line-height: 1;
             color: var(--clr-txt-primary);
             content: counter(steps);
@@ -126,7 +134,7 @@
     &__list-sm {
         display: flex;
         flex-direction: column;
-        gap: 3rem;
+        gap: 3.2rem;
         counter-reset: steps;
 
         &-text {
@@ -134,13 +142,13 @@
         }
 
         & p {
-            line-height: 1.5;
+            line-height: 1.8;
         }
 
         & ul {
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            gap: 1.7rem;
             list-style: none;
 
             &:first-child {
@@ -149,16 +157,16 @@
 
             & li {
                 position: relative;
+                margin-left: 6rem;
                 font-size: 1.5rem;
                 font-size: clamp(1.5rem, 0.75rem + 1.5vw, 1.7rem);
-                line-height: 1.5;
-                transform: translateX(6rem);
+                line-height: 1.8;
             }
         }
 
         & ul li::before {
             position: absolute;
-            top: 0.85rem;
+            top: 1.3rem;
             left: -1.5rem;
             display: inline-flex;
             align-items: center;
@@ -298,7 +306,7 @@
     padding: 1rem 2rem;
     margin-bottom: 1.2rem;
     font-size: 1.7rem;
-    font-size: clamp(1.7rem, 0.8rem + 1vw, 2rem);
+    font-size: clamp(1.8rem, 0.8rem + 1vw, 2rem);
     word-wrap: wrap;
     transform: translateX(-2rem);
 
@@ -331,9 +339,8 @@
 
 .title-h4 {
     display: inline-block;
-    margin-bottom: 1.2rem;
     font-size: 1.7rem;
-    font-size: clamp(1.7rem, 0.75rem + 1vw, 1.8rem);
-    font-weight: 600;
+    font-size: clamp(1.7rem, 0.75rem + 1vw, 1.9rem);
+    font-weight: 500;
     line-height: 1.2;
 }

@@ -60,6 +60,8 @@
     }
 
     &__details {
+        scroll-behavior: smooth;
+
         & summary {
             margin-bottom: 0.4rem;
         }

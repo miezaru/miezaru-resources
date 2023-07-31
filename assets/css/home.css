@@ -67,6 +67,14 @@
   margin-right: auto;
 }
 
+.u-margin-bottom-sm {
+  margin-bottom: 1.2rem;
+}
+
+.u-text-align-c {
+  text-align: center;
+}
+
 body {
   font-family: "Rubik", system-ui, -apple-system, sans-serif;
   font-weight: 400;
@@ -118,6 +126,16 @@ body {
 
 :focus-visible {
   outline: 0.4rem solid var(--clr-txt-primary);
+}
+
+::-moz-selection {
+  color: var(--clr-bcg-primary);
+  background: var(--clr-txt-primary);
+}
+
+::selection {
+  color: var(--clr-bcg-primary);
+  background: var(--clr-txt-primary);
 }
 
 *,

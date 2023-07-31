@@ -7,3 +7,8 @@ body {
 :focus-visible {
     outline: 0.4rem solid var(--clr-txt-primary);
 }
+
+::selection {
+    color: var(--clr-bcg-primary);
+    background: var(--clr-txt-primary);
+}
