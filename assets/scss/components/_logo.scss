@@ -4,12 +4,17 @@
         padding: 0.8rem 1.2rem;
         font-size: 3.2rem;
         line-height: 1;
-        color: var(--clr-txt-primary);
+        color: var(--clr-txt-secondary);
         text-decoration: none;
         background-color: var(--clr-bcg-primary);
         border-radius: var(--br-default);
         box-shadow: var(--sh-small);
         transition: all 0.2s;
+
+        &:hover,
+        &:active {
+            background-color: var(--clr-bcg-secondary);
+        }
 
         @media (width <= 42.5em) {
             font-size: 2.6rem;

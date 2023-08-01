@@ -12,6 +12,7 @@
             font-weight: 500;
             line-height: 1.6;
             color: inherit;
+            color: var(--clr-txt-secondary);
             background-color: var(--clr-bcg-primary);
             border-radius: var(--br-default);
             box-shadow: var(--sh-small);
@@ -26,46 +27,9 @@
             }
         }
 
-        &--html {
-            &:hover,
-            &:active {
-                background-color: var(--clr-accent-html);
-            }
-        }
-
-        &--tools {
-            &:hover,
-            &:active {
-                background-color: var(--clr-accent-tools);
-            }
-        }
-
-        &--css {
-            &:hover,
-            &:active {
-                background-color: var(--clr-accent-css);
-            }
-        }
-
-        &--scss {
-            &:hover,
-            &:active {
-                background-color: var(--clr-accent-css);
-            }
-        }
-
-        &--js {
-            &:hover,
-            &:active {
-                background-color: var(--clr-accent-css);
-            }
-        }
-
-        &--react {
-            &:hover,
-            &:active {
-                background-color: var(--clr-accent-css);
-            }
+        &:hover,
+        &:active {
+            background-color: var(--clr-bcg-secondary);
         }
     }
 
@@ -73,6 +37,6 @@
         width: 1.2rem;
         height: 1.2rem;
         margin-left: 0.6rem;
-        fill: var(--clr-txt-primary);
+        fill: var(--clr-txt-secondary);
     }
 }

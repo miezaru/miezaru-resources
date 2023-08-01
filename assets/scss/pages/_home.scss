@@ -2,48 +2,45 @@
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
-    padding: 1.2rem;
+    padding: 2.4rem;
     border-radius: var(--br-default);
-    box-shadow: 0 0 1.2rem rgba($black, 0.1);
+    box-shadow: 0 0 1.2rem rgba($clr-bcg-primary, 0.5);
+
+    @media (width <= 42.5em) {
+        padding: 2.4rem 1.2rem;
+        box-shadow: 0 0 1.2rem rgba($clr-bcg-primary, 0.5);
+    }
 
     &--html {
         grid-area: html;
-        background-color: var(--clr-bcg-section-html);
     }
 
     &--tools {
         grid-area: tools;
-        background-color: var(--clr-bcg-section-tools);
     }
 
     &--css {
         grid-area: css;
-        background-color: var(--clr-bcg-section-css);
     }
 
     &--js {
         grid-area: js;
         height: 30rem;
-        background-color: var(--clr-bcg-section-js);
     }
 
     &--scss {
         grid-area: scss;
         height: 30rem;
-        background-color: var(--clr-bcg-section-scss);
     }
 
     &--react {
         grid-area: react;
         height: 30rem;
-        background-color: var(--clr-bcg-section-react);
     }
 
     &--pwa {
         grid-area: pwa;
         height: 30rem;
-
-        // background-color: var(--clr-bcg-section-pwa);
     }
 }
 
@@ -71,6 +68,7 @@
             font-size: clamp(2.4rem, 1.4rem + 1vw, 3rem);
             font-weight: 700;
             color: inherit;
+            color: var(--clr-txt-secondary);
             text-align: center;
             background-color: var(--clr-bcg-primary);
             border-radius: var(--br-default);
@@ -78,46 +76,9 @@
             transition: all 0.2s;
         }
 
-        &--html {
-            &:hover,
-            &:active {
-                background-color: var(--clr-accent-html);
-            }
-        }
-
-        &--tools {
-            &:hover,
-            &:active {
-                background-color: var(--clr-accent-tools);
-            }
-        }
-
-        &--css {
-            &:hover,
-            &:active {
-                background-color: var(--clr-accent-css);
-            }
-        }
-
-        &--scss {
-            &:hover,
-            &:active {
-                background-color: var(--clr-accent-scss);
-            }
-        }
-
-        &--js {
-            &:hover,
-            &:active {
-                background-color: var(--clr-accent-js);
-            }
-        }
-
-        &--react {
-            &:hover,
-            &:active {
-                background-color: var(--clr-accent-react);
-            }
+        &:hover,
+        &:active {
+            background-color: var(--clr-bcg-secondary);
         }
     }
 
@@ -143,39 +104,9 @@
             transition: all 0.2s;
         }
 
-        &--html {
-            &:hover,
-            &:active {
-                background-color: var(--clr-accent-html);
-            }
-        }
-
-        &--css {
-            &:hover,
-            &:active {
-                background-color: var(--clr-accent-css);
-            }
-        }
-
-        &--scss {
-            &:hover,
-            &:active {
-                background-color: var(--clr-accent-css);
-            }
-        }
-
-        &--js {
-            &:hover,
-            &:active {
-                background-color: var(--clr-accent-css);
-            }
-        }
-
-        &--react {
-            &:hover,
-            &:active {
-                background-color: var(--clr-accent-css);
-            }
+        &:hover,
+        &:active {
+            background-color: var(--clr-bcg-secondary);
         }
     }
 
@@ -200,29 +131,11 @@
     font-size: 1.7rem;
     font-size: clamp(1.7rem, 0.8rem + 1vw, 2rem);
     font-weight: 600;
+    color: var(--clr-txt-secondary);
+    background-color: var(--clr-bcg-secondary);
     border-radius: var(--br-default);
 
-    &--html {
-        background-color: var(--clr-accent-html);
-    }
-
-    &--tools {
-        background-color: var(--clr-accent-tools);
-    }
-
-    &--css {
-        background-color: var(--clr-accent-css);
-    }
-
-    &--scss {
-        background-color: var(--clr-accent-scss);
-    }
-
-    &--js {
-        background-color: var(--clr-accent-js);
-    }
-
-    &--react {
-        background-color: var(--clr-accent-react);
+    &:not(:first-of-type) {
+        margin-top: 1.2rem;
     }
 }

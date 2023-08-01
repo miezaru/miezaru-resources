@@ -6,7 +6,7 @@ body {
 body {
     min-height: 100vh;
     font-display: swap;
-    background-color: var(--clr-bcg-primary);
+    background-color: var(--clr-bcg-main);
 }
 
 :focus-visible {
@@ -14,6 +14,6 @@ body {
 }
 
 ::selection {
-    color: var(--clr-bcg-primary);
-    background: var(--clr-txt-primary);
+    color: var(--clr-txt-primary);
+    background-color: var(--clr-txt-secondary);
 }

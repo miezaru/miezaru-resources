@@ -5,26 +5,30 @@
     gap: 2.4rem;
     align-items: center;
 
-    &__icon-box {
-        &:link,
-        &:visited {
-            display: flex;
-            gap: 0.8rem;
-            align-items: center;
-            padding: 0.8rem;
-            text-decoration: none;
-            background-color: var(--clr-bcg-primary);
-            border-radius: var(--br-default);
-            box-shadow: var(--sh-small);
-            transition: all 0.2s;
-        }
-    }
-
     &__icon {
         display: block;
         width: 2.4rem;
         height: 2.4rem;
-        fill: var(--clr-txt-primary);
+        fill: var(--clr-txt-secondary);
+        transition: all 0.1s;
+    }
+
+    &__icon-box {
+        &:link,
+        &:visited {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            text-decoration: none;
+            background-color: var(--clr-bcg-primary);
+            border-radius: var(--br-default);
+            transition: all 0.2s;
+        }
+
+        &:hover,
+        &:active {
+            background-color: var(--clr-bcg-secondary);
+        }
     }
 }
 

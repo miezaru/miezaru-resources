@@ -7,38 +7,21 @@
     padding: 1.2rem 3.2rem;
     overflow-x: auto;
     font-size: 1.6rem;
+    color: var(--clr-txt-secondary);
+    background-color: var(--clr-bcg-primary);
     border-radius: var(--br-default);
 
     // scroll-snap-type: inline proximity;
     scroll-behavior: smooth;
 
+    @media (width <= 42.5em) {
+        font-size: 1.4rem;
+    }
+
     &-el {
         padding: 1px;
         font-family: monospace;
-        line-height: 1;
-    }
-
-    &--html {
-        background-color: var(--clr-bcg-section-html);
-    }
-
-    &--css {
-        background-color: var(--clr-bcg-section-css);
-    }
-
-    &--tools {
-        background-color: var(--clr-bcg-section-tools);
-    }
-
-    &--scss {
-        background-color: var(--clr-bcg-section-scss);
-    }
-
-    &--js {
-        background-color: var(--clr-bcg-section-js);
-    }
-
-    &--react {
-        background-color: var(--clr-bcg-section-react);
+        font-weight: 700;
+        line-height: 1.2;
     }
 }
