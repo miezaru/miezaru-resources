@@ -98,6 +98,7 @@ p {
 html,
 body {
   scrollbar-gutter: stable;
+  overflow-x: hidden;
 }
 
 body {
@@ -202,10 +203,6 @@ iframe {
   display: -ms-flexbox;
   display: flex;
   gap: 2.4rem;
-}
-
-.btn-mobile-nav {
-  display: none;
 }
 
 .grid {
@@ -419,6 +416,122 @@ main {
   row-gap: 5rem;
 }
 
+.mobile-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: calc(100vh - 8rem);
+  margin-top: 8rem;
+  pointer-events: none;
+  visibility: hidden;
+  background-color: rgba(242, 151, 39, 0.97);
+  opacity: 0;
+  /* -- Default transition curve - linear */
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.line {
+  position: absolute;
+  display: inline-block;
+  width: 4.8rem;
+  height: 2px;
+  background-color: var(--clr-bcg-primary);
+}
+.line--1 {
+  top: 2.4rem;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  -webkit-transform-origin: 0% 0%;
+      -ms-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+.line--2 {
+  top: 50%;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+.line--3 {
+  bottom: 2.4rem;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  -webkit-transform-origin: 0% 100%;
+      -ms-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+}
+
+.mobile-content {
+  display: none;
+}
+.mobile-content__checkbox {
+  position: absolute;
+  top: 50%;
+  z-index: 9999;
+  width: 4.8rem;
+  height: 4.8rem;
+  cursor: pointer;
+  opacity: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.mobile-content__checkbox:checked ~ .mobile-nav {
+  pointer-events: auto;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+.mobile-content__checkbox:checked ~ .mobile-content__lines > .line--1 {
+  -webkit-transform: rotate(40deg);
+      -ms-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+.mobile-content__checkbox:checked ~ .mobile-content__lines > .line--2 {
+  -webkit-transform: scaleY(0);
+      -ms-transform: scaleY(0);
+          transform: scaleY(0);
+}
+.mobile-content__checkbox:checked ~ .mobile-content__lines > .line--3 {
+  -webkit-transform: rotate(-40deg);
+      -ms-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+}
+.mobile-content__lines {
+  width: 4.8rem;
+  height: 4.8rem;
+  cursor: pointer;
+}
+
 .logo:link, .logo:visited {
   padding: 0.8rem 1.2rem;
   font-size: 3.2rem;
@@ -478,10 +591,6 @@ main {
   display: grid;
   -ms-grid-columns: 1px;
   grid-template-columns: 1px;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 1.2rem 3.2rem;
   overflow-x: auto;
   font-size: 1.6rem;
@@ -841,17 +950,29 @@ main {
 }
 
 @media (width <= 87.5em) {
+  .header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 8rem;
+    background: rgba(242, 151, 39, 0.9);
+  }
   .socials-box {
     display: none;
-  }
-  .btn-mobile-nav {
-    display: block;
   }
   .grid {
     -ms-grid-columns: [full-start] minmax(3.2rem, 1fr) [center-start] ([col-start] minmax(-webkit-min-content, 12rem) [col-end])[10] [center-end] 20rem [nav-end] minmax(3.2rem, 1fr) [full-end];
     -ms-grid-columns: [full-start] minmax(3.2rem, 1fr) [center-start] ([col-start] minmax(min-content, 12rem) [col-end])[10] [center-end] 20rem [nav-end] minmax(3.2rem, 1fr) [full-end];
     grid-template-columns: [full-start] minmax(3.2rem, 1fr) [center-start] repeat(10, [col-start] minmax(-webkit-min-content, 12rem) [col-end]) [center-end] 20rem [nav-end] minmax(3.2rem, 1fr) [full-end];
     grid-template-columns: [full-start] minmax(3.2rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 12rem) [col-end]) [center-end] 20rem [nav-end] minmax(3.2rem, 1fr) [full-end];
+    padding: 0 0 12rem;
+  }
+  .mobile-content {
+    display: block;
+    margin-right: 3.2rem;
+  }
+  .logo:link, .logo:visited {
+    margin-left: 3.2rem;
   }
 }
 
@@ -896,6 +1017,12 @@ main {
     -ms-grid-columns: [center-start] 1fr [center-end];
     grid-template-columns: [center-start] 1fr [center-end];
     row-gap: 2.8rem;
+  }
+  .mobile-content {
+    margin-right: 1.6rem;
+  }
+  .logo:link, .logo:visited {
+    margin-left: 1.6rem;
   }
   .section__part {
     grid-column: center-start/center-end;
@@ -955,5 +1082,11 @@ main {
     -ms-grid-columns: [full-start] 1.2rem [center-start] ([col-start] minmax(min-content, 12rem) [col-end])[10] [center-end] 1.2rem [full-end];
     grid-template-columns: [full-start] 1.2rem [center-start] repeat(10, [col-start] minmax(-webkit-min-content, 12rem) [col-end]) [center-end] 1.2rem [full-end];
     grid-template-columns: [full-start] 1.2rem [center-start] repeat(10, [col-start] minmax(min-content, 12rem) [col-end]) [center-end] 1.2rem [full-end];
+  }
+  .mobile-content {
+    margin-right: 1.2rem;
+  }
+  .logo:link, .logo:visited {
+    margin-left: 1.2rem;
   }
 }

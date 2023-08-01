@@ -1,10 +1,9 @@
 .code {
     display: grid;
     grid-template-columns: 1px;
-    align-items: center;
+    padding: 1.2rem 3.2rem;
 
     // width: clamp(20rem, calc(20rem + 50vw), 80rem);
-    padding: 1.2rem 3.2rem;
     overflow-x: auto;
     font-size: 1.6rem;
     color: var(--clr-txt-secondary);

@@ -1,0 +1,103 @@
+.mobile-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 8rem);
+    margin-top: 8rem;
+    pointer-events: none;
+    visibility: hidden;
+    background-color: rgb($clr-bcg-secondary, 0.97);
+    opacity: 0;
+
+    /* -- Default transition curve - linear */
+    transition: all 0.5s ease-out;
+    transform: translateX(100%);
+}
+
+.line {
+    position: absolute;
+    display: inline-block;
+    width: 4.8rem;
+    height: 2px;
+    background-color: var(--clr-bcg-primary);
+
+    &--1 {
+        top: 2.4rem;
+        transition: transform 0.4s ease-in-out;
+        transform-origin: 0% 0%;
+    }
+
+    &--2 {
+        top: 50%;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    &--3 {
+        bottom: 2.4rem;
+        transition: transform 0.4s ease-in-out;
+        transform-origin: 0% 100%;
+    }
+}
+
+.mobile-content {
+    display: none;
+
+    @media (width <= 87.5em) {
+        display: block;
+        margin-right: 3.2rem;
+    }
+
+    @media (width <= 52.5em) {
+        margin-right: 1.6rem;
+    }
+
+    @media (width <= 20em) {
+        margin-right: 1.2rem;
+    }
+
+    &__checkbox {
+        position: absolute;
+        top: 50%;
+        z-index: 9999;
+        width: 4.8rem;
+        height: 4.8rem;
+        cursor: pointer;
+        opacity: 0;
+        transform: translateY(-50%);
+
+        &:checked {
+            & ~ .mobile-nav {
+                pointer-events: auto;
+                visibility: visible;
+                opacity: 1;
+                transform: translateX(0);
+            }
+
+            & ~ .mobile-content__lines > .line {
+                &--1 {
+                    transform: rotate(40deg);
+                }
+
+                &--2 {
+                    transform: scaleY(0);
+                }
+
+                &--3 {
+                    transform: rotate(-40deg);
+                }
+            }
+        }
+    }
+
+    &__lines {
+        width: 4.8rem;
+        height: 4.8rem;
+        cursor: pointer;
+    }
+}
