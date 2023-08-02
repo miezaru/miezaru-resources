@@ -186,6 +186,7 @@ iframe {
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem;
+  font-size: 2.4rem;
   text-decoration: none;
   background-color: var(--clr-bcg-primary);
   border-radius: var(--br-default);
@@ -194,6 +195,10 @@ iframe {
 }
 .header__icon-box:hover, .header__icon-box:active {
   background-color: var(--clr-bcg-secondary);
+}
+.header__icon-text {
+  font-size: 1.8rem;
+  color: var(--clr-txt-secondary);
 }
 
 .socials-box {
@@ -433,13 +438,13 @@ main {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   width: 100%;
-  height: calc(100vh - 8rem);
-  margin-top: 8rem;
+  height: calc(100vh - 6rem);
+  margin-top: 6rem;
   pointer-events: none;
   visibility: hidden;
   background-color: rgba(242, 151, 39, 0.97);
@@ -451,16 +456,34 @@ main {
       -ms-transform: translateX(100%);
           transform: translateX(100%);
 }
+.mobile-nav__socials-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2.4rem;
+}
+.mobile-nav__page-nav {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: var(--clr-txt-secondary);
+  border-radius: var(--br-default);
+}
 
 .line {
   position: absolute;
   display: inline-block;
-  width: 4.8rem;
+  width: 4rem;
   height: 2px;
   background-color: var(--clr-bcg-primary);
 }
 .line--1 {
-  top: 2.4rem;
+  top: 1.6rem;
   -webkit-transition: -webkit-transform 0.4s ease-in-out;
   transition: -webkit-transform 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out;
@@ -477,7 +500,7 @@ main {
   transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 .line--3 {
-  bottom: 2.4rem;
+  bottom: 1.6rem;
   -webkit-transition: -webkit-transform 0.4s ease-in-out;
   transition: -webkit-transform 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out;
@@ -494,8 +517,8 @@ main {
   position: absolute;
   top: 50%;
   z-index: 9999;
-  width: 4.8rem;
-  height: 4.8rem;
+  width: 4rem;
+  height: 4rem;
   cursor: pointer;
   opacity: 0;
   -webkit-transform: translateY(-50%);
@@ -511,9 +534,9 @@ main {
           transform: translateX(0);
 }
 .mobile-content__checkbox:checked ~ .mobile-content__lines > .line--1 {
-  -webkit-transform: rotate(40deg);
-      -ms-transform: rotate(40deg);
-          transform: rotate(40deg);
+  -webkit-transform: rotate(42deg);
+      -ms-transform: rotate(42deg);
+          transform: rotate(42deg);
 }
 .mobile-content__checkbox:checked ~ .mobile-content__lines > .line--2 {
   -webkit-transform: scaleY(0);
@@ -521,13 +544,13 @@ main {
           transform: scaleY(0);
 }
 .mobile-content__checkbox:checked ~ .mobile-content__lines > .line--3 {
-  -webkit-transform: rotate(-40deg);
-      -ms-transform: rotate(-40deg);
-          transform: rotate(-40deg);
+  -webkit-transform: rotate(-42deg);
+      -ms-transform: rotate(-42deg);
+          transform: rotate(-42deg);
 }
 .mobile-content__lines {
-  width: 4.8rem;
-  height: 4.8rem;
+  width: 4rem;
+  height: 4rem;
   cursor: pointer;
 }
 
@@ -670,7 +693,7 @@ main {
   padding: 1.2rem 2.4rem;
   font-size: 2.4rem;
   font-size: clamp(2.4rem, 1.4rem + 1vw, 3rem);
-  font-weight: 700;
+  font-weight: 600;
   color: inherit;
   color: var(--clr-txt-secondary);
   text-align: center;
@@ -820,7 +843,7 @@ main {
     position: fixed;
     z-index: 10;
     width: 100%;
-    height: 8rem;
+    height: 6rem;
     background: rgba(242, 151, 39, 0.9);
   }
   .socials-box {
@@ -838,6 +861,9 @@ main {
   .mobile-content {
     display: block;
     margin-right: 3.2rem;
+  }
+  .logo:link, .logo:visited {
+    font-size: 2.6rem;
   }
 }
 @media (width <= 56.25em) {
@@ -897,16 +923,11 @@ main {
   }
 }
 @media (width <= 42.5em) {
-  .logo:link, .logo:visited {
-    font-size: 2.6rem;
-  }
   .resources__link:link, .resources__link:visited {
     font-size: 1.4rem;
   }
   .section {
     padding: 2.4rem 1.2rem;
-    -webkit-box-shadow: 0 0 1.2rem rgba(218, 255, 251, 0.5);
-            box-shadow: 0 0 1.2rem rgba(218, 255, 251, 0.5);
   }
   .section-header {
     -webkit-flex-wrap: wrap;
