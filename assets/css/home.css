@@ -40,7 +40,7 @@
   --clr-txt-primary: #ddd;
   --clr-txt-secondary: #191919;
   --br-default: 4px;
-  --sh-small: 0 0 0.6rem 0 rgba(218, 255, 251, 0.4);
+  --sh-small: 0 0 0.6rem 0 rgba(242, 151, 39, 0.4);
 }
 
 .u-margin-right-md {
@@ -98,7 +98,6 @@ p {
 html,
 body {
   scrollbar-gutter: stable;
-  overflow-x: hidden;
 }
 
 body {
@@ -599,8 +598,8 @@ main {
   gap: 2.4rem;
   padding: 2.4rem;
   border-radius: var(--br-default);
-  -webkit-box-shadow: 0 0 1.2rem rgba(218, 255, 251, 0.5);
-          box-shadow: 0 0 1.2rem rgba(218, 255, 251, 0.5);
+  -webkit-box-shadow: 0 0 0.4rem rgba(242, 151, 39, 0.5);
+          box-shadow: 0 0 0.4rem rgba(242, 151, 39, 0.5);
 }
 .section--html {
   -ms-grid-row: 1;
@@ -755,16 +754,6 @@ main {
   margin-top: 1.2rem;
 }
 @media (width <= 87.5em) {
-  .header {
-    position: fixed;
-    z-index: 10;
-    width: 100%;
-    height: 8rem;
-    background: rgba(242, 151, 39, 0.9);
-  }
-  .socials-box {
-    display: none;
-  }
   .grid {
     -ms-grid-columns: [full-start] minmax(3.2rem, 1fr) [center-start] ([col-start] minmax(-webkit-min-content, 12rem) [col-end])[10] [center-end] 20rem [nav-end] minmax(3.2rem, 1fr) [full-end];
     -ms-grid-columns: [full-start] minmax(3.2rem, 1fr) [center-start] ([col-start] minmax(min-content, 12rem) [col-end])[10] [center-end] 20rem [nav-end] minmax(3.2rem, 1fr) [full-end];
@@ -774,10 +763,6 @@ main {
   }
   .grid-inner {
         grid-template-areas: ". . html html html . ." ". . css css css . ." ". . tools tools tools . ." ". . scss scss scss . ." ". . js js js . ." ". . react react react . ." ". . pwa pwa pwa . .";
-  }
-  .mobile-content {
-    display: block;
-    margin-right: 3.2rem;
   }
   .logo:link, .logo:visited {
     margin-left: 3.2rem;
@@ -831,6 +816,16 @@ main {
   }
 }
 @media (width <= 68.75em) {
+  .header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 8rem;
+    background: rgba(242, 151, 39, 0.9);
+  }
+  .socials-box {
+    display: none;
+  }
   .grid {
     -ms-grid-columns: [full-start] minmax(3.2rem, 1fr) [center-start] ([col-start] minmax(-webkit-min-content, 12rem) [col-end])[10] [center-end] minmax(3.2rem, 1fr) [full-end];
     -ms-grid-columns: [full-start] minmax(3.2rem, 1fr) [center-start] ([col-start] minmax(min-content, 12rem) [col-end])[10] [center-end] minmax(3.2rem, 1fr) [full-end];
@@ -839,6 +834,10 @@ main {
   }
   main {
     grid-column: center-start/center-end;
+  }
+  .mobile-content {
+    display: block;
+    margin-right: 3.2rem;
   }
 }
 @media (width <= 56.25em) {

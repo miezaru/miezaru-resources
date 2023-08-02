@@ -48,7 +48,7 @@
 .mobile-content {
     display: none;
 
-    @media (width <= 87.5em) {
+    @media (width <= 68.75em) {
         display: block;
         margin-right: 3.2rem;
     }

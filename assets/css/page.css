@@ -40,7 +40,7 @@
   --clr-txt-primary: #ddd;
   --clr-txt-secondary: #191919;
   --br-default: 4px;
-  --sh-small: 0 0 0.6rem 0 rgba(218, 255, 251, 0.4);
+  --sh-small: 0 0 0.6rem 0 rgba(242, 151, 39, 0.4);
 }
 
 .u-margin-right-md {
@@ -98,7 +98,6 @@ p {
 html,
 body {
   scrollbar-gutter: stable;
-  overflow-x: hidden;
 }
 
 body {
@@ -602,11 +601,13 @@ main {
 .code-el {
   padding: 1px;
   font-family: monospace;
-  font-weight: 700;
   line-height: 1.2;
 }
 
 .page-nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 2rem;
   grid-column: center-end/nav-end;
   -ms-grid-row-align: start;
       align-self: start;
@@ -614,9 +615,6 @@ main {
   line-height: 1.6;
   color: var(--clr-txt-primary);
   border-radius: var(--br-default);
-  -webkit-transform: translateY(13.9rem);
-      -ms-transform: translateY(13.9rem);
-          transform: translateY(13.9rem);
 }
 .page-nav p {
   margin-bottom: 2.4rem;
@@ -701,16 +699,6 @@ main {
 .page-nav__link-inner:hover, .page-nav__link-inner:active {
   color: var(--clr-txt-dark);
   text-decoration: underline;
-}
-
-.sticky-nav {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 2rem;
-  right: 1rem;
-  -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .main-header {
@@ -950,26 +938,12 @@ main {
 }
 
 @media (width <= 87.5em) {
-  .header {
-    position: fixed;
-    z-index: 10;
-    width: 100%;
-    height: 8rem;
-    background: rgba(242, 151, 39, 0.9);
-  }
-  .socials-box {
-    display: none;
-  }
   .grid {
     -ms-grid-columns: [full-start] minmax(3.2rem, 1fr) [center-start] ([col-start] minmax(-webkit-min-content, 12rem) [col-end])[10] [center-end] 20rem [nav-end] minmax(3.2rem, 1fr) [full-end];
     -ms-grid-columns: [full-start] minmax(3.2rem, 1fr) [center-start] ([col-start] minmax(min-content, 12rem) [col-end])[10] [center-end] 20rem [nav-end] minmax(3.2rem, 1fr) [full-end];
     grid-template-columns: [full-start] minmax(3.2rem, 1fr) [center-start] repeat(10, [col-start] minmax(-webkit-min-content, 12rem) [col-end]) [center-end] 20rem [nav-end] minmax(3.2rem, 1fr) [full-end];
     grid-template-columns: [full-start] minmax(3.2rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 12rem) [col-end]) [center-end] 20rem [nav-end] minmax(3.2rem, 1fr) [full-end];
     padding: 0 0 12rem;
-  }
-  .mobile-content {
-    display: block;
-    margin-right: 3.2rem;
   }
   .logo:link, .logo:visited {
     margin-left: 3.2rem;
@@ -988,6 +962,16 @@ main {
 }
 
 @media (width <= 68.75em) {
+  .header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 8rem;
+    background: rgba(242, 151, 39, 0.9);
+  }
+  .socials-box {
+    display: none;
+  }
   .grid {
     -ms-grid-columns: [full-start] minmax(3.2rem, 1fr) [center-start] ([col-start] minmax(-webkit-min-content, 12rem) [col-end])[10] [center-end] minmax(3.2rem, 1fr) [full-end];
     -ms-grid-columns: [full-start] minmax(3.2rem, 1fr) [center-start] ([col-start] minmax(min-content, 12rem) [col-end])[10] [center-end] minmax(3.2rem, 1fr) [full-end];
@@ -999,6 +983,10 @@ main {
     -ms-grid-columns: [full-start] minmax(min-content, 1fr) [center-start] ([col-start] minmax(min-content, 10rem) [col-end])[8] [center-end] minmax(min-content, 1fr) [full-end];
     grid-template-columns: [full-start] minmax(-webkit-min-content, 1fr) [center-start] repeat(8, [col-start] minmax(-webkit-min-content, 10rem) [col-end]) [center-end] minmax(-webkit-min-content, 1fr) [full-end];
     grid-template-columns: [full-start] minmax(min-content, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 10rem) [col-end]) [center-end] minmax(min-content, 1fr) [full-end];
+  }
+  .mobile-content {
+    display: block;
+    margin-right: 3.2rem;
   }
   .page-nav {
     display: none;

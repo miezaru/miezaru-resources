@@ -1,11 +1,12 @@
 .page-nav {
+    position: sticky;
+    top: 2rem;
     grid-column: center-end / nav-end;
     align-self: start;
     font-size: 1.6rem;
     line-height: 1.6;
     color: var(--clr-txt-primary);
     border-radius: var(--br-default);
-    transform: translateY(13.9rem);
 
     @media (width <= 68.75em) {
         display: none;
@@ -87,13 +88,4 @@
             text-decoration: underline;
         }
     }
-}
-
-// sticky nav
-
-.sticky-nav {
-    position: sticky;
-    top: 2rem;
-    right: 1rem;
-    transform: translateY(0);
 }
