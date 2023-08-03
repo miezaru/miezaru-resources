@@ -124,6 +124,12 @@
     </head>
 
     <body class="grid">
+        <a href="#top" class="top-btn" aria-label="back to the top of the page">
+            <svg width="100%" height="20">
+                <use href="../../assets/svg/symbol-defs.svg#shevron"></use>
+            </svg>
+        </a>
+
         <header class="header">
             <a
                 href="https://miezaru-resources.netlify.app/"
@@ -266,11 +272,16 @@
                 </a>
             </div>
             <div class="mobile-content">
+                <label
+                    for="mobile-navigation"
+                    style="opacity: 0; width: min-content; font-size: 0.1px"
+                    >Mobile navigation button</label
+                >
                 <input
                     type="checkbox"
                     class="mobile-content__checkbox"
                     name=""
-                    id=""
+                    id="mobile-navigation"
                 />
                 <div class="mobile-content__lines">
                     <span class="line line--1">&nbsp;</span>
@@ -280,9 +291,9 @@
                 <div class="mobile-nav">
                     <nav
                         class="mobile-nav__page-nav"
-                        aria-labelledby="on-this-page"
+                        aria-labelledby="mobile-on-this-page"
                     >
-                        <p id="on-this-page">On this page</p>
+                        <p id="mobile-on-this-page">On this page</p>
                         <ul class="mobile-nav__page-nav__list">
                             <li class="page-nav__item">
                                 <a
@@ -293,14 +304,21 @@
                             </li>
                             <li class="page-nav__item">
                                 <details class="page-nav__details details">
-                                    <summary>
+                                    <summary tabindex="-1">
                                         <a
                                             href="#layouts"
-                                            class="page-nav__link details-link"
+                                            class="page-nav__link details-link summary-link"
                                             >Layouts</a
                                         >
                                     </summary>
                                     <ul class="page-nav__list-inner">
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#layouts"
+                                                class="page-nav__link-inner mobile-nav__link"
+                                                >About layouts</a
+                                            >
+                                        </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#layouts-about"
@@ -312,29 +330,62 @@
                                 </details>
                             </li>
                             <li class="page-nav__item">
-                                <a
-                                    href="#float"
-                                    class="page-nav__link details-link"
-                                    >Float</a
-                                >
-                            </li>
-                            <li class="page-nav__item">
-                                <a
-                                    href="#flexbox"
-                                    class="page-nav__link details-link"
-                                    >Flexbox</a
-                                >
+                                <details class="page-nav__details details">
+                                    <summary tabindex="-1">
+                                        <a
+                                            href="#float"
+                                            class="page-nav__link details-link summary-link"
+                                            >Float</a
+                                        >
+                                    </summary>
+                                    <ul class="page-nav__list-inner">
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#float"
+                                                class="page-nav__link-inner mobile-nav__link"
+                                                >About float</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </details>
                             </li>
                             <li class="page-nav__item">
                                 <details class="page-nav__details details">
-                                    <summary>
+                                    <summary tabindex="-1">
+                                        <a
+                                            href="#flexbox"
+                                            class="page-nav__link details-link summary-link"
+                                            >Flexbox</a
+                                        >
+                                    </summary>
+                                    <ul class="page-nav__list-inner">
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#flexbox"
+                                                class="page-nav__link-inner mobile-nav__link"
+                                                >About flexbox</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li class="page-nav__item">
+                                <details class="page-nav__details details">
+                                    <summary tabindex="-1">
                                         <a
                                             href="#grid"
-                                            class="page-nav__link details-link"
+                                            class="page-nav__link details-link summary-link"
                                             >Grid</a
                                         >
                                     </summary>
                                     <ul class="page-nav__list-inner">
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#grid"
+                                                class="page-nav__link-inner mobile-nav__link"
+                                                >About grid</a
+                                            >
+                                        </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#grid-terminology"
@@ -360,37 +411,37 @@
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
-                                                href="#grid-units-and-functions mobile-nav__link"
-                                                class="page-nav__link-inner"
+                                                href="#grid-units-and-functions"
+                                                class="page-nav__link-inner mobile-nav__link"
                                                 >Units and functions</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
-                                                href="#grid-align-tracks-inside-con mobile-nav__link"
-                                                class="page-nav__link-inner"
+                                                href="#grid-align-tracks-inside-con"
+                                                class="page-nav__link-inner mobile-nav__link"
                                                 >Align tracks inside
                                                 container</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
-                                                href="#grid-align-tracks-inside-cell mobile-nav__link"
-                                                class="page-nav__link-inner"
+                                                href="#grid-align-tracks-inside-cell"
+                                                class="page-nav__link-inner mobile-nav__link"
                                                 >Align tracks inside cells</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
-                                                href="#grid-parent-container mobile-nav__link"
-                                                class="page-nav__link-inner"
+                                                href="#grid-parent-container"
+                                                class="page-nav__link-inner mobile-nav__link"
                                                 >Parent container properties</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
-                                                href="#grid-item-properties mobile-nav__link"
-                                                class="page-nav__link-inner"
+                                                href="#grid-item-properties"
+                                                class="page-nav__link-inner mobile-nav__link"
                                                 >Item properties</a
                                             >
                                         </li>
@@ -547,7 +598,7 @@
                 </li>
                 <li class="page-nav__item">
                     <details class="page-nav__details details">
-                        <summary>
+                        <summary tabindex="-1">
                             <a
                                 href="#layouts"
                                 class="page-nav__link details-link"
@@ -577,7 +628,7 @@
                 </li>
                 <li class="page-nav__item">
                     <details class="page-nav__details details">
-                        <summary>
+                        <summary tabindex="-1">
                             <a href="#grid" class="page-nav__link details-link"
                                 >Grid</a
                             >
@@ -668,7 +719,13 @@
                 </header>
 
                 <div class="section__part">
-                    <div style="display: flex; justify-items: center">
+                    <div
+                        style="
+                            display: flex;
+                            justify-items: center;
+                            margin-bottom: 4rem;
+                        "
+                    >
                         <svg
                             width="100%"
                             height="100%"

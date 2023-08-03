@@ -123,6 +123,12 @@
     </head>
 
     <body class="grid">
+        <a href="#top" class="top-btn" aria-label="back to the top of the page">
+            <svg width="100%" height="20">
+                <use href="../../assets/svg/symbol-defs.svg#shevron"></use>
+            </svg>
+        </a>
+
         <header class="header">
             <a
                 href="https://miezaru-resources.netlify.app/"
@@ -265,11 +271,16 @@
                 </a>
             </div>
             <div class="mobile-content">
+                <label
+                    for="mobile-navigation"
+                    style="opacity: 0; width: min-content; font-size: 0.1px"
+                    >Mobile navigation button</label
+                >
                 <input
                     type="checkbox"
                     class="mobile-content__checkbox"
                     name=""
-                    id=""
+                    id="mobile-navigation"
                 />
                 <div class="mobile-content__lines">
                     <span class="line line--1">&nbsp;</span>
@@ -279,9 +290,9 @@
                 <div class="mobile-nav">
                     <nav
                         class="mobile-nav__page-nav"
-                        aria-labelledby="on-this-page"
+                        aria-labelledby="mobile-on-this-page"
                     >
-                        <p id="on-this-page">On this page</p>
+                        <p id="mobile-on-this-page">On this page</p>
                         <ul class="mobile-nav__page-nav__list">
                             <li class="page-nav__item">
                                 <a
@@ -295,11 +306,18 @@
                                     <summary>
                                         <a
                                             href="#links"
-                                            class="page-nav__link details-link"
+                                            class="page-nav__link details-link summary-link"
                                             >Links</a
                                         >
                                     </summary>
                                     <ul class="page-nav__list-inner">
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#links"
+                                                class="page-nav__link-inner mobile-nav__link"
+                                                >All links</a
+                                            >
+                                        </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#links-learn-resources"
@@ -329,12 +347,18 @@
                                     <summary>
                                         <a
                                             href="#about"
-                                            class="page-nav__link details-link"
+                                            class="page-nav__link details-link summary-link"
                                             >About</a
                                         >
                                     </summary>
                                     <ul class="page-nav__list-inner">
-                                        <li class="page-nav__item-inner"></li>
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#about"
+                                                class="page-nav__link-inner mobile-nav__link"
+                                                >About forms</a
+                                            >
+                                        </li>
 
                                         <li class="page-nav__item-inner">
                                             <a
@@ -652,8 +676,12 @@
                     is most often sent to a server for processing.
                 </p>
             </header>
-            <section class="section" aria-labelledby="section-links-title">
-                <header class="section-header" id="links">
+            <section
+                class="section"
+                aria-labelledby="section-links-title"
+                id="links"
+            >
+                <header class="section-header">
                     <h2 class="title-h2" id="section-links-title ">Links</h2>
                 </header>
                 <div class="section__part" id="links-learn-resources">
@@ -832,8 +860,12 @@
                     </div>
                 </div>
             </section>
-            <section class="section" aria-labelledby="section-about-title">
-                <header class="section-header" id="about">
+            <section
+                class="section"
+                aria-labelledby="section-about-title"
+                id="about"
+            >
+                <header class="section-header">
                     <h2 class="title-h2" id="section-about-title">About</h2>
                 </header>
                 <div class="section__part" id="about-form">

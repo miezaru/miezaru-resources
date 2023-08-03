@@ -20,10 +20,10 @@ main {
                 [col-start] minmax(min-content, 10rem) [col-end]
             )
             [center-end] minmax(min-content, 1fr) [full-end];
+        row-gap: 0;
     }
 
     @media (width <= 52.5em) {
         grid-template-columns: [center-start] 1fr [center-end];
-        row-gap: 2.8rem;
     }
 }

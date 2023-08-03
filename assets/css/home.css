@@ -107,7 +107,7 @@ body {
 }
 
 :focus-visible {
-  outline: 0.4rem solid var(--clr-txt-primary);
+  outline: 0.4rem solid var(--clr-bcg-secondary);
 }
 
 ::-moz-selection {
@@ -167,6 +167,9 @@ iframe {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.header :focus-visible {
+  outline: 0.4rem solid var(--clr-bcg-main);
 }
 .header__icon {
   display: block;
@@ -424,7 +427,7 @@ main {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 9500;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -552,6 +555,9 @@ main {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
 }
+.mobile-content__checkbox:focus-visible ~ .mobile-content__lines .line {
+  background-color: var(--clr-bcg-main);
+}
 .mobile-content__checkbox:checked ~ .mobile-nav {
   pointer-events: auto;
   visibility: visible;
@@ -579,6 +585,21 @@ main {
   width: 4rem;
   height: 4rem;
   cursor: pointer;
+}
+
+.top-btn {
+  position: fixed;
+  right: 1.2rem;
+  bottom: 4.8rem;
+  z-index: 2;
+  display: none;
+  place-items: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--clr-bcg-primary);
+  border-radius: 50%;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .logo:link, .logo:visited {
@@ -1020,6 +1041,12 @@ main {
   .mobile-content {
     display: block;
     margin-right: 3.2rem;
+  }
+  .top-btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
   }
   .logo:link, .logo:visited {
     font-size: 2.6rem;

@@ -25,24 +25,41 @@
 //         navEl.classList.remove('sticky-nav')
 //     }
 // }
+
+// window.addEventListener('load', navigation, false)
+// window.addEventListener('resize', navigation, false)
+
 // details
 const details = document.querySelectorAll('.details')
 const detailsLinks = document.querySelectorAll('.details-link')
 const summaryEl = document.querySelector('summary')
 
-for (let i = 0; i < detailsLinks.length; i++) {
-    detailsLinks[i].addEventListener('click', function (el) {
-        const parentDetails = el.target.parentElement.parentElement
-        details.forEach((el) => el.removeAttribute('open'))
+function togglePageMenu(el) {
+    const parentDetails = el.target.parentElement.parentElement
+    if (parentDetails.hasAttribute('open')) {
+        parentDetails.removeAttribute('open')
+        return
+    }
 
-        if (!parentDetails.open) {
-            parentDetails.setAttribute('open', '')
-        }
-    })
+    if (!parentDetails.open) {
+        details.forEach((el) => el.removeAttribute('open'))
+        parentDetails.setAttribute('open', '')
+    }
+}
+
+for (let i = 0; i < detailsLinks.length; i++) {
+    detailsLinks[i].addEventListener('click', togglePageMenu)
 }
 
 const mobileNavLinks = document.querySelectorAll('.mobile-nav__link')
 const checkedNav = document.querySelector('.mobile-content__checkbox')
+const summaryLinks = document.querySelectorAll('.summary-link')
+
+for (let i = 0; i < summaryLinks.length; i++) {
+    summaryLinks[i].addEventListener('click', function (e) {
+        e.preventDefault()
+    })
+}
 
 for (let i = 0; i < mobileNavLinks.length; i++) {
     mobileNavLinks[i].addEventListener('click', function () {
@@ -51,13 +68,3 @@ for (let i = 0; i < mobileNavLinks.length; i++) {
         }
     })
 }
-
-// for (let i = 0; i < detailsLinks.length; i++) {
-//     detailsLinks[i].addEventListener('click', function (el) {
-
-//     })
-// }
-
-// window.addEventListener('load', navigation, false)
-// window.addEventListener('resize', navigation, false)
-// page navigation end

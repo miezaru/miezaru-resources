@@ -124,6 +124,12 @@
     </head>
 
     <body class="grid">
+        <a href="#top" class="top-btn" aria-label="back to the top of the page">
+            <svg width="100%" height="20">
+                <use href="../../assets/svg/symbol-defs.svg#shevron"></use>
+            </svg>
+        </a>
+
         <header class="header">
             <a
                 href="https://miezaru-resources.netlify.app/"
@@ -265,11 +271,16 @@
                 </a>
             </div>
             <div class="mobile-content">
+                <label
+                    for="mobile-navigation"
+                    style="opacity: 0; width: min-content; font-size: 0.1px"
+                    >Mobile navigation button</label
+                >
                 <input
                     type="checkbox"
                     class="mobile-content__checkbox"
                     name=""
-                    id=""
+                    id="mobile-navigation"
                 />
                 <div class="mobile-content__lines">
                     <span class="line line--1">&nbsp;</span>
@@ -279,9 +290,9 @@
                 <div class="mobile-nav">
                     <nav
                         class="mobile-nav__page-nav"
-                        aria-labelledby="on-this-page"
+                        aria-labelledby="mobile-on-this-page"
                     >
-                        <p id="on-this-page">On this page</p>
+                        <p id="mobile-on-this-page">On this page</p>
                         <ul class="mobile-nav__page-nav__list">
                             <li class="page-nav__item">
                                 <a
@@ -292,14 +303,21 @@
                             </li>
                             <li class="page-nav__item">
                                 <details class="page-nav__details details">
-                                    <summary>
+                                    <summary tabindex="-1">
                                         <a
-                                            href="#css"
-                                            class="page-nav__link details-link"
-                                            >About</a
+                                            href="#"
+                                            class="page-nav__link details-link summary-link"
+                                            >CSS</a
                                         >
                                     </summary>
                                     <ul class="page-nav__list-inner">
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#css"
+                                                class="page-nav__link-inner mobile-nav__link"
+                                                >About CSS</a
+                                            >
+                                        </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#css-rule"
@@ -554,7 +572,7 @@
                 </li>
                 <li class="page-nav__item">
                     <details class="page-nav__details details">
-                        <summary>
+                        <summary tabindex="-1">
                             <a href="#css" class="page-nav__link details-link"
                                 >About</a
                             >
@@ -1481,7 +1499,13 @@ img[alt=""] {
                                     default CSS, provided by the browser.
                                 </li>
                             </ul>
-                            <div style="display: flex; justify-content: center">
+                            <div
+                                style="
+                                    display: flex;
+                                    justify-content: center;
+                                    margin: 4rem 0;
+                                "
+                            >
                                 <svg
                                     width="100%"
                                     height="100%"
