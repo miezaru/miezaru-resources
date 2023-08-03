@@ -8,13 +8,21 @@
     display: flex;
     flex-direction: column;
     grid-column: col-start 1 / col-end 8;
-    gap: 3.2rem;
+    gap: 6rem;
+
+    @media (width <= 68.75em) {
+        gap: 0;
+    }
 
     &__part {
         display: flex;
         flex-direction: column;
         gap: 1.8rem;
         padding: 1.2rem 0;
+
+        @media (width <= 68.75em) {
+            padding-top: 6.8rem;
+        }
 
         @media (width <= 52.5em) {
             grid-column: center-start / center-end;

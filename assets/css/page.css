@@ -434,6 +434,7 @@ main {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: 6.4rem;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -444,7 +445,9 @@ main {
           justify-content: start;
   width: 100%;
   height: calc(100vh - 6rem);
+  padding: 4.8rem 0;
   margin-top: 6rem;
+  overflow: auto;
   pointer-events: none;
   visibility: hidden;
   background-color: rgba(242, 151, 39, 0.97);
@@ -456,6 +459,35 @@ main {
       -ms-transform: translateX(100%);
           transform: translateX(100%);
 }
+.mobile-nav p {
+  display: none;
+}
+.mobile-nav summary::marker {
+  display: none;
+  content: "";
+}
+.mobile-nav__page-nav {
+  width: 30rem;
+  padding: 1.2rem 2.4rem;
+  font-size: 2.2rem;
+  line-height: 1.6;
+  color: var(--clr-txt-secondary);
+  background-color: var(--clr-bcg-primary);
+  border-radius: var(--br-default);
+}
+.mobile-nav__page-nav__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.4rem;
+  list-style: none;
+}
 .mobile-nav__socials-box {
   display: -webkit-box;
   display: -webkit-flex;
@@ -463,16 +495,11 @@ main {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  gap: 2.4rem;
-}
-.mobile-nav__page-nav {
-  font-size: 1.6rem;
-  line-height: 1.6;
-  color: var(--clr-txt-secondary);
-  border-radius: var(--br-default);
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  gap: 1.2rem;
+  padding: 0 2.4rem;
 }
 
 .line {
@@ -741,7 +768,7 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   grid-column: col-start 1/col-end 8;
-  gap: 3.2rem;
+  gap: 6rem;
 }
 .section__part {
   display: -webkit-box;
@@ -996,10 +1023,142 @@ main {
     display: none;
   }
   .grid {
+    -ms-grid-rows: 6rem -webkit-min-content;
+    -ms-grid-rows: 6rem min-content;
+    grid-template-rows: 6rem -webkit-min-content;
+    grid-template-rows: 6rem min-content;
     -ms-grid-columns: [full-start] minmax(3.2rem, 1fr) [center-start] ([col-start] minmax(-webkit-min-content, 12rem) [col-end])[10] [center-end] minmax(3.2rem, 1fr) [full-end];
     -ms-grid-columns: [full-start] minmax(3.2rem, 1fr) [center-start] ([col-start] minmax(min-content, 12rem) [col-end])[10] [center-end] minmax(3.2rem, 1fr) [full-end];
     grid-template-columns: [full-start] minmax(3.2rem, 1fr) [center-start] repeat(10, [col-start] minmax(-webkit-min-content, 12rem) [col-end]) [center-end] minmax(3.2rem, 1fr) [full-end];
     grid-template-columns: [full-start] minmax(3.2rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 12rem) [col-end]) [center-end] minmax(3.2rem, 1fr) [full-end];
+  }
+  .grid > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .grid > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  .grid > *:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .grid > *:nth-child(4) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+  }
+  .grid > *:nth-child(5) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+  }
+  .grid > *:nth-child(6) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 6;
+  }
+  .grid > *:nth-child(7) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 7;
+  }
+  .grid > *:nth-child(8) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 8;
+  }
+  .grid > *:nth-child(9) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 9;
+  }
+  .grid > *:nth-child(10) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 10;
+  }
+  .grid > *:nth-child(11) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 11;
+  }
+  .grid > *:nth-child(12) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 12;
+  }
+  .grid > *:nth-child(13) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 13;
+  }
+  .grid > *:nth-child(14) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 14;
+  }
+  .grid > *:nth-child(15) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 15;
+  }
+  .grid > *:nth-child(16) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 16;
+  }
+  .grid > *:nth-child(17) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  .grid > *:nth-child(18) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+  .grid > *:nth-child(19) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+  }
+  .grid > *:nth-child(20) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 4;
+  }
+  .grid > *:nth-child(21) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 5;
+  }
+  .grid > *:nth-child(22) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 6;
+  }
+  .grid > *:nth-child(23) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 7;
+  }
+  .grid > *:nth-child(24) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 8;
+  }
+  .grid > *:nth-child(25) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 9;
+  }
+  .grid > *:nth-child(26) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 10;
+  }
+  .grid > *:nth-child(27) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 11;
+  }
+  .grid > *:nth-child(28) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 12;
+  }
+  .grid > *:nth-child(29) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 13;
+  }
+  .grid > *:nth-child(30) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 14;
+  }
+  .grid > *:nth-child(31) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 15;
+  }
+  .grid > *:nth-child(32) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 16;
   }
   .grid-inner {
     -ms-grid-columns: [full-start] minmax(-webkit-min-content, 1fr) [center-start] ([col-start] minmax(-webkit-min-content, 10rem) [col-end])[8] [center-end] minmax(-webkit-min-content, 1fr) [full-end];
@@ -1016,6 +1175,12 @@ main {
   }
   .page-nav {
     display: none;
+  }
+  .section {
+    gap: 0;
+  }
+  .section__part {
+    padding-top: 6.8rem;
   }
 }
 
@@ -1084,6 +1249,17 @@ main {
   }
   .title-h1 {
     padding: 1rem 2rem;
+  }
+}
+
+@media (width <= 22.5em) {
+  .mobile-nav__page-nav {
+    width: 90%;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.8rem;
+  }
+  .page-nav__list-inner {
+    margin-left: 1.2rem;
   }
 }
 

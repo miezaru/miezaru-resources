@@ -41,6 +41,23 @@ for (let i = 0; i < detailsLinks.length; i++) {
     })
 }
 
+const mobileNavLinks = document.querySelectorAll('.mobile-nav__link')
+const checkedNav = document.querySelector('.mobile-content__checkbox')
+
+for (let i = 0; i < mobileNavLinks.length; i++) {
+    mobileNavLinks[i].addEventListener('click', function () {
+        if (checkedNav.checked) {
+            checkedNav.checked = false
+        }
+    })
+}
+
+// for (let i = 0; i < detailsLinks.length; i++) {
+//     detailsLinks[i].addEventListener('click', function (el) {
+
+//     })
+// }
+
 // window.addEventListener('load', navigation, false)
 // window.addEventListener('resize', navigation, false)
 // page navigation end
