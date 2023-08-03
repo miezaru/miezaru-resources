@@ -25,4 +25,8 @@ p {
     color: var(--clr-txt-secondary);
     background-color: var(--clr-bcg-primary);
     border-radius: var(--br-default);
+
+    &--err {
+        background-color: var(--clr-bcg-err);
+    }
 }
