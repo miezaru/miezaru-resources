@@ -273,7 +273,7 @@
             <div class="mobile-content">
                 <label
                     for="mobile-navigation"
-                    style="opacity: 0; width: min-content; font-size: 0.1px"
+                    style="opacity: 0; width: 0; font-size: 0px"
                     >Mobile navigation button</label
                 >
                 <input
@@ -288,23 +288,23 @@
                     <span class="line line--2">&nbsp;</span>
                     <span class="line line--3">&nbsp;</span>
                 </div>
-                <div class="mobile-nav">
+                <div class="mob">
                     <nav
-                        class="mobile-nav__page-nav"
+                        class="mob--page-nav"
                         aria-labelledby="mobile-on-this-page"
                     >
                         <p id="mobile-on-this-page">On this page</p>
-                        <ul class="mobile-nav__page-nav__list">
+                        <ul class="mob--page-nav__list">
                             <li class="page-nav__item">
                                 <a
                                     href="#top"
-                                    class="page-nav__link details-link mobile-nav__link"
+                                    class="page-nav__link details-link mob--link"
                                     >Back to top &uarr;</a
                                 >
                             </li>
                             <li class="page-nav__item">
                                 <details class="page-nav__details details">
-                                    <summary>
+                                    <summary tabindex="-1">
                                         <a
                                             href="#about"
                                             class="page-nav__link details-link summary-link"
@@ -315,42 +315,42 @@
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#about"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >About icons</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#about-use-good-icons"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >Use good icons</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#about-icons-type"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >Icons type</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#about-when-use"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >When use icons</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#about-use-well"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >Use icons well</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#about-sprite-svg"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >How to make svg sprite</a
                                             >
                                         </li>
@@ -359,7 +359,7 @@
                             </li>
                         </ul>
                     </nav>
-                    <div class="mobile-nav__socials-box">
+                    <div class="mob--socials-box">
                         <a
                             href="https://github.com/miezaru"
                             class="header__icon-box"
@@ -506,7 +506,7 @@
                 </li>
                 <li class="page-nav__item">
                     <details class="page-nav__details details">
-                        <summary>
+                        <summary tabindex="-1">
                             <a href="#about" class="page-nav__link details-link"
                                 >About</a
                             >
@@ -555,7 +555,7 @@
         <main class="grid-inner">
             <header class="main-header">
                 <h1 class="title-h1 nav-makes-sticky">HTML: Icons</h1>
-                <p class="u-margin-top-sm">
+                <p>
                     Icons can be defined as the images or symbols used in any
                     computer interface refer to an element. It is a graphical
                     representation of a file or program that helps the user to
@@ -574,21 +574,21 @@
                 </header>
                 <div class="section__part" id="about-use-good-icons">
                     <h3 class="title-h3">Use good icons</h3>
-                    <ol class="section__list-sm">
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Use a good icon pack, there are tons of free and
                                 paid icons packs
                             </p>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Use only one icon pack. Don`t mix icons from
                                 different icon packs
                             </p>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Use SVG icons or icon fonts. Don`t use bitmap
                                 image formats (.jpg and .png)!
                             </p>
@@ -598,21 +598,29 @@
                 <div class="section__part" id="about-icons-type">
                     <h3 class="title-h3">Icon types</h3>
 
-                    <ol class="section__list-sm">
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">Vector-based</p>
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">Vector-based</p>
 
-                            <ul>
-                                <li>SVG images and icon fonts</li>
-                                <li>Scale indefinitely!</li>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    SVG images and icon fonts
+                                </li>
+                                <li class="list-inner__item">
+                                    Scale indefinitely!
+                                </li>
                             </ul>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">Bitmap</p>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">Bitmap</p>
 
-                            <ul>
-                                <li>"Regular images": JPG, PNG, GIF</li>
-                                <li>Do not scale, become unsharp!</li>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    "Regular images": JPG, PNG, GIF
+                                </li>
+                                <li class="list-inner__item">
+                                    Do not scale, become unsharp!
+                                </li>
                             </ul>
                         </li>
                     </ol>
@@ -626,25 +634,25 @@
                 <div class="section__part" id="about-when-use">
                     <h3 class="title-h3">When to use icons</h3>
 
-                    <ol class="section__list-sm">
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Use icons to provide visual assistance to text
                             </p>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Use icons for product feature blocks
                             </p>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Use icons associated with actions, and label
                                 them (unless no space or icon is 100% clear)
                             </p>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Use icons as bullet points
                             </p>
                         </li>
@@ -653,21 +661,21 @@
 
                 <div class="section__part" id="about-use-well">
                     <h3 class="title-h3">Use icons well</h3>
-                    <ol class="section__list-sm">
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 To keep icons neutral, use same color as text.
                                 To draw more attention, use different color
                             </p>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Don`t confuse users: icons need to make sense
                                 and fit the text or action!
                             </p>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Don`t make icons larger than what they were
                                 designed for. If needed, enclose them in a shape
                             </p>
@@ -679,42 +687,40 @@
                         How to make external SVG sprite file:
                     </h3>
 
-                    <ol class="section__list-sm">
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
-                                Create file sprites.svg
-                            </p>
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">Create file sprites.svg</p>
                             <pre class="code">
                                 <code class="code-el">
-        &lt;svg xmlns="http://www.w3.org/2000/svg"&gt;
-            &lt;symbol id="science" viewBox="0 0 24 24" fill="none"&gt;
-                &lt;path stroke-linecap="round" stroke-linejoin="round"
-                d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /&gt;
-            &lt;/symbol&gt;
-        &lt;/svg&gt;
+&lt;svg xmlns="http://www.w3.org/2000/svg"&gt;
+    &lt;symbol id="science" viewBox="0 0 24 24" fill="none"&gt;
+        &lt;path stroke-linecap="round" stroke-linejoin="round"
+        d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /&gt;
+    &lt;/symbol&gt;
+&lt;/svg&gt;
                                 </code>
                             </pre>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Need to take symbol from svg icon, if symbol
                                 more than 1 for 1 icon, use &lt;g&gt; tag to
                                 group them
                             </p>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Add viewBox attribute to symbol tag, from svg
                                 icon
                             </p>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Use id to link sprite to embedded svg
                             </p>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Sometimes, svg icons need more than viewBox, the
                                 might be need stroke or fill="none" properties
                             </p>

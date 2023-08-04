@@ -51,7 +51,7 @@ for (let i = 0; i < detailsLinks.length; i++) {
     detailsLinks[i].addEventListener('click', togglePageMenu)
 }
 
-const mobileNavLinks = document.querySelectorAll('.mobile-nav__link')
+const mobileNavLinks = document.querySelectorAll('.mob--link')
 const checkedNav = document.querySelector('.mobile-content__checkbox')
 const summaryLinks = document.querySelectorAll('.summary-link')
 
@@ -61,6 +61,7 @@ for (let i = 0; i < summaryLinks.length; i++) {
     })
 }
 
+console.log(mobileNavLinks)
 for (let i = 0; i < mobileNavLinks.length; i++) {
     mobileNavLinks[i].addEventListener('click', function () {
         if (checkedNav.checked) {

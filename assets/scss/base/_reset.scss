@@ -29,3 +29,10 @@ iframe {
     height: auto;
     block-size: auto;
 }
+
+summary {
+    &::marker {
+        display: none;
+        content: '';
+    }
+}

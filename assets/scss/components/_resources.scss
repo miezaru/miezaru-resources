@@ -11,12 +11,11 @@
             font-size: clamp(1.6rem, 0.9rem + 1vw, 1.7rem);
             font-weight: 500;
             line-height: 1.6;
-            color: inherit;
             color: var(--clr-txt-secondary);
             background-color: var(--clr-bcg-primary);
             border-radius: var(--br-default);
             box-shadow: var(--sh-small);
-            transition: all 0.2s;
+            transition: var(--tr-default);
 
             @media (width <= 75em) {
                 font-size: 1.5rem;

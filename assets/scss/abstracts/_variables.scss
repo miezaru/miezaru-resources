@@ -8,10 +8,13 @@ $clr-bcg-secondary: #f29727;
 
 // border-radius
 $br-default: 4px;
-$clr-bcg-err: #ffb4b0;
+$clr-bcg-err: #e75b77;
 
 // shadows
-$sh-small: 0 0 0.6rem 0 rgba($clr-bcg-secondary, 0.4);
+$sh-small: 0 0 0.6rem 0 rgba($clr-bcg-secondary, 0.5);
+
+// transitions
+$tr-default: all 0.2s;
 
 :root {
     --white: #{$white};
@@ -28,6 +31,9 @@ $sh-small: 0 0 0.6rem 0 rgba($clr-bcg-secondary, 0.4);
 
     // shadows
     --sh-small: #{$sh-small};
+
+    // transitions
+    --tr-default: #{$tr-default};
 
     // --: #{$};
 }

@@ -271,7 +271,7 @@
             <div class="mobile-content">
                 <label
                     for="mobile-navigation"
-                    style="opacity: 0; width: min-content; font-size: 0.1px"
+                    style="opacity: 0; width: 0; font-size: 0px"
                     >Mobile navigation button</label
                 >
                 <input
@@ -285,23 +285,23 @@
                     <span class="line line--2">&nbsp;</span>
                     <span class="line line--3">&nbsp;</span>
                 </div>
-                <div class="mobile-nav">
+                <div class="mob">
                     <nav
-                        class="mobile-nav__page-nav"
+                        class="mob--page-nav"
                         aria-labelledby="mobile-on-this-page"
                     >
                         <p id="mobile-on-this-page">On this page</p>
-                        <ul class="mobile-nav__page-nav__list">
+                        <ul class="mob--page-nav__list">
                             <li class="page-nav__item">
                                 <a
                                     href="#top"
-                                    class="page-nav__link details-link mobile-nav__link"
+                                    class="page-nav__link details-link mob--link"
                                     >Back to top &uarr;</a
                                 >
                             </li>
                             <li class="page-nav__item">
                                 <details class="page-nav__details details">
-                                    <summary>
+                                    <summary tabindex="-1">
                                         <a
                                             href="#links"
                                             class="page-nav__link details-link summary-link"
@@ -312,35 +312,35 @@
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#links"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >All links</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#links-metadata"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >Metadata</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#links-social"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >Social metadata</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#links-icons"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >Icons</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#links-fonts"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >Fonts</a
                                             >
                                         </li>
@@ -349,7 +349,7 @@
                             </li>
                         </ul>
                     </nav>
-                    <div class="mobile-nav__socials-box">
+                    <div class="mob--socials-box">
                         <a
                             href="https://github.com/miezaru"
                             class="header__icon-box"
@@ -497,7 +497,7 @@
                 </li>
                 <li class="page-nav__item">
                     <details class="page-nav__details details">
-                        <summary>
+                        <summary tabindex="-1">
                             <a href="#links" class="page-nav__link details-link"
                                 >Links</a
                             >
@@ -540,7 +540,7 @@
         <main class="grid-inner">
             <header class="main-header">
                 <h1 class="title-h1 nav-makes-sticky">HTML: Metadata</h1>
-                <p class="u-margin-top-sm">
+                <p>
                     The &lt;meta&gt; tag defines metadata about an HTML
                     document. Metadata is data (information) about data.
                 </p>

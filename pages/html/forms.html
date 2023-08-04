@@ -273,7 +273,7 @@
             <div class="mobile-content">
                 <label
                     for="mobile-navigation"
-                    style="opacity: 0; width: min-content; font-size: 0.1px"
+                    style="opacity: 0; width: 0; font-size: 0px"
                     >Mobile navigation button</label
                 >
                 <input
@@ -287,23 +287,23 @@
                     <span class="line line--2">&nbsp;</span>
                     <span class="line line--3">&nbsp;</span>
                 </div>
-                <div class="mobile-nav">
+                <div class="mob">
                     <nav
-                        class="mobile-nav__page-nav"
+                        class="mob--page-nav"
                         aria-labelledby="mobile-on-this-page"
                     >
                         <p id="mobile-on-this-page">On this page</p>
-                        <ul class="mobile-nav__page-nav__list">
+                        <ul class="mob--page-nav__list">
                             <li class="page-nav__item">
                                 <a
                                     href="#top"
-                                    class="page-nav__link details-link mobile-nav__link"
+                                    class="page-nav__link details-link mob--link"
                                     >Back to top &uarr;</a
                                 >
                             </li>
                             <li class="page-nav__item">
                                 <details class="page-nav__details details">
-                                    <summary>
+                                    <summary tabindex="-1">
                                         <a
                                             href="#links"
                                             class="page-nav__link details-link summary-link"
@@ -314,28 +314,28 @@
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#links"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >All links</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#links-learn-resources"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >Learn resources</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#links-testing"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >Testing</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#links-js"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >JavaScript</a
                                             >
                                         </li>
@@ -344,7 +344,7 @@
                             </li>
                             <li class="page-nav__item">
                                 <details class="page-nav__details details">
-                                    <summary>
+                                    <summary tabindex="-1">
                                         <a
                                             href="#about"
                                             class="page-nav__link details-link summary-link"
@@ -355,7 +355,7 @@
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#about"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >About forms</a
                                             >
                                         </li>
@@ -363,56 +363,56 @@
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#about-form"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >Form</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#about-user-input"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >Capturing user input</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#about-re-entering"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >Re-entering data</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#about-right-data"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >Right data</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#about-aria-validation"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >Aria validation rules</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#about-style-forms"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >Style forms</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#about-validation-js"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >Validation with JS</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#about-design-recommendation"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >Design recommendation</a
                                             >
                                         </li>
@@ -421,7 +421,7 @@
                             </li>
                         </ul>
                     </nav>
-                    <div class="mobile-nav__socials-box">
+                    <div class="mob--socials-box">
                         <a
                             href="https://github.com/miezaru"
                             class="header__icon-box"
@@ -569,7 +569,7 @@
                 </li>
                 <li class="page-nav__item">
                     <details class="page-nav__details details">
-                        <summary>
+                        <summary tabindex="-1">
                             <a href="#links" class="page-nav__link details-link"
                                 >Links</a
                             >
@@ -599,14 +599,12 @@
                 </li>
                 <li class="page-nav__item">
                     <details class="page-nav__details details">
-                        <summary>
+                        <summary tabindex="-1">
                             <a href="#about" class="page-nav__link details-link"
                                 >About</a
                             >
                         </summary>
                         <ul class="page-nav__list-inner">
-                            <li class="page-nav__item-inner"></li>
-
                             <li class="page-nav__item-inner">
                                 <a
                                     href="#about-form"
@@ -671,7 +669,7 @@
         <main class="grid-inner">
             <header class="main-header">
                 <h1 class="title-h1 nav-makes-sticky">HTML: Forms</h1>
-                <p class="u-margin-top-sm">
+                <p>
                     An HTML form is used to collect user input. The user input
                     is most often sent to a server for processing.
                 </p>
@@ -871,12 +869,12 @@
                 <div class="section__part" id="about-form">
                     <h3 class="title-h3">Form</h3>
 
-                    <ol class="section__list-sm">
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">GET - URL</p>
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">GET - URL</p>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 POST - data is included in the
                                 <a
                                     href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST#example"
@@ -917,21 +915,21 @@
                     </p>
                     <p>
                         The default value for type is text. This means that if
-                        you simply want a text &ltinput /&gt;, you can leave out
-                        the type attribute.
+                        you simply want a text
+                        <span class="mark-text">&ltinput /&gt;</span>, you can
+                        leave out the type attribute.
                     </p>
                     <pre class="code">
                         <code class="code-el">
 &lt;input /&gt;
-<input tabindex="-1"/>
+<label for="test-input">input w/o type</label>
+<input id="test-input" tabindex="-1"/>
                         </code>
                     </pre>
 
-                    <ol class="section__list-sm">
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
-                                Multiple lines of text
-                            </p>
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">Multiple lines of text</p>
                             <pre class="code">
                                 <code class="code-el">
 &lt;label for="comment"&gt;Comment&lt;/label&gt;
@@ -939,8 +937,8 @@
                                 </code>
                             </pre>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">List of options</p>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">List of options</p>
                             <pre class="code">
                                 <code class="code-el">
 &lt;label for="color"&gt;Color&lt;/label&gt;
@@ -951,10 +949,8 @@
                                 </code>
                             </pre>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
-                                Grouping form controls
-                            </p>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">Grouping form controls</p>
                             <pre class="code">
                         <code class="code-el">
 &lt;fieldset&gt;
@@ -969,10 +965,8 @@
                                 </code>
                             </pre>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
-                                Submitting a form
-                            </p>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">Submitting a form</p>
                             <pre class="code">
                                 <code class="code-el">
 &lt;button&gt;Submit&lt;/button&gt;
@@ -999,9 +993,9 @@
                         Help users avoid re-entering data in forms
                     </h3>
 
-                    <ol class="section__list-sm">
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Make it more convenient for users to fill out
                                 forms with
                                 <a
@@ -1012,21 +1006,21 @@
                                 >.
                             </p>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Based on this information, browsers can offer
                                 the option to autofill a field with previously
                                 entered data of the same type. Browsers can even
                                 offer to autofill an entire form.
                             </p>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Use sensible attribute values
                             </p>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Use
                                 <span class="mark-text">email</span>
                                 as a value for the
@@ -1044,8 +1038,8 @@
                                 </code>
                             </pre>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 The autocomplete attribute
                             </p>
 
@@ -1064,9 +1058,9 @@
                         Help users enter the right data in forms
                     </h3>
 
-                    <ol class="section__list-sm">
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 The
                                 <span class="mark-text">required</span>
                                 attribute tells the browser that the field is
@@ -1083,8 +1077,8 @@
                             </pre>
                         </li>
 
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">Minlenght</p>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">Minlenght</p>
 
                             <pre class="code">
                                 <code class="code-el">
@@ -1093,8 +1087,8 @@
                                 </code>
                             </pre>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 For numerical input types use
                                 <span class="mark-text">min</span>
                                 and
@@ -1102,11 +1096,9 @@
                                 to achieve the same result.
                             </p>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
-                                Pattern attribute
-                            </p>
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">Pattern attribute</p>
+                            <p class="list-sm__text">
                                 Sometimes you want to define more advanced
                                 validation rules. Use HTML
                                 <span class="mark-text">pattern attribute</span
@@ -1119,7 +1111,7 @@
 &lt;input required pattern="[a-z]{2,20}" type="text" id="animal" name="animal"&gt;
                                 </code>
                             </pre>
-                            <p class="section__list-sm-text">
+                            <p class="list-sm__text">
                                 Here, only lowercase letters are allowed; the
                                 user has to enter at least two characters, and
                                 not more than twenty.
@@ -1214,14 +1206,14 @@ nameInput.addEventListener('invalid', () => {
                 </div>
                 <div class="section__part" id="about-design-recommendation">
                     <h3 class="title-h3">Design recommendation</h3>
-                    <ol class="section__list-sm">
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Use a label for every form control
                             </p>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">Label wording</p>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">Label wording</p>
 
                             <pre class="code">
                                 <code class="code-el">
@@ -1230,29 +1222,29 @@ nameInput.addEventListener('invalid', () => {
                                 </code>
                             </pre>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Best label position - TOP
                             </p>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Better for users use single column form
                             </p>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Make forms big enought. The recommended tap
                                 target size of a button is at least 48px.
                             </p>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Show errors where they happen
                             </p>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Make it clear to users what data to enter
                             </p>
                             <pre class="code">
@@ -1263,8 +1255,8 @@ nameInput.addEventListener('invalid', () => {
                                 </code>
                             </pre>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Make it clear to users which fields are required
                             </p>
                             <pre class="code">

@@ -279,7 +279,7 @@
             <div class="mobile-content">
                 <label
                     for="mobile-navigation"
-                    style="opacity: 0; width: min-content; font-size: 0.1px"
+                    style="opacity: 0; width: 0; font-size: 0px"
                     >Mobile navigation button</label
                 >
                 <input
@@ -293,17 +293,17 @@
                     <span class="line line--2">&nbsp;</span>
                     <span class="line line--3">&nbsp;</span>
                 </div>
-                <div class="mobile-nav">
+                <div class="mob">
                     <nav
-                        class="mobile-nav__page-nav"
+                        class="mob--page-nav"
                         aria-labelledby="mobile-on-this-page"
                     >
                         <p id="mobile-on-this-page">On this page</p>
-                        <ul class="mobile-nav__page-nav__list">
+                        <ul class="mob--page-nav__list">
                             <li class="page-nav__item">
                                 <a
                                     href="#top"
-                                    class="page-nav__link details-link mobile-nav__link"
+                                    class="page-nav__link details-link mob--link"
                                     >Back to top &uarr;</a
                                 >
                             </li>
@@ -320,7 +320,7 @@
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#links"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >All links
                                             </a>
                                         </li>
@@ -328,7 +328,7 @@
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#links-aom"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >Accessibility Object Model</a
                                             >
                                         </li>
@@ -336,7 +336,7 @@
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#links-notes"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >Notes</a
                                             >
                                         </li>
@@ -344,7 +344,7 @@
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#links-role-attr"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >Role attribute</a
                                             >
                                         </li>
@@ -352,7 +352,7 @@
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#links-nv-access"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >NV Access app</a
                                             >
                                         </li>
@@ -372,35 +372,35 @@
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#about"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >About accessibility</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#about-aom"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >Accessibility Object Model</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#about-semantic"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >Semantic</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#about-role-attr"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >Role attribute</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#about-semantic-elements"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >Semantic elements</a
                                             >
                                         </li>
@@ -409,7 +409,7 @@
                             </li>
                         </ul>
                     </nav>
-                    <div class="mobile-nav__socials-box">
+                    <div class="mob--socials-box">
                         <a
                             href="https://github.com/miezaru"
                             class="header__icon-box"
@@ -552,7 +552,7 @@
             <ul class="page-nav__list">
                 <li class="page-nav__item">
                     <a href="#top" class="page-nav__link details-link"
-                        >On top &uarr;</a
+                        >Back to top &uarr;</a
                     >
                 </li>
                 <li class="page-nav__item">
@@ -645,7 +645,7 @@
         <main class="grid-inner">
             <header class="main-header">
                 <h1 class="title-h1 nav-makes-sticky">HTML: Accessibility</h1>
-                <p class="u-margin-top-sm">
+                <p>
                     Accessibility is the practice of making your website as
                     usable by many users as possible. It helps people with
                     disability and those who use mobile or slow internet
@@ -792,103 +792,144 @@
                 </div>
                 <div class="section__part" id="about-semantic-elements">
                     <h3 class="title-h3">Semantic elements</h3>
-                    <ul class="section__list" role="list">
-                        <li class="section__list-item">
+                    <ul class="list" role="list">
+                        <li class="list__item">
                             <h4 class="title-h4">Header</h4>
-                            <p>
-                                When the &lt;header&gt; is top level, it is the
-                                site
-                                <span class="mark-text">banner</span>, a
-                                landmark role. When a &lt;header&gt; is nested
-                                in &lt;main&gt;, &lt;article&gt;, or
-                                &lt;section&gt;, it just identifies it as the
-                                header for that section and isn't a landmark.
-                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        When the &lt;header&gt; is top level, it
+                                        is the site
+                                        <span class="mark-text">banner</span>, a
+                                        landmark role. When a &lt;header&gt; is
+                                        nested in &lt;main&gt;, &lt;article&gt;,
+                                        or &lt;section&gt;, it just identifies
+                                        it as the header for that section and
+                                        isn't a landmark.
+                                    </p>
+                                </li>
+                            </ul>
                         </li>
 
-                        <li class="section__list-item">
+                        <li class="list__item">
                             <h4 class="title-h4">Footer</h4>
-                            <p>
-                                The top level footer is a landmark with the
-                                implicit role of
-                                <span class="mark-text">contentinfo</span>. The
-                                other footer isn't a landmark. Chrome shows it
-                                as
-                                <span class="mark-text"
-                                    >FooterAsNonLandmark;</span
-                                >
-                                Firefox shows it as section.
-                            </p>
-                            <p>
-                                Footers are often where you will find contact
-                                information, wrapped in
-                                <span class="mark-text">&lt;address&gt;</span>,
-                                the contact address element. It is used to
-                                enclose the contact information for individuals
-                                or organizations, not physical mailing
-                                addresses.
-                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        The top level footer is a landmark with
+                                        the implicit role of
+                                        <span class="mark-text"
+                                            >contentinfo</span
+                                        >. The other footer isn't a landmark.
+                                        Chrome shows it as
+                                        <span class="mark-text"
+                                            >FooterAsNonLandmark;</span
+                                        >
+                                        Firefox shows it as section.
+                                    </p>
+                                </li>
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        Footers are often where you will find
+                                        contact information, wrapped in
+                                        <span class="mark-text"
+                                            >&lt;address&gt;</span
+                                        >, the contact address element. It is
+                                        used to enclose the contact information
+                                        for individuals or organizations, not
+                                        physical mailing addresses.
+                                    </p>
+                                </li>
+                            </ul>
                         </li>
 
-                        <li class="section__list-item">
+                        <li class="list__item">
                             <h4 class="title-h4">Main</h4>
-                            <p>
-                                There's a single &lt;main&gt; landmark element.
-                                The &lt;main&gt; element identifies the main
-                                content of the document. There should be
-                                <span class="mark-text">only one</span>
-                                &lt;main&gt; per page.
-                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        There's a single &lt;main&gt; landmark
+                                        element. The &lt;main&gt; element
+                                        identifies the main content of the
+                                        document. There should be
+                                        <span class="mark-text">only one</span>
+                                        &lt;main&gt; per page.
+                                    </p>
+                                </li>
+                            </ul>
                         </li>
 
-                        <li class="section__list-item">
+                        <li class="list__item">
                             <h4 class="title-h4">Aside</h4>
-                            <p>
-                                The &lt;aside&gt; is for content that is
-                                indirectly or tangentially related to the
-                                document's main content. The &lt;aside&gt;
-                                implicit role is
-                                <span class="mark-text">complementary</span>.
-                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        The &lt;aside&gt; is for content that is
+                                        indirectly or tangentially related to
+                                        the document's main content. The
+                                        &lt;aside&gt; implicit role is
+                                        <span class="mark-text"
+                                            >complementary</span
+                                        >.
+                                    </p>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="section__list-item">
+                        <li class="list__item">
                             <h4 class="title-h4">Article</h4>
-                            <p>
-                                An &lt;article&gt; represents a complete, or
-                                self-contained, section of content that is, in
-                                principle, independently
-                                <span class="mark-text">reusable</span>.
-                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        An &lt;article&gt; represents a
+                                        complete, or self-contained, section of
+                                        content that is, in principle,
+                                        independently
+                                        <span class="mark-text">reusable</span>.
+                                    </p>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="section__list-item">
+                        <li class="list__item">
                             <h4 class="title-h4">Section</h4>
-                            <p>
-                                The &lt;section&gt; element is used to encompass
-                                generic standalone sections of a document when
-                                there is no more specific semantic element to
-                                use. Sections should have a heading, with very
-                                few exceptions.
-                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        The &lt;section&gt; element is used to
+                                        encompass generic standalone sections of
+                                        a document when there is no more
+                                        specific semantic element to use.
+                                        Sections should have a heading, with
+                                        very few exceptions.
+                                    </p>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="section__list-item">
+                        <li class="list__item">
                             <h4 class="title-h4">Headings: h1 - h6</h4>
-                            <p>
-                                Each represents one of the six levels of section
-                                headings, with &lt;h1&gt; being the highest or
-                                most important section level, and &lt;h6&gt; the
-                                lowest.
-                            </p>
-                            <p>
-                                When a heading is nested in a document banner
-                                &lt;header&gt;, it is the heading for the
-                                application or site. When nested in
-                                &lt;main&gt;, whether or not it is nested within
-                                a &lt;header&gt; in &lt;main&gt;, it is the
-                                header for that page, not the whole site. When
-                                nested in an &lt;article&gt; or &lt;section&gt;,
-                                it is the header for that subsection of the
-                                page.
-                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        Each represents one of the six levels of
+                                        section headings, with &lt;h1&gt; being
+                                        the highest or most important section
+                                        level, and &lt;h6&gt; the lowest.
+                                    </p>
+                                </li>
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        When a heading is nested in a document
+                                        banner &lt;header&gt;, it is the heading
+                                        for the application or site. When nested
+                                        in &lt;main&gt;, whether or not it is
+                                        nested within a &lt;header&gt; in
+                                        &lt;main&gt;, it is the header for that
+                                        page, not the whole site. When nested in
+                                        an &lt;article&gt; or &lt;section&gt;,
+                                        it is the header for that subsection of
+                                        the page.
+                                    </p>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>

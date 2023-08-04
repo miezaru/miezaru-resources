@@ -272,7 +272,7 @@
             <div class="mobile-content">
                 <label
                     for="mobile-navigation"
-                    style="opacity: 0; width: min-content; font-size: 0.1px"
+                    style="opacity: 0; width: 0; font-size: 0px"
                     >Mobile navigation button</label
                 >
                 <input
@@ -286,13 +286,13 @@
                     <span class="line line--2">&nbsp;</span>
                     <span class="line line--3">&nbsp;</span>
                 </div>
-                <div class="mobile-nav">
+                <div class="mob">
                     <nav
-                        class="mobile-nav__page-nav"
+                        class="mob--page-nav"
                         aria-labelledby="mobile-on-this-page"
                     >
                         <p id="mobile-on-this-page">On this page</p>
-                        <ul class="mobile-nav__page-nav__list">
+                        <ul class="mob--page-nav__list">
                             <li class="page-nav__item">
                                 <a
                                     href="#top"
@@ -313,21 +313,21 @@
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#links"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >All links</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#links-performance"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >Performance</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#links-tools"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >Tools</a
                                             >
                                         </li>
@@ -347,63 +347,63 @@
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#about"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >About images</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#about-good-imgs"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >Use good images</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#about-use-well"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >Use images well</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#about-text-on-imgs"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >Text on images</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#about-tech-details"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >Technical details</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#about-performance"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >Performance</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#about-usable"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >Usable</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#about-squoosh"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >Squoosh API</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#about-useful"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >Useful</a
                                             >
                                         </li>
@@ -412,7 +412,7 @@
                             </li>
                         </ul>
                     </nav>
-                    <div class="mobile-nav__socials-box">
+                    <div class="mob--socials-box">
                         <a
                             href="https://github.com/miezaru"
                             class="header__icon-box"
@@ -655,7 +655,7 @@
         <main class="grid-inner">
             <header class="main-header">
                 <h1 class="title-h1 nav-makes-sticky">HTML: Images</h1>
-                <p class="u-margin-top-sm">
+                <p>
                     Images are very important to beautify as well as to depict
                     many complex concepts in simple way on web page.
                 </p>
@@ -775,19 +775,21 @@
                 </header>
                 <div class="section__part" id="about-good-imgs">
                     <h3 class="title-h3">Use good images</h3>
-                    <ol class="section__list-sm">
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Different types of images: product photos,
                                 storytelling photos, illustrations, patterns
                             </p>
-                            <ul>
-                                <li>SVG PATTERNS</li>
-                                <li>NICE ILLUSTRATIONS</li>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">SVG PATTERNS</li>
+                                <li class="list-inner__item">
+                                    NICE ILLUSTRATIONS
+                                </li>
                             </ul>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Use images to support website`s
                                 <span class="mark-text">message and story</span>
                                 . So only use relevant images!
@@ -798,20 +800,20 @@
 
                 <div class="section__part" id="about-use-well">
                     <h3 class="title-h3">Use images well</h3>
-                    <ol class="section__list-sm">
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Try to show real people to trigger user`s
                                 emotions
                             </p>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 If necessary, crop images to fit your message
                             </p>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Experiment combining photos, illustrations and
                                 patterns
                             </p>
@@ -822,22 +824,20 @@
                 <div class="section__part" id="about-text-on-imgs">
                     <h3 class="title-h3">Handling text on images</h3>
 
-                    <ol class="section__list-sm">
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Darker or brighten image (completely or
                                 partially, using a gradient)
                             </p>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Position a text into neutral image area
                             </p>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
-                                Put text in a box
-                            </p>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">Put text in a box</p>
                         </li>
                     </ol>
                 </div>
@@ -845,43 +845,43 @@
                 <div class="section__part" id="about-tech-details">
                     <h3 class="title-h3">Some technical details</h3>
 
-                    <ol class="section__list-sm">
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 To account for high-res screens, make image
                                 dimensions 2x as big as their displayed size
                             </p>
 
-                            <ul>
-                                <li>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
                                     If image have website size 300x300, he`s
                                     original size need to be 600x600
                                 </li>
-                                <li>
+                                <li class="list-inner__item">
                                     Scale factor: Actual pixels the screen
                                     contains / Pixels represented on screen
                                 </li>
-                                <li>
+                                <li class="list-inner__item">
                                     On high-res screens, scale factor is 2x or
                                     even 3x, on "normal" screens it`s just 1x (1
                                     physical pixel = 1 design pixel)
                                 </li>
                             </ul>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Compress images for a lower file size and better
                                 performance
                             </p>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 When using multiple images side-by-side, make
                                 sure they have the exact same dimensions
                             </p>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Always declare images size
                             </p>
                         </li>
@@ -890,17 +890,19 @@
 
                 <div class="section__part" id="about-performance">
                     <h3 class="title-h3">Performance</h3>
-                    <ol class="section__list-sm">
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Use
                                 <span class="mark-text">fetchpriority</span>
                                 and
                                 <span class="mark-text">loading="lazy"</span>
                                 for better loading performance.
                             </p>
-                            <ul>
-                                <li>loading eager - default</li>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    loading eager - default
+                                </li>
                             </ul>
 
                             <pre class="code">
@@ -915,12 +917,12 @@
                                 </code>
                             </pre>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 decoding: async or sync.
                             </p>
-                            <ul>
-                                <li>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
                                     Use the sync value if the image itself is
                                     the most important piece of content to
                                     prioritize.
@@ -944,9 +946,9 @@
 
                 <div class="section__part" id="about-usable">
                     <h3 class="title-h3">Usable</h3>
-                    <ol class="section__list-sm">
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">Default styles</p>
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">Default styles</p>
                             <pre class="code">
                                 <code class="code-el">
 &lt;img src="image.jpg" height="200" width="400" alt="…"&gt
@@ -966,8 +968,8 @@ iframe {
                                 </code>
                             </pre>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">Picture element</p>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">Picture element</p>
                             <pre class="code">
                                 <code class="code-el">
 &lt;picture&gt;
@@ -978,10 +980,8 @@ iframe {
                                 </code>
                             </pre>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
-                                Multiple image formats
-                            </p>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">Multiple image formats</p>
                             <pre class="code">
                                 <code class="code-el">
 &lt;picture&gt;
@@ -999,8 +999,8 @@ iframe {
                                 </code>
                             </pre>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">srcset</p>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">srcset</p>
                             <pre class="code">
                                 <code class="code-el">
 &lt;img
@@ -1010,8 +1010,8 @@ iframe {
                                 </code>
                             </pre>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">srcset</p>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">srcset</p>
                             <pre class="code">
                                 <code class="code-el">
 &lt;img
@@ -1020,12 +1020,12 @@ sizes="(min-width: 66em) 33vw, (min-width: 44em) 50vw, 100vw"&gt;
                                 </code>
                             </pre>
 
-                            <p class="section__list-sm-text">
+                            <p class="list-sm__text">
                                 Always use sizes with srcset
                             </p>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Pixel density descriptor
                             </p>
                             <pre class="code">
@@ -1035,8 +1035,8 @@ srcset="small-image.png 1x, medium-image.png 2x, large-image.png 3x"&gt;
                                 </code>
                             </pre>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Same with background-image
                             </p>
                             <pre class="code">
@@ -1052,14 +1052,14 @@ background-image: image-set(
                                 </code>
                             </pre>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 From GIF, JPG, PNG and AVIF - better use AVIF.
                                 With the same look, it`s 30% smaller.
                             </p>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Always use
                                 <span class="mark-text">max-width: 100%;</span>
                                 and
@@ -1069,8 +1069,8 @@ background-image: image-set(
                                 images, for better performance.
                             </p>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Use custom hotkey in vs code, emmet -
                                 <a
                                     href="https://docs.emmet.io/actions/update-image-size/"
@@ -1091,11 +1091,11 @@ background-image: image-set(
                             >Not maintainable</span
                         >
                     </p>
-                    <ol class="section__list-sm">
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">Need install:</p>
-                            <ul>
-                                <li>
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">Need install:</p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
                                     <a
                                         href="https://www.npmjs.com/package/@squoosh/cli"
                                         class="section__link"
@@ -1106,13 +1106,11 @@ background-image: image-set(
                                 </li>
                             </ul>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
-                                Change node to 16
-                            </p>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">Change node to 16</p>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">Commands:</p>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">Commands:</p>
                             <pre class="code">
                                 <code class="code-el">
 squoosh-cli --mozjpeg '{quality: 75}' -d img/jpg *(*.jpg|*.png|*.avif|*.webp!(webp|avif|jpg))
@@ -1130,9 +1128,9 @@ squoosh-cli --mozjpeg '{quality: 75}' -d jpg *(*.jpg|*.png|*.avif|*.webp!(webp|a
 
                 <div class="section__part" id="about-useful">
                     <h3 class="title-h3">Useful</h3>
-                    <ol class="section__list-sm">
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Картинке сохранять пропорции при ресайзе
                             </p>
                             <pre class="code">
@@ -1145,10 +1143,8 @@ img {
                                 </code>
                             </pre>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
-                                Ссылка на всю карточку
-                            </p>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">Ссылка на всю карточку</p>
                             <pre class="code">
                                 <code class="code-el">
 parent > h2 > a
@@ -1168,10 +1164,8 @@ a::before {
                                 </code>
                             </pre>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
-                                Outline на всю картинку
-                            </p>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">Outline на всю картинку</p>
                             <pre class="code">
                                 <code class="code-el">
 a:focus-visible {
@@ -1185,8 +1179,8 @@ a:focus-visible::before {
                                 </code>
                             </pre>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Aspect-ratio of the images will remain constant
                             </p>
                             <pre class="code">
@@ -1200,10 +1194,8 @@ iframe {
                                 </code>
                             </pre>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
-                                Different aspect-ratio
-                            </p>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">Different aspect-ratio</p>
                             <pre class="code">
                                 <code class="code-el">
 img {
@@ -1214,10 +1206,8 @@ img {
                                 </code>
                             </pre>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
-                                object-fit on images
-                            </p>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">object-fit on images</p>
                             <pre class="code">
                                 <code class="code-el">
 img {
@@ -1230,8 +1220,8 @@ img {
                                 </code>
                             </pre>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 Preload images what used in js or background css
                             </p>
                             <pre class="code">
@@ -1240,12 +1230,12 @@ img {
                                 </code>
                             </pre>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 How to use text with images.
                             </p>
-                            <ul>
-                                <li>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
                                     <a
                                         href="https://codepen.io/Miezaru/pen/MWaxEXz"
                                         class="section__link"
@@ -1253,7 +1243,7 @@ img {
                                         >Overlay the image</a
                                     >
                                 </li>
-                                <li>
+                                <li class="list-inner__item">
                                     <a
                                         href="https://codepen.io/Miezaru/pen/xxwBXzK"
                                         class="section__link"
@@ -1261,7 +1251,7 @@ img {
                                         >Put text in a box</a
                                     >
                                 </li>
-                                <li>
+                                <li class="list-inner__item">
                                     <a
                                         href="https://codepen.io/Miezaru/pen/abvMLao"
                                         class="section__link"

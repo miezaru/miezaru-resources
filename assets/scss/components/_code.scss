@@ -1,18 +1,10 @@
 .code {
     display: grid;
-    grid-template-rows: min-content;
     grid-template-columns: 1fr;
-    padding-right: -17px;
-    margin: 0;
-    overflow-x: auto;
     font-size: 1.6rem;
     color: var(--clr-txt-secondary);
-    white-space: pre;
     background-color: var(--clr-bcg-primary);
     border-radius: var(--br-default);
-
-    // scroll-snap-type: inline proximity;
-    scroll-behavior: smooth;
 
     @media (width <= 42.5em) {
         font-size: 1.4rem;
@@ -22,37 +14,33 @@
         padding: 1.2rem 3.2rem;
         overflow-x: scroll;
         font-family: monospace;
-        hyphens: none;
         line-height: 1.2;
-        word-break: normal;
-        word-wrap: normal;
-        word-spacing: normal;
 
-        /* width */
         &::-webkit-scrollbar {
             height: 7px;
         }
 
-        /* Track */
         &::-webkit-scrollbar-track {
             overflow: hidden;
             background: var(--clr-accent);
             border-radius: 4px;
         }
 
-        /* Handle */
         &::-webkit-scrollbar-thumb {
             background: var(--clr-bcg-secondary);
             border-radius: 4px;
         }
 
-        /* Handle on hover */
         &::-webkit-scrollbar-thumb:hover {
             background: var(--clr-bcg-secondary);
         }
 
         @media (width <= 56.25em) {
             padding: 1.2rem 2.4rem;
+        }
+
+        @media (width <= 20em) {
+            padding: 1.2rem;
         }
     }
 }

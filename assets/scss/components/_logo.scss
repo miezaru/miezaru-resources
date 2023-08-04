@@ -3,13 +3,14 @@
     &:visited {
         padding: 0.8rem 1.2rem;
         font-size: 3.2rem;
+        font-weight: 500;
         line-height: 1;
         color: var(--clr-txt-secondary);
         text-decoration: none;
         background-color: var(--clr-bcg-primary);
         border-radius: var(--br-default);
         box-shadow: var(--sh-small);
-        transition: all 0.2s;
+        transition: var(--tr-default);
 
         &:hover,
         &:active {

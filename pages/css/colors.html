@@ -271,7 +271,7 @@
             <div class="mobile-content">
                 <label
                     for="mobile-navigation"
-                    style="opacity: 0; width: min-content; font-size: 0.1px"
+                    style="opacity: 0; width: 0; font-size: 0px"
                     >Mobile navigation button</label
                 >
                 <input
@@ -286,17 +286,17 @@
                     <span class="line line--2">&nbsp;</span>
                     <span class="line line--3">&nbsp;</span>
                 </div>
-                <div class="mobile-nav">
+                <div class="mob">
                     <nav
-                        class="mobile-nav__page-nav"
+                        class="mob--page-nav"
                         aria-labelledby="mobile-on-this-page"
                     >
                         <p id="mobile-on-this-page">On this page</p>
-                        <ul class="mobile-nav__page-nav__list">
+                        <ul class="mob--page-nav__list">
                             <li class="page-nav__item">
                                 <a
                                     href="#top"
-                                    class="page-nav__link details-link mobile-nav__link"
+                                    class="page-nav__link details-link mob--link"
                                     >Back to top &uarr;</a
                                 >
                             </li>
@@ -313,21 +313,21 @@
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#colors"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >About colors</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#colors-define"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >Defining colors in CSS</a
                                             >
                                         </li>
                                         <li class="page-nav__item-inner">
                                             <a
                                                 href="#colors-grey"
-                                                class="page-nav__link-inner mobile-nav__link"
+                                                class="page-nav__link-inner mob--link"
                                                 >Shades of grey</a
                                             >
                                         </li>
@@ -336,7 +336,7 @@
                             </li>
                         </ul>
                     </nav>
-                    <div class="mobile-nav__socials-box">
+                    <div class="mob--socials-box">
                         <a
                             href="https://github.com/miezaru"
                             class="header__icon-box"
@@ -514,7 +514,7 @@
         <main class="grid-inner">
             <header class="main-header">
                 <h1 class="title-h1 nav-makes-sticky">CSS: Colors</h1>
-                <p class="u-margin-top-sm">
+                <p>
                     CSS Color property is used to set the color of HTML
                     elements. This property is used to set font color,
                     background color, etc. The color of an element can be
@@ -546,56 +546,62 @@
                 </div>
                 <div class="section__part" id="colors-define">
                     <h3 class="title-h3">Defining colors in CSS:</h3>
-                    <ul class="section__list">
-                        <li class="section__list-item">
+                    <ul class="list-outer">
+                        <li class="list-outer__item">
                             <h4 class="title-h4">RGB/RGBA Notation</h4>
-                            <ol class="section__list-sm">
-                                <li class="section__list-sm-item">
-                                    <p class="section__list-sm-text">
+                            <ol class="list-sm">
+                                <li class="list-sm__item">
+                                    <p class="list-sm__text">
                                         Regular RGB model
                                     </p>
-                                    <ul>
-                                        <li>rgb(0, 255, 255)</li>
+                                    <ul class="list-inner">
+                                        <li class="list-inner__item">
+                                            rgb(0, 255, 255)
+                                        </li>
                                     </ul>
                                 </li>
-                                <li class="section__list-sm-item">
-                                    <p class="section__list-sm-text">
+                                <li class="list-sm__item">
+                                    <p class="list-sm__text">
                                         RBG with transparency ("alpha")
                                     </p>
-                                    <ul>
-                                        <li>rgba(0, 255, 255, 0.3)</li>
+                                    <ul class="list-inner">
+                                        <li class="list-inner__item">
+                                            rgba(0, 255, 255, 0.3)
+                                        </li>
                                     </ul>
                                 </li>
                             </ol>
                         </li>
-                        <li class="section__list-item">
+                        <li class="list-outer__item">
                             <h4 class="title-h4">HEXADECIMAL Notation</h4>
-                            <ol class="section__list-sm">
-                                <li class="section__list-sm-item">
-                                    <p class="section__list-sm-text">
+                            <ol class="list-sm">
+                                <li class="list-sm__item">
+                                    <p class="list-sm__text">
                                         Instead of using scale from 0 to 255, we
                                         go from 0 to ff (255 in hexadecimal
                                         numbers)
                                     </p>
-                                    <ul>
-                                        <li>#00ffff</li>
+                                    <ul class="list-inner">
+                                        <li class="list-inner__item">
+                                            #00ffff
+                                        </li>
                                     </ul>
                                 </li>
-                                <li class="section__list-sm-item">
-                                    <p class="section__list-sm-text">
+                                <li class="list-sm__item">
+                                    <p class="list-sm__text">
                                         Shorthand, when all colors are identical
                                         pairs
                                     </p>
-                                    <ul>
-                                        <li>#0ff</li>
+                                    <ul class="list-inner">
+                                        <li class="list-inner__item">#0ff</li>
                                     </ul>
                                 </li>
-                                <li class="section__list-sm-item">
-                                    <p class="section__list-sm-text">
+                                <li class="list-sm__item">
+                                    <p class="list-sm__text">
                                         Also have transparency
                                     </p>
-                                    <ul>
-                                        <li>
+                                    <ul class="list-inner">
+                                        <li class="list-inner__item">
                                             <a
                                                 href="https://gist.github.com/lopspower/03fb1cc0ac9f32ef38f4"
                                                 class="section__link"
@@ -607,26 +613,28 @@
                                 </li>
                             </ol>
                         </li>
-                        <li class="section__list-item">
+                        <li class="list-outer__item">
                             <h4 class="title-h4">
                                 HSL (hue, saturation, lightness — тон,
-                                насыщенность и яркость
+                                насыщенность и яркость)
                             </h4>
-                            <ol class="section__list-sm" role="list">
-                                <li class="section__list-sm-item">
-                                    <p class="section__list-sm-text">
+                            <ol class="list-sm" role="list">
+                                <li class="list-sm__item">
+                                    <p class="list-sm__text">
                                         hsl(315, 100%, 60%)
                                     </p>
                                 </li>
-                                <li class="section__list-sm-item">
-                                    <p class="section__list-sm-text">
+                                <li class="list-sm__item">
+                                    <p class="list-sm__text">
                                         hsla(359, 99%, 50%, 0.5)
                                     </p>
                                 </li>
                             </ol>
                         </li>
                     </ul>
-                    <p>«Young guys can be messy rascals»</p>
+                    <p class="u-text-align-c">
+                        «Young guys can be messy rascals»
+                    </p>
                     <picture class="section__img">
                         <source
                             srcset="../../assets/img/rgb/rgb-lg.avif"
@@ -647,15 +655,15 @@
                 </div>
                 <div class="section__part" id="colors-grey">
                     <h3 class="title-h3">Shades of GREY</h3>
-                    <ol class="section__list-sm" role="list">
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                    <ol class="list-sm" role="list">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 When colors in all 3 channels are the same, we
                                 get a grey color
                             </p>
                         </li>
-                        <li class="section__list-sm-item">
-                            <p class="section__list-sm-text">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
                                 There are 256 pure grays to choose from
                             </p>
                         </li>

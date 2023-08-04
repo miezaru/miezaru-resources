@@ -11,7 +11,7 @@ main {
         )
         [center-end] minmax(5rem, 1fr) [full-end];
     grid-column: center-start / center-end;
-    row-gap: 5rem;
+    row-gap: 6rem;
 
     @media (width <= 68.75em) {
         grid-template-columns:
