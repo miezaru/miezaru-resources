@@ -61,7 +61,6 @@ for (let i = 0; i < summaryLinks.length; i++) {
     })
 }
 
-console.log(mobileNavLinks)
 for (let i = 0; i < mobileNavLinks.length; i++) {
     mobileNavLinks[i].addEventListener('click', function () {
         if (checkedNav.checked) {

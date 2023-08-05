@@ -2,19 +2,16 @@
     display: grid;
     grid-template-columns: 1fr;
     font-size: 1.6rem;
+    font-size: clamp(1.4rem, 0.6rem + 1vw, 1.6rem);
     color: var(--clr-txt-secondary);
     background-color: var(--clr-bcg-primary);
     border-radius: var(--br-default);
-
-    @media (width <= 42.5em) {
-        font-size: 1.4rem;
-    }
 
     &-el {
         padding: 1.2rem 3.2rem;
         overflow-x: scroll;
         font-family: monospace;
-        line-height: 1.2;
+        line-height: var(--line-height-sm);
 
         &::-webkit-scrollbar {
             height: 7px;
@@ -23,12 +20,12 @@
         &::-webkit-scrollbar-track {
             overflow: hidden;
             background: var(--clr-accent);
-            border-radius: 4px;
+            border-radius: var(--br-default);
         }
 
         &::-webkit-scrollbar-thumb {
             background: var(--clr-bcg-secondary);
-            border-radius: 4px;
+            border-radius: var(--br-default);
         }
 
         &::-webkit-scrollbar-thumb:hover {

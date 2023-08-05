@@ -1,0 +1,4 @@
+@use './colors' as c;
+
+$sh-small: 0 0 0.6rem rgba(c.$clr-bcg-secondary, 0.5);
+$sh-medium: 0 0 0.4rem rgba(c.$clr-bcg-secondary, 0.5);

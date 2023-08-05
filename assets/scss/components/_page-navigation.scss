@@ -4,7 +4,7 @@
     grid-column: center-end / nav-end;
     align-self: start;
     font-size: 1.6rem;
-    line-height: 1.6;
+    line-height: var(--line-height-md);
     color: var(--clr-txt-primary);
     border-radius: var(--br-default);
 
@@ -27,7 +27,7 @@
         &:link,
         &:visited {
             display: block;
-            font-weight: 500;
+            font-weight: var(--fw-500);
             color: inherit;
             transition: var(--tr-default);
         }

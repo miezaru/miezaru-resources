@@ -3,8 +3,7 @@
     &:visited {
         padding: 0.8rem 1.2rem;
         font-size: 3.2rem;
-        font-weight: 500;
-        line-height: 1;
+        font-weight: var(--fw-500);
         color: var(--clr-txt-secondary);
         text-decoration: none;
         background-color: var(--clr-bcg-primary);

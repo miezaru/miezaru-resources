@@ -4,19 +4,15 @@ body {
         system-ui,
         -apple-system,
         sans-serif;
-    font-weight: 400;
-    line-height: 1;
+    font-weight: var(--fw-400);
+    line-height: var(--line-height-initial);
     font-display: swap;
-}
-
-a {
-    text-decoration: none;
 }
 
 p {
     font-size: 1.6rem;
-    font-size: clamp(1.6rem, 0.75rem + 1vw, 1.8rem);
-    line-height: 1.7;
+    font-size: clamp(1.6rem, 0.8rem + 1vw, 1.8rem);
+    line-height: var(--line-height-bg);
     color: var(--clr-txt-primary);
 }
 
@@ -31,7 +27,7 @@ p {
     }
 
     &--err {
-        font-weight: 500;
+        font-weight: var(--fw-500);
         background-color: var(--clr-bcg-err);
     }
 }
