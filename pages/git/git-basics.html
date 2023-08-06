@@ -1,0 +1,2579 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Artem Usatyi, miezaruexpr@gmail.com" />
+        <meta
+            name="description"
+            content="Artem 'Miezaru' Usatyi resources page. This website contains a tons of useful information of the web development and more."
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="msapplication-TileColor" content="#001c30" />
+        <meta
+            name="msapplication-TileImage"
+            content="../../assets/img/icons/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#001c30" />
+
+        <link
+            as="font"
+            crossorigin
+            href="../../assets/fonts/rubik/RubikRegular.woff2"
+            rel="preload"
+            type="font/woff2"
+        />
+        <link
+            as="font"
+            crossorigin
+            href="../../assets/fonts/rubik/RubikMedium.woff2"
+            rel="preload"
+            type="font/woff2"
+        />
+        <link
+            as="font"
+            crossorigin
+            href="../../assets/fonts/rubik/RubikSemiBold.woff2"
+            rel="preload"
+            type="font/woff2"
+        />
+        <link
+            rel="canonical"
+            href="https://miezaru-resources.netlify.app/pages/git/git-basics.html"
+        />
+        <title>Miezaru App | Git Basics</title>
+
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="../../assets/img/icons/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="../../assets/img/icons/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="../../assets/img/icons/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="../../assets/img/icons/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="../../assets/img/icons/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="../../assets/img/icons/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="../../assets/img/icons/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="../../assets/img/icons/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="../../assets/img/icons/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="../../assets/img/icons/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="../../assets/img/icons/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="../../assets/img/icons/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="../../assets/img/icons/favicon-16x16.png"
+        />
+        <link rel="manifest" href="../../assets/img/icons/manifest.json" />
+
+        <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="../../assets/img/icons/favicon.ico"
+        />
+        <link rel="stylesheet" href="../../assets/css/page.css" />
+        <script src="../../assets/js/script.js" defer></script>
+    </head>
+
+    <body class="grid">
+        <a href="#top" class="top-btn" aria-label="back to the top of the page">
+            <svg width="100%" height="20">
+                <use href="../../assets/svg/symbol-defs.svg#shevron"></use>
+            </svg>
+        </a>
+
+        <header class="header">
+            <a
+                href="https://miezaru-resources.netlify.app/"
+                class="logo u-margin-right-auto"
+                >miezaru</a
+            >
+            <div class="socials-box">
+                <a
+                    href="https://github.com/miezaru"
+                    class="header__icon-box"
+                    rel="noopener external"
+                    aria-label="Miezaru github"
+                >
+                    <svg class="header__icon">
+                        <use
+                            href="../../assets/svg/symbol-defs.svg#icon-github"
+                        ></use>
+                    </svg>
+                </a>
+                <a
+                    href="https://gist.github.com/miezaru"
+                    class="header__icon-box"
+                    rel="noopener external"
+                    aria-label="Miezaru gist"
+                >
+                    <svg class="header__icon">
+                        <use
+                            href="../../assets/svg/symbol-defs.svg#icon-gist"
+                        ></use>
+                    </svg>
+                </a>
+                <a
+                    href="https://soundcloud.com/miezaru"
+                    class="header__icon-box"
+                    rel="noopener external"
+                    aria-label="Miezaru soundcloud"
+                >
+                    <svg class="header__icon">
+                        <use
+                            href="../../assets/svg/symbol-defs.svg#icon-soundcloud"
+                        ></use>
+                    </svg>
+                </a>
+                <a
+                    href="https://www.pinterest.com/miezaruexpr/"
+                    class="header__icon-box"
+                    rel="noopener external"
+                    aria-label="Miezaru pinterest"
+                >
+                    <svg class="header__icon">
+                        <use
+                            href="../../assets/svg/symbol-defs.svg#icon-pinterest"
+                        ></use>
+                    </svg>
+                </a>
+                <a
+                    href="https://web.telegram.org/"
+                    class="header__icon-box"
+                    rel="noopener external"
+                    aria-label="Telegram"
+                >
+                    <svg class="header__icon">
+                        <use
+                            href="../../assets/svg/symbol-defs.svg#icon-telegram"
+                        ></use>
+                    </svg>
+                </a>
+                <a
+                    href="https://www.twitch.tv/"
+                    class="header__icon-box"
+                    rel="noopener external"
+                    aria-label="Twitch"
+                >
+                    <svg class="header__icon">
+                        <use
+                            href="../../assets/svg/symbol-defs.svg#icon-twitch"
+                        ></use>
+                    </svg>
+                </a>
+                <a
+                    href="https://www.youtube.com/"
+                    class="header__icon-box"
+                    rel="noopener external"
+                    aria-label="Miezaru youtube"
+                >
+                    <svg class="header__icon">
+                        <use
+                            href="../../assets/svg/symbol-defs.svg#icon-youtube"
+                        ></use>
+                    </svg>
+                </a>
+                <a
+                    href="https://music.youtube.com/"
+                    class="header__icon-box"
+                    rel="noopener external"
+                    aria-label="Miezaru youtube music"
+                >
+                    <svg class="header__icon">
+                        <use
+                            href="../../assets/svg/symbol-defs.svg#icon-youtube-music"
+                        ></use>
+                    </svg>
+                </a>
+                <a
+                    href="https://www.facebook.com/miezaruexpr"
+                    class="header__icon-box"
+                    rel="noopener external"
+                    aria-label="Miezaru facebook"
+                >
+                    <svg class="header__icon">
+                        <use
+                            href="../../assets/svg/symbol-defs.svg#icon-facebook"
+                        ></use>
+                    </svg>
+                </a>
+                <a
+                    href="https://twitter.com/miezaruexpr"
+                    class="header__icon-box"
+                    rel="noopener external"
+                    aria-label="Miezaru twitter"
+                >
+                    <svg class="header__icon">
+                        <use
+                            href="../../assets/svg/symbol-defs.svg#icon-twitter"
+                        ></use>
+                    </svg>
+                </a>
+                <a
+                    href="https://store.steampowered.com/"
+                    class="header__icon-box"
+                    rel="noopener external"
+                    aria-label="Miezaru steam"
+                >
+                    <svg class="header__icon">
+                        <use
+                            href="../../assets/svg/symbol-defs.svg#icon-steam"
+                        ></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="mobile-content">
+                <label
+                    for="mobile-navigation"
+                    style="opacity: 0; width: 0; font-size: 0px"
+                    >Mobile navigation button</label
+                >
+                <input
+                    type="checkbox"
+                    class="mobile-content__checkbox"
+                    name=""
+                    id="mobile-navigation"
+                />
+                <div class="mobile-content__lines">
+                    <span class="line line--1">&nbsp;</span>
+                    <span class="line line--2">&nbsp;</span>
+                    <span class="line line--3">&nbsp;</span>
+                </div>
+                <div class="mob">
+                    <nav
+                        class="mob--page-nav"
+                        aria-labelledby="mobile-on-this-page"
+                    >
+                        <p id="mobile-on-this-page">On this page</p>
+                        <ul class="mob--page-nav__list">
+                            <li class="page-nav__item">
+                                <a
+                                    href="#top"
+                                    class="page-nav__link details-link mob--link"
+                                    >Back to top &uarr;</a
+                                >
+                            </li>
+                            <li class="page-nav__item">
+                                <details class="page-nav__details details">
+                                    <summary tabindex="-1">
+                                        <a
+                                            href="#git-basics"
+                                            class="page-nav__link details-link summary-link"
+                                            >Git: как устроен Git</a
+                                        >
+                                    </summary>
+                                    <ul class="page-nav__list-inner">
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#git-basics"
+                                                class="page-nav__link-inner mob--link"
+                                                >Как устроен git</a
+                                            >
+                                        </li>
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#git-vcs"
+                                                class="page-nav__link-inner mob--link"
+                                                >VCS - Version Control System</a
+                                            >
+                                        </li>
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#git-vcs-diff"
+                                                class="page-nav__link-inner mob--link"
+                                                >VCS Differences</a
+                                            >
+                                        </li>
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#git-stages"
+                                                class="page-nav__link-inner mob--link"
+                                                >Git stages</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li class="page-nav__item">
+                                <details class="page-nav__details details">
+                                    <summary tabindex="-1">
+                                        <a
+                                            href="#git-commands"
+                                            class="page-nav__link details-link summary-link"
+                                            >Git: базовые комманды</a
+                                        >
+                                    </summary>
+                                    <ul class="page-nav__list-inner">
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#git-commands"
+                                                class="page-nav__link-inner mob--link"
+                                                >Базовые комманды</a
+                                            >
+                                        </li>
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#git-init"
+                                                class="page-nav__link-inner mob--link"
+                                                >Создание репозитория</a
+                                            >
+                                        </li>
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#git-clone"
+                                                class="page-nav__link-inner mob--link"
+                                                >Клонирование репозитория</a
+                                            >
+                                        </li>
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#git-control"
+                                                class="page-nav__link-inner mob--link"
+                                                >Управление файлами в
+                                                репозитории</a
+                                            >
+                                        </li>
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#git-show-log"
+                                                class="page-nav__link-inner mob--link"
+                                                >Просмотр коммитов</a
+                                            >
+                                        </li>
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#git-remote-repository"
+                                                class="page-nav__link-inner mob--link"
+                                                >Удаленные репозитории</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li class="page-nav__item">
+                                <details class="page-nav__details details">
+                                    <summary tabindex="-1">
+                                        <a
+                                            href="#git-tags"
+                                            class="page-nav__link details-link summary-link"
+                                            >Git: теги</a
+                                        >
+                                    </summary>
+                                    <ul class="page-nav__list-inner">
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#git-tags"
+                                                class="page-nav__link-inner mob--link"
+                                                >Теги/tags</a
+                                            >
+                                        </li>
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#git-tags-how"
+                                                class="page-nav__link-inner mob--link"
+                                                >Работа с тегами</a
+                                            >
+                                        </li>
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#git-tags-exchange"
+                                                class="page-nav__link-inner mob--link"
+                                                >Обмен тегами</a
+                                            >
+                                        </li>
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#git-tags-delete"
+                                                class="page-nav__link-inner mob--link"
+                                                >Удаление тегов</a
+                                            >
+                                        </li>
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#git-tags-watch"
+                                                class="page-nav__link-inner mob--link"
+                                                >Переход на тег</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </details>
+                            </li>
+
+                            <li class="page-nav__item">
+                                <details class="page-nav__details details">
+                                    <summary tabindex="-1">
+                                        <a
+                                            href="#git-alias"
+                                            class="page-nav__link details-link summary-link"
+                                            >Git: alias</a
+                                        >
+                                    </summary>
+                                    <ul class="page-nav__list-inner">
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#git-alias"
+                                                class="page-nav__link-inner mob--link"
+                                                >Alias</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li class="page-nav__item">
+                                <details class="page-nav__details details">
+                                    <summary tabindex="-1">
+                                        <a
+                                            href="#git-branch"
+                                            class="page-nav__link details-link summary-link"
+                                            >Git: ветвление</a
+                                        >
+                                    </summary>
+                                    <ul class="page-nav__list-inner">
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#git-branch"
+                                                class="page-nav__link-inner mob--link"
+                                                >Ветвление</a
+                                            >
+                                        </li>
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#git-branch-basics"
+                                                class="page-nav__link-inner mob--link"
+                                                >Git branch basics</a
+                                            >
+                                        </li>
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#git-branch-merge"
+                                                class="page-nav__link-inner mob--link"
+                                                >Слияние веток</a
+                                            >
+                                        </li>
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#git-branch-control"
+                                                class="page-nav__link-inner mob--link"
+                                                >Управление ветками</a
+                                            >
+                                        </li>
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#git-branch-rename"
+                                                class="page-nav__link-inner mob--link"
+                                                >Переименование веток</a
+                                            >
+                                        </li>
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#git-branch-how"
+                                                class="page-nav__link-inner mob--link"
+                                                >Работа с ветками</a
+                                            >
+                                        </li>
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#git-branch-thematic"
+                                                class="page-nav__link-inner mob--link"
+                                                >Тематические ветки</a
+                                            >
+                                        </li>
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#git-branch-remote"
+                                                class="page-nav__link-inner mob--link"
+                                                >Удаленные ветки</a
+                                            >
+                                        </li>
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#git-branch-track"
+                                                class="page-nav__link-inner mob--link"
+                                                >Ветки слежения</a
+                                            >
+                                        </li>
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#git-branch-share"
+                                                class="page-nav__link-inner mob--link"
+                                                >Поделиться веткой</a
+                                            >
+                                        </li>
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#git-branch-tracking"
+                                                class="page-nav__link-inner mob--link"
+                                                >Отслеживание веток</a
+                                            >
+                                        </li>
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#git-branch-receiving-changes"
+                                                class="page-nav__link-inner mob--link"
+                                                >Получение изменений</a
+                                            >
+                                        </li>
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#git-branch-delete-remote"
+                                                class="page-nav__link-inner mob--link"
+                                                >Удаление веток на удалённом
+                                                сервере</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li class="page-nav__item">
+                                <details class="page-nav__details details">
+                                    <summary tabindex="-1">
+                                        <a
+                                            href="#git-rebase"
+                                            class="page-nav__link details-link summary-link"
+                                            >Git: перебазирование</a
+                                        >
+                                    </summary>
+                                    <ul class="page-nav__list-inner">
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#git-branch"
+                                                class="page-nav__link-inner mob--link"
+                                                >Перебазирование</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </details>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="mob--socials-box">
+                        <a
+                            href="https://github.com/miezaru"
+                            class="header__icon-box"
+                            rel="noopener external"
+                            aria-label="Miezaru github"
+                        >
+                            <svg class="header__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-github"
+                                ></use>
+                            </svg>
+                        </a>
+                        <a
+                            href="https://gist.github.com/miezaru"
+                            class="header__icon-box"
+                            rel="noopener external"
+                            aria-label="Miezaru gist"
+                        >
+                            <svg class="header__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-gist"
+                                ></use>
+                            </svg>
+                        </a>
+                        <a
+                            href="https://soundcloud.com/miezaru"
+                            class="header__icon-box"
+                            rel="noopener external"
+                            aria-label="Miezaru soundcloud"
+                        >
+                            <svg class="header__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-soundcloud"
+                                ></use>
+                            </svg>
+                        </a>
+                        <a
+                            href="https://www.pinterest.com/miezaruexpr/"
+                            class="header__icon-box"
+                            rel="noopener external"
+                            aria-label="Miezaru pinterest"
+                        >
+                            <svg class="header__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-pinterest"
+                                ></use>
+                            </svg>
+                        </a>
+                        <a
+                            href="https://web.telegram.org/"
+                            class="header__icon-box"
+                            rel="noopener external"
+                            aria-label="Telegram"
+                        >
+                            <svg class="header__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-telegram"
+                                ></use>
+                            </svg>
+                        </a>
+                        <a
+                            href="https://www.twitch.tv/"
+                            class="header__icon-box"
+                            rel="noopener external"
+                            aria-label="Twitch"
+                        >
+                            <svg class="header__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-twitch"
+                                ></use>
+                            </svg>
+                        </a>
+                        <a
+                            href="https://www.youtube.com/"
+                            class="header__icon-box"
+                            rel="noopener external"
+                            aria-label="Miezaru youtube"
+                        >
+                            <svg class="header__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-youtube"
+                                ></use>
+                            </svg>
+                        </a>
+                        <a
+                            href="https://music.youtube.com/"
+                            class="header__icon-box"
+                            rel="noopener external"
+                            aria-label="Miezaru youtube music"
+                        >
+                            <svg class="header__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-youtube-music"
+                                ></use>
+                            </svg>
+                        </a>
+                        <a
+                            href="https://www.facebook.com/miezaruexpr"
+                            class="header__icon-box"
+                            rel="noopener external"
+                            aria-label="Miezaru facebook"
+                        >
+                            <svg class="header__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-facebook"
+                                ></use>
+                            </svg>
+                        </a>
+                        <a
+                            href="https://twitter.com/miezaruexpr"
+                            class="header__icon-box"
+                            rel="noopener external"
+                            aria-label="Miezaru twitter"
+                        >
+                            <svg class="header__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-twitter"
+                                ></use>
+                            </svg>
+                        </a>
+                        <a
+                            href="https://store.steampowered.com/"
+                            class="header__icon-box"
+                            rel="noopener external"
+                            aria-label="Miezaru steam"
+                        >
+                            <svg class="header__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-steam"
+                                ></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav class="page-nav" aria-labelledby="on-this-page">
+            <p id="on-this-page">On this page</p>
+            <ul class="page-nav__list">
+                <li class="page-nav__item">
+                    <a href="#top" class="page-nav__link details-link"
+                        >Back to top &uarr;</a
+                    >
+                </li>
+                <li class="page-nav__item">
+                    <details class="page-nav__details details">
+                        <summary tabindex="-1">
+                            <a
+                                href="#git-basics"
+                                class="page-nav__link details-link"
+                                >Git: как устроен Git</a
+                            >
+                        </summary>
+                        <ul class="page-nav__list-inner">
+                            <li class="page-nav__item-inner">
+                                <a href="#git-vcs" class="page-nav__link-inner"
+                                    >VCS - Version Control System</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#git-vcs-diff"
+                                    class="page-nav__link-inner"
+                                    >VCS Differences</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#git-stages"
+                                    class="page-nav__link-inner"
+                                    >Git stages</a
+                                >
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="page-nav__item">
+                    <details class="page-nav__details details">
+                        <summary tabindex="-1">
+                            <a
+                                href="#git-commands"
+                                class="page-nav__link details-link"
+                                >Git: базовые комманды</a
+                            >
+                        </summary>
+                        <ul class="page-nav__list-inner">
+                            <li class="page-nav__item-inner">
+                                <a href="#git-init" class="page-nav__link-inner"
+                                    >Создание репозитория</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#git-clone"
+                                    class="page-nav__link-inner"
+                                    >Клонирование репозитория</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#git-control"
+                                    class="page-nav__link-inner"
+                                    >Управление файлами в репозитории</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#git-show-log"
+                                    class="page-nav__link-inner"
+                                    >Просмотр коммитов</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#git-remote-repository"
+                                    class="page-nav__link-inner"
+                                    >Удаленные репозитории</a
+                                >
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="page-nav__item">
+                    <details class="page-nav__details details">
+                        <summary tabindex="-1">
+                            <a
+                                href="#git-tags"
+                                class="page-nav__link details-link"
+                                >Git: теги</a
+                            >
+                        </summary>
+                        <ul class="page-nav__list-inner">
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#git-tags-how"
+                                    class="page-nav__link-inner"
+                                    >Работа с тегами</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#git-tags-exchange"
+                                    class="page-nav__link-inner"
+                                    >Обмен тегами</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#git-tags-delete"
+                                    class="page-nav__link-inner"
+                                    >Удаление тегов</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#git-tags-watch"
+                                    class="page-nav__link-inner"
+                                    >Переход на тег</a
+                                >
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+
+                <li class="page-nav__item">
+                    <details class="page-nav__details details">
+                        <summary tabindex="-1">
+                            <a
+                                href="#git-alias"
+                                class="page-nav__link details-link"
+                                >Git: alias</a
+                            >
+                        </summary>
+                    </details>
+                </li>
+                <li class="page-nav__item">
+                    <details class="page-nav__details details">
+                        <summary tabindex="-1">
+                            <a
+                                href="#git-branch"
+                                class="page-nav__link details-link"
+                                >Git: ветвление</a
+                            >
+                        </summary>
+                        <ul class="page-nav__list-inner">
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#git-branch-basics"
+                                    class="page-nav__link-inner"
+                                    >Git branch basics</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#git-branch-merge"
+                                    class="page-nav__link-inner"
+                                    >Слияние веток</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#git-branch-control"
+                                    class="page-nav__link-inner"
+                                    >Управление ветками</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#git-branch-rename"
+                                    class="page-nav__link-inner"
+                                    >Переименование веток</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#git-branch-how"
+                                    class="page-nav__link-inner"
+                                    >Работа с ветками</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#git-branch-thematic"
+                                    class="page-nav__link-inner"
+                                    >Тематические ветки</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#git-branch-remote"
+                                    class="page-nav__link-inner"
+                                    >Удаленные ветки</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#git-branch-track"
+                                    class="page-nav__link-inner"
+                                    >Ветки слежения</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#git-branch-share"
+                                    class="page-nav__link-inner"
+                                    >Поделиться веткой</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#git-branch-tracking"
+                                    class="page-nav__link-inner"
+                                    >Отслеживание веток</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#git-branch-receiving-changes"
+                                    class="page-nav__link-inner"
+                                    >Получение изменений</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#git-branch-delete-remote"
+                                    class="page-nav__link-inner"
+                                    >Удаление веток на удалённом сервере</a
+                                >
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="page-nav__item">
+                    <details class="page-nav__details details">
+                        <summary tabindex="-1">
+                            <a
+                                href="#git-rebase"
+                                class="page-nav__link details-link"
+                                >Git: перебазирование</a
+                            >
+                        </summary>
+                    </details>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="grid-inner">
+            <header class="main-header">
+                <h1 class="title-h1 nav-makes-sticky">Git</h1>
+                <p>
+                    Всё что попало в коммит почти всегда Git может восстановить.
+                    Можно восстановить даже коммиты из веток, которые были
+                    удалены, или коммиты, перезаписанные параметром --amend (см.
+                    Восстановление данных). Но всё, что не было включено в
+                    коммит и потеряно — скорее всего, потеряно навсегда.
+                </p>
+            </header>
+            <section
+                class="section"
+                aria-labelledby="section-git-basics"
+                id="git-basics"
+            >
+                <header class="section-header">
+                    <h2 class="title-h2" id="section-git-basics">
+                        Git: как устроен Git
+                    </h2>
+                </header>
+                <div class="section__part" id="git-vcs">
+                    <h3 class="title-h3">VCS - Version Control System</h3>
+                    <p>
+                        Version Control System (VCS) - это система, записывающая
+                        изменения в файл или набор файлов в течение времени и
+                        позволяющая вернуться позже к определённой версии.
+                    </p>
+                    <p>
+                        Раньше были локальные системы контроля версий (RCS), но
+                        что-бы доступ был к нескольким разработчикам, а не
+                        одному то придумали централизованные системы контроля
+                        версий (CVCS). К ним относились такие системы, как CVS,
+                        Subversion, Perforce. Пользовались большим спросом много
+                        лет.
+                    </p>
+                    <p>
+                        Сейчас все пришло к использованию распределенных систем
+                        контроля версий (DVCS), ибо если с диском или сервером
+                        предыдущих вариантов что-то случится и нету
+                        своевременных обновленных бекапов, то все данные будут
+                        утеряны. В DVCS каждая копия репозитория является полным
+                        бэкапом всех данных.
+                    </p>
+                    <p>
+                        Линейные VCS используются и сегодня довольно таки
+                        активно из-за своей простоты и не наобходимости в DAG -
+                        Directed acyclic graph ( Направленный ациклический
+                        граф).
+                    </p>
+                </div>
+
+                <div class="section__part" id="git-vcs-diff">
+                    <h3 class="title-h3">VCS Differences</h3>
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                Системы VSC по типу CVS, Subversion, Perforce,
+                                Bazaar хранят изменения в виде списков.
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                Git хранит изменения в виде снимков (snapshot).
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                Большой плюс Git - работы без интернета, при
+                                помощи коммитов и сохранение изменений при
+                                появлении интернета с помощью команды push.
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="section__part" id="git-stages">
+                    <h3 class="title-h3">Git stages</h3>
+                    <h4 class="title-h4">
+                        Три состояния фалов в git репозитории:
+                    </h4>
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">Изменён (modified)</p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        К изменённым относятся файлы, которые
+                                        поменялись, но ещё не были
+                                        зафиксированы.
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">Индексирован (staged)</p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        Индексированный — это изменённый файл в
+                                        его текущей версии, отмеченный для
+                                        включения в следующий коммит.
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                Зафиксирован (committed)
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        Зафиксированный значит, что файл уже
+                                        сохранён в вашей локальной базе.
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+
+            <section
+                class="section"
+                aria-labelledby="section-git-commands"
+                id="git-commands"
+            >
+                <header class="section-header">
+                    <h2 class="title-h2" id="section-git-commands">
+                        Git: базовые комманды
+                    </h2>
+                </header>
+                <div class="section__part" id="git-init">
+                    <h3 class="title-h3">Создание репозитория:</h3>
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">git init</p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">git add *.html</p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">git add License</p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                git commit -m "Initial commit"
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+                <div class="section__part" id="git-clone">
+                    <h3 class="title-h3">Клонирование репозитория:</h3>
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                git clone https://github.com/url [optional:
+                                каталог]
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                git clone https://github.com/libgit2/libgit2
+                                mylibgit
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="section__part" id="git-control">
+                    <h3 class="title-h3">Управление файлами в репозитории:</h3>
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git status -s</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        короткий вывод изменений
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git diff</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        просмотр конкретных измененных строк в
+                                        файлах
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git diff --staged</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        что войдет в следующий коммит
+                                        (сравнивает проиндексированные изменения
+                                        с последним коммитом)
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git add file.html</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        индексация файла file.html
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git restore --staged file.html</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        убирает файл с проиндексированных
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git restore file.html</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        опасная команда. Заменяет все локальные
+                                        изменения в файле версией с последнего
+                                        коммита.
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git checkout -- file.html</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        опасная команда. Заменяет все локальные
+                                        изменения в файле версией с последнего
+                                        коммита.
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+
+                    <h4 class="title-h4">Git: Коммиты</h4>
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git commit -m "comment"</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        снимок проиндексированных изменений
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git commit -a -m "comment"</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        короткая версия записи коммита с
+                                        добавление индексации (git add .)
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git commit --amend</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        замена предыдущего коммита новый с
+                                        новыми изменениями
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <ol class="list-sm">
+                        <h4 class="title-h4">Git: Удаление файлов</h4>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git rm file.html</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        удаление файла из отслеживаеммых
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git rm -f file.html</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        удаление файла если его уже изменили и
+                                        проиндексировалли
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git rm --cached file.html</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        удалить файл, но оставить его в каталоге
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git rm log/\*.log</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        удаление всех файлов в папке log с
+                                        окончание .log
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git rm \*.log</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        удаление всех файлов с окончание .log
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+
+                    <ol class="list-sm">
+                        <h4 class="title-h4">Git: Переименование файлов</h4>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git mv README.md README</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        переименование файлов (это лиш
+                                        укороченная версия ввода трех команд):
+                                    </p>
+                                </li>
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        mv README.md README
+                                    </p>
+                                </li>
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        git rm README.md
+                                    </p>
+                                </li>
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        git add README
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="section__part" id="git-show-log">
+                    <h3 class="title-h3">Просмотр коммитов:</h3>
+                    <p>У меня уже есть настроенные git lg1, git lg2</p>
+                    <p>
+                        Можно настроить собственный более красивый вывод:
+                        <a
+                            href="https://git-scm.com/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%9F%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80-%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8-%D0%BA%D0%BE%D0%BC%D0%BC%D0%B8%D1%82%D0%BE%D0%B2"
+                            class="section__link"
+                            >git log</a
+                        >
+                    </p>
+                </div>
+
+                <div class="section__part" id="git-remote-repository">
+                    <h3 class="title-h3">Удаленные репозитории</h3>
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git remote</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        названия доступных репозиториев
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git remote -v</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        выведет адресса чтения и записи
+                                        (возможно несколько адрессов, при работе
+                                        с несколькими разработчиками)
+                                    </p>
+                                </li>
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        origin - название внешнего git сервера
+                                        по умолчанию командой
+                                        <span class="mark-text">git clone</span
+                                        >.
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git clone -o server-name</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        изменение стандартного имени сервера
+                                        "origin" на "server-name"
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong
+                                    >git remote add john
+                                    https://github.com/john/our-project</strong
+                                >
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        добавление удаленных репозиториев
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git fetch john </strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        получить изменения Джона, не изменяет
+                                        наши изменения.
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git pull</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        <span class="mark-text">git fetch</span>
+                                        +
+                                        <span class="mark-text">git merge</span>
+                                        (с сервером на который смотритрит
+                                        репозиторий (origin))
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong
+                                    >git push &lt;remote-name&gt;
+                                    &lt;branch-name&gt;</strong
+                                >
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        отправка изменений в удаленный
+                                        репозиторий
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git push origin master</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        отправка изменений в удаленный
+                                        репозиторий (не позволит отправить если
+                                        сервер origin изменился с последнего git
+                                        pull)
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git remote show origin</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        получить больше информации об удаленном
+                                        репозитории, в данном примере origin
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git remote rename john jn</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        переименование удаленного репозиторий
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git remote rm john</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        удаление удаленного репозитория
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section
+                class="section"
+                aria-labelledby="section-git-tags"
+                id="git-tags"
+            >
+                <header class="section-header">
+                    <h2 class="title-h2" id="section-git-tags">
+                        Git: теги/tags
+                    </h2>
+                </header>
+
+                <div class="section__part" id="git-tags-how">
+                    <h3 class="title-h3">Работа с тегами</h3>
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git tag</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">список тегов</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git tag -l "v1.8.5*"</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        поиск тегов по шаблону
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong
+                                    >git tag -a v1.4 -m "my version 1.4"</strong
+                                >
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        аннотированный тег (рекомендуется, ибо
+                                        хранит больше информации)
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git tag v1.4</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        легковестный тег, хранит только ссылку
+                                        на контрольную сумму коммита
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git log --pretty=oneline</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        список пройденных коммитов
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git tag -a v1.2 9fceb02</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        отложенно задать тег на коммит
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="section__part" id="git-tags-exchange">
+                    <h3 class="title-h3">Обмен тегами</h3>
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git push origin &lt;tagname&gt;</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        git push не отправляет теги на удаленные
+                                        сервера, их надо отправлять явно.
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git push origin --tags</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        отправить все теги, которых нету на
+                                        сервере origin
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong
+                                    >git push &lt;remote&gt;
+                                    --follow-tags</strong
+                                >
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        отправить только аннотированные теги
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="section__part" id="git-tags-delete">
+                    <h3 class="title-h3">Удаление тегов</h3>
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git tag -d v1.4-lw</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        удаляет тег v1.4-lw локально
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong
+                                    >git push origin --delete v1.4-lw</strong
+                                >
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        удаляет тег v1.4-lw на внешнем сервере
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong
+                                    >git push origin :refs/tags/v1.4-lw</strong
+                                >
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        это следует понимать как обновление
+                                        внешнего тега пустым значением, что
+                                        приводит к его удалению. Еще один способ
+                                        удаления тега на внешнем сервере.
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="section__part" id="git-tags-watch">
+                    <h3 class="title-h3">Переход на тег</h3>
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git checkout v2.0.0</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        однако, это переведёт репозиторий в
+                                        состояние «detached HEAD», которое имеет
+                                        ряд неприятных побочных эффектов.
+                                    </p>
+                                </li>
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        Если в состоянии «detached HEAD» внести
+                                        изменения и сделать коммит, то тег не
+                                        изменится, при этом новый коммит не
+                                        будет относиться ни к какой из веток, а
+                                        доступ к нему можно будет получить
+                                        только по его хешу. Поэтому, если вам
+                                        нужно внести изменения — исправить
+                                        ошибку в одной из старых версий — скорее
+                                        всего вам следует создать ветку:
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git checkout -b version2 v2.0.0</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        создание и переключение на ветку
+                                        version2
+                                    </p>
+                                </li>
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        если сделать коммит в ветке version2, то
+                                        она сдвинется вперед и будет отличаться
+                                        от тега v2.0.0, так что будьте с этим
+                                        осторожны.
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+
+            <section
+                class="section"
+                aria-labelledby="section-git-alias"
+                id="git-alias"
+            >
+                <header class="section-header">
+                    <h2 class="title-h2" id="section-git-alias">Git: alias</h2>
+                </header>
+
+                <p>
+                    Псевдонимы в Git:
+                    <a
+                        href="https://git-scm.com/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%9F%D1%81%D0%B5%D0%B2%D0%B4%D0%BE%D0%BD%D0%B8%D0%BC%D1%8B-%D0%B2-Git"
+                        class="section__link"
+                        >git alias</a
+                    >
+                </p>
+            </section>
+
+            <section
+                class="section"
+                aria-labelledby="section-git-branch"
+                id="git-branch"
+            >
+                <header class="section-header">
+                    <h2 class="title-h2" id="section-git-branch">
+                        Git: ветвление
+                    </h2>
+                </header>
+
+                <div class="section__part" id="git-branch-basics">
+                    <h3 class="title-h3">Git branch basics</h3>
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git branch testing</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        создание ветки testing (новый указатель
+                                        на текущий коммит)
+                                    </p>
+                                </li>
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        HEAD - указатель на текущую локальную
+                                        ветку
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git log</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        покажет куда смотрит HEAD
+                                    </p>
+                                </li>
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        git log не показывает все ветки по
+                                        умолчанию, для просмотра истории
+                                        коммитов другой ветки необходимо явно
+                                        указать её имя:
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git log testing</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        явно посмотреть логи ветки testing
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git log --all</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        посмотреть историю по всем веткам
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git checkout testing</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        переключение на ветку testing (что-бы
+                                        HEAD смотрел теперь на нее) (old)
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git switch testing</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        переключение на ветку testing (что-бы
+                                        HEAD смотрел теперь на нее) (new)
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git checkout 18b9746</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        есть возможность прыгать на определенный
+                                        коммит, и уже с него создавать доп ветки
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong
+                                    >git checkout -b &lt;branchname&gt;</strong
+                                >
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        создание и сразу переключение на новую
+                                        ветку (old)
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong
+                                    >git switch -c/--create
+                                    &lt;branchname&gt;</strong
+                                >
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        создание и сразу переключение на новую
+                                        ветку (new)
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git switch -</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        вернуться к предыдущей извлеченной ветке
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="section__part" id="git-branch-merge">
+                    <h3 class="title-h3">Слияние веток</h3>
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git merge &lt;branchname&gt;</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        слияние веток. Проводить с ветки на
+                                        которую мы хотим произвести слияние
+                                        &lt;branchname&gt;. Если
+                                        &lt;branchname&gt; является прямым
+                                        потомком текущей ветки, то происходит
+                                        fast-forward. Git просто переносит
+                                        указатель ветки вперед, так как
+                                        расхождений в изменениях нету.
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <p>После слияния ветку можно удалить.</p>
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong
+                                    >git branch -d &lt;branchname&gt;</strong
+                                >
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        удалить ветку branchname
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <p>
+                        Возможны проблемы со слияниями, если изменения в ветках
+                        затронули одни и теже файлы, в таком случае прийдется
+                        все починить в ручную либо выбрать в какой из веток
+                        вариант правильный.
+                    </p>
+                    <p>
+                        После завершения ручных изменений в конфликтах,
+                        необходимо просто прописать
+                        <span class="mark-text">git add &lt;file&gt;</span> ,
+                        что-бы обозначить проблему решенной и закоммитить
+                        <span class="mark-text">git commit</span>
+                    </p>
+                </div>
+
+                <div class="section__part" id="git-branch-control">
+                    <h3 class="title-h3">Управление ветками</h3>
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git branch</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        список веток (* - показывает на какую
+                                        ветку указывает HEAD)
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git branch -v</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        показывает последний коммит на каждой из
+                                        веток
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git branch --merged</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        список веток слитых в текущую
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git branch --no-merged</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        список не слитых веток в текущую
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git branch --no-merged testing</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        расширенный вариант записи, что-бы
+                                        глянуть информацию по другой ветке
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong
+                                    >git branch -D &lt;branchname&gt;</strong
+                                >
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        что-бы удалить ветку без слияния вместе
+                                        со всеми наработками
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="section__part" id="git-branch-rename">
+                    <h3 class="title-h3">Переименование веток</h3>
+                    <p>
+                        Осторожно, особенно если менять название главной ветки,
+                        ибо скрипты и утилиты могут использовать старое имя
+                        главной ветки. Необходимо все тчательно проверять перед
+                        заменой
+                    </p>
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong
+                                    >git branch --move old-branch-name
+                                    new-branch-name</strong
+                                >
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        переименование ветки локально
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong
+                                    >git branch --set-upstream origin
+                                    new-branch-name</strong
+                                >
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        изменение имени локальной ветки на
+                                        удаленном репозитории
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong
+                                    >git push origin --delete
+                                    old-branch-name</strong
+                                >
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        удалить старую ветку на удаленном
+                                        репозитории
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <p>
+                        Для замены главной ветки, просмотреть пособие на
+                        <a
+                            href="https://git-scm.com/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2%D0%B5%D1%82%D0%BA%D0%B0%D0%BC%D0%B8"
+                            class="section__link"
+                            >git book</a
+                        >
+                    </p>
+                </div>
+
+                <div class="section__part" id="git-branch-how">
+                    <h3 class="title-h3">Работа с ветками</h3>
+                    <p>
+                        Многие разработчики, использующие Git, придерживаются
+                        именно такого подхода, оставляя полностью стабильный код
+                        только в ветке master — возможно, только тот код,
+                        который был или будет выпущен. При этом существует и
+                        параллельная ветка с именем develop или next,
+                        предназначенная для работы и тестирования стабильности;
+                        она не обязательно должна быть всегда стабильной, но при
+                        достижении стабильного состояния её содержимое можно
+                        слить в ветку master.
+                    </p>
+
+                    <p>
+                        Число уровней стабильности можно увеличить. В крупных
+                        проектах зачастую появляется ветка proposed или pu
+                        (предлагаемые обновления), объединяющая ветки с
+                        содержимым, которое ещё не готово к включению в ветки
+                        next или master. Идея состоит в том, что каждая ветка
+                        представляет собой определённый уровень стабильности;
+                        как только он повышается, содержимое сливается в ветку
+                        уровнем выше.
+                    </p>
+                </div>
+
+                <div class="section__part" id="git-branch-thematic">
+                    <h3 class="title-h3">Тематические ветки</h3>
+                    <p>
+                        Тематической веткой называется временная ветка,
+                        создаваемая и используемая для работы над конкретной
+                        функциональной возможностью или решения сопутствующих
+                        задач.
+                    </p>
+                </div>
+
+                <div class="section__part" id="git-branch-remote">
+                    <h3 class="title-h3">Удаленные ветки</h3>
+                    <p>
+                        Удалённые ссылки — это ссылки (указатели) в ваших
+                        удалённых репозиториях, включая ветки, теги и так далее.
+                    </p>
+
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git ls-remote &lt;remote&gt;</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        получение удаленных веток и
+                                        дополнительной информации.
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git remote show &lt;remote&gt;</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        получение удаленных веток и
+                                        дополнительной информации.
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="section__part" id="git-branch-track">
+                    <h3 class="title-h3">Ветки слежения</h3>
+                    <p>
+                        Ветки слежения — это ссылки на определённое состояние
+                        удалённых веток. Это локальные ветки, которые нельзя
+                        перемещать; Git перемещает их автоматически при любой
+                        коммуникации с удалённым репозиторием, чтобы
+                        гарантировать точное соответствие с ним.
+                    </p>
+
+                    <p>
+                        Представляйте их как закладки для напоминания о том, где
+                        ветки в удалённых репозиториях находились во время
+                        последнего подключения к ним.
+                    </p>
+
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git fetch &lt;remote&gt;</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        эта команда определяет какому серверу
+                                        соответствует &lt;remote&gt; (origin),
+                                        извлекает оттуда данные, которых у нас
+                                        ещё нет, и обновляет локальную базу
+                                        данных, сдвигая указатель origin/master
+                                        на новую позицию.
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git remote add</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        добавлять внешнюю ветку
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git fetch &lt;remote&gt;</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        следить за внешней веткой локально
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="section__part" id="git-branch-share">
+                    <h3 class="title-h3">Поделиться веткой</h3>
+                    <p>
+                        Когда вы хотите поделиться веткой, вам необходимо
+                        отправить её на удалённый сервер, где у вас есть права
+                        на запись. Ваши локальные ветки автоматически не
+                        синхронизируются с удалёнными при отправке — вам нужно
+                        явно указать те ветки, которые вы хотите отправить.
+                    </p>
+
+                    <p>
+                        Таким образом, вы можете использовать свои личные ветки
+                        для работы, которую не хотите показывать, а отправлять
+                        только те тематические ветки, над которыми вы хотите
+                        работать с кем-то совместно.
+                    </p>
+
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong
+                                    >git push &lt;remote&gt;
+                                    &lt;branch&gt;</strong
+                                >
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        отправка указанной ветки на указанный
+                                        сервер
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong
+                                    >git checkout -b serverfix
+                                    origin/serverfix</strong
+                                >
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        создание локальной ветки на основе
+                                        original/serverfix, и которая начинается
+                                        там же где и original/serverfix
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="section__part" id="git-branch-tracking">
+                    <h3 class="title-h3">Отслеживание веток</h3>
+                    <p>
+                        Получение локальной ветки из удалённой ветки
+                        автоматически создаёт то, что называется «веткой
+                        слежения» (а ветка, за которой следит локальная
+                        называется «upstream branch»).
+                    </p>
+
+                    <p>
+                        Ветки слежения — это локальные ветки, которые напрямую
+                        связаны с удалённой веткой.
+                    </p>
+
+                    <p>
+                        Если, находясь на ветке слежения, выполнить git pull, то
+                        Git уже будет знать с какого сервера получать данные и
+                        какую ветку использовать для слияния.
+                    </p>
+
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong
+                                    >git checkout -b &lt;branch&gt;
+                                    &lt;branch&gt;/&lt;remote&gt;</strong
+                                >
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        новая ветка отслеживает удаленную
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong
+                                    >git checkout --track
+                                    origin/serverfix</strong
+                                >
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">тоже самое</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <strong>git checkout serverfix</strong>
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">тоже самое</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+
+                    <p>
+                        Чтобы создать локальную ветку с именем, отличным от
+                        имени удалённой ветки, просто укажи другое имя:
+                    </p>
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                git checkout -b sf original/serverfix
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        новая ветка с именем sf
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">git branch -vv</p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        показывает какая из веток отслеживается,
+                                        отстаёт, опережает или всё сразу
+                                        относительно отслеживаемой
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <p>
+                        Важно отметить, что эти цифры описывают состояние на
+                        момент последнего получения данных с каждого из
+                        серверов. Эта команда не обращается к серверам, а лишь
+                        говорит вам о том, какая информация с этих серверов
+                        сохранена в локальном кэше.
+                    </p>
+
+                    <p>
+                        Если вы хотите иметь актуальную информацию об этих
+                        числах, вам необходимо получить данные со всех ваших
+                        удалённых серверов перед запуском команды. Сделать это
+                        можно вот так:
+                    </p>
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                git fetch --all; git branch -vv
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="section__part" id="git-branch-receiving-changes">
+                    <h3 class="title-h3">Получение изменений</h3>
+                    <p>
+                        Команда git fetch получает с сервера все изменения,
+                        которых у вас ещё нет, но не будет изменять состояние
+                        вашей рабочей копии. Эта команда просто получает данные
+                        и позволяет вам самостоятельно сделать слияние.
+                    </p>
+
+                    <p>
+                        Тем не менее, существует команда git pull, которая в
+                        большинстве случаев является командой git fetch, за
+                        которой непосредственно следует команда git merge. Если
+                        у вас настроена ветка слежения как показано в предыдущем
+                        разделе, или она явно установлена, или она была создана
+                        автоматически командами clone или checkout, git pull
+                        определит сервер и ветку, за которыми следит ваша
+                        текущая ветка, получит данные с этого сервера и затем
+                        попытается слить удалённую ветку. Обычно, лучше явно
+                        использовать команды fetch и merge, поскольку магия git
+                        pull может часто сбивать с толку.
+                    </p>
+                </div>
+
+                <div class="section__part" id="git-branch-delete-remote">
+                    <h3 class="title-h3">
+                        Удаление веток на удалённом сервере
+                    </h3>
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                git push origin --delete serverfix
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        удаление удаленной ветки serverfix
+                                    </p>
+                                </li>
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        всё, что делает эта строка — удаляет
+                                        указатель на сервере. Как правило, Git
+                                        сервер хранит данные пока не запустится
+                                        сборщик мусора, поэтому если ветка была
+                                        удалена случайно, чаще всего её легко
+                                        восстановить.
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+
+            <section
+                class="section"
+                aria-labelledby="section-git-rebase"
+                id="git-rebase"
+            >
+                <header class="section-header">
+                    <h2 class="title-h2" id="section-git-rebase">
+                        Git: перебазирование
+                    </h2>
+                </header>
+
+                <p>
+                    Смотреть на
+                    <a
+                        href="https://git-scm.com/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%9F%D0%B5%D1%80%D0%B5%D0%B1%D0%B0%D0%B7%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5"
+                        class="section__link"
+                        >сайте</a
+                    >, ибо надо разбираться. Используется для чистоты слияний
+                    истории в git.
+                </p>
+            </section>
+        </main>
+    </body>
+</html>

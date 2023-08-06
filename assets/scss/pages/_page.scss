@@ -82,7 +82,7 @@
 .title-h1 {
     padding: 2rem 4rem;
     font-size: 2.4rem;
-    font-size: clamp(2rem, 1.4rem + 1vw, 3rem);
+    font-size: clamp(2rem, 1.1rem + 1vw, 2.4rem);
 
     @extend %title-styles;
 
@@ -92,11 +92,11 @@
 }
 
 .title-h2 {
-    display: inline-block;
-    align-self: flex-start;
+    align-self: start;
     padding: 1.2rem 2.4rem;
     font-size: 2.2rem;
-    font-size: clamp(1.8rem, 1.2rem + 1vw, 2.4rem);
+    font-size: clamp(1.8rem, 1.2rem + 1vw, 2.2rem);
+    text-align: center;
     transform: translateX(-3.5rem);
 
     @extend %title-styles;
@@ -110,7 +110,6 @@
     }
 
     @media (width <= 50em) {
-        align-self: center;
         padding: 1rem 2rem;
     }
 }
@@ -121,7 +120,6 @@
     font-size: 1.8rem;
     font-size: clamp(1.6rem, 1rem + 1vw, 2rem);
     word-wrap: wrap;
-    transform: translateX(-0.4rem);
 
     @extend %title-styles;
 }

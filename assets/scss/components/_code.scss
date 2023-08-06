@@ -1,8 +1,7 @@
 .code {
     display: grid;
     grid-template-columns: 1fr;
-    font-size: 1.6rem;
-    font-size: clamp(1.4rem, 0.6rem + 1vw, 1.6rem);
+    font-size: 1.4rem;
     color: var(--clr-txt-secondary);
     background-color: var(--clr-bcg-primary);
     border-radius: var(--br-default);
@@ -14,7 +13,7 @@
         line-height: var(--line-height-sm);
 
         &::-webkit-scrollbar {
-            height: 7px;
+            height: 0.7rem;
         }
 
         &::-webkit-scrollbar-track {

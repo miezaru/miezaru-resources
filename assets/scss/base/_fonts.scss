@@ -1,14 +1,17 @@
+$rubik-font-path: '../fonts/rubik';
+
 @font-face {
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/RubikRegular.eot');
+    src: url('#{$rubik-font-path}/RubikRegular.eot');
     src:
-        url('../fonts/RubikRegular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/RubikRegular.woff2') format('woff2'),
-        url('../fonts/RubikRegular.woff') format('woff'),
-        url('../fonts/RubikRegular.ttf') format('truetype'),
-        url('../fonts/RubikRegular.svg#RubikRegular') format('svg');
+        url('#{$rubik-font-path}/RubikRegular.eot?#iefix')
+            format('embedded-opentype'),
+        url('#{$rubik-font-path}/RubikRegular.woff2') format('woff2'),
+        url('#{$rubik-font-path}/RubikRegular.woff') format('woff'),
+        url('#{$rubik-font-path}/RubikRegular.ttf') format('truetype'),
+        url('#{$rubik-font-path}/RubikRegular.svg#RubikRegular') format('svg');
     font-display: swap;
 }
 
@@ -16,13 +19,14 @@
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 500;
-    src: url('../fonts/RubikMedium.eot');
+    src: url('#{$rubik-font-path}/RubikMedium.eot');
     src:
-        url('../fonts/RubikMedium.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/RubikMedium.woff2') format('woff2'),
-        url('../fonts/RubikMedium.woff') format('woff'),
-        url('../fonts/RubikMedium.ttf') format('truetype'),
-        url('../fonts/RubikMedium.svg#RubikMedium') format('svg');
+        url('#{$rubik-font-path}/RubikMedium.eot?#iefix')
+            format('embedded-opentype'),
+        url('#{$rubik-font-path}/RubikMedium.woff2') format('woff2'),
+        url('#{$rubik-font-path}/RubikMedium.woff') format('woff'),
+        url('#{$rubik-font-path}/RubikMedium.ttf') format('truetype'),
+        url('#{$rubik-font-path}/RubikMedium.svg#RubikMedium') format('svg');
     font-display: swap;
 }
 
@@ -30,13 +34,14 @@
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 600;
-    src: url('../fonts/RubikSemiBold.eot');
+    src: url('#{$rubik-font-path}/RubikSemiBold.eot');
     src:
-        url('../fonts/RubikSemiBold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/RubikSemiBold.woff2') format('woff2'),
-        url('../fonts/RubikSemiBold.woff') format('woff'),
-        url('../fonts/RubikSemiBold.ttf') format('truetype'),
-        url('../fonts/RubikSemiBold.svg#RubikSemiBold') format('svg');
+        url('#{$rubik-font-path}/RubikSemiBold.eot?#iefix')
+            format('embedded-opentype'),
+        url('#{$rubik-font-path}/RubikSemiBold.woff2') format('woff2'),
+        url('#{$rubik-font-path}/RubikSemiBold.woff') format('woff'),
+        url('#{$rubik-font-path}/RubikSemiBold.ttf') format('truetype'),
+        url('#{$rubik-font-path}/RubikSemiBold.svg#RubikSemiBold') format('svg');
     font-display: swap;
 }
 
@@ -44,12 +49,12 @@
 //     font-family: 'Rubik';
 //     font-style: normal;
 //     font-weight: 700;
-//     src: url('../fonts/RubikBold.eot');
+//     src: url('#{$rubik-font-path}/RubikBold.eot');
 //     src:
-//         url('../fonts/RubikBold.eot?#iefix') format('embedded-opentype'),
-//         url('../fonts/RubikBold.woff2') format('woff2'),
-//         url('../fonts/RubikBold.woff') format('woff'),
-//         url('../fonts/RubikBold.ttf') format('truetype'),
-//         url('../fonts/RubikBold.svg#RubikBold') format('svg');
+//         url('#{$rubik-font-path}/RubikBold.eot?#iefix') format('embedded-opentype'),
+//         url('#{$rubik-font-path}/RubikBold.woff2') format('woff2'),
+//         url('#{$rubik-font-path}/RubikBold.woff') format('woff'),
+//         url('#{$rubik-font-path}/RubikBold.ttf') format('truetype'),
+//         url('#{$rubik-font-path}/RubikBold.svg#RubikBold') format('svg');
 //     font-display: swap;
 // }
