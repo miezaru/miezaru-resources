@@ -81,12 +81,12 @@
 
         &::before {
             position: absolute;
-            top: 0.68rem;
+            top: 1.2rem;
             display: inline-flex;
             align-items: center;
             justify-content: center;
             width: 1.2rem;
-            height: 1.2rem;
+            height: 0.2rem;
             font-size: 1.2rem;
             color: var(--clr-txt-secondary);
             content: '';
@@ -98,7 +98,7 @@
     }
 
     &__text {
-        margin-left: 2.6rem;
+        margin-left: 2.2rem;
         line-height: var(--line-height-md);
     }
 }

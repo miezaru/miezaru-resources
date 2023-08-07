@@ -6,10 +6,16 @@
     background-color: var(--clr-bcg-primary);
     border-radius: var(--br-default);
 
+    ::selection {
+        color: var(--clr-txt-primary);
+        background-color: var(--clr-txt-secondary);
+    }
+
     &-el {
         padding: 1.2rem 3.2rem;
         overflow-x: scroll;
         font-family: monospace;
+        font-weight: 400;
         line-height: var(--line-height-sm);
 
         &::-webkit-scrollbar {

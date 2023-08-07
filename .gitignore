@@ -7,3 +7,4 @@ dist/
 .browserslistrc
 gulpfile.js
 .editorconfig
+package-lock.json

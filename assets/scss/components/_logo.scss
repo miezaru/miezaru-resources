@@ -32,4 +32,9 @@
             margin-left: 1.2rem;
         }
     }
+
+    &::selection {
+        color: var(--clr-txt-primary);
+        background-color: var(--clr-txt-secondary);
+    }
 }

@@ -1,0 +1,1289 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Artem Usatyi, miezaruexpr@gmail.com" />
+        <meta
+            name="description"
+            content="Artem 'Miezaru' Usatyi resources page. This website contains a tons of useful information of the web development and more."
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="msapplication-TileColor" content="#001c30" />
+        <meta
+            name="msapplication-TileImage"
+            content="../../assets/img/icons/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#001c30" />
+
+        <link
+            as="font"
+            crossorigin
+            href="../../assets/fonts/rubik/RubikRegular.woff2"
+            rel="preload"
+            type="font/woff2"
+        />
+        <link
+            as="font"
+            crossorigin
+            href="../../assets/fonts/rubik/RubikMedium.woff2"
+            rel="preload"
+            type="font/woff2"
+        />
+        <link
+            as="font"
+            crossorigin
+            href="../../assets/fonts/rubik/RubikSemiBold.woff2"
+            rel="preload"
+            type="font/woff2"
+        />
+        <link
+            rel="canonical"
+            href="https://miezaru-resources.netlify.app/pages/git/git-env.html"
+        />
+        <title>Miezaru App | Git Env</title>
+
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="../../assets/img/icons/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="../../assets/img/icons/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="../../assets/img/icons/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="../../assets/img/icons/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="../../assets/img/icons/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="../../assets/img/icons/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="../../assets/img/icons/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="../../assets/img/icons/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="../../assets/img/icons/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="../../assets/img/icons/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="../../assets/img/icons/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="../../assets/img/icons/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="../../assets/img/icons/favicon-16x16.png"
+        />
+        <link rel="manifest" href="../../assets/img/icons/manifest.json" />
+
+        <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="../../assets/img/icons/favicon.ico"
+        />
+        <link rel="stylesheet" href="../../assets/css/page.css" />
+        <script src="../../assets/js/script.js" defer></script>
+    </head>
+
+    <body class="grid">
+        <a href="#top" class="top-btn" aria-label="back to the top of the page">
+            <svg width="100%" height="20">
+                <use href="../../assets/svg/symbol-defs.svg#shevron"></use>
+            </svg>
+        </a>
+
+        <header class="header">
+            <a
+                href="https://miezaru-resources.netlify.app/"
+                class="logo u-margin-right-auto"
+                >miezaru</a
+            >
+            <div class="socials-box">
+                <a
+                    href="https://github.com/miezaru"
+                    class="header__icon-box"
+                    rel="noopener external"
+                    aria-label="Miezaru github"
+                >
+                    <svg class="header__icon">
+                        <use
+                            href="../../assets/svg/symbol-defs.svg#icon-github"
+                        ></use>
+                    </svg>
+                </a>
+                <a
+                    href="https://gist.github.com/miezaru"
+                    class="header__icon-box"
+                    rel="noopener external"
+                    aria-label="Miezaru gist"
+                >
+                    <svg class="header__icon">
+                        <use
+                            href="../../assets/svg/symbol-defs.svg#icon-gist"
+                        ></use>
+                    </svg>
+                </a>
+                <a
+                    href="https://soundcloud.com/miezaru"
+                    class="header__icon-box"
+                    rel="noopener external"
+                    aria-label="Miezaru soundcloud"
+                >
+                    <svg class="header__icon">
+                        <use
+                            href="../../assets/svg/symbol-defs.svg#icon-soundcloud"
+                        ></use>
+                    </svg>
+                </a>
+                <a
+                    href="https://www.pinterest.com/miezaruexpr/"
+                    class="header__icon-box"
+                    rel="noopener external"
+                    aria-label="Miezaru pinterest"
+                >
+                    <svg class="header__icon">
+                        <use
+                            href="../../assets/svg/symbol-defs.svg#icon-pinterest"
+                        ></use>
+                    </svg>
+                </a>
+                <a
+                    href="https://web.telegram.org/"
+                    class="header__icon-box"
+                    rel="noopener external"
+                    aria-label="Telegram"
+                >
+                    <svg class="header__icon">
+                        <use
+                            href="../../assets/svg/symbol-defs.svg#icon-telegram"
+                        ></use>
+                    </svg>
+                </a>
+                <a
+                    href="https://www.twitch.tv/"
+                    class="header__icon-box"
+                    rel="noopener external"
+                    aria-label="Twitch"
+                >
+                    <svg class="header__icon">
+                        <use
+                            href="../../assets/svg/symbol-defs.svg#icon-twitch"
+                        ></use>
+                    </svg>
+                </a>
+                <a
+                    href="https://www.youtube.com/"
+                    class="header__icon-box"
+                    rel="noopener external"
+                    aria-label="Miezaru youtube"
+                >
+                    <svg class="header__icon">
+                        <use
+                            href="../../assets/svg/symbol-defs.svg#icon-youtube"
+                        ></use>
+                    </svg>
+                </a>
+                <a
+                    href="https://music.youtube.com/"
+                    class="header__icon-box"
+                    rel="noopener external"
+                    aria-label="Miezaru youtube music"
+                >
+                    <svg class="header__icon">
+                        <use
+                            href="../../assets/svg/symbol-defs.svg#icon-youtube-music"
+                        ></use>
+                    </svg>
+                </a>
+                <a
+                    href="https://www.facebook.com/miezaruexpr"
+                    class="header__icon-box"
+                    rel="noopener external"
+                    aria-label="Miezaru facebook"
+                >
+                    <svg class="header__icon">
+                        <use
+                            href="../../assets/svg/symbol-defs.svg#icon-facebook"
+                        ></use>
+                    </svg>
+                </a>
+                <a
+                    href="https://twitter.com/miezaruexpr"
+                    class="header__icon-box"
+                    rel="noopener external"
+                    aria-label="Miezaru twitter"
+                >
+                    <svg class="header__icon">
+                        <use
+                            href="../../assets/svg/symbol-defs.svg#icon-twitter"
+                        ></use>
+                    </svg>
+                </a>
+                <a
+                    href="https://store.steampowered.com/"
+                    class="header__icon-box"
+                    rel="noopener external"
+                    aria-label="Miezaru steam"
+                >
+                    <svg class="header__icon">
+                        <use
+                            href="../../assets/svg/symbol-defs.svg#icon-steam"
+                        ></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="mobile-content">
+                <label
+                    for="mobile-navigation"
+                    style="opacity: 0; width: 0; font-size: 0px"
+                    >Mobile navigation button</label
+                >
+                <input
+                    type="checkbox"
+                    class="mobile-content__checkbox"
+                    name=""
+                    id="mobile-navigation"
+                />
+                <div class="mobile-content__lines">
+                    <span class="line line--1">&nbsp;</span>
+                    <span class="line line--2">&nbsp;</span>
+                    <span class="line line--3">&nbsp;</span>
+                </div>
+                <div class="mob">
+                    <nav
+                        class="mob--page-nav"
+                        aria-labelledby="mobile-on-this-page"
+                    >
+                        <p id="mobile-on-this-page">On this page</p>
+                        <ul class="mob--page-nav__list">
+                            <li class="page-nav__item">
+                                <details class="page-nav__details details">
+                                    <summary tabindex="-1">
+                                        <a
+                                            href="#vscode"
+                                            class="page-nav__link details-link summary-link"
+                                            >Visual Studio Code</a
+                                        >
+                                    </summary>
+                                    <ul class="page-nav__list-inner">
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#vscode-install"
+                                                class="page-nav__link-inner mob--link"
+                                                >Установка vscode</a
+                                            >
+                                        </li>
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#vscode-settings"
+                                                class="page-nav__link-inner mob--link"
+                                                >Настройка vscode</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li class="page-nav__item">
+                                <details class="page-nav__details details">
+                                    <summary tabindex="-1">
+                                        <a
+                                            href="#wsl2"
+                                            class="page-nav__link details-link summary-link"
+                                            >WSL2</a
+                                        >
+                                    </summary>
+                                    <ul class="page-nav__list-inner">
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#wsl2-install"
+                                                class="page-nav__link-inner mob--link"
+                                                >Установка WSL2</a
+                                            >
+                                        </li>
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#wsl2-install-diff"
+                                                class="page-nav__link-inner mob--link"
+                                                >Перенос WSL2 на другой диск</a
+                                            >
+                                        </li>
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#wsl2-install-next"
+                                                class="page-nav__link-inner mob--link"
+                                                >Дальнейшая настройка WSL2</a
+                                            >
+                                        </li>
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#wsl2-install-extra"
+                                                class="page-nav__link-inner mob--link"
+                                                >Дополнительный настройки
+                                                WSL2</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li class="page-nav__item">
+                                <details class="page-nav__details details">
+                                    <summary tabindex="-1">
+                                        <a
+                                            href="#nvm"
+                                            class="page-nav__link details-link summary-link"
+                                            >NVM</a
+                                        >
+                                    </summary>
+                                    <ul class="page-nav__list-inner">
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#nvm-install"
+                                                class="page-nav__link-inner mob--link"
+                                                >Установка NVM</a
+                                            >
+                                        </li>
+                                        <li class="page-nav__item-inner">
+                                            <a
+                                                href="#nvm-issue"
+                                                class="page-nav__link-inner mob--link"
+                                                >Ошибки NVM</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </details>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="mob--socials-box">
+                        <a
+                            href="https://github.com/miezaru"
+                            class="header__icon-box"
+                            rel="noopener external"
+                            aria-label="Miezaru github"
+                        >
+                            <svg class="header__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-github"
+                                ></use>
+                            </svg>
+                        </a>
+                        <a
+                            href="https://gist.github.com/miezaru"
+                            class="header__icon-box"
+                            rel="noopener external"
+                            aria-label="Miezaru gist"
+                        >
+                            <svg class="header__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-gist"
+                                ></use>
+                            </svg>
+                        </a>
+                        <a
+                            href="https://soundcloud.com/miezaru"
+                            class="header__icon-box"
+                            rel="noopener external"
+                            aria-label="Miezaru soundcloud"
+                        >
+                            <svg class="header__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-soundcloud"
+                                ></use>
+                            </svg>
+                        </a>
+                        <a
+                            href="https://www.pinterest.com/miezaruexpr/"
+                            class="header__icon-box"
+                            rel="noopener external"
+                            aria-label="Miezaru pinterest"
+                        >
+                            <svg class="header__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-pinterest"
+                                ></use>
+                            </svg>
+                        </a>
+                        <a
+                            href="https://web.telegram.org/"
+                            class="header__icon-box"
+                            rel="noopener external"
+                            aria-label="Telegram"
+                        >
+                            <svg class="header__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-telegram"
+                                ></use>
+                            </svg>
+                        </a>
+                        <a
+                            href="https://www.twitch.tv/"
+                            class="header__icon-box"
+                            rel="noopener external"
+                            aria-label="Twitch"
+                        >
+                            <svg class="header__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-twitch"
+                                ></use>
+                            </svg>
+                        </a>
+                        <a
+                            href="https://www.youtube.com/"
+                            class="header__icon-box"
+                            rel="noopener external"
+                            aria-label="Miezaru youtube"
+                        >
+                            <svg class="header__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-youtube"
+                                ></use>
+                            </svg>
+                        </a>
+                        <a
+                            href="https://music.youtube.com/"
+                            class="header__icon-box"
+                            rel="noopener external"
+                            aria-label="Miezaru youtube music"
+                        >
+                            <svg class="header__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-youtube-music"
+                                ></use>
+                            </svg>
+                        </a>
+                        <a
+                            href="https://www.facebook.com/miezaruexpr"
+                            class="header__icon-box"
+                            rel="noopener external"
+                            aria-label="Miezaru facebook"
+                        >
+                            <svg class="header__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-facebook"
+                                ></use>
+                            </svg>
+                        </a>
+                        <a
+                            href="https://twitter.com/miezaruexpr"
+                            class="header__icon-box"
+                            rel="noopener external"
+                            aria-label="Miezaru twitter"
+                        >
+                            <svg class="header__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-twitter"
+                                ></use>
+                            </svg>
+                        </a>
+                        <a
+                            href="https://store.steampowered.com/"
+                            class="header__icon-box"
+                            rel="noopener external"
+                            aria-label="Miezaru steam"
+                        >
+                            <svg class="header__icon">
+                                <use
+                                    href="../../assets/svg/symbol-defs.svg#icon-steam"
+                                ></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav class="page-nav" aria-labelledby="on-this-page">
+            <p id="on-this-page">On this page</p>
+            <ul class="page-nav__list">
+                <li class="page-nav__item">
+                    <a href="#top" class="page-nav__link details-link"
+                        >Back to top &uarr;</a
+                    >
+                </li>
+                <li class="page-nav__item">
+                    <details class="page-nav__details details">
+                        <summary tabindex="-1">
+                            <a
+                                href="#vscode"
+                                class="page-nav__link details-link"
+                                >Visual Studio Code</a
+                            >
+                        </summary>
+                        <ul class="page-nav__list-inner">
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#vscode-install"
+                                    class="page-nav__link-inner"
+                                    >Установка vscode</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#vscode-settings"
+                                    class="page-nav__link-inner"
+                                    >Настройка vscode</a
+                                >
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="page-nav__item">
+                    <details class="page-nav__details details">
+                        <summary tabindex="-1">
+                            <a href="#wsl2" class="page-nav__link details-link"
+                                >WSL2</a
+                            >
+                        </summary>
+                        <ul class="page-nav__list-inner">
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#wsl2-install"
+                                    class="page-nav__link-inner"
+                                    >Установка WSL2</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#wsl2-install-diff"
+                                    class="page-nav__link-inner"
+                                    >Перенос WSL2 на другой диск</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#wsl2-install-next"
+                                    class="page-nav__link-inner"
+                                    >Дальнейшая настройка WSL2</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#wsl2-install-extra"
+                                    class="page-nav__link-inner"
+                                    >Дополнительный настройки WSL2</a
+                                >
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="page-nav__item">
+                    <details class="page-nav__details details">
+                        <summary tabindex="-1">
+                            <a href="#nvm" class="page-nav__link details-link"
+                                >NVM</a
+                            >
+                        </summary>
+                        <ul class="page-nav__list-inner">
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#nvm-install"
+                                    class="page-nav__link-inner"
+                                    >Установка NVM</a
+                                >
+                            </li>
+                            <li class="page-nav__item-inner">
+                                <a
+                                    href="#nvm-issue"
+                                    class="page-nav__link-inner"
+                                    >Ошибки NVM</a
+                                >
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="grid-inner">
+            <header class="main-header">
+                <h1 class="title-h1 nav-makes-sticky">Enviroment setup</h1>
+                <p>Настройка Git для работы.</p>
+            </header>
+            <section
+                class="section"
+                aria-labelledby="section-vscode"
+                id="vscode"
+            >
+                <header class="section-header">
+                    <h2 class="title-h2" id="section-vscode">
+                        Visual Studio Code
+                    </h2>
+                </header>
+                <div class="section__part" id="vscode-install">
+                    <h3 class="title-h3">Установка vscode</h3>
+
+                    <ul class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                Скачать
+                                <a
+                                    href="https://code.visualstudio.com/"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >VS Code</a
+                                >
+                                с оффициального сайта
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                Залогиниться под своим профилем
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                Многие настройки установятся после этого, но
+                                лучше перепроверить.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="section__part" id="vscode-settings">
+                    <h3 class="title-h3">Настройка vscode</h3>
+
+                    <h4 class="title-h4">Global vscode settings</h4>
+                    <pre class="code">
+                        <code class="code-el">
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[svg]": { "editor.defaultFormatter": "jock.svg" },
+    "[markdown]": { "editor.defaultFormatter": "DavidAnson.vscode-markdownlint" },
+
+    // Вывод всех настроек в левой части экрана
+    "workbench.settings.useSplitJSON": true,
+    "workbench.colorTheme": "Night Owl (No Italics)",
+    "workbench.iconTheme": "icons",
+
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+
+    "editor.fontFamily": "'Dank Mono', Consolas, 'JetBrains Mono', Inconsolata, monospace",
+    "editor.wordWrap": "on",
+    "editor.mouseWheelZoom": true,
+    "editor.snippetSuggestions": "top",
+    "editor.renderWhitespace": "none",
+    "explorer.compactFolders": false,
+    "breadcrumbs.enabled": true,
+
+    // настройка на уровне проекта, показывает в какой части работать относительно корня
+    // "terminal.integrated.cwd": "html"
+
+    "terminal.integrated.profiles.windows": {
+        "Git Bash": { "path": "C:\\Program Files\\Git\\bin\\bash.exe" }
+    },
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+
+    "javascript.suggest.names": false,
+
+    // EXT Colorize
+    "colorize.languages": ["css", "scss", "javascript", "sass"],
+    "colorize.colorized_variables": ["css", "scss", "javascript"],
+    "colorize.hide_current_line_decorations": false
+}
+
+                        </code>
+                    </pre>
+
+                    <h4 class="title-h4">Local vscode settigs</h4>
+                    <pre class="code">
+                        <code class="code-el">
+{
+    "editor.formatOnSave": true,
+
+    "[javascriptreact, javascript, css, scss]": {
+        "editor.formatOnSave": false
+    },
+
+    "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+
+    "stylelint.validate": ["css", "scss", "less"],
+
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+        "source.fixAll.stylelint": true
+    },
+
+    // Delete snippets list from autocomplete menu
+    "stylelint.snippet": [""],
+
+    "search.exclude": {
+        "yarn.lock": true,
+        "node_modules": true
+    }
+}
+                    </code>
+                </pre>
+
+                    <h4 class="title-h4">VS Code extensions</h4>
+                    <ul class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >Auto Close Tag</a
+                                >
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >Auto Rename Tag</a
+                                >
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://marketplace.visualstudio.com/items?itemName=sdras.night-owl"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >Night Owl Theme</a
+                                >
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://marketplace.visualstudio.com/items?itemName=tal7aouy.icons"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >Icons</a
+                                >
+                                - icons theme
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >Remote Development</a
+                                >, after install use 'code .' command in
+                                terminal.
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >CodeSnap</a
+                                >
+                                - снимки кусочков кода.
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://marketplace.visualstudio.com/items?itemName=kamikillerto.vscode-colorize"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >Colorize</a
+                                >
+                                - подсветка цветов в css/scss. Необходимы
+                                настройки указанные выше, в глобальных
+                                настройках для vscode.
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >Editor Config for VS Code</a
+                                >
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >ESLint</a
+                                >
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >Prettier</a
+                                >
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://marketplace.visualstudio.com/items?itemName=bodil.file-browser"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >File Browser</a
+                                >
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://marketplace.visualstudio.com/items?itemName=zh9528.file-size"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >File Size</a
+                                >
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >Git History</a
+                                >
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >Image Preview</a
+                                >
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >Import Cost</a
+                                >
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://marketplace.visualstudio.com/items?itemName=AndersEAndersen.html-class-suggestions"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >HTML Class Suggestions</a
+                                >
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >Live Server</a
+                                >
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >Markdown All in One</a
+                                >
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >Markdown Lint</a
+                                >
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >NPM Intellisense</a
+                                >
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://marketplace.visualstudio.com/items?itemName=NoThlnG.vscode-open-wsl"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >Open in browser (WSL Support)</a
+                                >
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://marketplace.visualstudio.com/items?itemName=Rubymaniac.vscode-paste-and-indent"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >Paste and Indent</a
+                                >
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >Path Intellisense</a
+                                >
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >SCSS Intellisense</a
+                                >
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >Stylelint</a
+                                >
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://marketplace.visualstudio.com/items?itemName=jock.svg"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >SVG</a
+                                >
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >Thunder Client</a
+                                >
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://marketplace.visualstudio.com/items?itemName=pflannery.vscode-versionlens"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >Versions Lens</a
+                                >
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://marketplace.visualstudio.com/items?itemName=redhat.fabric8-analytics"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >Dependency Analytics</a
+                                >
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >IntelliCode</a
+                                >
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section" aria-labelledby="section-wsl2" id="wsl2">
+                <header class="section-header">
+                    <h2 class="title-h2" id="section-wsl2">
+                        Windows Subsystem for Linux - WSL2
+                    </h2>
+                </header>
+                <div class="section__part" id="wsl2-install">
+                    <h3 class="title-h3">Настройка WSL2</h3>
+
+                    <h4 class="title-h4">
+                        Ознакомиться с официальной установкой
+                    </h4>
+                    <ul class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://learn.microsoft.com/ru-ru/windows/wsl/install"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >Microsoft WSL2</a
+                                >
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="section__part" id="wsl2-install-diff">
+                    <h3 class="title-h3">Настройка WSL2 на другой диск</h3>
+
+                    <h4 class="title-h4">
+                        Если надо установить WSL2 на не системный диск, то есть
+                        несколько методов, но для меня рабочим является только
+                        один.
+                    </h4>
+                    <ul class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://dev.to/equiman/move-wsl-file-system-to-another-drive-2a3d"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >1 метод</a
+                                >
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://kontext.tech/article/308/how-to-install-windows-subsystem-for-linux-on-a-non-c-drive"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >2 метод</a
+                                >
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://www.youtube.com/watch?v=ON_dPAO4KZs"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >3 метод, рабочий для меня</a
+                                >
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="section__part" id="wsl2-install-next">
+                    <h3 class="title-h3">Дальнейшая установка</h3>
+
+                    <h4 class="title-h4">Что делаем</h4>
+                    <ul class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                установка wsl2 на другой диск с помощью видео
+                                номер 3
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                изменить json файл терминала
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://code.visualstudio.com/docs/remote/remote-overview"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >Установить расширение Remote Development</a
+                                >
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                sudo apt update && sudo apt upgrade
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                командой 'code .' через консоль подключаем wsl2
+                                к vscode
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="./git-setup.html"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >Git setup</a
+                                >
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="#nvm"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >nvm/nodejs/npm</a
+                                >
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="section__part" id="wsl2-install-extra">
+                    <h3 class="title-h3">Дополнительно</h3>
+                    <ul class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                Добавить в рабочую WSL2 директорию ссылки на
+                                диски Windows (что-бы не вводить каждый раз
+                                /mnt/c/...)
+                            </p>
+                            <ul class="list-inner">
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">cd ~</p>
+                                </li>
+                                <li class="list-inner__item">
+                                    <p class="list-inner__text">
+                                        ln -s /mnt/c/Users/user win_home
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section" aria-labelledby="section-nvm" id="nvm">
+                <header class="section-header">
+                    <h2 class="title-h2" id="section-nvm">Node/Npm/Nvm</h2>
+                </header>
+                <div class="section__part" id="nvm-install">
+                    <h3 class="title-h3">Установка NVM</h3>
+
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://github.com/nvm-sh/nvm"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >linux/mac</a
+                                >
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://github.com/coreybutler/nvm-windows/releases"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >windows</a
+                                >
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                <a
+                                    href="https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >wsl</a
+                                >
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="section__part" id="nvm-issue">
+                    <h3 class="title-h3">Ошибки</h3>
+
+                    <ol class="list-sm">
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                после установки, перезайти в терминал, что-бы
+                                nvm начал работать.
+                            </p>
+                        </li>
+                        <li class="list-sm__item">
+                            <p class="list-sm__text">
+                                Столкнулся с ошибкой на windows,
+                                <a
+                                    href="https://github.com/coreybutler/nvm-windows/issues/708"
+                                    class="section__link"
+                                    rel="noopener external"
+                                    >решение</a
+                                >
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

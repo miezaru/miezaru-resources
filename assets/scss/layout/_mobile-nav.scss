@@ -21,6 +21,11 @@
     transform: translateX(100%);
     scroll-behavior: smooth;
 
+    ::selection {
+        color: var(--clr-txt-primary);
+        background-color: var(--clr-txt-secondary);
+    }
+
     &::-webkit-scrollbar {
         width: 4px;
     }

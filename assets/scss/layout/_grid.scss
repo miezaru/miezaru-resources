@@ -23,7 +23,8 @@
             [center-end]
             20rem [nav-end]
             minmax(3.2rem, 1fr) [full-end];
-        padding: 0 0 12rem;
+        padding-top: 0;
+        padding-bottom: 12rem;
     }
 
     @media (width <= 68.75em) {
@@ -47,7 +48,7 @@
             )
             [center-end]
             1.6rem [full-end];
-        padding: 0 0 6rem;
+        padding-bottom: 6rem;
     }
 
     @media (width <= 20em) {
